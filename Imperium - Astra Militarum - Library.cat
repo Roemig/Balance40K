@@ -11302,7 +11302,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="4780-be29-8c52-1d20" id="12ee-e8d2-3537-7f88" primary="false" name="Squadron"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="235"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -12658,7 +12658,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink name="Imperium" hidden="false" id="cb09-53af-3494-2451" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -15167,7 +15167,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Malcador [Legends]" hidden="false" id="f706-c35a-a325-38bf">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="3cc4-24c8-85a-5f15" primary="false" name="Faction: Astra Militarum"/>
@@ -15457,7 +15457,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Malcador Annihilator [Legends]" hidden="false" id="bc69-45ff-789c-90bb">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="270"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="230"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="ea47-487f-236a-8c53" primary="false" name="Faction: Astra Militarum"/>
@@ -15730,7 +15730,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Malcador Defender [Legends]" hidden="false" id="a185-ae7a-4503-8ceb">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="310"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="270"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="36f6-af77-b409-e90c" primary="false" name="Faction: Astra Militarum"/>
@@ -15987,7 +15987,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Malcador Infernus [Legends]" hidden="false" id="5e59-657b-5c85-1d92">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="235"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="134f-ff4a-642a-9fec" primary="false" name="Faction: Astra Militarum"/>
@@ -17089,7 +17089,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="310"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="260"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="a20c-3b86-8a13-1b5a" primary="false" name="Faction: Astra Militarum"/>
@@ -17348,7 +17348,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="285"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="235"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="a8b5-e7d6-5651-7d30" primary="false" name="Faction: Astra Militarum"/>
@@ -17606,7 +17606,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="310"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="260"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="c4c7-ce1-d4c8-545" primary="false" name="Faction: Astra Militarum"/>
@@ -18317,7 +18317,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Valdor [Legends]" hidden="false" id="3936-a532-dc5e-8498">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="285"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="230"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fa45-57e-930e-602b" id="6e83-e8bb-79c3-16b3" primary="false" name="Faction: Astra Militarum"/>
@@ -21258,7 +21258,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Death Korps Grenadier Squad [Legends]" hidden="false" id="8a25-2a0c-87d2-3ea6">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Unit Composition" hidden="false" id="baed-7c31-5898-eb0b" sortIndex="3">
@@ -21858,7 +21858,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Macharius Omega [Legends]" hidden="false" id="4b76-f049-77b1-38bf">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="310"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="260"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -22110,7 +22110,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stygies Destroyer Tank Hunter [Legends]" hidden="false" id="28d1-70b2-70be-c998">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -25617,7 +25617,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Salamander Scout Vehicle [Legends]" hidden="false" id="73b2-edbf-eec3-563d">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -25814,7 +25814,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Assault Vehicle [Legends]" hidden="false" id="6800-f1ce-7deb-d9eb">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -26019,7 +26019,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Venator [Legends]" hidden="false" id="a95f-9dd6-de66-fa59">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -26207,7 +26207,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Salamander Command Vehicle [Legends]" hidden="false" id="9fb1-876b-ac2d-6c9b">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -29199,7 +29199,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <categoryLink name="Officer" hidden="false" id="4f7c-0b88-5d26-df01" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="265"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="280"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -29662,7 +29662,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krieg Combat Engineers" hidden="false" id="3e90-9359-2aaa-205e">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -29689,7 +29689,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="95" field="51b2-306e-1021-d207">
+        <modifier type="set" value="90" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="5" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
