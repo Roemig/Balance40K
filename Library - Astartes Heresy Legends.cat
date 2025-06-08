@@ -5532,7 +5532,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Greater Brass Scorpion [Legends]" hidden="false" id="f564-7bc-21a6-7796">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="560"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="440"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="290a-5d4-f2fa-f245" primary="true" name="Vehicle"/>
