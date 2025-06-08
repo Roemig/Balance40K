@@ -6605,7 +6605,7 @@ If this unit’s Bodyguard unit is destroyed, Ghazghkull Thraka and Makari becom
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="115" field="51b2-306e-1021-d207">
+        <modifier type="set" value="100" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="5" field="selections" scope="3bff-9fad-2d11-7866" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -8682,10 +8682,10 @@ Designer’s Note: Place the relevant number of Ammo Runt tokens next to the uni
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="210" field="51b2-306e-1021-d207">
+        <modifier type="set" value="190" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="5" field="selections" scope="b16a-7132-3f8a-abe5" childId="model" shared="true"/>
           </conditions>
@@ -13612,7 +13612,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="295"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="265"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -13834,7 +13834,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="225"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="185"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -14025,7 +14025,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -14655,7 +14655,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -14849,7 +14849,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -15948,7 +15948,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Close combat weapons" hidden="false" id="128b-9bdf-997c-96a4" type="selectionEntry" targetId="f84d-cef1-7fc1-f3b7">
@@ -16205,7 +16205,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -16459,7 +16459,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         <categoryLink targetId="56cc-5f43-2403-8da0" id="6cd1-6b3d-3a82-be9a" primary="false" name="Faction: Orks"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="230"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">

@@ -5405,7 +5405,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Blood Slaughterer [Legends]" hidden="false" id="fdad-1104-a934-3812">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="a3b0-930a-1a43-2c86" primary="true" name="Vehicle"/>
