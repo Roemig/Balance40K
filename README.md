@@ -1,4 +1,4 @@
-Warhammer 40,000 10th Edition
+Warhammer 40,000 10th Edition but balanced
 ==================
 
 [![Latest release](https://img.shields.io/github/release/BSData/wh40k-10e.svg?style=flat-square)](https://github.com/BSData/wh40k-10e/releases/latest)
