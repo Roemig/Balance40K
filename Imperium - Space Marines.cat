@@ -21413,7 +21413,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Land Raider Redeemer" hidden="false" id="d361-a36e-1448-264d">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="285"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="270"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="f268-7c87-16a1-dad8" primary="true" name="Vehicle"/>
