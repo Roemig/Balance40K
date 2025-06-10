@@ -7995,7 +7995,7 @@ Strategic Reserves.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vanguard Veteran Squad [Legends]" hidden="false" id="f1b9-b2e8-4ccf-d6cb">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="d859-19be-43c8-4136" primary="true" name="Infantry"/>
@@ -8018,7 +8018,7 @@ Strategic Reserves.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1c3c-229c-db87-fec6" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="240" field="51b2-306e-1021-d207">
+        <modifier type="set" value="170" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="f1b9-b2e8-4ccf-d6cb" childId="model" shared="true" id="c465-ba04-3a7-cc0a" includeChildSelections="true"/>
           </conditions>
@@ -28876,7 +28876,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Command Squad [Legends]" hidden="false" id="78ae-14b4-56d0-cc9d">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="667e-c3-f187-8fa6" primary="true" name="Infantry"/>
