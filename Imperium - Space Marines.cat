@@ -11973,6 +11973,13 @@ by 1.</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
           </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="7" field="2337-daa1-6682-b110">
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="parent" childId="1111-1111-1111-1111" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
