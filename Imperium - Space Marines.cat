@@ -11982,6 +11982,9 @@ by 1.</characteristic>
                   </modifiers>
         </profile>
       </profiles>
+              <categoryLinks>
+                <categoryLink targetId="1111-1111-1111-1111" id="1111-1111-1111-1112" primary="false" name="Close Combat Mastery"/>
+              </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="6d4f-7306-c14a-f76c">
       <profiles>
