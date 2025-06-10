@@ -1989,7 +1989,7 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Exorcist" hidden="false" id="684e-4dd3-340a-23ee" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
