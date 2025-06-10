@@ -18362,7 +18362,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Desolation Squad" hidden="false" id="a3ea-7a0d-fef8-23bf">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="6990-9fc-1e30-28ee" primary="true" name="Infantry"/>
