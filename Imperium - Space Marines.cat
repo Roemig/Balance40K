@@ -123,6 +123,7 @@
     <categoryEntry name="Watch Master" id="6e-71bd-2538-d468" hidden="false"/>
     <categoryEntry name="Sanguinary Priest" id="561f-8606-9555-b3ba" hidden="false"/>
     <categoryEntry name="Death Company" id="7278-781b-ce6c-d23c" hidden="false"/>
+    <categoryEntry name="Close Combat Mastery" id="1111-1111-1111-1111-1111" hidden="true"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="e9ed-6763-ea0d-39fe" targetId="82cb-ba1-1aae-3b1d"/>
