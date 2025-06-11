@@ -2045,7 +2045,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
