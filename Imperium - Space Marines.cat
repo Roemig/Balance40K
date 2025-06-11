@@ -13214,7 +13214,7 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Assault Squad [Legends]" hidden="false" id="ca4e-47d5-a704-8e5a">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="242b-855c-a40d-2e91" primary="true" name="Infantry"/>
@@ -13520,7 +13520,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="150" field="51b2-306e-1021-d207">
+        <modifier type="set" value="160" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="ca4e-47d5-a704-8e5a" childId="69fc-472b-e77b-fab8" shared="true" id="ad73-679-da71-2b43"/>
           </conditions>
@@ -13640,7 +13640,7 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Assault Squad with Jump Packs [Legends]" hidden="false" id="bfe7-b726-9158-d5ad">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="24c6-a522-61cc-a876" primary="true" name="Infantry"/>
@@ -13948,7 +13948,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+        <modifier type="set" value="190" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="bfe7-b726-9158-d5ad" childId="220a-fd5c-42e7-2e65" shared="true" id="ad73-679-da71-2b43" includeChildSelections="true"/>
           </conditions>
