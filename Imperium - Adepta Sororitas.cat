@@ -5971,7 +5971,7 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
         </selectionEntry>
       </selectionEntries>
       <modifiers>
-        <modifier type="set" value="80" field="51b2-306e-1021-d207">
+        <modifier type="set" value="60" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="3" field="selections" scope="8124-7324-b211-3269" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -5984,7 +5984,7 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
         </modifier>
       </modifiers>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
       </costs>
       <profiles>
         <profile name="Spiritual Fortitude" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a47-84c9-767e-fe13">
