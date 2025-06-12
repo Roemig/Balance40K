@@ -6682,16 +6682,15 @@ this unit, add 1 to any armour saving throw made against that attack.</character
       </profiles>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="7517-1f92-5f32-e093" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="ebc1-83c3-a25b-1bc7" primary="true" name="Battleline"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="bc5a-bba1-4208-aa4f" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="fef2-3e39-8bec-45ee" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="4289-a23d-9f4-1c0f" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="2740-ec68-77ee-2830" id="63a7-8e52-1333-a977" primary="false" name="Tactical Squad"/>
+        <categoryLink targetId="2740-ec68-77ee-2830" id="1111-1111-1111-1118" primary="false" name="Breacher Squad"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Breacher Marines" hidden="false" id="86de-e2b-99f0-1548" defaultSelectionEntryId="fc38-382c-98c1-9b3d" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Tactical Marine" hidden="false" id="fc38-382c-98c1-9b3d">
+            <selectionEntry type="model" import="true" name="Breacher Marine" hidden="false" id="fc38-382c-98c1-9b3d">
               <constraints>
                 <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="bf86-6005-80d1-e554"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1a10-2f1d-5108-12aa"/>
