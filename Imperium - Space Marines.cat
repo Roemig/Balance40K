@@ -38109,7 +38109,7 @@ per turn.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -38117,7 +38117,7 @@ per turn.</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="45f5-f76f-3825-ac0b" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="45f5-f76f-3825-ac0b" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="4c49-cd39-06c2-91be" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9442-d13c-4e00-6560" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="54e5-6b6e-23f9-bd35" includeChildSelections="true"/>
