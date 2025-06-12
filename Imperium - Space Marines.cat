@@ -6672,7 +6672,7 @@ this unit, add 1 to any armour saving throw made against that attack.</character
       </infoLinks>
       <comment>A4 WS 3+</comment>
     </selectionEntry>
-   <selectionEntry type="unit" import="true" name="Breacher Squad" hidden="false" id="c09a-6504-d25f-477">
+   <selectionEntry type="unit" import="true" name="Breacher Squad" hidden="false" id="1111-1111-1111-1117">
       <profiles>
         <profile name="Walking Bulwark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8fc-8ef9-6b6f-25d9">
           <characteristics>
@@ -6909,7 +6909,7 @@ this unit, add 1 to any armour saving throw made against that attack.</character
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
       </costs>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="f1cd-9f82-73cf-acc3" includeChildSelections="true" includeChildForces="true"/>
