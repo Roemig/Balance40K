@@ -99,6 +99,7 @@
     <categoryEntry name="Land Raider Helios" hidden="false" id="b9bb-3a23-433d-22a6"/>
     <categoryEntry name="Mortis Dreadnought" hidden="false" id="6ea3-4d1e-7551-c10"/>
     <categoryEntry name="Deimos Predator" hidden="false" id="f834-621c-3327-ca13"/>
+    <categoryEntry name="Deimos Rhino" hidden="false" id="1111-1111-1111-1115"/>
     <categoryEntry name="Chaplain Venerable Dreadnought" hidden="false" id="7e5c-674f-433f-c73c"/>
     <categoryEntry name="Land Speeder Tempest" hidden="false" id="d739-581-1839-5a61"/>
     <categoryEntry name="Carab Culln the Risen" hidden="false" id="6bc5-c225-8ca0-5a5d"/>
@@ -2660,6 +2661,7 @@
     <entryLink import="true" name="Land Raider Helios [Legends]" hidden="false" type="selectionEntry" id="c8f-979d-913b-2bad" targetId="f62a-bea1-a015-3668"/>
     <entryLink import="true" name="Mortis Dreadnought [Legends]" hidden="false" type="selectionEntry" id="b1ba-c9c4-557b-4a47" targetId="525c-7e0-b0de-8a6f"/>
     <entryLink import="true" name="Deimos Predator [Legends]" hidden="false" type="selectionEntry" id="569e-478f-3778-555b" targetId="534d-4e94-5a8a-75ae"/>
+    <entryLink import="true" name="Deimos Rhino [Legends]" hidden="false" type="selectionEntry" id="1111-1111-1111-1114" targetId="1111-1111-1111-1113"/>
     <entryLink import="true" name="Chaplain Venerable Dreadnought [Legends]" hidden="false" type="selectionEntry" id="d8c8-3031-2faa-22a6" targetId="b51-a07d-6440-e1ad"/>
     <entryLink import="true" name="Land Speeder Tempest [Legends]" hidden="false" type="selectionEntry" id="9683-3b69-ae2f-d527" targetId="d4ad-4638-c7a7-1af6"/>
     <entryLink import="true" name="Carab Culln the Risen [Legends]" hidden="false" type="selectionEntry" id="64c2-9759-7dd3-89dc" targetId="103c-8f97-ed61-1922"/>
@@ -31585,7 +31587,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deimos Rhino" hidden="false" id="1111-1111-1111-1113">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
       </costs>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="4144-d2c1-e753-353"/>
