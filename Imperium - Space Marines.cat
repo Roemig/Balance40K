@@ -315,8 +315,8 @@
     <entryLink import="true" name="Vanguard Veteran Squad with Jump Packs" hidden="false" type="selectionEntry" id="3f75-2c71-6fdb-6fc3" targetId="9e9c-bf4d-2d40-be82"/>
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" type="selectionEntry" id="73f7-4630-43be-e095" targetId="1bb6-878e-7af1-5bdb"/>
     <entryLink import="true" name="Stormraven Gunship" hidden="false" type="selectionEntry" id="6a36-465-ee24-331b" targetId="469b-3370-30f3-473a"/>
-    <entryLink import="true" name="Tactical Squad" hidden="false" type="selectionEntry" id="453-8d3-1fbd-293e" targetId="c09a-6504-d25f-477">
     <entryLink import="true" name="Breacher Squad" hidden="false" type="selectionEntry" id="1111-1111-1111-1116" targetId="1111-1111-1111-1117">
+    <entryLink import="true" name="Tactical Squad" hidden="false" type="selectionEntry" id="453-8d3-1fbd-293e" targetId="c09a-6504-d25f-477">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -6674,7 +6674,7 @@ this unit, add 1 to any armour saving throw made against that attack.</character
     </selectionEntry>
    <selectionEntry type="unit" import="true" name="Breacher Squad" hidden="false" id="1111-1111-1111-1117">
       <profiles>
-        <profile name="Walking Bulwark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8fc-8ef9-6b6f-25d9">
+        <profile name="Walking Bulwark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1111-1111-1111-1131">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit always counts as being in cover</characteristic>
           </characteristics>
