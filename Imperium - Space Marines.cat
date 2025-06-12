@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="112" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="113" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -31401,6 +31401,14 @@ You can attach this model to one of the above units even if one Captain, Chapte
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="2 Heavy Flamers" hidden="false" id="f9b7-9115-2a7a-c8ae">
                   <entryLinks>
@@ -31414,10 +31422,18 @@ You can attach this model to one of the above units even if one Captain, Chapte
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Turrent Weapon" id="3791-a268-a833-74d0" hidden="false">
+            <selectionEntryGroup name="Turret Weapon" id="3791-a268-a833-74d0" hidden="false">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9052-eec1-347f-a1c9"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="188c-5182-a901-a2d"/>
@@ -31428,7 +31444,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
                     <profile name="➤ Plasma Destroyer - Standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b59b-1f41-52e0-4b1c">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+1</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -31439,7 +31455,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
                     <profile name="➤ Plasma Destroyer - Supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7f73-d9cd-d375-5f8b">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+1</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
@@ -31528,6 +31544,27 @@ You can attach this model to one of the above units even if one Captain, Chapte
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="3ef0-8e6f-7a38-0d08" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Neutron Blaster" hidden="false" id="745c-c293-e416-9801">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="533f-0808-9883-9e0e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <profiles>
+                    <profile name="Neutron Blaster" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2202-b883-d3c4-5723">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating Wounds" id="d4ef-4820-c9c7-4846" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -31770,7 +31807,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="b2a0-bd27-bb82-0235" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Storm Bolter" hidden="false" id="c709-10f8-7baa-7ade" type="selectionEntry" targetId="eb61-5cd0-5242-74cc">
+            <entryLink import="true" name="Twin Bolter" hidden="false" id="c709-10f8-7baa-7ade" type="selectionEntry" targetId="eb61-5cd0-5242-74cc">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79c2-11e7-4f7f-5107"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c11-0c94-708a-1937"/>
