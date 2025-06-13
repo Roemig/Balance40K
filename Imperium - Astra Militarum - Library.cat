@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="125" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="126" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -32223,8 +32223,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <selectionEntryGroups>
         <selectionEntryGroup name="6 Guardsmen" id="52af-aa88-0c45-544e" hidden="false" defaultSelectionEntryId="5c78-4af2-518c-ccee" sortIndex="2">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="05f4-19eb-5968-8f62"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3727-2d98-b51e-f81e"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="05f4-19eb-5968-8f62"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3727-2d98-b51e-f81e"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Guardsman" hidden="false" id="64ef-61c0-a70c-2426" type="selectionEntry" targetId="ae21-aec-1942-66ea">
@@ -34002,7 +34002,7 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Guardsman" hidden="false" type="profile" id="6424-7c5f-6b99-3d29" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Shock Trooper" hidden="false" type="profile" id="6424-7c5f-6b99-3d29" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
@@ -34031,7 +34031,7 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Guardsman" hidden="false" type="profile" id="f4be-f3b1-f7d5-c02" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Shock Trooper" hidden="false" type="profile" id="f4be-f3b1-f7d5-c02" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
@@ -34044,7 +34044,7 @@ Onslaught - 4</characteristic>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Shock Trooper w/ Meltagun" hidden="false" id="318a-8c8c-8556-6972">
+        <selectionEntry type="model" import="true" name="Guardsman w/ Meltagun" hidden="false" id="318a-8c8c-8556-6972">
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="61cc-c2c3-c872-56be" targetId="8fe1-438f-f00a-ef5c">
               <constraints>
@@ -34060,7 +34060,7 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Guardsman" hidden="false" type="profile" id="7a36-38ed-6695-9dbf" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Shock Trooper" hidden="false" type="profile" id="7a36-38ed-6695-9dbf" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
@@ -34089,7 +34089,7 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Guardsman" hidden="false" type="profile" id="be55-9338-e98a-c154" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Shock Trooper" hidden="false" type="profile" id="be55-9338-e98a-c154" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
