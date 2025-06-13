@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="114" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="115" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -128,6 +128,7 @@
     <categoryEntry id="9824-8b57-21d0-b8b3" name="Breacher Squad" hidden="false"/>
     <categoryEntry id="8420-92ed-a8a3-5fb5" name="Support Squad" hidden="false"/>
     <categoryEntry id="ad6f-bf30-0610-6568" name="Heavy Support Squad" hidden="false"/>
+    <categoryEntry name="Tyberos the Red Wake" hidden="false" id="f3e4-d267-e0c4-89e1"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="e9ed-6763-ea0d-39fe" targetId="82cb-ba1-1aae-3b1d"/>
@@ -2732,6 +2733,32 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Tyberos the Red Wake" hidden="false" type="selectionEntry" id="f175-60de-5f7d-31a0" targetId="23fd-537e-87b3-daf9">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hunger and Slake" hidden="false" id="c466-3eb6-179b-c9f1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="860c-1aa3-10e9-f2a9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd73-aec5-d879-2928"/>
+          </constraints>
+          <profiles>
+            <profile name="Hunger and Slake" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a28e-846f-16f0-b163">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="fafc-355f-afa6-0eef" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -31904,12 +31931,13 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="690-1407-c886-2ac8" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="690-1407-c886-2ac8" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="372c-409b-2b3b-5bfb" primary="false" name="Walker"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="44d7-12ac-bf1a-8afb" primary="false" name="Imperium"/>
         <categoryLink targetId="c97c-376-e2e0-1dd2" id="1681-5e08-a65a-586a" primary="false" name="Dreadnought"/>
         <categoryLink targetId="7e5c-674f-433f-c73c" id="62f4-e861-3d7a-24b0" primary="false" name="Chaplain Venerable Dreadnought"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="32c7-9a73-1130-7fa3" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink name="Character" hidden="false" id="8484-50d1-ed64-29b5" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Chaplain Venerable Dreadnought [Legends]" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="77d3-7836-c62b-6b9">
@@ -32121,6 +32149,37 @@ You can attach this model to one of the above units even if one Captain, Chapte
             <entryLink import="true" name="Armoured feet" hidden="false" id="b05f-2b19-0168-baeb" collective="false" targetId="d961-1269-6476-6f8c" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="0df6-5fa9-5648-29f8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Absolver Bolt Pistol" hidden="false" id="21d5-54ee-7ab8-dd5a" type="selectionEntry" targetId="a490-361-c9c4-afeb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daf4-1684-9880-3419"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0e2-d619-0913-5e2a"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="ac0f-d33b-80e4-4e58" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="be05-f4a5-7f93-d75f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="ac0f-d33b-80e4-4e58" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Crozius Arcanum" hidden="false" id="da29-4102-857a-a76b" type="selectionEntry" targetId="871-d25c-e7b3-5dfc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69f4-a7d3-8cfa-a5d8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f444-95ff-1ba4-9240"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="031b-5936-1356-a216" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -32136,6 +32195,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3721-4a78-c50b-d9cc" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="aa51-03ea-f4af-9466" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -33174,13 +33234,14 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="b634-e7a9-32c2-13b9" targetId="3b76-4053-ece9-6e7d"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="5b3-c92e-d069-7dba" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="5b3-c92e-d069-7dba" primary="false" name="Vehicle"/>
         <categoryLink targetId="8875-fa3f-3355-3342" id="227f-308f-8dfb-56bb" primary="false" name="Venerable"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="616c-1545-4918-1403" primary="false" name="Walker"/>
         <categoryLink targetId="6df-937-16bc-8c1a" id="3513-82cd-317b-10e7" primary="false" name="Smoke"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2c02-6f4b-81f5-37f5" primary="false" name="Imperium"/>
         <categoryLink targetId="c97c-376-e2e0-1dd2" id="dcd3-1b5-62e4-7f8f" primary="false" name="Dreadnought"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="7079-b87d-22c2-b2d1" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink name="Character" hidden="false" id="c006-d54c-932d-5202" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
@@ -33199,6 +33260,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="1faa-132e-b5bc-cb36" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="6367-84a9-57b8-4645" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -33275,6 +33337,11 @@ You can attach this model to one of the above units even if one Captain, Chapte
     <selectionEntry type="model" import="true" name="Rhino Primaris [Legends]" hidden="false" id="80d1-496f-40fd-c154">
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5e24-8612-5219-6764" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="d51d-be46-a51a-c92c" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1780-8303-af81-c13b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="221d-7cf2-8469-bf70"/>
@@ -33318,12 +33385,13 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="4dba-3ccf-d4d6-4fc1" targetId="3b76-4053-ece9-6e7d"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="d5c3-4a3f-bd7a-6ec2" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="d5c3-4a3f-bd7a-6ec2" primary="false" name="Vehicle"/>
         <categoryLink targetId="6df-937-16bc-8c1a" id="770a-4195-ac8d-f43c" primary="false" name="Smoke"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="be61-80b0-56cf-7771" primary="false" name="Transport"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="fbcd-63f4-e6e9-a3e5" primary="false" name="Imperium"/>
         <categoryLink targetId="6612-4ab5-e0bb-6dd1" id="d4f4-c2ad-7077-dd77" primary="false" name="Rhino Primaris"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="c200-d298-3342-8b47" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink name="Character" hidden="false" id="5ef7-e00d-5018-b86d" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
@@ -33479,15 +33547,21 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <cost name="pts" typeId="51b2-306e-1021-d207" value="310"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="1b26-3629-9430-59a2" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="1b26-3629-9430-59a2" primary="false" name="Vehicle"/>
         <categoryLink targetId="6df-937-16bc-8c1a" id="9b53-5660-b7f3-26a5" primary="false" name="Smoke"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="49f4-bbf0-f8a2-a9af" primary="false" name="Transport"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e7a8-6ec6-c83d-579c" primary="false" name="Imperium"/>
         <categoryLink targetId="d4f3-3223-b460-ded5" id="1c4d-bc7-e20b-bc17" primary="false" name="Land Raider Excelsior"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="6df4-9418-ba9e-4d08" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink name="Character" hidden="false" id="9444-8222-221c-5ce7" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="2d93-1e8e-4181-5712" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="6f50-0f93-d160-e4e6" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5ba-155e-8d0c-ad5d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5ab1-96b4-e83a-9f8f"/>
@@ -38654,6 +38728,145 @@ per turn.</characteristic>
               </repeats>
             </modifier>
             <modifier type="increment" value="2" field="f8e3-34d7-0669-2cc9">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tyberos the Red Wake" id="23fd-537e-87b3-daf9">
+      <infoLinks>
+        <infoLink name="Leader" type="rule" id="d956-7360-690a-b184" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Deep Strike" type="rule" id="0b4c-d0c9-c938-d897" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Invulnerable Save" hidden="false" type="profile" id="7b8a-3997-e532-656b" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="6c11-27ba-a3b4-b0e2" targetId="3b76-4053-ece9-6e7d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="0da7-2573-cbb7-05c7" primary="false" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="f842-6cc6-debf-9eb1" primary="false" name="Infantry"/>
+        <categoryLink targetId="2d7f-1892-2fd0-e29c" id="c37e-94be-622c-ba43" primary="false" name="Captain"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="10dc-3ea3-f53c-2690" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="82f8-3576-8918-35f2" primary="false" name="Imperium"/>
+        <categoryLink targetId="740a-892c-8958-defa" id="c718-753a-4324-7248" primary="false" name="Terminator"/>
+        <categoryLink name="Epic Hero" hidden="false" id="6c44-3544-372a-bb74" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Chapter Master" hidden="false" id="9068-7634-afd0-51af" targetId="5bd8-882d-302b-48f3" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0578-1ee1-ab70-f19d" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7006-a4c8-ac5a-c8e0" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="f7d7-154d-3831-f958" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="3eb3-a906-310e-b67d" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="80b8-be6e-51dc-6738" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Tyberos the Red Wake" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fd0e-a8c5-c0e0-e2ab">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">8</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d7dc-8784-bcc3-e9ea">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Relic Terminator Squad
+■ Terminator Assault Squad
+■ Terminator Squad</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Savagery beyond reason" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7de-22ce-d94e-c72a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly Adeptus Astartes infantry unit is within 12&quot; of this model, each time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shadow Warfare" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0216-2b81-bc7d-5d4d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent’s turn, if this unit is more than 6&quot; away from all enemy models, you can remove this unit from the battlefield and place it into Strategic Reserves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditions>
+                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="2" field="3eb3-a906-310e-b67d">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="80b8-be6e-51dc-6738">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
