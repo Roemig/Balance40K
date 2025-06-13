@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="8" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="39b9-56da-6787-1880" name="Kratos" hidden="false">
       <constraints>
@@ -2022,7 +2022,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8df7-d036-1101-0267" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Storm bolter" hidden="false" id="c0f1-28ec-8348-d3f8" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
             <entryLink import="true" name="Twin lascannon" hidden="false" id="9b2d-9f47-c423-6942" collective="false" targetId="c36c-6247-f673-fe00" type="selectionEntry">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="226f-43b3-9a59-e764" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2053,17 +2052,41 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52eb-04f3-13ff-9fc5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Heavy bolter" hidden="false" id="d859-af5d-429b-22ff" collective="false" targetId="d243-77eb-2a1-ff34" type="selectionEntry"/>
-                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="83cb-b7f4-40a6-6216" collective="false" targetId="f1a6-b394-5bc5-a3cb" type="selectionEntry"/>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="98da-74ea-f6d8-51f8" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry"/>
-                <entryLink import="true" name="Twin heavy flamer" hidden="false" id="b824-582e-3fc2-c0a7" collective="false" targetId="28c2-3ff0-43c1-380d" type="selectionEntry"/>
+                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="83cb-b7f4-40a6-6216" collective="false" targetId="f1a6-b394-5bc5-a3cb" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin heavy flamer" hidden="false" id="b824-582e-3fc2-c0a7" collective="false" targetId="28c2-3ff0-43c1-380d" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="56e8-9e08-1a56-59f3" type="selectionEntry" targetId="c36c-6247-f673-fe00"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="4d06-fe57-f1f3-50d0" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e03-8c0c-bc4e-1400"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="c899-1e61-7ebc-0ea7" type="selectionEntry" targetId="d243-77eb-2a1-ff34"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="be42-e478-5e84-75d8" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="3457-5166-67d8-ca8a" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="a204-172e-c95b-ef14" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="47de-0247-d818-a26f" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="629f-3003-5a72-c240" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -2324,7 +2347,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="724f-13c5-d436-248c"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Storm bolter" hidden="false" id="3e1c-d033-7360-7217" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Herakles-pattern autocannon" hidden="false" id="6c5b-521e-2870-42de">
@@ -2386,6 +2408,19 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="96d9-9f6d-8618-4598" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5095-11a7-14e7-bbb7"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="2b0e-b9c1-270a-1e26" type="selectionEntry" targetId="d243-77eb-2a1-ff34"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="9946-9f2d-02ae-6bac" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="621e-80f0-638a-4444" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="16a0-31d2-fbb8-0f55" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="069b-1e94-0585-c185" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="2ad0-611d-fade-830b" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -2573,7 +2608,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d205-2ebf-8b50-920c"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Storm bolter" hidden="false" id="7510-4d47-b186-f155" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Venator neutron laser" hidden="false" id="17fc-29fd-a1bb-2fd6">
@@ -2636,6 +2670,19 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="3388-9e4c-0576-1c58" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3af1-6618-964c-8ae6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="4e18-5061-0917-6556" type="selectionEntry" targetId="d243-77eb-2a1-ff34"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="0d8e-9cf4-7299-7f02" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="e7e0-42ff-4ee2-eb19" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="9070-5bf5-03b9-e6ec" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="81f3-fd8f-e089-3ecf" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="e64e-1e5b-4e0b-22c7" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -3194,7 +3241,11 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vindicator Laser Destroyer [Legends]" hidden="false" id="128d-5011-8e6-45a6">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="3c5a-35e3-d715-ff54" primary="false" name="Faction: Adeptus Astartes"/>
@@ -3245,6 +3296,11 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Storm bolter" hidden="false" id="2385-ccf2-8f52-769c" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+            <entryLink import="true" name="Havoc Launcher" hidden="false" id="8996-1fd5-8f48-85c3" type="selectionEntry" targetId="5500-ca94-43f4-0881">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="828a-a8ba-1f9f-42fc"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Laservolley cannon" hidden="false" id="38d2-3b20-6d20-837e">
@@ -4029,17 +4085,6 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle weapon" id="dd27-89ca-48c9-fb9d" hidden="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3322-5c1b-d988-c345"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Heavy bolter" hidden="false" id="e51c-6d70-adfd-1ee9" type="selectionEntry" targetId="d243-77eb-2a1-ff34"/>
-                <entryLink import="true" name="Heavy flamer" hidden="false" id="3906-bb1c-9fea-9ed2" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="9b87-837b-d060-c12b" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
-                <entryLink import="true" name="Storm bolter" hidden="false" id="14fe-cbe2-7ce2-297" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup name="Sponsons" id="ede8-7239-7141-c52c" hidden="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daef-c5fe-91c3-aa1e"/>
@@ -4073,6 +4118,19 @@
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="2346-6547-2a25-1af9" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b718-12fc-699a-0ca1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="8f79-80ac-19a0-30e7" type="selectionEntry" targetId="d243-77eb-2a1-ff34"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="ca36-8d55-b028-6e23" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="eba9-9e31-ba9b-0db7" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="b4c4-9f89-12cc-5a7a" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="1baf-da58-672d-89cf" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="1345-c1f6-981f-c594" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -4158,6 +4216,8 @@
                 <entryLink import="true" name="Heavy flamer" hidden="false" id="3cbe-4600-e9ea-f69" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
                 <entryLink import="true" name="Multi-melta" hidden="false" id="29ce-b9ad-b0cd-9378" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="c17e-79b-3a2b-12" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="7305-13c2-b9ab-0e35" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="98b9-7eed-c9f1-109e" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsons" id="e7ab-b81c-e038-83bd" hidden="false">
@@ -4207,7 +4267,11 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Spartan [Legends]" hidden="false" id="7b3a-9a63-6200-ec7">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="315"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="325"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="d310-5ca7-7c4a-1a4b" primary="true" name="Vehicle"/>
@@ -4255,17 +4319,7 @@
               <entryLinks>
                 <entryLink import="true" name="Twin heavy bolter" hidden="false" id="b4c7-c0c-ce4d-4ff4" type="selectionEntry" targetId="f1a6-b394-5bc5-a3cb"/>
                 <entryLink import="true" name="Twin heavy flamer" hidden="false" id="c29e-6b5a-edc3-fe67" type="selectionEntry" targetId="28c2-3ff0-43c1-380d"/>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Pintle weapon" id="2928-10df-a548-a097" hidden="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bca-eaa5-9fd2-e48d"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Heavy bolter" hidden="false" id="249f-11e-4df6-628c" type="selectionEntry" targetId="d243-77eb-2a1-ff34"/>
-                <entryLink import="true" name="Heavy flamer" hidden="false" id="5054-94ae-e11e-4f64" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="f49c-ed4f-71c2-9368" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
-                <entryLink import="true" name="Storm bolter" hidden="false" id="821-b17f-ee04-d1a1" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="91bf-9612-5ae7-c9c2" type="selectionEntry" targetId="c36c-6247-f673-fe00"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsons" id="7efb-4501-ca78-6c9b" hidden="false" defaultSelectionEntryId="534c-5208-d3b1-3f1f">
@@ -4324,6 +4378,19 @@
                   </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="aef4-4040-a18e-67bc" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99ce-8fe6-ddc2-8ef6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="ff8c-653b-51eb-f0c5" type="selectionEntry" targetId="d243-77eb-2a1-ff34"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="39c6-3979-2c6f-a973" type="selectionEntry" targetId="bcef-39ba-a990-5490"/>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="9430-9f6d-22bf-0c4c" type="selectionEntry" targetId="91c8-b628-4d47-d01e"/>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="f21b-b219-afe0-ee80" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="02dc-9ae0-44d4-56ae" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="3807-e258-b497-ace7" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -6191,6 +6258,24 @@
       </profiles>
       <infoLinks>
         <infoLink name="Devastating Wounds" hidden="false" type="rule" id="7ca7-98ee-eaa8-1612" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Havoc Launcher" hidden="false" id="5500-ca94-43f4-0881">
+      <profiles>
+        <profile name="Havoc Launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7360-b255-43a1-6517">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="c5c2-8644-87a2-863a" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

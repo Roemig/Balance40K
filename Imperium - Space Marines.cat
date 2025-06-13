@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="116" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="117" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -31377,7 +31377,12 @@ You can attach this model to one of the above units even if one Captain, Chapte
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deimos Predator [Legends]" hidden="false" id="534d-4e94-5a8a-75ae">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="6f2d-bad9-8a71-eb4c" primary="true" name="Vehicle"/>
@@ -31422,14 +31427,6 @@ You can attach this model to one of the above units even if one Captain, Chapte
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5841-cd01-4eb6-fbd9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Storm Bolter" hidden="false" id="a155-c2c2-f057-333" type="selectionEntry" targetId="eb61-5cd0-5242-74cc">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b517-daf0-d487-346b"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="9de9-c213-4c6e-58e6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -31583,7 +31580,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="1fd5-4fa5-fe1b-0776" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -31638,6 +31635,70 @@ You can attach this model to one of the above units even if one Captain, Chapte
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="85e5-df29-b3cf-63ea" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f90-eb2e-9d2b-f59e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Havoc launcher" hidden="false" id="874d-6f23-38c7-967d" collective="false">
+                  <profiles>
+                    <profile name="Havoc launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="af4c-69a1-761e-20ae">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="5743-0253-27c6-49c1" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin boltgun" hidden="false" id="c582-e4e8-9080-2785" collective="false">
+                  <profiles>
+                    <profile name="Twin boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d994-53bd-476d-d98a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="42e3-60af-9f60-ddd2" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="89d6-f3e5-7c1f-7207" collective="false" targetId="8882-6dc0-3a7b-5266" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="5c22-d885-7465-4ea3" collective="false" targetId="d243-77eb-2a1-ff34" type="selectionEntry"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="ffca-518e-035f-7079" collective="false" targetId="bcef-39ba-a990-5490" type="selectionEntry"/>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="73d9-fa17-8061-56a4" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -31740,7 +31801,12 @@ You can attach this model to one of the above units even if one Captain, Chapte
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deimos Rhino" hidden="false" id="1111-1111-1111-1113">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="4144-d2c1-e753-353"/>
@@ -31785,6 +31851,32 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="29e4-1f83-97fc-2fb1" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Hunter Killer Missile" hidden="false" id="3678-855a-3e71-22e2" type="selectionEntry" targetId="2523-36d-531f-9910">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af79-8f81-8018-f868"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="cc73-17fb-48c0-1b6c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Armoured Tracks" hidden="false" id="e2f3-657f-726f-a263" type="selectionEntry" targetId="d3da-d5f3-70a9-50ed">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b589-3e17-ad3d-421d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d076-75c9-e705-019a"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="b212-0f52-8b83-51df" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="ef38-59bc-46cb-1577" type="selectionEntry" targetId="eb61-5cd0-5242-74cc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6871-7251-b819-0dcd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1b9-d97b-2d59-159e"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="e45a-f7fb-1d62-6b00" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e550-944-8fcc-2f61" primary="false" name="Imperium"/>
@@ -31867,28 +31959,6 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="d632-1877-f162-a93a" hidden="false" sortIndex="2">
-          <entryLinks>
-            <entryLink import="true" name="Armoured Tracks" hidden="false" id="aff-6819-7658-2fbb" type="selectionEntry" targetId="d3da-d5f3-70a9-50ed">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a068-b082-dcec-4080"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e86-cf15-849e-e721"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b2a0-bd27-bb82-0235" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Storm Bolter" hidden="false" id="c709-10f8-7baa-7ade" type="selectionEntry" targetId="eb61-5cd0-5242-74cc">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79c2-11e7-4f7f-5107"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c11-0c94-708a-1937"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="3fb3-7728-d850-8b88" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Pintle weapon" id="2667-d8cf-962d-6990" hidden="false" collective="false" import="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6817-11a5-45d2-182e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -31933,15 +32003,28 @@ You can attach this model to one of the above units even if one Captain, Chapte
                 <infoLink name="Twin-linked" id="8f6e-7a00-12d2-27d4" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Combi-weapon" hidden="false" id="1514-c24f-d6fd-c0ab" collective="false" targetId="8882-6dc0-3a7b-5266" type="selectionEntry"/>
+            <entryLink import="true" name="Combi-weapon" hidden="false" id="1514-c24f-d6fd-c0ab" collective="false" targetId="8882-6dc0-3a7b-5266" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Heavy bolter" hidden="false" id="c6d9-e55-c30e-35de" collective="false" targetId="d243-77eb-2a1-ff34" type="selectionEntry"/>
             <entryLink import="true" name="Heavy flamer" hidden="false" id="4670-1449-7ee5-7d90" collective="false" targetId="bcef-39ba-a990-5490" type="selectionEntry"/>
-            <entryLink import="true" name="Multi-melta" hidden="false" id="32b0-fc75-8b2e-7a25" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry"/>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="32b0-fc75-8b2e-7a25" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -33264,7 +33347,12 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <categoryLink name="Character" hidden="false" id="c006-d54c-932d-5202" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -38778,7 +38866,7 @@ per turn.</characteristic>
         <entryLink id="0578-1ee1-ab70-f19d" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
