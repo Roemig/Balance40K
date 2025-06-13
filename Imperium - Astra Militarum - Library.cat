@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="129" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="130" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -34038,16 +34038,15 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       </profiles>
       <comment>Conscripts</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Catachan Veterans" hidden="false" id="b81c-ec1b-f43b-9164">
+    <selectionEntry type="unit" import="true" name="Catachan Veteran Squad" hidden="false" id="b81c-ec1b-f43b-9164">
       <categoryLinks>
-        <categoryLink targetId="8a6c-34aa-874b-8013" id="7a81-f963-dbd6-a2e3" primary="false" name="Catachan Jungle Fighters"/>
         <categoryLink targetId="fa45-57e-930e-602b" id="016f-24f7-077f-3755" primary="false" name="Faction: Astra Militarum"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="3b5f-4dd2-e19e-ce3a" primary="false" name="Imperium"/>
         <categoryLink targetId="edff-c2d-8999-4f45" id="ccdb-7fab-8e5c-68f0" primary="false" name="Platoon"/>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="85ea-03c0-1993-95ae" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="31e9-8c99-8dc0-7b39" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="85ea-03c0-1993-95ae" primary="true" name="Infantry"/>
         <categoryLink targetId="c8a1-fef-5569-61c9" id="f40e-8cd3-9c57-70e7" primary="false" name="Regiment"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="cb1d-4373-1c5c-309d" primary="false" name="Grenades"/>
+        <categoryLink name="Catachan Veteran Squad" hidden="false" id="2e31-79a9-5d86-dcaf" targetId="8201-ae3d-130b-51fe" primary="false"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="120" field="51b2-306e-1021-d207">
@@ -34080,7 +34079,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a ranged attack against a unit within 12&quot;, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Catachan veterans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="382c-60f8-fc59-f192">
+        <profile name="Catachan Veteran Squad" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="382c-60f8-fc59-f192">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a model from your army with the Leader ability can be attached to a **^^Catachan Jungle Fighters^^** unit, it can be attached to this unit instead.</characteristic>
           </characteristics>
@@ -34516,6 +34515,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Special Weapons Squad" id="66d5-84db-36a2-3618" hidden="false"/>
     <categoryEntry name="Conscript Squad" id="0c58-5718-d215-5332" hidden="false"/>
     <categoryEntry name="Conscripts" id="d9b9-4ba9-568a-de85" hidden="false"/>
+    <categoryEntry name="Catachan Veteran Squad" id="8201-ae3d-130b-51fe" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
