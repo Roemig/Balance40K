@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="115" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="116" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -211,7 +211,11 @@
     <entryLink import="true" name="Gladiator Lancer" hidden="false" type="selectionEntry" id="774e-1b48-d9b4-84b8" targetId="7814-107b-a498-96f6"/>
     <entryLink import="true" name="Gladiator Reaper" hidden="false" type="selectionEntry" id="67b0-bbc-b17-24f4" targetId="ed20-824b-7419-aebc"/>
     <entryLink import="true" name="Gladiator Valiant" hidden="false" type="selectionEntry" id="af30-8cda-c8d2-4ac3" targetId="6b89-8147-9b6b-6db1"/>
-    <entryLink import="true" name="Hammerfall Bunker" hidden="false" type="selectionEntry" id="75dd-d7a5-f45c-f90c" targetId="5882-9143-e7c5-ac11"/>
+    <entryLink import="true" name="Hammerfall Bunker" hidden="false" type="selectionEntry" id="75dd-d7a5-f45c-f90c" targetId="5882-9143-e7c5-ac11">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+      </costs>
+    </entryLink>
     <entryLink import="true" name="Heavy Intercessor Squad" hidden="false" type="selectionEntry" id="44a8-9703-5aed-64f" targetId="7324-e591-939b-b675"/>
     <entryLink import="true" name="Hellblaster Squad" hidden="false" type="selectionEntry" id="4c8-e877-566b-a1ee" targetId="7102-b3a4-9bfc-1b84"/>
     <entryLink import="true" name="Hunter [Legends]" hidden="false" type="selectionEntry" id="d318-96c5-d134-fa02" targetId="3ad-729-3235-4777"/>
@@ -31121,6 +31125,14 @@ You can attach this model to one of the above units even if one Captain, Chapte
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="2 Dreadnought Inferno Cannons" hidden="false" id="8401-1490-e6aa-7044">
                   <selectionEntries>
@@ -31228,6 +31240,14 @@ You can attach this model to one of the above units even if one Captain, Chapte
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
