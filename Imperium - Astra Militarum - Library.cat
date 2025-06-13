@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="124" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="125" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -3149,7 +3149,13 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commissar" hidden="false" id="a979-5b21-dc69-b949">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf38-2338-aa71-ed56" id="2287-d41-897a-bdf6" primary="false" name="Commissar"/>
@@ -3212,7 +3218,7 @@
         </profile>
         <profile name="Officer" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="11a-efa7-7a1e-27e9">
           <characteristics>
-            <characteristic name="Orders" typeId="36b-c3c9-245f-e97d">This Officer can issue 1 Order to a Regiment unit. This Officer can only issue the Duty and Honour! and Fix Bayonets! Orders.</characteristic>
+            <characteristic name="Orders" typeId="36b-c3c9-245f-e97d">This Officer can issue 1 Order to a Ogryn or Regiment unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3240,6 +3246,7 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="ee77-0913-ec48-f511" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Laspistol" hidden="false" id="ba86-f8a8-e1d4-4333" type="selectionEntry" targetId="1211-ef94-5ea9-6a50"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Chainsword" id="2f0b-0c9e-0391-7383" hidden="false" defaultSelectionEntryId="cf09-4428-9f51-d36c">
@@ -3285,6 +3292,9 @@
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Power fist" hidden="false" id="182f-968f-642e-20c4" type="selectionEntry" targetId="f054-ef04-f991-1ccb"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -5757,11 +5767,13 @@
         <categoryLink targetId="6df-937-16bc-8c1a" id="d602-5904-a16a-a874" primary="false" name="Smoke"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="acd1-da30-2656-832a" includeChildSelections="true" includeChildForces="true"/>
@@ -8558,7 +8570,13 @@
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="4a48-7fff-e753-7ef6" primary="true" name="Infantry"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -12940,7 +12958,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="6df-937-16bc-8c1a" id="f08-a1f7-a8fd-c6d9" primary="false" name="Smoke"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="acd1-da30-2656-832a" includeChildSelections="true" includeChildForces="true"/>
@@ -13990,7 +14014,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shock Trooper" hidden="false" id="ae21-aec-1942-66ea">
       <infoLinks>
-        <infoLink name="Shock Trooper" hidden="false" type="profile" id="55ff-405c-16bb-1ea2" targetId="ea09-3364-e6cd-2ffe"/>
+        <infoLink name="Guardsman" hidden="false" type="profile" id="55ff-405c-16bb-1ea2" targetId="ea09-3364-e6cd-2ffe"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Lasgun" hidden="false" type="selectionEntry" id="b066-d6eb-16ea-ae60" targetId="26c-19b3-720-8dcf">
@@ -15300,6 +15324,15 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Two lascannons" hidden="false" id="8d37-a7c-fc98-b90">
                   <entryLinks>
@@ -15354,6 +15387,8 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="5e8d-7216-89e9-ece4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="4c5f-1c76-3d55-6ce6" type="selectionEntry" targetId="866e-e876-1f61-2022"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="e55d-0c75-0d44-773a" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -15590,6 +15625,15 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Two lascannons" hidden="false" id="9e1a-8d12-6329-35b6">
                   <entryLinks>
@@ -15621,6 +15665,8 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="296d-63f5-9f0f-c552" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="8b39-a537-f54f-8ea4" type="selectionEntry" targetId="866e-e876-1f61-2022"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="659f-0b8e-a5dc-0360" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -15863,6 +15909,15 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Two lascannons" hidden="false" id="d0f1-f38e-77a3-9cdc">
                   <entryLinks>
@@ -15894,6 +15949,8 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="8117-f270-6750-40d3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="21fd-8e5b-3d41-eda6" type="selectionEntry" targetId="866e-e876-1f61-2022"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="76c1-854e-254d-9e94" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -16120,6 +16177,15 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Two lascannons" hidden="false" id="d23f-88b3-6d37-1561">
                   <entryLinks>
@@ -16164,6 +16230,8 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="d9b8-c52a-1a11-882d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="b484-15e2-236b-0683" type="selectionEntry" targetId="866e-e876-1f61-2022"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="3a30-f31d-6182-114b" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -25108,7 +25176,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Griffon Mortar Carrier [Legends]" hidden="false" id="7be8-bfe0-6416-8ed7">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -26289,7 +26363,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Salamander Command Vehicle [Legends]" hidden="false" id="9fb1-876b-ac2d-6c9b">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -26357,7 +26437,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48c8-e907-ea3a-a9a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Enhancements" hidden="false" id="9e6d-dc1f-3c4c-5eab" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="d329-f7f0-9c94-3f0c" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="0df5-8ce6-6e3e-c47a" includeChildSelections="false"/>
@@ -32093,7 +32173,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="518b-cec5-d34c-3aa4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Annihlator Lascannon" hidden="false" id="6b74-cc4a-3b74-17f7" type="selectionEntry" targetId="72d0-c262-5b03-afdc">
+            <entryLink import="true" name="Annihilator Lascannon" hidden="false" id="6b74-cc4a-3b74-17f7" type="selectionEntry" targetId="72d0-c262-5b03-afdc">
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="348b-d890-975e-3488" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
@@ -32101,6 +32181,140 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Special Weapons Squad" hidden="false" id="1679-3d4e-47c3-548c">
+      <categoryLinks>
+        <categoryLink targetId="fa45-57e-930e-602b" id="4896-c58b-f89d-8b85" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="5c07-ead7-2be4-1a71" primary="false" name="Imperium"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="ef98-0180-1d85-632d" primary="true" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="53e1-dea9-10a9-4ac5" primary="false" name="Grenades"/>
+        <categoryLink targetId="c8a1-fef-5569-61c9" id="16f5-6748-1ba3-f4aa" primary="false" name="Regiment"/>
+        <categoryLink name="Special Weapons Squad" hidden="false" id="b939-ed6a-6f83-72ee" targetId="66d5-84db-36a2-3618" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2a27-409c-659b-e5d8" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="ca8e-6222-7a67-ace1" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="0acf-090b-2acc-5248" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="a1ee-2061-9e9c-0084" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Integrated Support" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca93-52f7-429b-7c05">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While within 6&quot; of a friendly Cadian Shock Troops, Catachan Jungle Fighters or Death Korps of Krieg unit, this unit gains the lone operative ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="6 Guardsmen" id="52af-aa88-0c45-544e" hidden="false" defaultSelectionEntryId="5c78-4af2-518c-ccee" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="05f4-19eb-5968-8f62"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3727-2d98-b51e-f81e"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Guardsman" hidden="false" id="64ef-61c0-a70c-2426" type="selectionEntry" targetId="ae21-aec-1942-66ea">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6441-4bf1-7052-a217" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="39b4-eee1-790c-9208" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="3a37-3ee5-885a-a8fa" type="selectionEntryGroup" targetId="b692-3776-f85-d20c">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5d93-3a91-0556-bf45" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9cc8-de2e-702c-0e9f" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditions>
+                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="ca8e-6222-7a67-ace1">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="0acf-090b-2acc-5248">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="a1ee-2061-9e9c-0084">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -32245,6 +32459,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Hell&apos;s Last" id="2277-1f3a-1f4f-5895" hidden="false"/>
     <categoryEntry name="Leman Russ Conqueror" id="5b76-37e9-46ab-6bcf" hidden="false"/>
     <categoryEntry name="Leman Russ Annihlator" id="a0ba-064e-5d9b-6215" hidden="false"/>
+    <categoryEntry name="Special Weapons Squad" id="66d5-84db-36a2-3618" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -33771,7 +33986,7 @@ Onslaught - 4</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup name="Shock Trooper w/ Special Weapon" hidden="false" id="b692-3776-f85-d20c">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Shock Trooper w/ Flamer" hidden="false" id="decb-e366-9b9f-b0be">
+        <selectionEntry type="model" import="true" name="Guardsman w/ Flamer" hidden="false" id="decb-e366-9b9f-b0be">
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="e07-2088-5227-7d8" targetId="8fe1-438f-f00a-ef5c">
               <constraints>
@@ -33787,10 +34002,10 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Shock Trooper" hidden="false" type="profile" id="6424-7c5f-6b99-3d29" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Guardsman" hidden="false" type="profile" id="6424-7c5f-6b99-3d29" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="b113-604c-4bfa-1bfe">
@@ -33800,7 +34015,7 @@ Onslaught - 4</characteristic>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Shock Trooper w/ Grenade Launcher" hidden="false" id="3d59-b7ef-3885-7cce">
+        <selectionEntry type="model" import="true" name="Guardsman w/ Grenade Launcher" hidden="false" id="3d59-b7ef-3885-7cce">
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="2700-42ca-39ac-f372" targetId="8fe1-438f-f00a-ef5c">
               <constraints>
@@ -33816,10 +34031,10 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Shock Trooper" hidden="false" type="profile" id="f4be-f3b1-f7d5-c02" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Guardsman" hidden="false" type="profile" id="f4be-f3b1-f7d5-c02" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="b113-604c-4bfa-1bfe">
@@ -33845,10 +34060,10 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Shock Trooper" hidden="false" type="profile" id="7a36-38ed-6695-9dbf" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Guardsman" hidden="false" type="profile" id="7a36-38ed-6695-9dbf" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="b113-604c-4bfa-1bfe">
@@ -33858,7 +34073,7 @@ Onslaught - 4</characteristic>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Shock Trooper w/ Plasma Gun" hidden="false" id="103a-aceb-392d-b414">
+        <selectionEntry type="model" import="true" name="Guardsman w/ Plasma Gun" hidden="false" id="103a-aceb-392d-b414">
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="8389-30b-7b13-8788" targetId="8fe1-438f-f00a-ef5c">
               <constraints>
@@ -33874,10 +34089,10 @@ Onslaught - 4</characteristic>
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Shock Trooper" hidden="false" type="profile" id="be55-9338-e98a-c154" targetId="ea09-3364-e6cd-2ffe"/>
+            <infoLink name="Guardsman" hidden="false" type="profile" id="be55-9338-e98a-c154" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b113-604c-4bfa-1bfe"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="b113-604c-4bfa-1bfe">
