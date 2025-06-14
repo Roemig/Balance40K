@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="136" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="137" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -5306,6 +5306,15 @@
               <infoLinks>
                 <infoLink name="Heavy Weapons Team" id="c42b-2653-8bb4-d2cd" hidden="false" type="profile" targetId="a171-5382-6258-473b"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Heavy Weapons Team w/ Mortar" hidden="false" id="601a-7d0e-d1e5-9361">
               <constraints>
@@ -8981,7 +8990,11 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Heavy Bolter Option" hidden="false" id="d0b9-4612-8bf5-d19d" defaultSelectionEntryId="ef74-d558-de80-ac42">
           <entryLinks>
-            <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="ef74-d558-de80-ac42" targetId="4493-24dd-c551-e327"/>
+            <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="ef74-d558-de80-ac42" targetId="4493-24dd-c551-e327">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Autocannon" hidden="false" type="selectionEntry" id="bf72-b6bf-c78f-d7cf" targetId="19fa-5ec4-c3c6-f1fa"/>
             <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="fd19-e709-f5b0-93f8" targetId="a2c9-3bb4-6675-5c79"/>
             <entryLink import="true" name="Missile launcher" hidden="false" type="selectionEntry" id="8d79-ca34-b2c5-6777" targetId="fc7a-6cff-c0e5-3b96"/>
@@ -31685,6 +31698,15 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <infoLinks>
                 <infoLink name="Heavy Weapons Team" id="360b-3087-961d-77bd" hidden="false" type="profile" targetId="a171-5382-6258-473b"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Heavy Weapons Team w/ Mortar" hidden="false" id="7850-70ca-5c64-e976">
               <constraints>
@@ -34620,7 +34642,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Veteran Guardsman w/ Regimental Standard" hidden="false" id="ee31-b952-50cf-08db">
+            <selectionEntry type="model" import="true" name="Veteran Drop Trooper w/ Regimental Standard" hidden="false" id="ee31-b952-50cf-08db">
               <profiles>
                 <profile name="Veteran Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0835-cded-3292-276d">
                   <characteristics>
@@ -34707,7 +34729,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b14-71f6-d37e-e7e0"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Veteran Guardsman w/ Medi-pack" hidden="false" id="ae80-60bc-3384-7ed4">
+            <selectionEntry type="model" import="true" name="Veteran Drop Trooper w/ Medi-pack" hidden="false" id="ae80-60bc-3384-7ed4">
               <profiles>
                 <profile name="Veteran Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="dc14-6363-9e9f-9fc9">
                   <characteristics>
@@ -34864,7 +34886,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="1 Sergeant and 9 Drop Troopers" hidden="false" id="1ee1-f8f0-9adb-221b">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Drop Trooper" hidden="false" id="76ac-0282-7646-a35e">
+                <selectionEntry type="model" import="true" name="Drop Trooper" hidden="false" id="76ac-0282-7646-a35e">
                   <profiles>
                     <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ada4-9dc8-b256-022c">
                       <characteristics>
@@ -34880,22 +34902,22 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <modifiers>
                     <modifier type="decrement" value="1" field="5e57-9ab7-8dc9-4c39">
                       <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="4551-8263-8330-06ca"/>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5a4a-0cff-d435-61a9" shared="true" roundUp="false" id="4551-8263-8330-06ca"/>
                       </repeats>
                     </modifier>
                     <modifier type="decrement" value="1" field="382c-5bd2-521e-fb58">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b5f1-8941-57c9-4687" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="decrement" value="1" field="5e57-9ab7-8dc9-4c39">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b5f1-8941-57c9-4687" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="decrement" value="1" field="382c-5bd2-521e-fb58">
                       <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="93fe-b8c3-6447-8520"/>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5a4a-0cff-d435-61a9" shared="true" roundUp="false" id="93fe-b8c3-6447-8520"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -35195,7 +35217,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </entryLink>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Drop Trooper" hidden="false" id="d107-36ef-32e8-bec7">
+                <selectionEntry type="model" import="true" name="Drop Trooper" hidden="false" id="d107-36ef-32e8-bec7">
                   <profiles>
                     <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8b95-857a-1a11-3712">
                       <characteristics>
@@ -35211,22 +35233,22 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <modifiers>
                     <modifier type="decrement" value="1" field="5bea-5d70-d1c6-fdef">
                       <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="50db-1e21-069a-6a98"/>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="031e-bc7d-0187-52b0" shared="true" roundUp="false" id="50db-1e21-069a-6a98"/>
                       </repeats>
                     </modifier>
                     <modifier type="decrement" value="1" field="bf7b-363e-0fab-f521">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="63cc-b29c-51eb-a2d6" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="decrement" value="1" field="5bea-5d70-d1c6-fdef">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="63cc-b29c-51eb-a2d6" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="decrement" value="1" field="bf7b-363e-0fab-f521">
                       <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="a0f8-6651-1db6-6e01"/>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="031e-bc7d-0187-52b0" shared="true" roundUp="false" id="a0f8-6651-1db6-6e01"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -35245,7 +35267,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="bf7b-363e-0fab-f521"/>
+                    <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="bf7b-363e-0fab-f521"/>
                     <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="5bea-5d70-d1c6-fdef"/>
                   </constraints>
                 </selectionEntry>
