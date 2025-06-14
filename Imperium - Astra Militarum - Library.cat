@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="133" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="134" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -34078,7 +34078,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Unit Composition" hidden="false" id="16c9-1ca2-cfa2-cf81" defaultSelectionEntryId="89b7-3e0e-acf0-485c" sortIndex="2"/>
-        <selectionEntryGroup name="Veterans" id="ae6a-df5c-3906-93b8" hidden="false" defaultSelectionEntryId="af0c-83ff-5de8-0e53">
+        <selectionEntryGroup name="Veterans" id="b38e-31de-a3e1-03ef" hidden="false">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="af0c-83ff-5de8-0e53">
               <entryLinks>
@@ -34112,8 +34112,85 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Veteran w/ Special Weapon" hidden="false" id="3681-bd99-077e-ec91">
+            <selectionEntry type="upgrade" import="true" name="Veteran w/ Vox Caster" hidden="false" id="3266-bfd2-bea1-c99c">
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="9f77-541c-8f65-6740" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff1a-b6b2-0ed1-97ec"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e4c-ef69-2fe0-2c27"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasgun" hidden="false" id="6981-78da-a26e-a4c3" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b68c-6f46-642a-ea67"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0e9-725a-e20c-e19e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Vox-caster" hidden="false" id="c44c-8397-459f-3281" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1fd-db4b-1c39-da66" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0969-fb7e-14e0-1eed" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ef1-5817-e5b3-69ba" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Veteran" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4d76-5802-4532-a070">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0274-52b2-92c9-69ae" includeChildSelections="false"/>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="a0c3-0f93-aafc-cdc5" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Veteran w/ Special Weapon" id="314a-fb53-e937-2fcc" hidden="false">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2aa9-fe78-e2b3-17b5" includeChildSelections="false"/>
+              </constraints>
               <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Veteran w/ Flamer" hidden="false" id="5228-a7f4-1711-f2bb">
+                  <profiles>
+                    <profile name="Veteran" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="83cd-ce2c-a568-0564">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="b81c-ec1b-f43b-9164" shared="true" id="e196-37a5-1ecd-bf71" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="ced5-db8f-d1ce-8b8b" type="selectionEntry" targetId="b349-9d3a-1a65-3e48">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99fe-64b7-f4d6-d6f1"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4c5-b5cf-f443-fb8e"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Flamer" hidden="false" id="88cc-3989-4987-6422" type="selectionEntry" targetId="ddae-e6-79d8-3f66">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f50c-df3c-1657-f3aa"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="718f-f5e7-0999-8c2d"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Veteran w/ Grenade Launcher" hidden="false" id="e978-9fb8-74c8-f81e">
                   <profiles>
                     <profile name="Veteran" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="981c-eebb-7116-7ae1">
@@ -34207,37 +34284,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Veteran w/ Flamer" hidden="false" id="5228-a7f4-1711-f2bb">
-                  <profiles>
-                    <profile name="Veteran" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="83cd-ce2c-a568-0564">
-                      <characteristics>
-                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
-                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="b81c-ec1b-f43b-9164" shared="true" id="e196-37a5-1ecd-bf71" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="ced5-db8f-d1ce-8b8b" type="selectionEntry" targetId="b349-9d3a-1a65-3e48">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99fe-64b7-f4d6-d6f1"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4c5-b5cf-f443-fb8e"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Flamer" hidden="false" id="88cc-3989-4987-6422" type="selectionEntry" targetId="ddae-e6-79d8-3f66">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f50c-df3c-1657-f3aa"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="718f-f5e7-0999-8c2d"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Veteran w/ Sniper Rifle" hidden="false" id="05ca-b687-c8a8-7e06">
                   <profiles>
                     <profile name="Veteran" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f7f6-72a7-ece5-d925">
@@ -34270,52 +34316,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2aa9-fe78-e2b3-17b5" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Veteran w/ Vox Caster" hidden="false" id="3266-bfd2-bea1-c99c">
-              <entryLinks>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="9f77-541c-8f65-6740" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff1a-b6b2-0ed1-97ec"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e4c-ef69-2fe0-2c27"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Lasgun" hidden="false" id="6981-78da-a26e-a4c3" type="selectionEntry" targetId="26c-19b3-720-8dcf">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b68c-6f46-642a-ea67"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0e9-725a-e20c-e19e"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Vox-caster" hidden="false" id="c44c-8397-459f-3281" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1fd-db4b-1c39-da66" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0969-fb7e-14e0-1eed" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ef1-5817-e5b3-69ba" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Veteran" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4d76-5802-4532-a070">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0274-52b2-92c9-69ae" includeChildSelections="false"/>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="a0c3-0f93-aafc-cdc5" includeChildSelections="false"/>
-          </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
