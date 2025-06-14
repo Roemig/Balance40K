@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b0ae-12a5-c84-ea45" name="Imperium - Astra Militarum" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="23" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b0ae-12a5-c84-ea45" name="Imperium - Astra Militarum" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="24" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="true" name="‘Iron Hand’ Straken [Legends]" hidden="false" type="selectionEntry" id="f38c-6b5-d8d3-32db" targetId="913f-3cb6-fb80-7f6a"/>
     <entryLink import="true" name="Aegis Defence Line" hidden="false" type="selectionEntry" id="2c5d-9f8f-b19d-53be" targetId="cb99-456-f100-40ed">
@@ -950,7 +950,10 @@
     <entryLink import="true" name="Infantry Squad" hidden="false" type="selectionEntry" id="96d4-6f18-2553-24d2" targetId="6c81-9fe6-c714-88e8"/>
     <entryLink import="true" name="Death Rider Squadron Commander" hidden="false" type="selectionEntry" id="d10d-558a-1d98-b996" targetId="cbb7-7f52-35e1-c6fb"/>
     <entryLink import="true" name="Death Korps Marshal" hidden="false" type="selectionEntry" id="11b5-138c-d5e2-b0af" targetId="f01a-11ad-b9e1-9d9c"/>
-    <entryLink import="true" name="Catachan Veterans" hidden="false" type="selectionEntry" id="8719-12c6-715c-7a61" targetId="b81c-ec1b-f43b-9164"/>
+    <entryLink import="true" name="Catachan Veteran Squad" hidden="false" type="selectionEntry" id="8719-12c6-715c-7a61" targetId="b81c-ec1b-f43b-9164"/>
+    <entryLink import="true" name="Elysian Drop Troopers" hidden="false" type="selectionEntry" id="99f1-b7c0-3c8d-cc8f" targetId="0db1-e1a4-b273-3a79"/>
+    <entryLink import="true" name="Elysian Command Squad" hidden="false" type="selectionEntry" id="3666-a0f3-7a2c-557d" targetId="dd7e-feaa-81cb-460b"/>
+    <entryLink import="true" name="Elysian Heavy Weapons Squad" hidden="false" type="selectionEntry" id="730b-f6ba-0783-568b" targetId="7dba-87ec-88a8-1819"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink id="e373-3c0a-1185-467a" name="Imperium - Astra Militarum - Library" targetId="5a44-f048-114b-e3ff" type="catalogue" importRootEntries="false"/>

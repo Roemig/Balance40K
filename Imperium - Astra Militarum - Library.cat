@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="135" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="136" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -8891,24 +8891,12 @@
       <infoLinks>
         <infoLink targetId="bd6a-9b65-19dc-e09a" id="7e23-35c5-c4f7-8e73" type="profile" name="Guardsman" hidden="false"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink targetId="b046-96fe-4014-fe33" id="c8f1-e4e-8708-d240" type="selectionEntryGroup" name="Laspistol Option" hidden="false"/>
-        <entryLink import="true" name="Sergeant Melee Option" hidden="false" type="selectionEntryGroup" id="2cc7-945f-b47b-a9ff" targetId="4236-4a39-e7dd-9ee8"/>
-      </entryLinks>
       <comment>Infantry Squad</comment>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Guardsman" hidden="false" id="6401-bf57-ca2b-995b">
       <infoLinks>
         <infoLink name="Guardsman" hidden="false" type="profile" id="d25d-fbc2-6c55-b138" targetId="bd6a-9b65-19dc-e09a"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="65ed-5d-242d-6bba" targetId="f61b-a631-1446-4453">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="484a-53b8-99a9-4cb3"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4aa-85c5-14de-1c6e"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="26c-19b3-720-8dcf" collective="true">
       <profiles>
@@ -9179,20 +9167,6 @@
       <infoLinks>
         <infoLink name="Guardsman" hidden="false" type="profile" id="9566-1fa0-45b8-65fa" targetId="bd6a-9b65-19dc-e09a"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink targetId="6bfd-18be-90d3-2398" id="e68d-83dd-28de-237c" type="selectionEntry" name="Vox-caster" hidden="false" collective="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa02-70dd-8fc2-e056"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bdd-3118-f5dc-f688"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="56f4-2264-83e9-4e14" targetId="f61b-a631-1446-4453">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="484a-53b8-99a9-4cb3"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4aa-85c5-14de-1c6e"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shock Trooper" hidden="false" id="ae21-aec-1942-66ea">
       <infoLinks>
@@ -24212,9 +24186,14 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="ebd4-1b78-a46-6eb4" id="f1b3-3873-a15c-7e9d" primary="false" name="Sabre Weapons Battery"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Elysian Drop Sentinel [Legends]" hidden="false" id="badd-6133-a469-613c">
+    <selectionEntry type="unit" import="true" name="Elysian Drop Sentinels [Legends]" hidden="false" id="badd-6133-a469-613c">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c8d2-d7f4-6ba3-be07" includeChildSelections="false" includeChildForces="true"/>
@@ -24223,19 +24202,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="7744-e0b4-d218-e13f" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Elysian Drop Sentinel" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="452d-cd17-2550-81a1">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
-        </profile>
         <profile name="Meteoric Descent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8589-14ca-fc31-f3cd">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model is set up on the battlefield using the Deep Strike ability, it can perform a meteoric descent. If it does, this model can be set up anywhere on the battlefield that is more than 3&quot; horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge.</characteristic>
@@ -24263,69 +24229,108 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="fa45-57e-930e-602b" id="7ffa-983b-f2df-6dfc" primary="false" name="Faction: Astra Militarum"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="559f-6d10-b176-c5b6" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear Options" id="55d6-7725-b367-fe2" hidden="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cd0-9a8-e8be-2f5e"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="f3d3-ca8d-c1a1-6f1d" type="selectionEntry" targetId="8cd3-2b20-a76b-93ac">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d909-4413-f3b1-9042" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Heavy flamer" hidden="false" id="7c86-9e5-1ce0-a5c0" type="selectionEntry" targetId="6fef-cbbd-be33-44a4">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="514d-bb23-2951-d190" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+        <selectionEntryGroup name="1-2 Elysian Drop Sentinels" id="b45c-ec08-2849-d404" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="1f51-1d4f-a43d-b4d6">
+            <selectionEntry type="model" import="true" name="Elysian Drop Sentinel" hidden="false" id="4c8e-b57c-6820-6ebf">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d84-1eb0-6884-d481"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c8a-cbfe-77a0-b58d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6c9-ed3d-8697-0a0b" includeChildSelections="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="14e4-23be-64db-ad7a" includeChildSelections="true"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
               <profiles>
-                <profile name="Close Combat Weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b802-2cf7-1e87-e90d">
+                <profile name="Elysian Drop Sentinel" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="452d-cd17-2550-81a1">
                   <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
+                  <attributes>
+                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                  </attributes>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear Options" id="55d6-7725-b367-fe2" hidden="false" defaultSelectionEntryId="f3d3-ca8d-c1a1-6f1d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc95-cd02-e4f9-6a2a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1ce-425a-414a-8651"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Multi-melta" hidden="false" id="f3d3-ca8d-c1a1-6f1d" type="selectionEntry" targetId="8cd3-2b20-a76b-93ac">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d909-4413-f3b1-9042" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy flamer" hidden="false" id="7c86-9e5-1ce0-a5c0" type="selectionEntry" targetId="6fef-cbbd-be33-44a4">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="514d-bb23-2951-d190" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="a8c2-1dd5-879f-7f2c" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="af03-2c69-626a-cb5d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f946-9604-98c1-1f96" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2402-b36e-bf8c-6f50" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="1f51-1d4f-a43d-b4d6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d84-1eb0-6884-d481"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c8a-cbfe-77a0-b58d"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close Combat Weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b802-2cf7-1e87-e90d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="91fb-dd10-ea1f-577e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="91fb-dd10-ea1f-577e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                <entryLink import="true" name="Hunter-killer missile" hidden="false" id="f67e-d4a1-da4f-622e" type="selectionEntry" targetId="37aa-e4f5-30bd-c59c">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="789c-b76c-382c-c89c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4980-8dae-ba78-d466" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Heavy bolter" hidden="false" id="a8c2-1dd5-879f-7f2c" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="af03-2c69-626a-cb5d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f946-9604-98c1-1f96" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2402-b36e-bf8c-6f50" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="f67e-d4a1-da4f-622e" type="selectionEntry" targetId="37aa-e4f5-30bd-c59c">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="789c-b76c-382c-c89c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4980-8dae-ba78-d466" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
@@ -34826,11 +34831,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Elysian Drop Troopers" hidden="false" id="0db1-e1a4-b273-3a79">
       <modifiers>
-        <modifier type="set" value="120" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="greaterThan" value="10" field="selections" scope="0db1-e1a4-b273-3a79" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
@@ -34851,7 +34851,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <categoryLink name="Elysian Drop Troopers" hidden="false" id="7038-6c18-14eb-eb07" targetId="a6b3-69c6-47e9-0d6a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -34863,19 +34863,26 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <selectionEntryGroup name="Unit Composition" hidden="false" id="bf21-7698-833c-f477" defaultSelectionEntryId="3167-a16a-6a56-858f">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="1 Sergeant and 9 Drop Troopers" hidden="false" id="1ee1-f8f0-9adb-221b">
-              <entryLinks>
-                <entryLink targetId="df22-5dc1-57dc-e347" id="d7ac-5395-c394-e3b2" type="selectionEntry" name="Sergeant" hidden="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="058e-b8ea-0e4d-4f9c"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7b6-5b94-f970-645e"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Guardsman" hidden="false" type="selectionEntry" id="7c80-587a-ac50-0b21" targetId="6401-bf57-ca2b-995b">
-                  <constraints>
-                    <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="382c-5bd2-521e-fb58"/>
-                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5e57-9ab7-8dc9-4c39"/>
-                  </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Drop Trooper" hidden="false" id="76ac-0282-7646-a35e">
+                  <profiles>
+                    <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ada4-9dc8-b256-022c">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <modifiers>
+                    <modifier type="decrement" value="1" field="5e57-9ab7-8dc9-4c39">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="4551-8263-8330-06ca"/>
+                      </repeats>
+                    </modifier>
                     <modifier type="decrement" value="1" field="382c-5bd2-521e-fb58">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
@@ -34891,11 +34898,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="93fe-b8c3-6447-8520"/>
                       </repeats>
                     </modifier>
-                    <modifier type="decrement" value="1" field="5e57-9ab7-8dc9-4c39">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="4551-8263-8330-06ca"/>
-                      </repeats>
-                    </modifier>
                   </modifiers>
                   <entryLinks>
                     <entryLink import="true" name="Accatran Pattern Lasgun" hidden="false" id="591d-4d13-81a0-589f" type="selectionEntry" targetId="eb4b-f2d4-3875-a8b1">
@@ -34904,13 +34906,44 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e7d-2e89-0fd3-69e4"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="65ed-5d-242d-6bba" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b435-3246-bb28-f15f"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="023b-47b8-7850-128f"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" type="selectionEntry" id="e082-a63d-4575-a440" targetId="47cc-2173-cdbd-c86c">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="498a-1091-d69b-aedf" includeChildSelections="true"/>
+                    <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="382c-5bd2-521e-fb58"/>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5e57-9ab7-8dc9-4c39"/>
                   </constraints>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Drop Trooper w/ Vox Caster" hidden="false" id="b5f1-8941-57c9-4687">
+                  <profiles>
+                    <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fe94-37d4-c55c-0dba">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <entryLinks>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="56f4-2264-83e9-4e14" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ef0-aa6e-a3d0-1218"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43e0-f918-625a-6855"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Vox-caster" hidden="false" id="e68d-83dd-28de-237c" targetId="6bfd-18be-90d3-2398" type="selectionEntry" collective="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa02-70dd-8fc2-e056"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bdd-3118-f5dc-f688"/>
+                      </constraints>
+                    </entryLink>
                     <entryLink import="true" name="Accatran Pattern Lasgun" hidden="false" id="2939-1562-f110-82d1" type="selectionEntry" targetId="eb4b-f2d4-3875-a8b1">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b03-5d45-cfe9-3c42"/>
@@ -34918,73 +34951,242 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" type="selectionEntryGroup" id="54d6-fb31-4327-9bac" targetId="5205-1baa-b09e-f1a8"/>
-              </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="498a-1091-d69b-aedf" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Drop Trooper Sergeant" hidden="false" id="ba8a-f805-9406-fae4">
+                  <entryLinks>
+                    <entryLink import="true" name="Laspistol Option" hidden="false" id="c8f1-e4e-8708-d240" targetId="b046-96fe-4014-fe33" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="2cc7-945f-b47b-a9ff" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="058e-b8ea-0e4d-4f9c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7b6-5b94-f970-645e"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b340-6949-30ca-13e1">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Drop Trooper w/ Special Weapon" id="5a4a-0cff-d435-61a9" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Flamer" hidden="false" id="ae3e-dcbb-4c58-990f">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b25d-b134-02f7-b34f">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="298f-4a7d-ba9e-1710" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0148-925b-ed47-cb6a"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4186-93db-d802-2f16"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Flamer" hidden="false" id="ef50-3be6-a779-1be1" type="selectionEntry" targetId="ddae-e6-79d8-3f66">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b35-ca25-2129-1d0d"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="456a-b999-ec40-c817"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e6c0-edf6-1ad5-387c"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="e6c0-edf6-1ad5-387c">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Plasma Gun" hidden="false" id="ccf2-38f1-15c6-92bc">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6242-04ad-5b3c-4725">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="f9c1-a7dd-16b2-1fd3">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="1588-aa4a-a19f-3366" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60ce-b174-10ae-0ea6"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="165f-35f5-c13a-492a"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma gun" hidden="false" id="043f-a544-eb5e-80fa" type="selectionEntry" targetId="d0dc-eb53-4dc1-c69e">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f95-f729-b9e7-6cac"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="621c-7f58-c8db-4d53"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f9c1-a7dd-16b2-1fd3"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Sniper Rifle" hidden="false" id="a73b-711f-6298-ca55">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f3cf-6c05-2a9a-5d48">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="cd4b-44f7-5c77-1f79">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="fe8b-1ac0-4a4e-47e0" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dff-a0e9-db19-905e"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="618d-2c53-079b-ecf0"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Sniper rifle" hidden="false" id="ccfd-fea2-2c1a-4760" type="selectionEntry" targetId="e8ed-6c2-7bbf-a33">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e6c-6346-f98a-34b2"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaa8-00fd-e698-a486"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cd4b-44f7-5c77-1f79"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Meltagun" hidden="false" id="c4dc-424d-0e72-f539">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4d59-bcd6-e658-4771">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="13d1-1093-99cc-e87e">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="d0f4-6daa-cae2-2560" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bbd-88ef-e7e7-d956"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49af-7da8-588d-0a8b"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Meltagun" hidden="false" id="ec36-837e-3874-f368" type="selectionEntry" targetId="e701-7c4-8b3b-49d6">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cddd-c37b-e394-5f29"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e025-801f-6a08-aac9"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="13d1-1093-99cc-e87e"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Grenade Launcher" hidden="false" id="4a03-87ee-e9bf-80d3">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9256-b349-f61f-749b">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="8805-8dd8-cfe4-c790" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44fb-71b1-d108-d0d6"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f09a-bc56-b88f-d85a"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Grenade launcher" hidden="false" id="b425-bbe4-2626-c3bb" type="selectionEntry" targetId="56dc-438-2698-6a6a">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58e9-bbd3-a6fb-2388"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5534-a137-e012-fa2a"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="009a-c9fa-34b5-d306"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="009a-c9fa-34b5-d306">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="1 Sergeant, 7 Drop Troopers and 1 Heavy Weapons Team" hidden="false" id="0ca2-544b-cb68-f31a">
               <entryLinks>
-                <entryLink targetId="df22-5dc1-57dc-e347" id="2641-3f31-5a4d-e138" type="selectionEntry" name="Sergeant" hidden="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b211-f323-d90c-e401"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f85f-393b-a6f9-57c7"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Guardsman" hidden="false" type="selectionEntry" id="0299-19f5-fa3e-df01" targetId="6401-bf57-ca2b-995b">
-                  <constraints>
-                    <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="5b16-eadc-0d7d-a74b"/>
-                    <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="0481-17f7-f870-675e"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="decrement" value="1" field="382c-5bd2-521e-fb58">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" value="1" field="5e57-9ab7-8dc9-4c39">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" value="1" field="382c-5bd2-521e-fb58">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="1bb5-a60d-5954-2c86"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="decrement" value="1" field="382c-5bd2-521e-fb58">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" value="1" field="5e57-9ab7-8dc9-4c39">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="1947-af9e-e786-a2e1"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <entryLinks>
-                    <entryLink import="true" name="Accatran Pattern Lasgun" hidden="false" id="fade-75ee-ceac-3170" type="selectionEntry" targetId="eb4b-f2d4-3875-a8b1">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0db8-3487-9649-b667"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a06-c242-ee13-b475"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" type="selectionEntry" id="fd02-d3ee-553f-299e" targetId="47cc-2173-cdbd-c86c">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abc6-a770-f1e8-b222" includeChildSelections="true"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Accatran Pattern Lasgun" hidden="false" id="957f-0560-d4ff-50be" type="selectionEntry" targetId="eb4b-f2d4-3875-a8b1">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ac3-51de-4c74-6a31"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdf8-0f4c-492b-bf3b"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" type="selectionEntryGroup" id="b4ac-dc33-8917-5a2f" targetId="5205-1baa-b09e-f1a8"/>
                 <entryLink import="true" name="Heavy Weapons Team" hidden="false" type="selectionEntry" id="3726-c7e6-6494-1c9c" targetId="c4e3-2813-f26d-5991">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bca3-f8e4-2e69-6d58"/>
@@ -34992,6 +35194,327 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Drop Trooper" hidden="false" id="d107-36ef-32e8-bec7">
+                  <profiles>
+                    <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8b95-857a-1a11-3712">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="5bea-5d70-d1c6-fdef">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="50db-1e21-069a-6a98"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="bf7b-363e-0fab-f521">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="5bea-5d70-d1c6-fdef">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="bf7b-363e-0fab-f521">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="a0f8-6651-1db6-6e01"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Accatran Pattern Lasgun" hidden="false" id="b56a-d037-dad9-4e7f" type="selectionEntry" targetId="eb4b-f2d4-3875-a8b1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c30-20c0-cf6e-b80d"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1642-fa6f-c951-51dd"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="6105-e2f2-eaf5-2ed7" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ddc-b8ff-ab17-3f4a"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f54-d673-b1a2-2298"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="bf7b-363e-0fab-f521"/>
+                    <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="5bea-5d70-d1c6-fdef"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Drop Trooper Sergeant" hidden="false" id="2a60-4d04-b33a-ed62">
+                  <entryLinks>
+                    <entryLink import="true" name="Laspistol Option" hidden="false" id="eaf8-a241-0c99-0ba9" targetId="b046-96fe-4014-fe33" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="0bbf-d911-4b22-1d77" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ec0-68bd-6075-44ec"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ca5-004a-53c6-4a6d"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="46b3-6bcc-794c-02eb">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Drop Trooper w/ Vox Caster" hidden="false" id="63cc-b29c-51eb-a2d6">
+                  <profiles>
+                    <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6a65-1e21-04d0-4aa3">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="2efb-c816-a779-c7f3" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ced-8ff7-deb2-1a1e"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b770-939b-d5bb-fec6"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Vox-caster" hidden="false" id="9bdf-05e5-06c1-84da" targetId="6bfd-18be-90d3-2398" type="selectionEntry" collective="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a87-a809-ad0b-0a9d"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="404f-f24c-e5f2-c341"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Accatran Pattern Lasgun" hidden="false" id="6e69-866f-ad3b-97ab" type="selectionEntry" targetId="eb4b-f2d4-3875-a8b1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b18-8e3e-1bb9-2b30"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8e4-f4c3-972e-7bdd"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2ab-70ed-8762-57a4" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Drop Trooper w/ Special Weapon" id="031e-bc7d-0187-52b0" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Flamer" hidden="false" id="d556-c08f-678c-c1fc">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d6dc-0ba5-ede2-a8d2">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="1738-b470-d815-f0fc" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d0e-cf5c-4ba7-df35"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63a9-3ff2-f322-d5d4"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Flamer" hidden="false" id="3868-a2fb-c961-92eb" type="selectionEntry" targetId="ddae-e6-79d8-3f66">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="948d-4c00-8b8b-6369"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e632-0ec8-3883-a018"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5781-b4cb-a5ff-b20f"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="5781-b4cb-a5ff-b20f">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Plasma Gun" hidden="false" id="02fd-32c6-eca7-1997">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d564-1cdf-5a6c-12cf">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="8e7d-dd98-cb69-a972">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="ff83-a671-9371-482a" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4615-1e91-3e21-abc8"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="774f-da7d-8101-fcb7"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma gun" hidden="false" id="6cbb-8183-24ae-5f73" type="selectionEntry" targetId="d0dc-eb53-4dc1-c69e">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91af-f77e-238d-1fea"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee4c-5fbb-5293-c7ca"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8e7d-dd98-cb69-a972"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Sniper Rifle" hidden="false" id="ca8d-faba-e32b-9af3">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c701-2c81-723c-0c52">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="e864-9a42-3a80-32cd">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="32b3-e4f4-4dd6-5d1b" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ecbe-b657-825c-324e"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0904-323a-ae4e-3bd3"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Sniper rifle" hidden="false" id="eaae-ba69-4e6c-8e58" type="selectionEntry" targetId="e8ed-6c2-7bbf-a33">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98c8-fc73-f6cd-d69e"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c214-44f7-fa37-ff4f"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e864-9a42-3a80-32cd"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Meltagun" hidden="false" id="c814-8a30-4e21-5e4e">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ecd2-8bb2-1230-9372">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="6ce9-1f54-96fd-b278">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="8b35-df25-9795-e760" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dba-22d0-3294-6d0f"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c80b-7312-0d45-0475"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Meltagun" hidden="false" id="66cd-a645-c0fc-082b" type="selectionEntry" targetId="e701-7c4-8b3b-49d6">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7622-48d0-f6b9-786a"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55ee-aaaf-b685-d756"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6ce9-1f54-96fd-b278"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Drop Trooper w/ Grenade Launcher" hidden="false" id="2567-481b-b568-b3be">
+                      <profiles>
+                        <profile name="Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7716-defa-d21a-28bf">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="5e8e-57a4-8cb5-b7df" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d20a-11b7-dc09-2300"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eab9-d565-1094-da02"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Grenade launcher" hidden="false" id="1c9c-d603-3214-4754" type="selectionEntry" targetId="56dc-438-2698-6a6a">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e424-e8d5-ea8b-6ef7"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e60-7494-bc94-0f64"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7ff2-4729-3a24-844b"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="7ff2-4729-3a24-844b">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -35006,7 +35529,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After arriving by deep strike, this unit can make a normal move of up to 6&quot;.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Integrated Support" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1eae-4c2a-62c4-5d80">
+        <profile name="Integrated Officers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1eae-4c2a-62c4-5d80">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a character unit is attached to this unit, it has the deep strike ability.</characteristic>
           </characteristics>
@@ -35025,7 +35548,320 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       </modifierGroups>
       <infoLinks>
         <infoLink name="Unit Composition" hidden="false" id="b73d-595a-de0e-eeea" type="profile" targetId="b592-33bc-a25d-b3a9"/>
+        <infoLink name="Deep Strike" id="2f1f-ea87-e081-0f04" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Elysian Heavy Weapons Squad" hidden="false" id="7dba-87ec-88a8-1819">
+      <categoryLinks>
+        <categoryLink targetId="fa45-57e-930e-602b" id="2c9f-f968-0a5a-88bf" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="71d3-720d-8c1a-5a43" primary="false" name="Imperium"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="ddec-a70f-35f6-f130" primary="true" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="ba2c-4dc3-fb5c-49d8" primary="false" name="Grenades"/>
+        <categoryLink targetId="c8a1-fef-5569-61c9" id="9c64-b041-db88-9b58" primary="false" name="Regiment"/>
+        <categoryLink name="Elysian Heavy Weapons Squad" hidden="false" id="0c02-207c-bf55-3e03" targetId="b03c-b57f-75ed-4b84" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2538-4113-fa28-6751" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="ad11-401d-04b4-fbfa" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="01cb-66ff-5bc1-99b8" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="4767-7a04-d554-63fb" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Drop Ready" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="15e7-00a6-c53c-91ae">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this unit arrives by deep strike, it&apos;s models do not count as having made a move this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="3 Heavy Weapons Teams" id="0b8a-a5bb-3dc1-fb79" hidden="false" defaultSelectionEntryId="5c78-4af2-518c-ccee" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team w/ Heavy bolter" hidden="false" id="3416-83ae-c87d-7799">
+              <entryLinks>
+                <entryLink import="true" name="Laspistol" hidden="false" id="cce1-9338-51cf-3f41" type="selectionEntry" targetId="bf92-b949-693e-e9e0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8994-5b0b-edba-cb62" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c821-a814-3cec-2117" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d455-90f0-df4c-1ba2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Weapons team close combat weapons" hidden="false" id="257d-782a-6e20-fc74" type="selectionEntry" targetId="16ad-15ff-0e7d-38e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89a0-a30e-4b67-b9ce" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c19b-8af4-f998-c07d" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="2ff8-07c9-19ce-57c1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="1b05-ba5b-0080-db14" type="selectionEntry" targetId="4493-24dd-c551-e327">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf40-faba-f8f7-ecfb" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a761-c67d-c66d-96db" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="5b8d-db36-d619-6f34" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="92eb-309e-8203-6ac1"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Heavy Weapons Team" id="a9fc-1d5c-5f05-4e2b" hidden="false" type="profile" targetId="a171-5382-6258-473b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team w/ Mortar" hidden="false" id="3cdd-20b6-5f1f-4a1e">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0c66-a478-e428-adb9"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Mortar" hidden="false" id="40e2-2ac3-28fc-84e6" type="selectionEntry" targetId="9274-cb2d-ba0-281b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef25-ebfb-ecba-eff1" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0155-ad30-fce0-01fc" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9f73-fc8f-7e1b-cb90" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Weapons team close combat weapons" hidden="false" id="1c8d-91ce-1fd2-6c29" type="selectionEntry" targetId="16ad-15ff-0e7d-38e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60ee-2155-a6c4-43b7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87f1-d997-91df-1474" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0a56-4a0d-38ef-5c23" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Laspistol" hidden="false" id="1c36-ff7e-571d-cc04" type="selectionEntry" targetId="bf92-b949-693e-e9e0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87fc-01d0-05f4-4768" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69c3-a5d7-eff2-ad43" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="1287-95bb-cae0-9d1e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Heavy Weapons Team" id="5692-1fd5-5038-7307" hidden="false" type="profile" targetId="a171-5382-6258-473b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team w/ Missile launcher" hidden="false" id="1b9c-488c-ce2a-a8f0">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a471-c8f9-09ec-b2b6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Missile launcher" hidden="false" id="850d-8790-ea8c-0df8" type="selectionEntry" targetId="fc7a-6cff-c0e5-3b96">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="119f-a256-b971-253e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9805-ebbd-44df-81bf" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d8a0-1b71-da8f-b6d0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Laspistol" hidden="false" id="19cb-d8b1-cdf1-72e5" type="selectionEntry" targetId="bf92-b949-693e-e9e0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98a0-69c7-5b89-1da9" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f671-636c-1679-d1ae" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bffe-db06-2d3f-afde" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Weapons team close combat weapons" hidden="false" id="984f-46f0-85f1-c3eb" type="selectionEntry" targetId="16ad-15ff-0e7d-38e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56a1-c9d1-3fbb-e33e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be03-94f8-3d57-eb80" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="aafe-fec3-04cf-39f3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Heavy Weapons Team" id="8adb-1ec0-12af-d9b0" hidden="false" type="profile" targetId="a171-5382-6258-473b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team w/ Lascannon" hidden="false" id="b079-bed8-42e8-0f57">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="424f-30c6-4ea6-1c29"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Laspistol" hidden="false" id="1c55-ebc5-0fa3-4050" type="selectionEntry" targetId="bf92-b949-693e-e9e0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d474-757b-9ad0-a399" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49c7-e085-3a53-963b" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="06fc-215b-4425-345d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Weapons team close combat weapons" hidden="false" id="a47f-e16f-6249-cf90" type="selectionEntry" targetId="16ad-15ff-0e7d-38e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5600-4539-25b1-ad89" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b69-65dc-4b6d-b32d" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="04fd-b31e-bcc4-9272" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="a655-b5c8-7eb8-4a95" type="selectionEntry" targetId="a2c9-3bb4-6675-5c79">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4633-9180-460d-2735" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d65d-a463-3706-4069" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="337f-e0cb-caa6-8be2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Heavy Weapons Team" id="0fb1-46d7-a6a1-da6d" hidden="false" type="profile" targetId="a171-5382-6258-473b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team w/ Autocannon" hidden="false" id="914a-cb58-7ea9-5c2f">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ef0d-24e0-ab39-7bdc"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Laspistol" hidden="false" id="991c-61cb-7463-d90b" type="selectionEntry" targetId="bf92-b949-693e-e9e0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94d9-0f13-ebd4-64fa" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c67-59e1-9535-5b04" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="255e-fddc-df53-77f4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Weapons team close combat weapons" hidden="false" id="04f4-1d0e-b581-0795" type="selectionEntry" targetId="16ad-15ff-0e7d-38e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e43-6575-6d38-14d4" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="371b-f992-ec32-9109" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="fa28-23cf-407c-559d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Autocannon" hidden="false" id="15fa-2025-92a3-a177" type="selectionEntry" targetId="19fa-5ec4-c3c6-f1fa">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cb7-be1e-9e90-cbce" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a18-50a9-284d-5fc2" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="2ad8-a2a2-838b-663c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Heavy Weapons Team" id="4784-6dc7-9c77-0aff" hidden="false" type="profile" targetId="a171-5382-6258-473b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="94ba-26ac-3598-a28c"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5383-3e49-3a5d-ac36"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Embarking" id="a831-4996-23db-6e8e" hidden="false" type="profile" targetId="5b59-38a0-a158-05b9"/>
+        <infoLink name="Deep Strike" id="c694-d3b3-db92-f1cc" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="e32a-dfa8-eb54-b20d" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditions>
+                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="ad11-401d-04b4-fbfa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="01cb-66ff-5bc1-99b8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="4767-7a04-d554-63fb">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -35176,6 +36012,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Catachan Veteran Squad" id="8201-ae3d-130b-51fe" hidden="false"/>
     <categoryEntry name="Elysian Command Squad" id="c2a2-e1c2-2a17-ee0b" hidden="false"/>
     <categoryEntry name="Elysian Drop Troopers" id="a6b3-69c6-47e9-0d6a" hidden="false"/>
+    <categoryEntry name="Elysian Heavy Weapons Squad" id="b03c-b57f-75ed-4b84" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -39134,68 +39971,6 @@ In addition:
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6c42-0395-4426-2b71"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="2" field="411e-2828-14a8-712c">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Drop Trooper w/ Grenade Launcher" hidden="false" id="5b38-28cb-f34c-bed9">
-          <infoLinks>
-            <infoLink name="Guardsman" id="9f13-2f38-1f5f-41fc" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Close combat weapon" hidden="false" id="74f8-24db-05e9-439d" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f66c-db5d-cdc4-bd98"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="951c-dec6-4c85-144e"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Grenade launcher" hidden="false" id="9d4c-9b2b-e197-178f" type="selectionEntry" targetId="56dc-438-2698-6a6a">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d6e-e0cf-0265-839f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6170-2b18-0bcf-b1a2"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="611e-6777-8a39-b5c9"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="2" field="411e-2828-14a8-712c">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9119-b865-bb29-158c" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d56-7397-bb1a-eab6" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="87c0-6e5f-1cfe-8281" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Drop Trooper w/ Flamer" hidden="false" id="53e8-f554-e006-4056">
-          <infoLinks>
-            <infoLink name="Guardsman" id="9105-f2bc-a5b0-9010" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Close combat weapon" hidden="false" id="5d01-364b-a0a4-afed" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c707-d2ec-7fc5-ba2f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="360c-06a5-4c2d-b7e4"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Flamer" hidden="false" id="cbf2-004d-3ef0-be08" type="selectionEntry" targetId="ddae-e6-79d8-3f66">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="708d-cbd9-c069-d804"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26c6-9e37-2af7-ca36"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="25bb-d9bb-3d0e-0f6d"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="2" field="411e-2828-14a8-712c">
