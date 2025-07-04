@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="39b9-56da-6787-1880" name="Kratos" hidden="false">
       <constraints>
@@ -2073,7 +2073,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Additional weapon" id="4d22-9c96-a83a-c628" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52eb-04f3-13ff-9fc5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="52eb-04f3-13ff-9fc5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Twin heavy bolter" hidden="false" id="83cb-b7f4-40a6-6216" collective="false" targetId="f1a6-b394-5bc5-a3cb" type="selectionEntry">
@@ -3116,6 +3116,13 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Quad heavy bolter" hidden="false" id="81b-3440-e7a1-cd0b">
                   <profiles>
@@ -3177,6 +3184,13 @@
                     <infoLink name="Indirect Fire" id="bfd9-e95e-8fcf-9dc5" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
                     <infoLink name="Heavy" id="c482-4e4b-db2a-2df2" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>

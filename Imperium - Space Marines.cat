@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="119" battleScribeVersion="2.03" library="false" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="120" battleScribeVersion="2.03" library="false" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -203,7 +203,11 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Desolation Squad" hidden="false" type="selectionEntry" id="d7cd-4833-9dc7-6857" targetId="a3ea-7a0d-fef8-23bf"/>
-    <entryLink import="true" name="Dreadnought" hidden="false" type="selectionEntry" id="2d11-749e-9510-6657" targetId="d204-13c6-dab1-ecdc"/>
+    <entryLink import="true" name="Dreadnought" hidden="false" type="selectionEntry" id="2d11-749e-9510-6657" targetId="d204-13c6-dab1-ecdc">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
+      </costs>
+    </entryLink>
     <entryLink import="true" name="Drop Pod" hidden="false" type="selectionEntry" id="c4d5-4a1b-2b29-d473" targetId="4d57-c5c8-c1a1-e8a6"/>
     <entryLink import="true" name="Eliminator Squad" hidden="false" type="selectionEntry" id="be63-b837-d723-d3c6" targetId="d6c3-e9d2-430d-6c2f"/>
     <entryLink import="true" name="Eradicator Squad" hidden="false" type="selectionEntry" id="1b37-d674-f2ef-6d3b" targetId="c570-c6ba-c9dc-5a44"/>
@@ -2667,7 +2671,11 @@
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Land Raider Helios [Legends]" hidden="false" type="selectionEntry" id="c8f-979d-913b-2bad" targetId="f62a-bea1-a015-3668"/>
-    <entryLink import="true" name="Mortis Dreadnought [Legends]" hidden="false" type="selectionEntry" id="b1ba-c9c4-557b-4a47" targetId="525c-7e0-b0de-8a6f"/>
+    <entryLink import="true" name="Mortis Dreadnought [Legends]" hidden="false" type="selectionEntry" id="b1ba-c9c4-557b-4a47" targetId="525c-7e0-b0de-8a6f">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+      </costs>
+    </entryLink>
     <entryLink import="true" name="Deimos Predator [Legends]" hidden="false" type="selectionEntry" id="569e-478f-3778-555b" targetId="534d-4e94-5a8a-75ae"/>
     <entryLink import="true" name="Deimos Rhino" hidden="false" type="selectionEntry" id="1111-1111-1111-1114" targetId="1111-1111-1111-1113"/>
     <entryLink import="true" name="Chaplain Venerable Dreadnought [Legends]" hidden="false" type="selectionEntry" id="d8c8-3031-2faa-22a6" targetId="b51-a07d-6440-e1ad"/>
@@ -12043,12 +12051,12 @@ by 1.</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 2</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Devastating Wounds" hidden="false" type="rule" id="fd9a-d8d4-7a67-f5a4" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Sustained Hits" id="68b9-651e-718f-ef44" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="7b46-de5b-2c60-4597">
@@ -31896,7 +31904,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deimos Rhino" hidden="false" id="1111-1111-1111-1113">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -32077,7 +32085,12 @@ You can attach this model to one of the above units even if one Captain, Chapte
                 <infoLink name="Blast" id="e60c-bf7e-7855-aeb" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Twin boltgun" hidden="false" id="6edb-6f3-dbd3-b36b" collective="false">
@@ -32098,7 +32111,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
                 <infoLink name="Twin-linked" id="8f6e-7a00-12d2-27d4" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -32110,14 +32123,22 @@ You can attach this model to one of the above units even if one Captain, Chapte
           <entryLinks>
             <entryLink import="true" name="Combi-weapon" hidden="false" id="1514-c24f-d6fd-c0ab" collective="false" targetId="8882-6dc0-3a7b-5266" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Heavy bolter" hidden="false" id="c6d9-e55-c30e-35de" collective="false" targetId="d243-77eb-2a1-ff34" type="selectionEntry"/>
-            <entryLink import="true" name="Heavy flamer" hidden="false" id="4670-1449-7ee5-7d90" collective="false" targetId="bcef-39ba-a990-5490" type="selectionEntry"/>
-            <entryLink import="true" name="Multi-melta" hidden="false" id="32b0-fc75-8b2e-7a25" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry">
+            <entryLink import="true" name="Heavy bolter" hidden="false" id="c6d9-e55-c30e-35de" collective="false" targetId="d243-77eb-2a1-ff34" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy flamer" hidden="false" id="4670-1449-7ee5-7d90" collective="false" targetId="bcef-39ba-a990-5490" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="32b0-fc75-8b2e-7a25" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
