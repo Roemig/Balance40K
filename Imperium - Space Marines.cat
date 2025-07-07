@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="120" battleScribeVersion="2.03" library="false" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="121" battleScribeVersion="2.03" library="false" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -11163,7 +11163,7 @@ by 1.</characteristic>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="b48d-7d68-033c-5f20" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                       <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -11281,7 +11281,7 @@ by 1.</characteristic>
                   <entryLinks>
                     <entryLink import="true" name="Centurion Bolters" hidden="false" type="selectionEntry" id="8866-3f9-fc9b-80bd" targetId="953c-b525-10be-f7cd">
                       <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -21790,13 +21790,13 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating wounds, Twin-linked</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 2, Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Twin-linked" hidden="false" type="rule" id="e0bc-c8fd-2b70-3901" targetId="cf93-ad4d-2f08-a79d"/>
-        <infoLink name="Devastating Wounds" hidden="false" type="rule" id="6b91-ad2-79c4-1e23" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Sustained Hits" id="e30a-df4b-73cb-4cd4" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Repulsor" hidden="false" id="e8e-fc5c-c689-99ca">
@@ -31719,6 +31719,14 @@ You can attach this model to one of the above units even if one Captain, Chapte
                   <infoLinks>
                     <infoLink name="Devastating Wounds" id="d4ef-4820-c9c7-4846" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -31904,7 +31912,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deimos Rhino" hidden="false" id="1111-1111-1111-1113">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -35403,7 +35411,7 @@ You can attach this model to one of the above units even if one Character model
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ancient on Bike [Legends]" hidden="false" id="e4c7-b10c-6896-3f0">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -38608,16 +38616,16 @@ per turn.</characteristic>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Devastating Wounds</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Sustained Hits 2</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Heavy" hidden="false" type="rule" id="fa84-4707-f35d-1f6b" targetId="1202-10a8-78e9-4c67"/>
-        <infoLink name="Devastating Wounds" id="e1cb-fec1-fea0-9b13" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Sustained Hits" id="155a-ab5d-dd73-8128" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
       </infoLinks>
       <comment>Heavy</comment>
     </selectionEntry>
