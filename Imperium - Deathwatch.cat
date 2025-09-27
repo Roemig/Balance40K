@@ -728,7 +728,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Lance" id="3354-8365-a4e2-cc3a" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57" publicationId="ed4a-f59e-0a5f-f996"/>
+                <infoLink name="Lance" id="3354-8365-a4e2-cc3a" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57" publicationId="48fc-15aa-b307-9443"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="16e8-a707-16d3-a4c4" hidden="false" flatten="true">
