@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="166" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="167" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -2701,31 +2701,6 @@
         <entryLink import="true" name="Shadow Operations" hidden="false" id="1e97-6ae1-1f87-734c" type="selectionEntryGroup" targetId="68a2-ada5-3cd4-c5a3"/>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Deimos Predator Battle Tank" hidden="false" id="e8a5-08a3-68b2-0236" type="selectionEntry" targetId="2b86-d1d5-4ee4-4b46"/>
-    <entryLink import="true" name="Deimos Predator Support Tank" hidden="false" id="5d9b-ff66-7d00-0b7a" type="selectionEntry" targetId="6cf6-09c8-946e-cd5c"/>
-    <entryLink import="true" name="Breacher Squad" hidden="false" id="9590-17b8-12e9-b6d1" type="selectionEntry" targetId="4cf8-9787-c25a-3f8c"/>
-    <entryLink import="true" name="Captain in Saturnine Terminator Armour" hidden="false" id="801f-0bd4-1cd0-74bf" type="selectionEntry" targetId="3a5f-6c35-213c-a172"/>
-    <entryLink import="true" name="Castaferrum Consul Venerable Dreadnought" hidden="false" id="57a9-4ac2-3ea1-5b47" type="selectionEntry" targetId="223a-fcb8-a0b7-97ac"/>
-    <entryLink import="true" name="Castaferrum Dreadnought" hidden="false" id="904e-87e6-e4c8-4b66" type="selectionEntry" targetId="5d85-a278-6d60-d183"/>
-    <entryLink import="true" name="Castaferrum Mortis Dreadnought" hidden="false" id="58bf-b487-42bd-4593" type="selectionEntry" targetId="7db5-245e-0044-aacf"/>
-    <entryLink import="true" name="Damocles Rhino" hidden="false" id="9bf6-05bd-6114-f5d4" type="selectionEntry" targetId="4be9-1ac0-7eaa-27f7"/>
-    <entryLink import="true" name="Deimos Rhino" hidden="false" id="d0fe-443d-e79c-f733" type="selectionEntry" targetId="9be1-0082-2df3-a3b7"/>
-    <entryLink import="true" name="Despoiler Squad" hidden="false" id="3b0a-e340-a4a0-f7d2" type="selectionEntry" targetId="cf87-a296-2d35-2209"/>
-    <entryLink import="true" name="Heavy Support Squad" hidden="false" id="5096-bda2-82ff-ac09" type="selectionEntry" targetId="c241-f5b1-4548-c0ec"/>
-    <entryLink import="true" name="Legion Assault Squad" hidden="false" id="b1cd-3b64-c655-5146" type="selectionEntry" targetId="985d-898c-e8c0-8d78"/>
-    <entryLink import="true" name="Legion Attack Bike Squad" hidden="false" id="2982-5b4e-6c6d-b706" type="selectionEntry" targetId="b90b-8632-fec4-fc8f"/>
-    <entryLink import="true" name="Legion Bike Squad" hidden="false" id="a890-479e-f276-e2ad" type="selectionEntry" targetId="c282-1ab5-80fd-432f"/>
-    <entryLink import="true" name="Legion Command Squad" hidden="false" id="9560-df04-7464-8f3e" type="selectionEntry" targetId="2ded-dcb5-32f5-f528"/>
-    <entryLink import="true" name="Legion Tactical Veteran Squad" hidden="false" id="d1a9-99ee-c609-ab28" type="selectionEntry" targetId="a6b0-253f-3772-9f1b"/>
-    <entryLink import="true" name="Legion Tarantula Battery" hidden="false" id="83d4-4572-4fd0-ae38" type="selectionEntry" targetId="05b8-b091-f8d9-7e54"/>
-    <entryLink import="true" name="Legion Terminator Squad" hidden="false" id="4acf-7c9d-8327-e4a3" type="selectionEntry" targetId="9deb-5ab4-48be-a329"/>
-    <entryLink import="true" name="Saturnine Terminator Squad" hidden="false" id="7bb3-6e53-0159-7549" type="selectionEntry" targetId="48ae-d87d-996f-35de"/>
-    <entryLink import="true" name="Support Squad" hidden="false" id="6817-0e76-6ab4-eb75" type="selectionEntry" targetId="0ed2-01df-ef0d-0b73"/>
-    <entryLink import="true" name="Thunderfire Carrier" hidden="false" id="9f2a-87f3-93bb-b740" type="selectionEntry" targetId="d01a-7949-0709-93fe"/>
-    <entryLink import="true" name="Venerable Castaferrum Dreadnought" hidden="false" id="68da-3707-aa0d-191f" type="selectionEntry" targetId="047e-3654-8c76-2159"/>
-    <entryLink import="true" name="Veteran Destroyer Squad" hidden="false" id="2da4-4381-fd07-6056" type="selectionEntry" targetId="a60c-55a9-c340-ec1a"/>
-    <entryLink import="true" name="Saturnine Dreadnought" hidden="false" type="selectionEntry" id="5c97-a423-2121-39cf" targetId="3f36-ab82-de68-3f4b"/>
-    <entryLink import="true" name="Whirlwind Hyperios" hidden="false" type="selectionEntry" id="e363-916d-5e03-6a0b" targetId="814b-4113-4c23-7197"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -46875,7 +46850,6 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
     <catalogueLink type="catalogue" name="Library - Titans" id="896f-5094-b2f2-8aa8" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="e24b-8767-615b-7565" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="9e7d-2e90-7a2c-3130" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Library - Legiones Astartes" id="b2d2-a969-b335-e854" targetId="4416-a9c9-c027-7c78"/>
   </catalogueLinks>
   <profileTypes>
     <profileType name="Deeds Worthy of Saga" hidden="false" id="cc48-131-6c21-72f1">
