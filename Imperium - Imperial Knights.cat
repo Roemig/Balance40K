@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="25dd-7aa0-6bf4-f2d5" name="Imperium - Imperial Knights" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2882-7336-d8eb-116f" name="Imperium - Imperial Knights" gameSystemId="e868-bc21-f5bd-28b5" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="9b69-6acf-ce6e-7d56" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="a9de-79c6-ff31-ace3" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Library - Titans" id="993e-4de7-67f6-59d2" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Adeptus Mechanicus" id="d4a9-0d7e-4b3f-4d7c" targetId="77b9-2f66-3f9b-5cf3"/>
+    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="9b69-6acf-ce6e-7d56" targetId="54f9-a521-056e-aaad" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="a9de-79c6-ff31-ace3" targetId="5572-fbc2-fab1-98f3" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Titans" id="993e-4de7-67f6-59d2" targetId="83be-d3b0-113c-5433" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Adeptus Mechanicus" id="d4a9-0d7e-4b3f-4d7c" targetId="3bec-aca6-5e72-7827"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="b9ee-35d4-2177-b643" targetId="5a84-ea91-b707-1656"/>
