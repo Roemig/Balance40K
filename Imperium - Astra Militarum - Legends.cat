@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f8a6-7ed3-a5a7-8c6b" name="Imperium - Astra Militarum - Legends" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="37" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f8a6-7ed3-a5a7-8c6b" name="Imperium - Astra Militarum - Legends" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="37" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Malcador Vanquisher [Legends]" hidden="false" id="438e-cf20-08f6-5e34">
       <costs>
@@ -4673,9 +4673,6 @@
     <categoryEntry name="Catachan Veteran Squad" id="2d50-7fc8-e5c5-26cf" hidden="false"/>
     <categoryEntry name="Leman Russ Conqueror" id="e827-7670-8613-3b6b" hidden="false"/>
   </categoryEntries>
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="Imperium - Astra Militarum - Library" id="5e1c-90ab-6d0b-12ca" targetId="9683-193e-34ea-f512"/>
-  </catalogueLinks>
   <sharedProfiles>
     <profile name="Elysian Drop Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="aa3d-3564-398a-7198">
       <characteristics>
@@ -4900,4 +4897,7 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Imperium - Astra Militarum - Library" id="7cf5-8458-8f8a-b8aa" targetId="5a44-f048-114b-e3ff"/>
+  </catalogueLinks>
 </catalogue>
