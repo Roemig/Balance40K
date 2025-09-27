@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="afe8-17cc-4150-ee0d" name="Xenos - Tyranids" revision="109" battleScribeVersion="2.03" library="false" gameSystemId="e868-bc21-f5bd-28b5" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="109" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Dunamis55">
   <categoryEntries>
     <categoryEntry name="Synapse" hidden="false" id="4129-a453-686a-d38a"/>
     <categoryEntry id="4f10-fe01-4b80-8d6b" name="Winged Hive Tyrant" hidden="false"/>
@@ -13849,7 +13849,7 @@ In the Muster Armies step, you can select up to 2 **^^Trygon^^** models from y
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Unaligned Forces" id="e1d1-13ae-8bc4-4330" targetId="a35d-7481-7ddb-9d95" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="e1d1-13ae-8bc4-4330" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
   </catalogueLinks>
   <sharedRules>
     <rule id="395b-a159-b293-27aa" name="Shadow in the Warp" hidden="false">

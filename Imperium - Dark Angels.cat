@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4dc9-eeeb-9f9c-c8c5" name="Imperium - Adeptus Astartes - Dark Angels" gameSystemId="e868-bc21-f5bd-28b5" gameSystemRevision="1" revision="50" battleScribeVersion="2.03" authorName="Simon Porter" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="470a-6daa-9014-12df" name="Imperium - Adeptus Astartes - Dark Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="50" battleScribeVersion="2.03" authorName="Simon Porter" type="catalogue">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Imperium - Space Marines" id="a650-8be4-a99-ea41" targetId="8991-13a8-896f-9f72" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f6c0-6a84-98dc-c47b" targetId="54f9-a521-056e-aaad" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="f161-7bb8-b521-bc26" targetId="5572-fbc2-fab1-98f3" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Space Marines" id="a650-8be4-a99-ea41" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f6c0-6a84-98dc-c47b" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="f161-7bb8-b521-bc26" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
   </catalogueLinks>
   <publications>
     <publication name="Index - Dark Angels" hidden="false" id="3931-1b04-c00e-afad" publisher="Index - Dark Angels" publicationDate="12-06-2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/06/C6o7G0zjRSxCUvhK.pdf" shortName="Index - Dark Angels"/>
@@ -2309,7 +2309,7 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="8f34-65b8-6d76-37c3" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="8f34-65b8-6d76-37c3" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0ad-7270-a5ab-f18a"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43aa-947e-e04a-247"/>
@@ -2567,7 +2567,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2a-1a1d-cc9a-f081" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="c363-3ae4-67b6-abf6" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="c363-3ae4-67b6-abf6" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="1c6e-3afe-c609-aa2b" includeChildSelections="true"/>
                   </constraints>
@@ -2681,7 +2681,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2fb-5bf0-3a31-80a6" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="c14f-bbb4-8a0a-e88f" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="c14f-bbb4-8a0a-e88f" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="3447-744b-952c-d528" includeChildSelections="true"/>
                   </constraints>
@@ -2849,7 +2849,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feee-5959-8e4f-f361" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="e907-e029-9d32-8d15" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                    <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="e907-e029-9d32-8d15" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="4188-837c-dd4c-e823" includeChildSelections="true"/>
                       </constraints>

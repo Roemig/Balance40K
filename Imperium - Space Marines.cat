@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8991-13a8-896f-9f72" name="Imperium - Adeptus Astartes - Space Marines" revision="167" battleScribeVersion="2.03" library="false" gameSystemId="e868-bc21-f5bd-28b5" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="165" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -4127,7 +4127,7 @@
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="f4a1-6904-0653-2461" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
                         </entryLink>
-                        <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="6e2c-375b-a6d4-fcc9" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                        <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="6e2c-375b-a6d4-fcc9" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a26d-4d36-397a-7a6a-min" includeChildSelections="false"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a26d-4d36-397a-7a6a-max" includeChildSelections="false"/>
@@ -4272,7 +4272,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fac-496c-9ed5-a8cc"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="a0dd-1572-c636-9fd1" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="a0dd-1572-c636-9fd1" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95b2-456a-e3e1-46ba-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95b2-456a-e3e1-46ba-max" includeChildSelections="false"/>
@@ -14754,7 +14754,7 @@ by 1.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Combat Knife" hidden="false" type="selectionEntry" id="4dfd-929-4b70-ea15" targetId="8c75-384d-a10-a451" collective="false"/>
                 <entryLink import="true" name="Astartes Shotgun" hidden="false" type="selectionEntry" id="c8b1-40a7-ed4-6ad2" targetId="de02-10d8-697a-6b2c"/>
-                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="d0cd-2b59-6119-0674" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="d0cd-2b59-6119-0674" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3da-4947-7e88-7d00"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2323-fbb8-f184-3e6c"/>
@@ -14854,7 +14854,7 @@ by 1.</characteristic>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="5e9e-c176-901e-ff28" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="816a-d974-0b96-c178" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                    <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="816a-d974-0b96-c178" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="e71d-378b-fd96-cac6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -46846,10 +46846,10 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="c047-b43d-ba0f-5f32" targetId="5572-fbc2-fab1-98f3" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Library - Titans" id="896f-5094-b2f2-8aa8" targetId="83be-d3b0-113c-5433" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="e24b-8767-615b-7565" targetId="54f9-a521-056e-aaad" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="9e7d-2e90-7a2c-3130" targetId="6506-edd0-197d-b6a1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="c047-b43d-ba0f-5f32" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Titans" id="896f-5094-b2f2-8aa8" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="e24b-8767-615b-7565" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="9e7d-2e90-7a2c-3130" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
   </catalogueLinks>
   <profileTypes>
     <profileType name="Deeds Worthy of Saga" hidden="false" id="cc48-131-6c21-72f1">

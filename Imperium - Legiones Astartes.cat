@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5764-3dc1-e3c8-3ee1" name="Imperium - Legiones Astartes" gameSystemId="e868-bc21-f5bd-28b5" gameSystemRevision="37" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5764-3dc1-e3c8-3ee1" name="Imperium - Legiones Astartes" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="37" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Breacher Squad" id="e354-60f5-f063-c7e9" hidden="false"/>
     <categoryEntry name="Deimos Rhino" id="b8d8-67af-b3e7-5cb6" hidden="false"/>
