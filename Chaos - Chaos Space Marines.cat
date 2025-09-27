@@ -3385,7 +3385,7 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
         <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9bbd-a535-a4ef-9680" name="Heretic Astartes Daemon Prince" publicationId="48fc-15aa-b307-9443" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9bbd-a535-a4ef-9680" name="Heretic Astartes Daemon Prince" publicationId="ed4a-f59e-0a5f-f996" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dcf-cb5-3e4-db74" type="max"/>
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="9b1e-34a8-afb0-7495" includeChildSelections="false"/>
@@ -3628,7 +3628,7 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry id="2a1d-2757-347c-58f2" name="Heretic Astartes Daemon Prince with wings" publicationId="48fc-15aa-b307-9443" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="2a1d-2757-347c-58f2" name="Heretic Astartes Daemon Prince with wings" publicationId="ed4a-f59e-0a5f-f996" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dcf-cb5-3e4-db74" type="max"/>
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="2925-1944-bea4-eef5" includeChildSelections="false"/>
