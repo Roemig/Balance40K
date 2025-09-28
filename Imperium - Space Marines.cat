@@ -41609,8 +41609,7 @@ per turn.</characteristic>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink name="Infantry" hidden="false" id="9100-b8cf-efe1-2bd9" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-        <categoryLink name="Battleline" hidden="false" id="7126-58c8-6525-1841" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="9100-b8cf-efe1-2bd9" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink name="Grenades" hidden="false" id="2ed0-3b52-bfca-838b" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="68a7-c01b-f66c-994e" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="6ac4-5a1c-c7ba-feee" targetId="6e7-40c-58d9-e402" primary="false"/>
@@ -44487,8 +44486,7 @@ per turn.</characteristic>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink name="Infantry" hidden="false" id="28de-26da-953f-c795" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-        <categoryLink name="Battleline" hidden="false" id="fc01-882b-6852-1259" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="28de-26da-953f-c795" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink name="Grenades" hidden="false" id="8d72-1aa8-6979-baa6" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="3f8f-7e9b-83c0-7ff5" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="a371-418e-c5d0-cf91" targetId="6e7-40c-58d9-e402" primary="false"/>
