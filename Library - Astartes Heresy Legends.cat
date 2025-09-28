@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="39b9-56da-6787-1880" name="Kratos" hidden="false">
       <constraints>
@@ -1069,7 +1069,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1527,7 +1532,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -2269,38 +2279,63 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Additional weapon" id="4d22-9c96-a83a-c628" hidden="false" collective="false" import="true">
+            <selectionEntryGroup name="Pintle weapon" id="4d06-fe57-f1f3-50d0" hidden="false">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52eb-04f3-13ff-9fc5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e03-8c0c-bc4e-1400"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Heavy bolter" hidden="false" id="d859-af5d-429b-22ff" collective="false" targetId="d243-77eb-2a1-ff34" type="selectionEntry">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="efb8-6b2a-2344-52e1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="c899-1e61-7ebc-0ea7" type="selectionEntry" targetId="d243-77eb-2a1-ff34">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
                 </entryLink>
-                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="83cb-b7f4-40a6-6216" collective="false" targetId="f1a6-b394-5bc5-a3cb" type="selectionEntry">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="cf22-b0f4-d73d-6bbc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="be42-e478-5e84-75d8" type="selectionEntry" targetId="bcef-39ba-a990-5490">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
                 </entryLink>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="98da-74ea-f6d8-51f8" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="75fe-6a5c-4c76-a145" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="3457-5166-67d8-ca8a" type="selectionEntry" targetId="91c8-b628-4d47-d01e">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
                 </entryLink>
-                <entryLink import="true" name="Twin heavy flamer" hidden="false" id="b824-582e-3fc2-c0a7" collective="false" targetId="28c2-3ff0-43c1-380d" type="selectionEntry">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d986-aef7-76d1-d686" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="a204-172e-c95b-ef14" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="47de-0247-d818-a26f" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="629f-3003-5a72-c240" type="selectionEntry" targetId="5500-ca94-43f4-0881">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
                 </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Additional weapon" id="e7c3-8e38-d889-8fc8" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a364-ba52-fa73-72c6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="3e61-952b-74a7-6b4c" collective="false" targetId="f1a6-b394-5bc5-a3cb" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin heavy flamer" hidden="false" id="3ce6-44d1-4f2d-17d2" collective="false" targetId="28c2-3ff0-43c1-380d" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="56e8-9e08-1a56-59f3" type="selectionEntry" targetId="c36c-6247-f673-fe00"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="225"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -2312,7 +2347,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Land Raider Achilles [Legends]" hidden="false" id="3006-ffe-2b0c-6b1b">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="285"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="275"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="25c7-9244-f8fa-a550" primary="true" name="Vehicle"/>
@@ -2553,7 +2593,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sicaran Battle Tank [Legends]" hidden="false" id="b2f1-197b-fb3b-687f">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="5425-5fc2-c61e-f46" primary="true" name="Vehicle"/>
@@ -2608,11 +2653,6 @@
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="fb73-c845-abb5-8bc0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Storm bolter" hidden="false" id="3e1c-d033-7360-7217" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="7f33-6f7a-f333-7d82" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -2683,6 +2723,35 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="7f66-d535-b7ce-e5f6" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c09-2de0-df89-a41f"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="5eed-4fb3-e387-8adf" type="selectionEntry" targetId="d243-77eb-2a1-ff34">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="9440-01c2-f4ab-02c5" type="selectionEntry" targetId="bcef-39ba-a990-5490">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="41d1-0009-f91c-e142" type="selectionEntry" targetId="91c8-b628-4d47-d01e">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="facb-8083-05ac-8db3" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="c7ca-c003-6af9-a528" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="8d4f-333d-3a5e-f7bb" type="selectionEntry" targetId="5500-ca94-43f4-0881">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2696,7 +2765,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sicaran Arcus [Legends]" hidden="false" id="ca2a-69ca-dd3c-47">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="fbbb-66e7-1081-e33f" primary="false" name="Faction: Adeptus Astartes"/>
@@ -2844,7 +2918,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sicaran Venator [Legends]" hidden="false" id="e63e-2aa6-f840-b54e">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="3ba2-ff8c-474e-1d2" primary="true" name="Vehicle"/>
@@ -2899,11 +2978,6 @@
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="042e-be0f-61a3-aaeb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Storm bolter" hidden="false" id="7510-4d47-b186-f155" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="354a-d4c5-057b-fd8a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -2974,6 +3048,35 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="e84f-34f1-aea0-9667" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05c8-0cfd-5fe9-428a"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="89e6-d428-9e6b-5b04" type="selectionEntry" targetId="d243-77eb-2a1-ff34">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="5f60-cbdc-1362-8623" type="selectionEntry" targetId="bcef-39ba-a990-5490">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="294e-ff81-e2dd-9f64" type="selectionEntry" targetId="91c8-b628-4d47-d01e">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="9c15-1e01-83c3-1b50" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="c8ea-6a75-5140-5f3e" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="cba4-ded2-7af1-2860" type="selectionEntry" targetId="5500-ca94-43f4-0881">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2987,7 +3090,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sicaran Punisher [Legends]" hidden="false" id="68aa-28bf-bd73-3355">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="bc62-c85b-48ba-ba71" primary="true" name="Vehicle"/>
@@ -3042,11 +3150,6 @@
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="cfe0-4b3e-4ed8-5355" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Storm bolter" hidden="false" id="4cb3-8623-ac91-6f3" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="e360-7266-244c-0137" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -3117,6 +3220,35 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Pintle weapon" id="cd8b-1d6b-5223-c382" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="066b-55cf-dc66-b064"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="7abe-99a4-08c9-6e1e" type="selectionEntry" targetId="d243-77eb-2a1-ff34">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="7897-2daf-d131-1657" type="selectionEntry" targetId="bcef-39ba-a990-5490">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="dc43-cde8-0a71-4799" type="selectionEntry" targetId="91c8-b628-4d47-d01e">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="06d2-42d2-7516-3555" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="404f-d029-d90a-faaa" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="1cb3-d2aa-a753-b609" type="selectionEntry" targetId="5500-ca94-43f4-0881">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3130,7 +3262,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sicaran Omega [Legends]" hidden="false" id="8b64-6aba-150d-27e4">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="235"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="215"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="bb99-c0d1-afe1-a940" primary="false" name="Faction: Adeptus Astartes"/>
@@ -3308,7 +3445,12 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="dceb-5fe7-50b5-f582" hidden="false">
@@ -3604,7 +3746,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vindicator Laser Destroyer [Legends]" hidden="false" id="128d-5011-8e6-45a6">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="3c5a-35e3-d715-ff54" primary="false" name="Faction: Adeptus Astartes"/>
@@ -4480,7 +4627,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Typhon [Legends]" hidden="false" id="f60c-1b93-9ee8-59d2">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="385"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="300"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Damaged: 1-6 wounds remaining" hidden="false" type="profile" id="3f0-2205-bafa-d0ca" targetId="8edb-b088-4c26-2fef"/>
@@ -4577,6 +4729,8 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="368c-8420-203f-548e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="22f0-6cd4-014b-2fb5" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="a935-0a03-0e26-6b8d" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsons" id="ede8-7239-7141-c52c" hidden="false">
@@ -4719,6 +4873,8 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="aac9-26e6-ce58-5b42" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="2ad0-611d-fade-830b" type="selectionEntry" targetId="5500-ca94-43f4-0881"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="069b-1e94-0585-c185" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sponsons" id="e7ab-b81c-e038-83bd" hidden="false">
@@ -4767,7 +4923,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Spartan [Legends]" hidden="false" id="7b3a-9a63-6200-ec7">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="315"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="295"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="d310-5ca7-7c4a-1a4b" primary="true" name="Vehicle"/>
@@ -7053,6 +7214,24 @@
       </profiles>
       <infoLinks>
         <infoLink name="Devastating Wounds" hidden="false" type="rule" id="7ca7-98ee-eaa8-1612" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Havoc Launcher" hidden="false" id="5500-ca94-43f4-0881">
+      <profiles>
+        <profile name="Havoc Launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7360-b255-43a1-6517">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="c5c2-8644-87a2-863a" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
