@@ -934,6 +934,69 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Last Chancers" hidden="false" type="selectionEntry" id="1463-5cd4-b88c-59bd" targetId="c754-2100-68b4-5205">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Knight-Commander Pask" hidden="false" type="selectionEntry" id="c7a2-d6f1-d32e-6846" targetId="63ad-cdf1-0dbd-6007">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Sergeant Bastonne" hidden="false" type="selectionEntry" id="135d-b302-5b74-0809" targetId="529b-5ae0-6e26-563d">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Malcador Commander" hidden="false" type="selectionEntry" id="503c-f4c9-a7aa-4f84" targetId="a175-5a8d-ccce-ef07">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Captain Al&apos;rahem" hidden="false" type="selectionEntry" id="be05-ffe3-6716-0e58" targetId="ecf6-eab1-0545-80f0">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Commander Chenkov" hidden="false" type="selectionEntry" id="56bf-bd84-d969-8d87" targetId="e562-b125-adf6-b5c3">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Mogul Kamir" hidden="false" type="selectionEntry" id="d62c-b6bd-1277-3255" targetId="cffa-eccd-9397-9ad7">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink id="e373-3c0a-1185-467a" name="Imperium - Astra Militarum - Library" targetId="5a44-f048-114b-e3ff" type="catalogue" importRootEntries="false"/>
