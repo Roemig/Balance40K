@@ -14813,7 +14813,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shock Trooper" hidden="false" id="ae21-aec-1942-66ea">
       <infoLinks>
-        <infoLink name="Shock Trooper" hidden="false" type="profile" id="55ff-405c-16bb-1ea2" targetId="ea09-3364-e6cd-2ffe"/>
+        <infoLink name="Guardsman" hidden="false" type="profile" id="55ff-405c-16bb-1ea2" targetId="ea09-3364-e6cd-2ffe"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Lasgun" hidden="false" type="selectionEntry" id="b066-d6eb-16ea-ae60" targetId="26c-19b3-720-8dcf">
@@ -14857,7 +14857,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shock Trooper Sergeant" hidden="false" id="e395-8ca5-e093-6f7b">
       <infoLinks>
-        <infoLink name="Shock Trooper" hidden="false" type="profile" id="9e70-7e5b-8809-b46b" targetId="ea09-3364-e6cd-2ffe"/>
+        <infoLink name="Guardsman" hidden="false" type="profile" id="9e70-7e5b-8809-b46b" targetId="ea09-3364-e6cd-2ffe"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear Options" hidden="false" id="7b3a-d2ff-caa-5e40" defaultSelectionEntryId="9142-cd28-1254-6c47">
@@ -35903,16 +35903,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <infoLink name="Deep Strike" id="ec39-a05b-6833-6be9" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Guardsman" hidden="false" id="6401-bf57-ca2b-995b">
-      <infoLinks>
-        <infoLink name="Guardsman" id="d25d-fbc2-6c55-b138" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Guardsman w/ Vox Caster" hidden="false" id="47cc-2173-cdbd-c86c">
-      <infoLinks>
-        <infoLink name="Guardsman" id="9566-1fa0-45b8-65fa" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
-      </infoLinks>
-    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Guardsman" hidden="false" id="6401-bf57-ca2b-995b"/>
+    <selectionEntry type="model" import="true" name="Guardsman w/ Vox Caster" hidden="false" id="47cc-2173-cdbd-c86c"/>
     <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="3e42-c585-d90d-7ada">
       <profiles>
         <profile name="Heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="42d9-be3b-a36b-3148">
@@ -36041,10 +36033,51 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a409-f879-c54c-3992"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d120-386a-3ad8-1e3c"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="4a54-237a-27fc-d63b" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
-                    <entryLink import="true" name="Laspistol Option" hidden="false" id="6b1f-c201-4207-4cbc" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
-                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="a502-3d38-dd39-4860" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapons" id="081e-d5e5-62f2-53a4" hidden="false" defaultSelectionEntryId="850c-9a99-1772-b54c">
+                      <entryLinks>
+                        <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="4a54-237a-27fc-d63b" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                        <entryLink import="true" name="Lasgun" hidden="false" id="850c-9a99-1772-b54c" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+                          <profiles>
+                            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e16e-9cf7-4445-6a60">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82b8-bd2d-0206-4e4e"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Laspistol Option" hidden="false" id="6b1f-c201-4207-4cbc" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b1e2-d8b6-3061-a53a"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0ddc-2aa3-ec8e-06de"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="b1e2-d8b6-3061-a53a">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="fe7b-3066-712b-a0cc" childId="a09c-6de4-e1c1-708a" shared="true" id="b41d-3a57-b3b0-d440" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="0ddc-2aa3-ec8e-06de">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="fe7b-3066-712b-a0cc" childId="a09c-6de4-e1c1-708a" shared="true" id="0d37-a52e-38c7-6bb8" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Guardsman" hidden="false" id="e0ab-c8bf-4544-c7c2" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
                   <constraints>
@@ -36087,6 +36120,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="5d4f-39e1-0204-9bc3" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="ce00-a783-d760-1d3a" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
                   <constraints>
@@ -36112,22 +36148,15 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="3565-140b-09e3-955a" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="2877-bad5-6312-4b8f" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="1 Sergeant, 7 Guardsmen and 1 Heavy Weapons Team" hidden="false" id="222b-fb0c-0421-5d5e">
               <entryLinks>
-                <entryLink import="true" name="Sergeant" hidden="false" id="da07-5eca-0ed7-d33d" targetId="df22-5dc1-57dc-e347" type="selectionEntry">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18aa-541e-4402-028b"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b10-bf32-4eae-eaac"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="f63f-c29b-bca4-ada2" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
-                    <entryLink import="true" name="Laspistol Option" hidden="false" id="f1e8-c183-ee96-ca09" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Guardsman" hidden="false" id="5e7d-26db-dd4d-22f8" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
                   <constraints>
                     <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="d2f7-fc4b-e1ed-34e1"/>
@@ -36174,6 +36203,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="e9f9-aeba-39d9-3ce0" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="6b88-9d36-491e-5d85" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
                   <constraints>
@@ -36199,6 +36231,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="f9a6-e0ed-ae51-8741" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="ee4a-b1b7-c70a-7278" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
                 <entryLink import="true" name="Heavy Weapons Team" hidden="false" id="fe2f-1f68-e1ec-365c" type="selectionEntry" targetId="c4e3-2813-f26d-5991">
@@ -36207,20 +36242,61 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1157-b7f4-9ab7-6053"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Sergeant" hidden="false" id="a791-e851-a809-48e9" targetId="df22-5dc1-57dc-e347" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea0c-f3bc-3218-f876"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf1b-3841-1e23-77ca"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="8e08-3f4b-983f-70d9" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapons" id="b96d-ea78-9990-866e" hidden="false" defaultSelectionEntryId="850c-9a99-1772-b54c">
+                      <entryLinks>
+                        <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="ea9c-db9e-99f7-1b93" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                        <entryLink import="true" name="Lasgun" hidden="false" id="a089-e80d-f0cd-332d" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+                          <profiles>
+                            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cd07-cf07-6e74-5fd0">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a414-2166-d80f-f4eb"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Laspistol Option" hidden="false" id="ade8-d9df-c4bf-681f" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8e35-39e4-df51-c0d5"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9a2b-5dfe-edb7-de35"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="8e35-39e4-df51-c0d5">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="a791-e851-a809-48e9" childId="a09c-6de4-e1c1-708a" shared="true" id="99a1-f6c4-90e6-aa53" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="9a2b-5dfe-edb7-de35">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="a791-e851-a809-48e9" childId="a09c-6de4-e1c1-708a" shared="true" id="a807-f5c8-cc4d-5fb9" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Sergeants and 18 Guardsmen" hidden="false" id="9119-b865-bb29-158c">
               <entryLinks>
-                <entryLink import="true" name="Sergeant" hidden="false" id="32a4-ef9c-81c6-4cc3" type="selectionEntry" targetId="df22-5dc1-57dc-e347">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="52b3-7399-87cd-cf1d"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ed45-8be4-57ce-e9ae"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="ad62-c4a9-8364-5a1c" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
-                    <entryLink import="true" name="Laspistol Option" hidden="false" id="f530-53fe-b64a-0f8c" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Guardsman" hidden="false" id="a23f-970a-f125-a799" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
                   <constraints>
                     <constraint type="min" value="18" field="selections" scope="parent" shared="true" id="65dc-9f16-c76f-1e31"/>
@@ -36267,6 +36343,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="ea06-0a20-55bb-54b7" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="e4db-26c1-45f2-381a" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
                   <constraints>
@@ -36292,8 +36371,62 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="3777-baba-beb9-37f1" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="01af-55ad-3857-8eb2" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
+                <entryLink import="true" name="Sergeant" hidden="false" id="5c38-686f-dcad-bafa" targetId="df22-5dc1-57dc-e347" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f1d-3013-8ca8-c0e8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd95-653d-3b5a-1ce8"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="7f85-2669-ea5c-0535" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapons" id="0bc9-7a92-1f66-5ded" hidden="false" defaultSelectionEntryId="850c-9a99-1772-b54c">
+                      <entryLinks>
+                        <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="d70d-a414-2447-053c" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                        <entryLink import="true" name="Lasgun" hidden="false" id="fa52-b2c7-b4e2-5810" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+                          <profiles>
+                            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ddb0-fad5-4807-23e7">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80bc-b774-8473-36c9"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Laspistol Option" hidden="false" id="726b-43f3-9325-993d" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a5ba-9bdf-bd95-e43b"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="18af-c76e-e7f8-c46a"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="a5ba-9bdf-bd95-e43b">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="5c38-686f-dcad-bafa" childId="a09c-6de4-e1c1-708a" shared="true" id="af5d-04ba-85f9-7657" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="18af-c76e-e7f8-c46a">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="5c38-686f-dcad-bafa" childId="a09c-6de4-e1c1-708a" shared="true" id="c738-5f80-de80-afbe" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </entryLink>
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -36351,6 +36484,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="09fc-ddb1-61cf-22e9" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="f83f-3bbe-85e2-2b5e" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
                   <constraints>
@@ -36376,6 +36512,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="62b4-9973-04f0-eb0c" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="0905-336c-37cd-011e" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
                 <entryLink import="true" name="Heavy Weapons Team" hidden="false" id="6168-4132-5215-61c5" type="selectionEntry" targetId="c4e3-2813-f26d-5991">
@@ -36384,15 +36523,56 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4490-bdef-292f-74e6"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Sergeant" hidden="false" id="8f8f-5a47-cdd0-ca45" type="selectionEntry" targetId="df22-5dc1-57dc-e347">
+                <entryLink import="true" name="Sergeant" hidden="false" id="d416-754c-033c-e0c3" targetId="df22-5dc1-57dc-e347" type="selectionEntry">
                   <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9353-996c-3ebd-9266"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e758-bdbb-a709-3da1"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="892c-d9b1-dc07-685b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4707-4e97-8571-1125"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="5db7-040c-313d-a8fe" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
-                    <entryLink import="true" name="Laspistol Option" hidden="false" id="96e5-b3a3-227f-eff8" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
-                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="5093-7305-b5db-c2ca" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapons" id="ff06-5f0e-b72d-dc53" hidden="false" defaultSelectionEntryId="850c-9a99-1772-b54c">
+                      <entryLinks>
+                        <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="17f9-f33f-bc6c-f20e" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                        <entryLink import="true" name="Lasgun" hidden="false" id="46b7-ef8c-af98-10b0" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+                          <profiles>
+                            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="240e-ddb0-be90-f887">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f150-c565-9a4a-960f"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Laspistol Option" hidden="false" id="273d-beb4-d58a-5fb6" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="435c-d9a7-e0b2-9216"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e4b6-6349-b2be-519c"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="435c-d9a7-e0b2-9216">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="d416-754c-033c-e0c3" childId="a09c-6de4-e1c1-708a" shared="true" id="0238-645a-543f-360b" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="e4b6-6349-b2be-519c">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="d416-754c-033c-e0c3" childId="a09c-6de4-e1c1-708a" shared="true" id="238a-4455-6154-f0e7" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <modifiers>
@@ -36405,16 +36585,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Sergeants, 14 Guardsmen and 2 Heavy Weapons Team" hidden="false" id="87c0-6e5f-1cfe-8281">
               <entryLinks>
-                <entryLink import="true" name="Sergeant" hidden="false" id="5b2e-4ca5-dda2-0ec0" type="selectionEntry" targetId="df22-5dc1-57dc-e347">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="68c7-b227-3367-e0db"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f14a-8c56-2ca0-00c8"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="45db-c629-9c17-f27c" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
-                    <entryLink import="true" name="Laspistol Option" hidden="false" id="1539-eec3-f6a2-77af" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Guardsman" hidden="false" id="7f37-e750-2ae7-5cb9" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
                   <constraints>
                     <constraint type="min" value="14" field="selections" scope="parent" shared="true" id="22f2-7b84-a259-dea9"/>
@@ -36461,6 +36631,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="9852-55e2-9ce0-43f6" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="1302-b1c9-3af4-dbe2" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
                   <constraints>
@@ -36486,6 +36659,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="969c-d5dc-6c19-7e02" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink import="true" name="Heavy Weapons Team" hidden="false" id="1bc2-a230-c076-0a2d" type="selectionEntry" targetId="c4e3-2813-f26d-5991">
                   <constraints>
@@ -36494,6 +36670,57 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="5eeb-6d14-ad9f-1345" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
+                <entryLink import="true" name="Sergeant" hidden="false" id="5129-2bd2-302b-09e3" targetId="df22-5dc1-57dc-e347" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b78-a07f-5d32-31f3"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e5a-3eee-1a9d-81be"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Guardsman" id="fe32-62f1-24cd-dacb" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapons" id="4ff5-f306-4098-7e89" hidden="false" defaultSelectionEntryId="850c-9a99-1772-b54c">
+                      <entryLinks>
+                        <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="e7ae-3688-daae-3461" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                        <entryLink import="true" name="Lasgun" hidden="false" id="b678-3308-f74c-c17c" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+                          <profiles>
+                            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="dfe0-b5fe-0e5c-d38e">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcd6-5ed9-2fd5-e975"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Laspistol Option" hidden="false" id="bdc7-7185-fa72-a52f" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e256-d1ce-d50e-199d"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a3d1-e8ce-47b1-f47c"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="e256-d1ce-d50e-199d">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="5129-2bd2-302b-09e3" childId="a09c-6de4-e1c1-708a" shared="true" id="b9a1-3639-e772-b9b7" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="a3d1-e8ce-47b1-f47c">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="5129-2bd2-302b-09e3" childId="a09c-6de4-e1c1-708a" shared="true" id="da9b-75db-0955-a68b" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </entryLink>
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -37674,9 +37901,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       </infoGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="df22-5dc1-57dc-e347">
-      <infoLinks>
-        <infoLink name="Guardsman" id="7e23-35c5-c4f7-8e73" hidden="false" targetId="bd6a-9b65-19dc-e09a" type="profile"/>
-      </infoLinks>
       <comment>Infantry Squad</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Special Weapons Squad" hidden="false" id="de2d-24f2-e393-536d">
@@ -39132,10 +39356,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Malcador twin lascannon" hidden="false" id="99fd-2abf-8f4e-0e1b">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1908-7107-d452-9f7a"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d30-dcbb-7dd4-0857"/>
-                  </constraints>
                   <profiles>
                     <profile name="Malcador twin lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="cfaa-3549-0cd9-c639">
                       <characteristics>
@@ -39157,10 +39377,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Malcador battle cannon" hidden="false" id="e083-5434-2d34-7034">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="424b-2f3c-a45c-074f"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8348-1f88-e110-f4a5"/>
-                  </constraints>
                   <profiles>
                     <profile name="Malcador battle cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5eec-fb9e-a47a-0a89">
                       <characteristics>
@@ -39182,10 +39398,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Vanquisher battle cannon" hidden="false" id="0db7-ecac-0558-0879">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2bf-0171-165e-59c5"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ad9-c9e7-b250-ef0c"/>
-                  </constraints>
                   <profiles>
                     <profile name="Vanquisher battle cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e244-5587-28ae-1855">
                       <characteristics>
@@ -39749,6 +39961,932 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grenadier Squad" hidden="false" id="85df-9288-d060-adc4">
+      <modifiers>
+        <modifier type="set" value="120" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="10" field="selections" scope="85df-9288-d060-adc4" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="a907-b195-aea3-0e04" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Infantry Squad" hidden="false" id="8a32-5dfd-7653-939b" targetId="c07a-988a-8e7e-7697" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="e0d0-ae3b-c20c-609e" targetId="fa45-57e-930e-602b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="ca25-c184-cde0-fb06" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="3f3c-f846-deb7-2177" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Battleline" hidden="false" id="1f49-90ea-d55b-0d4a" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Grenades" hidden="false" id="57e3-c203-b4b2-a8fd" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Regiment" hidden="false" id="ffe3-6787-cb5e-8909" targetId="c8a1-fef-5569-61c9" primary="false"/>
+        <categoryLink name="Platoon" hidden="false" id="3097-0a9c-bc4f-a1d1" targetId="edff-c2d-8999-4f45" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="300a-68ad-4a2e-16bd" hidden="false" defaultSelectionEntryId="3167-a16a-6a56-858f">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 Sergeant and 9 Guardsmen" hidden="false" id="5d0f-2bbd-8e89-0b5c">
+              <entryLinks>
+                <entryLink import="true" name="Sergeant" hidden="false" id="e6a9-348e-bb5c-04c8" targetId="df22-5dc1-57dc-e347" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cb0-65a0-d472-89f7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf57-de0e-3e51-51bc"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="2e1f-d49d-f76b-5863" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                    <entryLink import="true" name="Laspistol Option" hidden="false" id="3a4b-9b01-22bf-4dcb" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman" hidden="false" id="87b7-6ee3-53e6-6e70" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
+                  <constraints>
+                    <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="9cfa-0511-0454-e9a3"/>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="fc3b-53d4-76bc-987c"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="4f1d-89ec-c301-79bb"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="bc1e-a764-fa5f-b75c"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="5f57-0129-f544-87a4" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aeb-fea7-8a33-0b05"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0840-f20b-66c8-dd02"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="8749-58bd-097c-2e28" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d37-40ef-ff26-5a59"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c1b-46d5-7802-7933"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="125f-7fb8-8814-bd33" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="365a-9b4a-34e4-5f4f" includeChildSelections="true"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Vox-caster" hidden="false" id="c0c9-8e37-357c-60fc" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37bb-2561-69b5-c227"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d18-e078-5469-22ac"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="1a9b-22d6-9cc7-8746" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3611-6829-92a3-5da3"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd5a-0a84-ebed-faee"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="680a-72b2-2366-169b" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="067f-35a6-0daa-7112"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a574-c8d4-fac7-6350"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="25fb-5ca1-b1d8-3117" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="1 Sergeant, 7 Guardsmen and 1 Heavy Weapons Team" hidden="false" id="6f6d-b0e8-9cc1-c37f">
+              <entryLinks>
+                <entryLink import="true" name="Sergeant" hidden="false" id="e62f-8f85-4c27-4972" targetId="df22-5dc1-57dc-e347" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4830-14b3-a17b-8c01"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6801-3ccb-e84a-5a08"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="f6bf-be92-8c54-ee4c" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                    <entryLink import="true" name="Laspistol Option" hidden="false" id="da6c-6f43-1da0-54a4" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman" hidden="false" id="a5c8-cb8e-625b-1c56" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
+                  <constraints>
+                    <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="ce2a-983e-9c97-14b3"/>
+                    <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="489d-ddfd-4e59-c4eb"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="c7fb-631e-2a6a-625d"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="60ab-f40c-d33f-c102"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="072f-35f9-149a-6715" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d28-6055-da84-9775"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="184f-c883-f290-f63e"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="e3f6-5b9b-9db9-ae49" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94fb-ae0e-8fff-5bae"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3759-579b-aa08-fbda"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="a7d4-89bc-45e1-733c" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c2-b14c-7e1b-3979" includeChildSelections="true"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="5941-6ec7-3cb7-ed3f" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3e-904b-f4e0-24fd"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4436-4b19-bb69-22ce"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="9682-0edb-e692-29cb" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4f4-6349-9286-bf1b"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04d4-ffa8-ceab-faaf"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Vox-caster" hidden="false" id="2b6d-967d-144c-fd28" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f549-3318-2a6a-0856"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bf2-6171-5d2b-f737"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="4c83-ca78-4710-791a" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
+                <entryLink import="true" name="Heavy Weapons Team" hidden="false" id="8cf6-8df5-7e10-aea8" type="selectionEntry" targetId="c4e3-2813-f26d-5991">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94a6-8518-25e5-7f89"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d5d-f82c-2b59-f699"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 Sergeants and 18 Guardsmen" hidden="false" id="3f7d-b336-0b3a-3477">
+              <entryLinks>
+                <entryLink import="true" name="Sergeant" hidden="false" id="1dfb-3a99-ea97-4c88" type="selectionEntry" targetId="df22-5dc1-57dc-e347">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="62c6-9264-4987-8928"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a65d-52aa-9f3e-1735"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="890f-b122-0e99-93db" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                    <entryLink import="true" name="Laspistol Option" hidden="false" id="31f5-6d6f-70d9-e427" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman" hidden="false" id="5ed1-2b5e-3557-dcf5" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
+                  <constraints>
+                    <constraint type="min" value="18" field="selections" scope="parent" shared="true" id="b53a-1883-43e1-25b9"/>
+                    <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="a69f-2057-6705-8caf"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="33ac-db60-ebf2-6e1e"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="d33e-0ad4-4f2a-ca3e"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="8d18-6a67-2567-4687" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0524-4e1f-0a85-7ebc"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4d9-89ee-bf2c-f1ed"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="ac4f-187a-46e5-3ba6" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b92-9d30-25da-397c"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d59-868e-28f1-260f"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="d767-450f-73a7-4473" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9759-dcc4-c753-c72f" includeChildSelections="true"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Vox-caster" hidden="false" id="9a0f-3671-c918-ebee" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa6b-7266-724b-d893"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a57-db88-4d75-a28f"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="2638-78ee-bf41-9dca" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52e9-bfc3-e74a-3862"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1188-99a0-0712-7b40"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="b24e-9843-8407-7189" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ec2-51db-0d5c-e170"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="390b-241c-9566-bad3"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="8a04-52ea-f3f1-d442" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 Sergeants, 16 Guardsmen and 1 Heavy Weapons Team" hidden="false" id="ca80-66a8-8d25-e0ae">
+              <entryLinks>
+                <entryLink import="true" name="Guardsman" hidden="false" id="6eb6-6d44-52f4-927d" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
+                  <constraints>
+                    <constraint type="min" value="16" field="selections" scope="parent" shared="true" id="7d30-6a92-a1da-67d1"/>
+                    <constraint type="max" value="16" field="selections" scope="parent" shared="true" id="2615-9442-a708-70b8"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="c093-03d8-dd26-84a2"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="2475-8bd7-23c0-3057"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="921c-d470-082f-3caf" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1007-08cf-ab4a-46aa"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06b1-ef25-3189-afd2"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="7349-650a-5bee-16f7" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29d0-e0ca-e861-f17d"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3660-51d3-b98c-e25b"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="b5be-3401-70ae-8e68" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7b15-55f5-f8fa-0634" includeChildSelections="true"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Vox-caster" hidden="false" id="96fe-8cb6-400a-0376" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7579-05e9-8f83-d852"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="112d-fd23-8595-0f3b"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="d079-01c7-e137-2a38" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="542a-2388-872b-0c36"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="921e-8d65-cb25-f608"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="ebf4-08e5-3e91-55df" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6edf-d22c-26a6-5511"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b95-6939-080c-32dc"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="8c85-f7a4-683f-a8d7" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
+                <entryLink import="true" name="Heavy Weapons Team" hidden="false" id="5d41-8a3e-ac01-137a" type="selectionEntry" targetId="c4e3-2813-f26d-5991">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce19-e1d6-c5ef-cc91"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12cb-0672-ccc6-809b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sergeant" hidden="false" id="0814-fea2-70dd-77f6" type="selectionEntry" targetId="df22-5dc1-57dc-e347">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5a8e-0030-e9c1-f542"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6634-dba1-472d-bc40"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="502f-d943-365a-a324" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                    <entryLink import="true" name="Laspistol Option" hidden="false" id="1d8d-fe66-61e8-59fb" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 Sergeants, 14 Guardsmen and 2 Heavy Weapons Team" hidden="false" id="6d94-c1de-7898-b026">
+              <entryLinks>
+                <entryLink import="true" name="Sergeant" hidden="false" id="129c-649e-98ba-96fb" type="selectionEntry" targetId="df22-5dc1-57dc-e347">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="23f4-0a92-0842-5e41"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="11ca-9b99-8061-95b2"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="bdec-5e6d-5a38-7831" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
+                    <entryLink import="true" name="Laspistol Option" hidden="false" id="7d31-2008-f630-82a4" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman" hidden="false" id="024f-a477-bac4-c154" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
+                  <constraints>
+                    <constraint type="min" value="14" field="selections" scope="parent" shared="true" id="4dbb-4d11-2afc-9c92"/>
+                    <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="ffc8-195d-66a2-3d1d"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="d1ad-a063-1538-67c5"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="9cfa-0511-0454-e9a3">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="47cc-2173-cdbd-c86c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="fc3b-53d4-76bc-987c">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="5205-1baa-b09e-f1a8" shared="true" roundUp="false" id="fef7-63d2-4d40-f5c7"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="018b-cfea-f067-657e" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6526-f326-fdb9-3ada"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9172-e3eb-78cd-5d2d"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="9008-1c8d-2414-5daf" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1573-12e2-e119-8bd5"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7aa9-6418-457c-e939"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Vox Caster" hidden="false" id="44aa-c9e5-5bc4-d823" type="selectionEntry" targetId="47cc-2173-cdbd-c86c">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e2ff-f723-eba7-339a" includeChildSelections="true"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Vox-caster" hidden="false" id="0374-97e0-5d28-3fd6" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="203b-4147-ad9f-39cc"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ce1-48a6-4cd0-b83b"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="2dec-e8e7-cd2e-d820" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63a1-904a-805e-1d77"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4577-64ad-e449-ef8f"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="dac7-026f-7db5-ddcd" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="276b-5340-49ca-bc83"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ddf8-1789-080b-0e0c"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Heavy Weapons Team" hidden="false" id="01ed-29b3-2fd3-22f6" type="selectionEntry" targetId="c4e3-2813-f26d-5991">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="09ec-459b-3b2e-f2e0"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="88e7-8a64-4e95-e1b1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Guardsman w/ Special Weapon" hidden="false" id="5679-3813-499c-482a" type="selectionEntryGroup" targetId="5205-1baa-b09e-f1a8"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40c3-6c53-5903-a3ab"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce17-cf78-ab97-0554"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Defenders of Humanity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2bfb-9e83-3bd1-0e06">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets this unit, if this unit is within range of an objective marker you control, models in this unit have the Benefit of Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="a907-b195-aea3-0e04">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Unit Composition" id="5af8-7118-85d2-8ae8" hidden="false" type="profile" targetId="b592-33bc-a25d-b3a9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Honus Infantry Squad" hidden="false" id="18f2-1b51-83d1-cece">
+      <modifiers>
+        <modifier type="set" value="170" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="10" field="selections" scope="18f2-1b51-83d1-cece" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="fa45-57e-930e-602b" id="8130-3edf-35fe-4e2b" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="0285-c998-682b-250c" primary="false" name="Imperium"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="f54a-1d2f-b5f0-1a8e" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="c08d-ca65-f384-784b" primary="true" name="Battleline"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="81ec-6cd3-70f4-81ff" primary="false" name="Grenades"/>
+        <categoryLink targetId="c8a1-fef-5569-61c9" id="38ab-ff51-9796-ce01" primary="false" name="Regiment"/>
+        <categoryLink targetId="edff-c2d-8999-4f45" id="824c-109f-2acd-6aa1" primary="false" name="Platoon"/>
+        <categoryLink name="Honus Infantry Squad" hidden="false" id="ce5a-bd1d-25e2-d332" targetId="7945-92de-fe3b-1651" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="d188-1190-7ada-b665" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="5fa5-9568-23cb-bfb2" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="6476-6138-19ef-6f7d" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="930f-4f59-a950-804c" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" hidden="false" id="8a4c-0b3e-a8c3-f4b4" defaultSelectionEntryId="5a97-68a8-6baf-ce48" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 Sergeant and 9 Troopers" hidden="false" id="5a97-68a8-6baf-ce48">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="9 Troopers" id="c49e-06f0-166a-5114" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="a405-4ea5-3b64-ed74" includeChildSelections="false"/>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6fe5-5272-d0d5-eac6" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Honus Squad Trooper" hidden="false" id="31fc-a9f0-a1fd-7fb6">
+                      <infoLinks>
+                        <infoLink name="Honus Infantry" id="f88b-e1f5-4f0b-9bf5" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="f958-d7fa-bd62-89cb" includeChildSelections="false"/>
+                        <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6956-d2e6-1bf3-29a2" includeChildSelections="false"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Lasrifle" hidden="false" id="8bc8-d5ae-f304-cdf7" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="259c-7901-55b2-6524"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="072d-1895-6893-9da6"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="a6e4-ebbf-c6c7-a539" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a850-81e4-d93c-2b8e"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34db-6158-1437-430e"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Honus Trooper w/Vox Caster" hidden="false" id="a87a-3d8f-6965-d7da">
+                      <entryLinks>
+                        <entryLink import="true" name="Vox-caster" hidden="false" id="f619-3513-988f-7cf1" type="selectionEntry" targetId="6bfd-18be-90d3-2398"/>
+                        <entryLink import="true" name="Lasrifle" hidden="false" id="cf39-4f4a-80e3-f395" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9e8-62c1-af0f-2a0d"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76bf-bc9f-cfe8-7626"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="8617-b269-85eb-63ad" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7215-fd71-72f3-200c"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73e8-cca5-24bf-3190"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1094-a1b7-d007-a4b0"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Honus Infantry" id="0c65-20b9-7c10-f62e" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Honus Squad Sergeant" hidden="false" id="3e79-3b50-ca7c-45b5">
+                  <infoLinks>
+                    <infoLink name="Honus Infantry" id="f9fb-22a9-02f6-2ab3" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37c8-b89f-12fc-8fde"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d413-99ad-939b-b7e4"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon" id="c638-979a-4760-3006" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="9ac3-8b69-6c9a-046d" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8">
+                          <entryLinks>
+                            <entryLink import="true" name="Power fist" hidden="false" id="21d5-94d9-3dcb-8e8a" type="selectionEntry" targetId="f054-ef04-f991-1ccb"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Lasrifle" hidden="false" id="f3ef-e4cd-0475-d0d8" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fe3-f6d7-04ee-8fcf"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="48bc-05eb-cafa-8b40">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </entryLink>
+                        <entryLink import="true" name="Laspistol Option" hidden="false" id="f104-4b20-da0a-93f5" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier type="set" value="1" field="998e-10f4-0586-362d">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="3e79-3b50-ca7c-45b5" childId="f3ef-e4cd-0475-d0d8" shared="true" id="69d6-95d8-1b93-eb23" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="0ec9-8c63-5fdf-9e52">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="3e79-3b50-ca7c-45b5" childId="f3ef-e4cd-0475-d0d8" shared="true" id="aa0b-7a42-d584-5b04" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="998e-10f4-0586-362d"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0ec9-8c63-5fdf-9e52"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="1 Sergeant and 19 Troopers" hidden="false" id="cf36-2c6d-9cee-e5b7">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="19 Troopers" id="b0af-44ee-b3dd-80cc" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="19" field="selections" scope="parent" shared="true" id="b5e9-98c4-9e6a-1891" includeChildSelections="false"/>
+                    <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="a6a4-2190-ab94-0e83" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Honus Squad Trooper" hidden="false" id="9dfb-ca18-5a9e-79e3">
+                      <infoLinks>
+                        <infoLink name="Honus Infantry" id="7bc8-2483-9af0-b743" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="18" field="selections" scope="parent" shared="true" id="cea3-7079-90dc-931f" includeChildSelections="false"/>
+                        <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="599c-492b-5c2b-877e" includeChildSelections="false"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Lasrifle" hidden="false" id="9d15-0aba-9fe0-73c4" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4932-e5f2-216c-951d"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f31e-10dc-ba61-f1d5"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="83ae-a731-8fce-2930" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2770-ce70-020f-f123"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2892-c4c0-2aad-917e"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Honus Trooper w/Vox Caster" hidden="false" id="4c6b-97cc-c55e-ed8e">
+                      <entryLinks>
+                        <entryLink import="true" name="Vox-caster" hidden="false" id="e934-d785-694d-0850" type="selectionEntry" targetId="6bfd-18be-90d3-2398"/>
+                        <entryLink import="true" name="Lasrifle" hidden="false" id="4448-cc25-839a-86e3" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dacc-628d-d549-7c92"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5106-b58a-6a94-bffc"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="74d5-adff-d3de-571c" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abf2-7c5a-62c4-1ed2"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c19a-2f01-f713-eb94"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1c8-07c7-7d7c-715f"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Honus Infantry" id="1171-5b80-0622-6d1b" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Honus Squad Trooper" id="f648-bd46-809f-9412" hidden="false"/>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Honus Squad Sergeant" hidden="false" id="e7e8-a45e-4902-1393">
+                  <infoLinks>
+                    <infoLink name="Honus Infantry" id="b6ee-5bfc-6e6b-dd42" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03e-dc4a-8e73-4cd7"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8852-671e-ac31-bc93"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon" id="1fee-0f8b-f53d-70eb" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="f54e-e1b6-0982-dcfb" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8">
+                          <entryLinks>
+                            <entryLink import="true" name="Power fist" hidden="false" id="c3d6-01aa-e4d7-65c8" type="selectionEntry" targetId="f054-ef04-f991-1ccb"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Lasrifle" hidden="false" id="7ecd-5211-6910-e544" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15ca-41ab-6740-bb80"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="13f0-8ed6-4b6a-a061">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </entryLink>
+                        <entryLink import="true" name="Laspistol Option" hidden="false" id="5062-ec2d-8fa4-ab75" type="selectionEntryGroup" targetId="b046-96fe-4014-fe33"/>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier type="set" value="1" field="52dc-0fdb-09f6-3cb0">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="e7e8-a45e-4902-1393" childId="7ecd-5211-6910-e544" shared="true" id="3c89-4a53-c2af-49f3" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="0af5-8050-08ff-c44a">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="e7e8-a45e-4902-1393" childId="7ecd-5211-6910-e544" shared="true" id="3b25-1d40-c697-c736" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="52dc-0fdb-09f6-3cb0"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0af5-8050-08ff-c44a"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b19c-9cd1-ed64-7377"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="949f-e2f0-06ff-355f"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Bayonet Wall" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e9c-7a4c-c743-7583">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While every model in this unit is in base contact with at least two other models, models in this unit have the fights first ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unit Composition" hidden="false" id="54ff-c0bf-7d01-e9e1" type="profile" targetId="b592-33bc-a25d-b3a9"/>
+        <infoLink name="Fights First" id="f9c0-afc3-119a-f057" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="6056-f7d5-19a0-6266" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="5fa5-9568-23cb-bfb2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="6476-6138-19ef-6f7d">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="930f-4f59-a950-804c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="5fa5-9568-23cb-bfb2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="d0de-45ce-e737-b6be" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lasrifle" hidden="false" id="5c9b-f64c-1e4d-eeb7">
+      <profiles>
+        <profile name="Lasrifle - Volley" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="29f3-a8f4-599b-456a">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lasrifle - Blast-charger" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="85f9-3dcc-6840-55f2">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" hidden="false" type="rule" id="7071-7318-07a5-d835" targetId="c5c8-8b58-b8b6-7786"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Aegis Defence Line" hidden="false" id="a56a-23f-9ea1-d8ee"/>
@@ -39910,6 +41048,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Commander Chenkov" id="76ce-1884-e35a-8765" hidden="false"/>
     <categoryEntry name="Captain Al&apos;Rahem" id="754b-c60f-380e-de51" hidden="false"/>
     <categoryEntry name="Mogul Kamir" id="e0c5-e4d6-8c19-ef49" hidden="false"/>
+    <categoryEntry name="Honus Infantry Squad" id="7945-92de-fe3b-1651" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -39932,20 +41071,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While one or more **^^Officer^^** models are in the same unit as this model, those **^^Officer^^** models have the Feel No Pain 4+ ability</characteristic>
       </characteristics>
     </profile>
-    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bd6a-9b65-19dc-e09a">
-      <characteristics>
-        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-      </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
-    </profile>
-    <profile name="Shock Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ea09-3364-e6cd-2ffe">
+    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ea09-3364-e6cd-2ffe">
       <characteristics>
         <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
         <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
@@ -40228,6 +41354,19 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+      </attributes>
+    </profile>
+    <profile name="Honus Infantry" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d239-6d1e-6ac5-cf4d">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
       <attributes>
         <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
@@ -43484,7 +44623,7 @@ In addition:
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Guardsman w/ Plasma Gun" hidden="false" id="ccea-5d73-4322-a603">
           <infoLinks>
-            <infoLink name="Guardsman" id="ac9e-24d3-3ff0-e51a" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
+            <infoLink name="Guardsman" id="a690-bba5-23b4-3710" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" id="c7f4-309b-f59a-718a" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
@@ -43515,7 +44654,7 @@ In addition:
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsman w/ Meltagun" hidden="false" id="7db7-214c-393e-3e14">
           <infoLinks>
-            <infoLink name="Guardsman" id="d6e4-67c8-1fd2-2f0a" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
+            <infoLink name="Guardsman" id="652e-2831-fbc4-1ed9" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" id="5e6c-ab18-02f5-0bcb" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
@@ -43546,7 +44685,7 @@ In addition:
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsman w/ Grenade Launcher" hidden="false" id="9a2e-f807-5086-8394">
           <infoLinks>
-            <infoLink name="Guardsman" id="3f63-c8ce-3373-de11" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
+            <infoLink name="Guardsman" id="4429-fe7d-b856-fefa" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" id="e23b-9ba4-ec2a-6ad2" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
@@ -43577,7 +44716,7 @@ In addition:
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsman w/ Flamer" hidden="false" id="28e2-96eb-68d7-c330">
           <infoLinks>
-            <infoLink name="Guardsman" id="8e2c-aea5-bc62-a966" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
+            <infoLink name="Guardsman" id="8cea-e426-7a8b-5890" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" id="3d79-202d-84d6-43e7" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
@@ -43608,7 +44747,7 @@ In addition:
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsman w/ Sniper Rifle" hidden="false" id="d1ed-1248-1c4b-4f49">
           <infoLinks>
-            <infoLink name="Guardsman" id="0a12-5451-74fc-3b0b" hidden="false" type="profile" targetId="bd6a-9b65-19dc-e09a"/>
+            <infoLink name="Guardsman" id="858c-ffba-5ed6-11f7" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Close combat weapon" hidden="false" id="298d-e8bb-f090-8ce1" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
@@ -43656,12 +44795,10 @@ In addition:
       <entryLinks>
         <entryLink import="true" name="Laspistol" hidden="false" id="b0c4-3796-3a9a-cbc2" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
         <entryLink import="true" name="Bolt pistol" hidden="false" id="d626-4328-a58b-8f78" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
-        <entryLink import="true" name="Boltgun" hidden="false" id="f86f-813a-e1a1-b3d6" type="selectionEntry" targetId="1cd4-7b86-8d9d-bb46"/>
         <entryLink import="true" name="Plasma pistol" hidden="false" id="e752-5964-cbf0-f308" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f2f-3b83-e009-96f6"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba72-a8bf-e884-7677"/>
       </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sergeant Melee Option" id="4236-4a39-e7dd-9ee8" hidden="false">
@@ -43670,7 +44807,6 @@ In addition:
         <entryLink import="true" name="Power weapon" hidden="false" id="b908-c438-f167-eb13" type="selectionEntry" targetId="abb5-c410-8f2a-e60a"/>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61f2-aad8-de59-77d0"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87fa-077f-1e52-bed3"/>
       </constraints>
     </selectionEntryGroup>
