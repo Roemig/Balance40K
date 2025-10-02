@@ -1006,6 +1006,8 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Leman Russ Mars Alpha Strike Tank" hidden="false" id="6188-8321-fea1-3c25" type="selectionEntry" targetId="868a-5db5-96e5-20f7"/>
+    <entryLink import="true" name="Leman Russ Mars Alpha Support Tank" hidden="false" id="a3d5-98b2-8a39-f420" type="selectionEntry" targetId="9de4-78c0-d8b5-a402"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink id="e373-3c0a-1185-467a" name="Imperium - Astra Militarum - Library" targetId="5a44-f048-114b-e3ff" type="catalogue" importRootEntries="false"/>
