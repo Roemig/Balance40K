@@ -40538,7 +40538,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6fe5-5272-d0d5-eac6" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Honus Squad Trooper" hidden="false" id="31fc-a9f0-a1fd-7fb6">
+                    <selectionEntry type="model" import="true" name="Honus Squad Trooper" hidden="false" id="31fc-a9f0-a1fd-7fb6">
                       <infoLinks>
                         <infoLink name="Honus Infantry" id="f88b-e1f5-4f0b-9bf5" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
                       </infoLinks>
@@ -40561,7 +40561,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Honus Trooper w/Vox Caster" hidden="false" id="a87a-3d8f-6965-d7da">
+                    <selectionEntry type="model" import="true" name="Honus Trooper w/Vox Caster" hidden="false" id="a87a-3d8f-6965-d7da">
                       <entryLinks>
                         <entryLink import="true" name="Vox-caster" hidden="false" id="f619-3513-988f-7cf1" type="selectionEntry" targetId="6bfd-18be-90d3-2398"/>
                         <entryLink import="true" name="Lasrifle" hidden="false" id="cf39-4f4a-80e3-f395" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
@@ -40588,7 +40588,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honus Squad Sergeant" hidden="false" id="3e79-3b50-ca7c-45b5">
+                <selectionEntry type="model" import="true" name="Honus Squad Sergeant" hidden="false" id="3e79-3b50-ca7c-45b5">
                   <infoLinks>
                     <infoLink name="Honus Infantry" id="f9fb-22a9-02f6-2ab3" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
                   </infoLinks>
@@ -40653,7 +40653,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="a6a4-2190-ab94-0e83" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Honus Squad Trooper" hidden="false" id="9dfb-ca18-5a9e-79e3">
+                    <selectionEntry type="model" import="true" name="Honus Squad Trooper" hidden="false" id="9dfb-ca18-5a9e-79e3">
                       <infoLinks>
                         <infoLink name="Honus Infantry" id="7bc8-2483-9af0-b743" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
                       </infoLinks>
@@ -40676,7 +40676,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Honus Trooper w/Vox Caster" hidden="false" id="4c6b-97cc-c55e-ed8e">
+                    <selectionEntry type="model" import="true" name="Honus Trooper w/Vox Caster" hidden="false" id="4c6b-97cc-c55e-ed8e">
                       <entryLinks>
                         <entryLink import="true" name="Vox-caster" hidden="false" id="e934-d785-694d-0850" type="selectionEntry" targetId="6bfd-18be-90d3-2398"/>
                         <entryLink import="true" name="Lasrifle" hidden="false" id="4448-cc25-839a-86e3" type="selectionEntry" targetId="5c9b-f64c-1e4d-eeb7">
@@ -40704,7 +40704,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <selectionEntryGroup name="Honus Squad Trooper" id="f648-bd46-809f-9412" hidden="false"/>
               </selectionEntryGroups>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honus Squad Sergeant" hidden="false" id="e7e8-a45e-4902-1393">
+                <selectionEntry type="model" import="true" name="Honus Squad Sergeant" hidden="false" id="e7e8-a45e-4902-1393">
                   <infoLinks>
                     <infoLink name="Honus Infantry" id="b6ee-5bfc-6e6b-dd42" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
                   </infoLinks>
