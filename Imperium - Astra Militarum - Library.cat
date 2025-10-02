@@ -15168,15 +15168,18 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <profile name="Multi-laser" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5e8b-c2da-d7b3-7e2b">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Lethal Hits" id="d8bb-351d-924f-8047" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="4493-24dd-c551-e327">
       <profiles>
@@ -42822,6 +42825,7 @@ Onslaught - 4</characteristic>
             <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="5a2e-1423-5585-54bb" targetId="51a8-ffe2-928f-3f50"/>
             <entryLink import="true" name="Heavy flamer" hidden="false" type="selectionEntry" id="e73c-c3e7-9241-5226" targetId="6fef-cbbd-be33-44a4"/>
             <entryLink import="true" name="Autocannon" hidden="false" id="3648-59ec-a40f-13f0" type="selectionEntry" targetId="4a22-4d7b-aea8-75f0"/>
+            <entryLink import="true" name="Multi-laser" hidden="false" id="cd4d-f75b-ef1f-5169" type="selectionEntry" targetId="866e-e876-1f61-2022"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Pintle Mount" id="688e-7a57-c258-43cd" hidden="false" defaultSelectionEntryId="none">

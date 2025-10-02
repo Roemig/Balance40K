@@ -11748,7 +11748,7 @@ by 1.</characteristic>
         <profile name="Assault Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="229a-6aa7-98d9-234d">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">9</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
@@ -21350,7 +21350,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <profile name="Twin Assault Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e305-23e6-6fd3-ac5f">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">9</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
@@ -32792,7 +32792,7 @@ You can attach this model to one of the above units even if one Character model
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Relic Razorback [Legends]" hidden="false" id="2a4c-d1a-95c9-f4cf">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -45591,8 +45591,7 @@ per turn.</characteristic>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="4bbe-c6d7-53c9-a972" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="2f57-482f-e59d-0974" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="4bbe-c6d7-53c9-a972" primary="true" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="d4dd-97d2-f317-85bf" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="7fdf-2a71-afba-e759" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="60b9-44b0-07f9-074d" primary="false" name="Faction: Adeptus Astartes"/>
