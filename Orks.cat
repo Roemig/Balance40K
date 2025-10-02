@@ -11977,6 +11977,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         <categoryLink targetId="ba27-989e-951a-8cf8" id="ca12-6c30-a520-5890" primary="false" name="Wazbom Blastajet"/>
         <categoryLink targetId="56cc-5f43-2403-8da0" id="b832-3678-1b7c-b35b" primary="false" name="Faction: Orks"/>
         <categoryLink targetId="fe8b-9078-9a3d-fed" id="f676-a8a2-6739-9493" primary="false" name="Speed Freeks"/>
+        <categoryLink name="Mek" hidden="false" id="e1f6-a105-7095-48ea" targetId="f802-1e3a-d9ce-aa99" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
@@ -22647,7 +22648,7 @@ GRETCHIN units from your army gain the BATTLELINE keyword.</description>
         <selectionEntry type="upgrade" import="true" name="Kult of Speed" hidden="false" id="b404-44f-e9b4-7fe2">
           <rules>
             <rule name="Adrenaline Junkies" id="800f-b674-d975-c458" hidden="false">
-              <description>**^^Speed Freeks^^** units from your army which have moved at least 8&quot; during the movement phase gain **^^Krumpspeed!^^** for the duration of the battle round. **^^Krumpspeed!^^** grants +1 to hit and wound rolls. During the Waagh, **^^Speed Freeks^^** units are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.</description>
+              <description>**^^Speed Freeks^^** units from your army which have moved at least 8&quot; during the movement phase gain **^^Krumpspeed!^^** for the duration of the battle round. While **^^Krumpspeed!^^** is active re-roll hit and wound rolls of 1. During the Waagh, **^^Speed Freeks^^** units are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.</description>
             </rule>
           </rules>
         </selectionEntry>
