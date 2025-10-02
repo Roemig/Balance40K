@@ -14881,7 +14881,12 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </infoGroup>
       </infoGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -20874,6 +20879,385 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       </profiles>
       <comment>A3 S6</comment>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="&apos;Ard Boyz" hidden="false" id="085b-4179-ee4a-210e">
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="7cc9-b42b-35b2-4bff"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5f6d-15d3-1a33-3cce" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="cc67-3024-cea4-f359" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="47fb-074c-f5c1-45a5" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Extra &apos;Ard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4f8b-8cd0-dbc2-9c98">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, when this unit is selected as a target by an enemy unit, subtract 1 from the wound rolls of these attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bodyguard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5c61-07fd-1f58-7a77">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit has a Starting Strength of 20, you can attach up to two Leader units to it instead of one (but only if one of those is a WARBOSS model). If you do, and this unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="263e-af42-4492-c037" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="c54f-1023-6f26-db5e" primary="true" name="Battleline"/>
+        <categoryLink targetId="5aac-7b7-bf84-cae8" id="3f1e-1e1d-19b8-0d40" primary="false" name="Mob"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="0405-c797-0847-faf9" primary="false" name="Grenades"/>
+        <categoryLink targetId="1c75-96a5-5598-2cd" id="47f8-9e70-f6b5-22cb" primary="false" name="Boyz"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="638d-8854-1a9d-315a" primary="false" name="Faction: Orks"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="5353-df4a-4c1b-691a" targetId="37c-6ef9-277-9091"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="&apos;Ard Boss Nob" id="cb2b-20c1-f3c3-ca0c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="&apos;Ard Boss Nob" hidden="false" id="4a9b-a767-72a3-03fb">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Big Choppa and Slugga" id="f79a-6171-e4c9-dd9c" hidden="false" defaultSelectionEntryId="9d77-2604-83bf-8c51">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Big choppa and slugga" hidden="false" id="d48c-29c8-e059-3bf2">
+                      <entryLinks>
+                        <entryLink import="true" name="Slugga" hidden="false" id="ceb3-5add-861b-1555" type="selectionEntry" targetId="752e-cd9b-4721-f0b0">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e44-9a72-9c14-fce5"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba73-67ae-660e-b5b7"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="4e50-2f0c-13ac-8f6e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Big choppa" hidden="false" id="6c50-910a-3bda-ae3a" type="selectionEntry" targetId="29e9-cd9b-66bd-fe60">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2902-54f6-18c2-8419"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca9d-27b9-0036-ee00"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="9de9-5d57-8dfc-b352" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Power klaw and slugga" hidden="false" id="40a0-11b8-c7d3-1950">
+                      <entryLinks>
+                        <entryLink import="true" name="Slugga" hidden="false" id="8807-9702-aa13-0db5" type="selectionEntry" targetId="752e-cd9b-4721-f0b0">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffba-9ada-f7f3-eee5"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25ce-9b19-b13e-6516"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="92b6-a4b6-8c7c-d9bb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Power klaw" hidden="false" id="3533-5150-7a73-8842" type="selectionEntry" targetId="ee65-6385-44ba-3758">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a11-7961-fc3d-8727"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f918-17b6-ae6d-07a2"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="35d1-5214-d915-9f7d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Kombi-weapon and close combat weapon" hidden="false" id="2dee-01da-c0f9-d281">
+                      <entryLinks>
+                        <entryLink import="true" name="Kombi-weapon" hidden="false" id="1b81-de86-b5f3-e179" type="selectionEntry" targetId="ac6f-9310-e9ac-678">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9827-8d31-15c7-9730"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c23-247a-78cc-258c"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="f5ab-4633-568c-233a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="28d7-5c4a-1bfb-650f" type="selectionEntry" targetId="0534-7359-3392-9d1b">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="af04-3301-2a27-499e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6392-f898-36db-3158"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf7d-a3d7-21d7-827e"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26bb-3fa2-7a70-65f9"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bb-683a-fa75-2158"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="764b-7b9a-c19e-5925"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="817b-9007-9fa7-6755"/>
+              </constraints>
+              <profiles>
+                <profile name="&apos;Ard Boss Nob" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="11fc-aa2b-12e9-8de7">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                  <attributes>
+                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                  </attributes>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="&apos;Ard Boyz 9-19" id="dec0-a3fa-0ec1-df46" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="&apos;Ard Boy w/ Shoota and close combat weapon" hidden="false" id="8b62-308f-938d-fa54">
+              <constraints>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="63a9-3f1d-5dd3-9348"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shoota" hidden="false" id="5315-8561-6021-08e2" type="selectionEntry" targetId="b2ed-fcb0-cba1-63c4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f81-b46a-af18-50ea"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e02c-8d4c-63a4-9971"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="a78b-a663-e8de-e867" type="selectionEntry" targetId="0534-7359-3392-9d1b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6df4-7461-7924-4ca5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd30-fbe8-7db3-3045"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="&apos;Ard Boy" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1846-93ad-891d-328d">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                  <attributes>
+                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                  </attributes>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="&apos;Ard Boy w/ Slugga and choppa" hidden="false" id="461c-794d-d752-3bd4">
+              <entryLinks>
+                <entryLink import="true" name="Choppa" hidden="false" id="7cd8-ffcf-43bd-1dec" type="selectionEntry" targetId="e542-78f9-46d8-6c33">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89af-8fcf-680f-7742"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c134-e775-4c98-37e9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Slugga" hidden="false" id="74eb-a5d2-c66c-9d84" type="selectionEntry" targetId="e71d-1472-87d-b4fa">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ece-9f2f-3857-197a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f69a-8b03-acd1-5b9b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="d764-9cfb-a6e4-ee85"/>
+              </constraints>
+              <profiles>
+                <profile name="&apos;Ard Boy" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="852b-2f39-e93a-3fbe">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                  <attributes>
+                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                  </attributes>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Special Weapons" id="3fc8-3674-97f4-6779" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="&apos;Ard Boy w/ Big shoota and close combat weapon" hidden="false" id="7a7e-c690-47a7-8b89">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="67e1-3726-2ced-23a9"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big shoota" hidden="false" id="c29f-ebee-380a-6bbe" type="selectionEntry" targetId="1fa0-d99a-154f-ffd8" collective="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4003-9760-f606-81ed"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4fc-255f-2ca5-a6e8"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="a5d7-d12c-0dc9-4e8b" type="selectionEntry" targetId="0534-7359-3392-9d1b">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="20ae-f34c-f69b-b5d9"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f88-d54c-6c52-b638"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <profiles>
+                    <profile name="&apos;Ard Boy" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a6f8-fa24-b485-f807">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                      <attributes>
+                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                      </attributes>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="&apos;Ard Boy w/ Rokkit launcha and close combat weapon" hidden="false" id="4382-cbb0-fa3e-2db9">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="718d-c4da-6e41-2b58"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Rokkit launcha" hidden="false" id="b91c-c02c-f458-0509" type="selectionEntry" targetId="80bc-5c89-4125-2253" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65f9-a77d-8b08-48cc"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2719-d280-0398-4d2b"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="6431-4191-5f9d-3fab" type="selectionEntry" targetId="0534-7359-3392-9d1b">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99e6-b794-9103-f573"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bde-eb98-fe2c-dc85"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <profiles>
+                    <profile name="&apos;Ard Boy" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="eb8a-79d7-3eb0-ec6c">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                      <attributes>
+                        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                      </attributes>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9ad-6c96-1e2d-99db" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="e9ad-6c96-1e2d-99db">
+                  <conditions>
+                    <condition type="atLeast" value="20" field="selections" scope="085b-4179-ee4a-210e" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="f388-a38b-a9f9-6f32"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="60f1-b141-27c9-92eb"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="10" field="selections" scope="085b-4179-ee4a-210e" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="750d-5544-c34d-0992" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Crusade modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="2" field="5f6d-15d3-1a33-3cce">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="cc67-3024-cea4-f359">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="6" field="47fb-074c-f5c1-45a5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <rules>
     <rule name="Waaagh!" hidden="false" id="37c-6ef9-277-9091">
@@ -23797,6 +24181,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <entryLink import="true" name="Battlewagon" hidden="false" type="selectionEntry" id="9af5-6820-1ff2-6c01" targetId="306a-b2ac-aaf1-9a7c"/>
     <entryLink import="true" name="Beast Snagga Boyz" hidden="false" type="selectionEntry" id="fd9d-87f3-1895-3470" targetId="b7c3-d00e-daf2-76fb"/>
     <entryLink import="true" name="Beastboss" hidden="false" type="selectionEntry" id="2f80-26a6-9486-b348" targetId="5a5d-c5a4-39b8-4a3f"/>
+    <entryLink import="true" name="&apos;Ard Boyz" hidden="false" type="selectionEntry" id="4d82-8ba8-05fb-4fe4" targetId="085b-4179-ee4a-210e"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" id="2be6-f2b9-f73c-82b1" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
