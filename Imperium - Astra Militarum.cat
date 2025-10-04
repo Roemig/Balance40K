@@ -687,7 +687,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Elysian Drop Sentinel [Legends]" hidden="false" type="selectionEntry" id="d3b9-1474-30d5-dfc1" targetId="badd-6133-a469-613c">
+    <entryLink import="true" name="Elysian Drop Sentinels [Legends]" hidden="false" type="selectionEntry" id="d3b9-1474-30d5-dfc1" targetId="e0f5-59e7-dd56-1def">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -813,7 +813,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Elysian Sniper Squad [Legends]" hidden="false" type="selectionEntry" id="7300-2798-b3a1-cc45" targetId="d4da-78a0-ef0-1e7e">
+    <entryLink import="true" name="Heavy Weapons Squad" hidden="false" type="selectionEntry" id="7300-2798-b3a1-cc45" targetId="9e09-0615-9551-203e">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -1008,6 +1008,7 @@
     </entryLink>
     <entryLink import="true" name="Leman Russ Mars Alpha Strike Tank" hidden="false" id="6188-8321-fea1-3c25" type="selectionEntry" targetId="868a-5db5-96e5-20f7"/>
     <entryLink import="true" name="Leman Russ Mars Alpha Support Tank" hidden="false" id="a3d5-98b2-8a39-f420" type="selectionEntry" targetId="9de4-78c0-d8b5-a402"/>
+    <entryLink import="true" name="Elysian Sniper Squad" hidden="false" id="b186-8fed-39cb-69aa" type="selectionEntry" targetId="cdd1-5c15-62dd-e7a3"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink id="e373-3c0a-1185-467a" name="Imperium - Astra Militarum - Library" targetId="5a44-f048-114b-e3ff" type="catalogue" importRootEntries="false"/>
