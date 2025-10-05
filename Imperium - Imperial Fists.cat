@@ -367,6 +367,7 @@ Veteran Squad units from your army have an Objective Control characteristic of 
     <categoryEntry name="Darnath Lysander" hidden="false" id="f797-f718-df7d-8545"/>
     <categoryEntry name="Tor Garadon" hidden="false" id="3d09-3368-9c3c-9009"/>
     <categoryEntry name="Pedro Kantor" hidden="false" id="7709-796b-3022-31fe"/>
+    <categoryEntry name="Captain Cortez" id="8e50-dfce-2e06-e60c" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Darnath Lysander" hidden="false" type="selectionEntry" id="1b9c-5fc3-d8c7-46fa" targetId="eecd-6976-6410-1e42"/>
