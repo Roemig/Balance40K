@@ -171,6 +171,9 @@
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="bc3c-af0e-4977-f947" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                          </costs>
                         </entryLink>
                         <entryLink import="true" name="Autocannon" hidden="false" id="bf47-27cc-a9ce-b017" type="selectionEntry" targetId="4a22-4d7b-aea8-75f0">
                           <entryLinks>
@@ -186,11 +189,17 @@
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="1057-613a-df73-92ea" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                          </costs>
                         </entryLink>
                         <entryLink import="true" name="Missile launcher" hidden="false" id="9809-33d9-9594-f30f" type="selectionEntry" targetId="635b-8f40-42ce-099b">
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="0794-ac26-9bfc-3ae8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                          </costs>
                         </entryLink>
                         <entryLink import="true" name="Plasma cannon" hidden="false" id="525b-aaab-bb53-ca9c" type="selectionEntry" targetId="f26-434a-79ef-40a5">
                           <entryLinks>
@@ -10913,11 +10922,17 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="c40a-9c2e-6e15-ec67" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                          </costs>
                         </entryLink>
                         <entryLink import="true" name="Missile launcher" hidden="false" id="744c-fd1a-5ebe-46c7" type="selectionEntry" targetId="635b-8f40-42ce-099b">
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="8631-ea48-97e1-0a2b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                          </costs>
                         </entryLink>
                         <entryLink import="true" name="Plasma cannon" hidden="false" id="1844-b72f-b74-4dd" type="selectionEntry" targetId="f26-434a-79ef-40a5">
                           <entryLinks>
@@ -10928,6 +10943,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="46a9-171d-dd6f-5a1e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                          </costs>
                         </entryLink>
                       </entryLinks>
                       <constraints>
