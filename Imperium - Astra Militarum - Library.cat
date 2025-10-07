@@ -4793,6 +4793,16 @@
               <infoLinks>
                 <infoLink name="Field Ordnance Battery" id="3c4b-79d0-d6bb-cc32" hidden="false" type="profile" targetId="1b6b-0a0d-900e-8091"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="-15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Ordnance Team w/ Bombast field gun" hidden="false" id="d7b7-2c5e-1d0e-99f0">
               <entryLinks>
@@ -4926,6 +4936,16 @@
               <infoLinks>
                 <infoLink name="Field Ordnance Battery" id="76e0-feb2-1476-6b61" hidden="false" type="profile" targetId="1b6b-0a0d-900e-8091"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -14081,10 +14101,29 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             </modifier>
           </modifiers>
         </profile>
+        <profile name="➤ Missile Launcher - flak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6709-e1e1-4077-e48b">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti Fly 2+, Heavy</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Heavy" hidden="false" type="rule" id="2bc9-81f2-41ce-f6b6" targetId="1202-10a8-78e9-4c67"/>
         <infoLink name="Blast" hidden="false" type="rule" id="a4dc-1969-6985-78fb" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Anti-" id="e586-a9bf-08ad-de37" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
       </infoLinks>
       <comment>BS5+</comment>
     </selectionEntry>
@@ -31938,6 +31977,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="8556-cb4e-2024-1630" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Siege cannon" hidden="false" id="7fb5-3f72-0ac2-f2f9">
                   <profiles>
@@ -31988,6 +32037,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="5f4b-d7af-dfae-7646" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-25"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Heavy quad launcher" hidden="false" id="2fd3-fcc7-3c74-554f">
                   <profiles>
@@ -32015,6 +32074,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <categoryLinks>
                     <categoryLink name="Attacks Dx Weapon" hidden="false" id="3c9a-78b0-98da-f41a" targetId="e993-e086-6de1-12af" primary="false"/>
                   </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-15"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -32811,10 +32880,29 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             </modifier>
           </modifiers>
         </profile>
+        <profile name="➤ Missile Launcher - flak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2dd9-5b34-ee76-2120">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti Fly 2+, Heavy</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Heavy" hidden="false" type="rule" id="652b-b63f-ce9a-2ee8" targetId="1202-10a8-78e9-4c67"/>
         <infoLink name="Blast" hidden="false" type="rule" id="d603-8c53-0ffc-6eee" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Anti-" id="2f0b-d72f-77ba-935e" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
       </infoLinks>
       <comment>BS4+</comment>
     </selectionEntry>
@@ -35118,7 +35206,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="451d-c231-c34f-23f0"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Drop Trooper " hidden="false" id="0874-d9d9-f041-bef5">
+            <selectionEntry type="model" import="true" name="3 Drop Troopers" hidden="false" id="0874-d9d9-f041-bef5">
               <entryLinks>
                 <entryLink import="true" name="Close combat weapon" hidden="false" id="5815-8e1b-2a79-5a18" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                   <constraints>
@@ -35138,14 +35226,14 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81cb-44ca-4f38-a39f" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Elysian Drop Trooper" id="8ef6-83e4-5ddb-07ec" hidden="false" type="profile" targetId="aa3d-3564-398a-7198"/>
-                <infoLink name="Elysian Drop Trooper" id="d50a-1250-1330-c316" hidden="false" type="profile" targetId="aa3d-3564-398a-7198"/>
                 <infoLink name="Elysian Drop Trooper" id="7075-f98d-69f2-a33a" hidden="false" type="profile" targetId="aa3d-3564-398a-7198"/>
+                <infoLink name="Elysian Drop Trooper" id="8853-9f00-8c2b-3b98" hidden="false" type="profile" targetId="aa3d-3564-398a-7198"/>
+                <infoLink name="Elysian Drop Trooper" id="dd72-75e4-94c7-ce31" hidden="false" type="profile" targetId="aa3d-3564-398a-7198"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Drop Trooper w/ Special Weapon" hidden="false" id="8c89-749f-fe53-33a8">
+            <selectionEntry type="model" import="true" name="3 Drop Trooper w/ Special Weapons" hidden="false" id="8c89-749f-fe53-33a8">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Drop Trooper w/ Flamer" hidden="false" id="fc26-ec22-a166-a44c">
+                <selectionEntry type="model" import="true" name="3 Drop Troopers w/ Flamers" hidden="false" id="fc26-ec22-a166-a44c">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="311b-e06a-7611-9577" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -35168,13 +35256,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d858-5657-544c-17ca"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="0994-5199-3676-fd62">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -35186,7 +35267,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Drop Trooper w/ Grenade Launcher" hidden="false" id="43b4-526e-cf2b-a867">
+                <selectionEntry type="model" import="true" name="3 Drop Troopers w/ Grenade Launchers" hidden="false" id="43b4-526e-cf2b-a867">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="f39b-71b5-7f37-557e" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -35209,13 +35290,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23ea-5d25-ece1-b610"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="0994-5199-3676-fd62">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -35227,7 +35301,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Drop Trooper w/ Meltagun" hidden="false" id="72df-83bd-0560-6270">
+                <selectionEntry type="model" import="true" name="3 Drop Troopers w/ Meltaguns" hidden="false" id="72df-83bd-0560-6270">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="d2c3-8530-3bd2-ae22" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -35250,13 +35324,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d22-f3aa-dd35-5dc4"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="0994-5199-3676-fd62">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -35268,7 +35335,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Drop Trooper w/ Plasma Gun" hidden="false" id="05f4-60df-cb64-757d">
+                <selectionEntry type="model" import="true" name="3 Drop Troopers w/ Plasma Guns" hidden="false" id="05f4-60df-cb64-757d">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="e5fc-86c8-adef-91fb" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -35291,13 +35358,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0994-5199-3676-fd62"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="0994-5199-3676-fd62">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -36966,10 +37026,29 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
           </characteristics>
         </profile>
+        <profile name="➤ Missile Launcher - flak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8b7e-e8cb-743e-de31">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti Fly 2+, Heavy</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Heavy" id="551e-2461-3517-0b9b" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
         <infoLink name="Blast" id="92a7-2b38-3324-f8d5" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Anti-" id="3754-7dd7-e2cd-293b" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
       </infoLinks>
       <comment>Elysian Heavy</comment>
     </selectionEntry>
@@ -37440,29 +37519,29 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="44a5-8b0d-7460-72ff"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Guardsman" hidden="false" id="edb7-d88c-f3f1-81fb">
+            <selectionEntry type="model" import="true" name="3 Guardsmen" hidden="false" id="edb7-d88c-f3f1-81fb">
               <profiles>
-                <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4a81-e7d2-b4d4-7bab">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3adc-ddce-6adf-3437">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7269-ce30-9a1f-2525">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9098-3fcb-7178-6d29">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="60f0-44fb-ed06-7ed4">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
@@ -37492,9 +37571,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2038-5114-1f5c-336d" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Guardsmen w/ Special Weapon" hidden="false" id="19fe-6c9e-e25a-cca8">
+            <selectionEntry type="model" import="true" name="3 Guardsmen w/ Special Weapons" hidden="false" id="19fe-6c9e-e25a-cca8">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Guardsmen w/ Flamers" hidden="false" id="7adf-b5d5-4546-9a5a">
+                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Flamers" hidden="false" id="7adf-b5d5-4546-9a5a">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="80b1-e221-f08d-f573" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -37517,13 +37596,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c0d-48f5-19b2-37ff"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="5543-e628-19a3-b801">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -37535,7 +37607,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Guardsmen w/ Grenade Launchers" hidden="false" id="603a-559a-976b-4c52">
+                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Grenade Launchers" hidden="false" id="603a-559a-976b-4c52">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="8332-0e64-a3ff-7574" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -37558,13 +37630,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d991-570b-09c0-9497"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="5543-e628-19a3-b801">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -37576,7 +37641,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Guardsmen w/ Meltaguns" hidden="false" id="eda9-703a-6318-23b5">
+                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Meltaguns" hidden="false" id="eda9-703a-6318-23b5">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="0c9f-017b-afdc-0cfb" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -37599,13 +37664,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe0c-ffbf-f7ed-60ec"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="5543-e628-19a3-b801">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -37617,7 +37675,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Guardsmen w/ Plasma Guns" hidden="false" id="584c-0adf-54d3-e58c">
+                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Plasma Guns" hidden="false" id="584c-0adf-54d3-e58c">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="ceeb-3966-c893-c327" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -37640,13 +37698,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5543-e628-19a3-b801"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="5543-e628-19a3-b801">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -37658,7 +37709,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Guardsmen w/ Sniper Rifles" hidden="false" id="5bba-9aac-8793-939a">
+                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Sniper Rifles" hidden="false" id="5bba-9aac-8793-939a">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="488d-1e35-652c-6c21" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -37681,13 +37732,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f42-a454-4186-1587"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="8f42-a454-4186-1587">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6f72-94d9-b0df-e130" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -39342,7 +39386,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </profile>
         <profile name="Grinder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2dcd-07bf-4063-cb29">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the game, you must exchange the sergeant of any Platoon Command Squad with Commander Chenkov. If this is not possible, Sergeant Bastonne is destroyed.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the game, you must exchange the sergeant of any Platoon Command Squad with Commander Chenkov. If this is not possible, Commander Chenkov is destroyed.</characteristic>
           </characteristics>
         </profile>
         <profile name="Send in the next wave!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ec32-95b3-cd00-b636">
