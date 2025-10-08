@@ -125,13 +125,13 @@
                   <profiles>
                     <profile name="Zzap gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c59c-65c9-8d4c-3a4a">
                       <characteristics>
-                        <characteristic name="Range" id="5f1b-738e-89a8-eb7e" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" id="8cc8-7187-89d8-b98c" hidden="false" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" id="23d7-7ccb-5e0-13f9" hidden="false" typeId="94d-8a98-cf90-183e">5+</characteristic>
-                        <characteristic name="S" id="e5a5-900f-9b5f-9e40" hidden="false" typeId="2229-f494-25db-c5d3">D6+6</characteristic>
-                        <characteristic name="AP" id="66aa-464a-a612-c2ca" hidden="false" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" id="caab-723c-55b8-3525" hidden="false" typeId="a354-c1c8-a745-f9e3">5</characteristic>
-                        <characteristic name="Keywords" id="d4dc-24ec-16ac-db03" hidden="false" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 4+</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">D6+6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">5</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 4+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -16351,7 +16351,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -16369,7 +16369,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
@@ -16445,7 +16445,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -16515,15 +16515,15 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3098-842f-759-3da9"/>
                       </constraints>
                       <profiles>
-                        <profile name="Zzap gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bdb3-7a52-dd62-3f72">
+                        <profile name="Zzap gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9d51-15ef-ea24-3319">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">6+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">2D6</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">D6+6</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Heavy</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">5</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 4+</characteristic>
                           </characteristics>
                           <modifiers>
                             <modifier type="append" value="+0" field="2229-f494-25db-c5d3" join="">
@@ -17210,15 +17210,15 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Zzap gun" hidden="false" id="f587-96e-8972-71a2">
                   <profiles>
-                    <profile name="Zzap gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5700-8d15-99d5-1ec1">
+                    <profile name="Zzap gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4865-1928-04c2-b7ff">
                       <characteristics>
-                        <characteristic name="Range" id="f6d7-9c5d-3edd-542d" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" id="7cbc-d213-99a5-a383" hidden="false" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" id="8c2b-ceef-4d6a-74d9" hidden="false" typeId="94d-8a98-cf90-183e">5+</characteristic>
-                        <characteristic name="S" id="b6ab-67ee-e1cf-68b6" hidden="false" typeId="2229-f494-25db-c5d3">2D6</characteristic>
-                        <characteristic name="AP" id="bbf0-2018-ac57-f77f" hidden="false" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" id="eabb-374a-b792-91ce" hidden="false" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" id="955d-8714-c793-5d95" hidden="false" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">D6+6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">5</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 4+</characteristic>
                       </characteristics>
                       <modifiers>
                         <modifier type="append" value="+0" field="2229-f494-25db-c5d3" join="">
@@ -20534,9 +20534,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         <profile name="➤ Supa-kannon - shell" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f6dc-c7d9-4203-f5c0">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
