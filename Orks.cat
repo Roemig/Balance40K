@@ -3019,7 +3019,7 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
@@ -22653,7 +22653,7 @@ GRETCHIN units from your army gain the BATTLELINE keyword.</description>
         <selectionEntry type="upgrade" import="true" name="Kult of Speed" hidden="false" id="b404-44f-e9b4-7fe2">
           <rules>
             <rule name="Adrenaline Junkies" id="800f-b674-d975-c458" hidden="false">
-              <description>**^^Speed Freeks^^** units from your army which have moved at least 8&quot; during the movement phase gain **^^Krumpspeed!^^** for the duration of the battle round. While **^^Krumpspeed!^^** is active, add 1 to ranged hit rolls, and re-roll any wound roll of 1. During the Waagh, **^^Speed Freeks^^** units are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.</description>
+              <description>**^^Speed Freeks^^** units from your army which have moved at least 8&quot; during the movement phase gain **^^Krumpspeed!^^** for the duration of the battle round. While **^^Krumpspeed!^^** is active, add 1 to ranged hit and wound rolls, and add 1 to the attack characteristic of any equipped melee weapons. During the Waagh, **^^Speed Freeks^^** units are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.</description>
             </rule>
           </rules>
         </selectionEntry>
