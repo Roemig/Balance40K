@@ -22653,7 +22653,7 @@ GRETCHIN units from your army gain the BATTLELINE keyword.</description>
         <selectionEntry type="upgrade" import="true" name="Kult of Speed" hidden="false" id="b404-44f-e9b4-7fe2">
           <rules>
             <rule name="Adrenaline Junkies" id="800f-b674-d975-c458" hidden="false">
-              <description>**^^Speed Freeks^^** units from your army which have moved at least 8&quot; during the movement phase gain **^^Krumpspeed!^^** for the duration of the battle round. While **^^Krumpspeed!^^** is active, add 1 to ranged hit and wound rolls, and add 1 to the attack characteristic of any equipped melee weapons. During the Waagh, **^^Speed Freeks^^** units are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.</description>
+              <description>**^^Speed Freeks^^** units from your army which have moved at least 8&quot; during the movement phase gain **^^Krumpspeed!^^** for the duration of the battle round. While **^^Krumpspeed!^^** is active, add 1 to ranged hit and wound rolls, and add 1 to the armor penetration characteristic of any equipped melee weapons. During the Waagh, **^^Speed Freeks^^** units are eligible to shoot and declare a charge in a turn in which they Advanced or Fell Back.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -22682,12 +22682,12 @@ Shoota Drills: Each time an INFANTRY or MOUNTED model in this unit makes a range
         <selectionEntry type="upgrade" import="true" name="More Dakka!" hidden="false" id="f607-6488-0765-b901">
           <rules>
             <rule name="Dakka! Dakka! Dakka!" id="0d8a-1996-f526-5ca4" hidden="false">
-              <description>Ranged weapons equipped by **^^Orks Infantry^^** and **^^Orks Vehicle^^**, but not **^^Grots^^** models from your army have the **[SUSTAINED HITS 1]** ability.
+              <description>Ranged weapons equipped by **^^Orks^^** models from your army gain the **[SUSTAINED HITS 1]** ability.
 
 
-Ranged weapons equipped by Boyz and Nobs Squads have the **[SUSTAINED HITS 2]** ability instead.
+Ranged weapons equipped by Boyz and Nobs Squads gain the **[SUSTAINED HITS 2]** ability instead.
 
-While the Waaagh! is active for your army, during your Shooting phase, ranged weapons equipped by **^^Orks Infantry^^** and **^^Orks Vehicle^^**, but not **^^Grots^^** models from your army have the **[LETHAL HITS]** ability.</description>
+While the Waaagh! is active for your army, during your Shooting phase, ranged weapons equipped by **^^Orks^^** models from your army have the **[LETHAL HITS]** ability.</description>
             </rule>
           </rules>
           <infoLinks>
