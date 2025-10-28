@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="5d6e-fd3-330a-11dd" name="Imperium - Adeptus Astartes - Imperial Fists" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="5d6e-fd3-330a-11dd" name="Imperium - Adeptus Astartes - Imperial Fists" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="1781-a2e9-cb3e-1f49" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="6ab-d4bf-f407-e939" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
@@ -367,7 +367,6 @@ Veteran Squad units from your army have an Objective Control characteristic of 
     <categoryEntry name="Darnath Lysander" hidden="false" id="f797-f718-df7d-8545"/>
     <categoryEntry name="Tor Garadon" hidden="false" id="3d09-3368-9c3c-9009"/>
     <categoryEntry name="Pedro Kantor" hidden="false" id="7709-796b-3022-31fe"/>
-    <categoryEntry name="Captain Cortez" id="8e50-dfce-2e06-e60c" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Darnath Lysander" hidden="false" type="selectionEntry" id="1b9c-5fc3-d8c7-46fa" targetId="eecd-6976-6410-1e42"/>
