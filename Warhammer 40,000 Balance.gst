@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-68cc-5ca8-f046-3e5c" name="Warhammer 40,000 10th Edition, but balanced" revision="75" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-ceaf-7a48-d78c-23f3" name="Warhammer 40,000 10th Edition, but balanced" revision="1" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="2dc3-45bb-60b8-d5ce" name="10th Edition Core Rules, but balanced" shortName="10th Ed Core Balanced"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f9" shortName="Balance" publisherUrl="https://github.com/Roemig/Balance40K"/>
