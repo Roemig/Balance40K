@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b45c-af22-788a-dfd6" name="Chaos - Daemons Library" revision="81" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b45c-af22-788a-dfd6" name="Chaos - Daemons Library" revision="81" battleScribeVersion="2.03" library="true" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="75" type="catalogue">
   <publications>
     <publication id="e3ec-7a32-ae62-8727" name="Index - Chaos Daemons"/>
   </publications>

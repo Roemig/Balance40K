@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="92" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="92" battleScribeVersion="2.03" library="false" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="75" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -45,6 +45,7 @@
     <categoryEntry name="Infiltrators" id="20d8-c9da-14df-9d01" hidden="false"/>
     <categoryEntry name="Pteraxii" id="f8db-f163-9a12-b79c" hidden="false"/>
     <categoryEntry name="Servitor Battleclade" id="b94e-c390-0c3b-f9cf" hidden="false"/>
+    <categoryEntry name="Tech-Priest" id="59a9-b5cc-7c11-aaad" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="9bc2-4d5f-5d27-ce7a" name="Archaeopter Fusilave" hidden="false" collective="false" import="true" targetId="7662-5fde-16f1-5267" type="selectionEntry"/>
@@ -735,10 +736,10 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         <categoryLink id="c67c-7e09-59d1-1392" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="true"/>
         <categoryLink id="b6c7-a87e-ccb1-ea32" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="false"/>
         <categoryLink id="a68e-3745-f64e-a8c7" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
-        <categoryLink id="c096-b40c-541a-340a" name="Tech-Priest" hidden="false" targetId="59a9-b5cc-7c11-aaad" primary="false"/>
         <categoryLink id="33ff-444c-148a-a51d" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5418-f86b-6e76-c5a" primary="false"/>
         <categoryLink id="e19b-e53f-88b3-88f5" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink targetId="6d46-7883-e5d1-45ee" id="fee-c1a7-f4d4-c70d" primary="false" name="Cult Mechanicus"/>
+        <categoryLink name="Tech-Priest" hidden="false" id="9bf7-3e5f-9772-51a8" targetId="59a9-b5cc-7c11-aaad" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c097-c2fe-be86-de31" name="Warlord" hidden="false" collective="false" import="true" targetId="0580-79ca-da98-77c3" type="selectionEntry">

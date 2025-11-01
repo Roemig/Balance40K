@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="110" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="75" revision="110" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Vindicare Assassin" hidden="false" id="efa3-2cf5-dcfb-b976">
       <categoryLinks>
@@ -17093,6 +17093,8 @@ For the purposes of determining which models in this unit can embark within a ^^
     <categoryEntry name="Ordo Hereticus" id="cc90-ec2e-cca3-e44d" hidden="false"/>
     <categoryEntry name="Navigator" id="9922-bda1-77ca-84e9" hidden="false"/>
     <categoryEntry name="Inquisitorial Agents" id="d328-29e2-67d0-2185" hidden="false"/>
+	<categoryEntry name="Sanctifiers" id="9d4f-4beb-107d-3175" hidden="false"/>
+	<categoryEntry name="Ministorum Priest" id="cc88-9467-86ac-4ca2" hidden="false"/>
     <categoryEntry name="Assigned Agents - Requisitioned" id="d074-7a54-bf4f-768c" hidden="true">
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="true" id="7cb1-09e0-acd9-5a8f" includeChildSelections="true"/>
