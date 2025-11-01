@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-1111-1111-1111-1111" gameSystemRevision="77" revision="1" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="77" revision="1" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="fa68-fcb9-38c-cd0f" name="Winged Hive Tyrant" hidden="false" collective="false" import="true" type="model">
       <constraints>
