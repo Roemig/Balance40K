@@ -26444,6 +26444,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <entryLink import="true" name="Shoota Boyz" hidden="false" type="selectionEntry" id="12ff-f46c-8f53-2f52" targetId="1c4a-4aed-6037-00d0"/>
     <entryLink import="true" name="&apos;Ard Boyz with Shootas" hidden="false" type="selectionEntry" id="552a-9f38-12e1-22ed" targetId="bd8f-493d-c38f-61f2"/>
     <entryLink import="true" name="Kustom Battle Fortress" hidden="false" type="selectionEntry" id="619e-8e76-2045-753c" targetId="3f22-f112-5596-9f2b"/>
+    <entryLink import="true" name="Looted Wagon" hidden="false" type="selectionEntry" id="c642-a82e-66c8-edf0" targetId="201b-baa8-1f60-733a"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" id="2be6-f2b9-f73c-82b1" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
