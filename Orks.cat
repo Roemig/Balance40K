@@ -23399,24 +23399,6 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="ea64-d5eb-e3b5-2a30" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Big shoota" hidden="false" id="972a-ba73-688a-c767" type="selectionEntry" targetId="1fa0-d99a-154f-ffd8">
-              <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1f16-c843-9579-613c"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a1c9-7cb7-37ea-87f0"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="f153-8e64-e32b-e84d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Killkannon" hidden="false" id="9792-5321-1602-62de" type="selectionEntry" targetId="7b79-39d8-0d8a-275c">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d2f-fe4d-0972-96b2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff7c-082c-4ae1-a488"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="a0a6-dc4a-625a-cc94" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
             <entryLink import="true" name="Armoured hull" hidden="false" id="beff-f240-2a3f-a941" type="selectionEntry" targetId="c20a-6327-4743-4114">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce75-b4e4-fa94-aa41"/>
@@ -23424,6 +23406,24 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="fe5b-a60a-16d9-1619" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Big shoota" hidden="false" id="fede-1166-7686-7842" type="selectionEntry" targetId="1fa0-d99a-154f-ffd8">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f7d0-7610-4459-4be7"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4c90-e28d-c1a0-e1da"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="6b4c-6985-7407-2f35" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Killkannon" hidden="false" id="cc9c-401f-a0c0-8624" type="selectionEntry" targetId="7b79-39d8-0d8a-275c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8727-057c-9b25-48a9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8441-af1d-c5c9-d489"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="208d-fbee-d7ff-ea21" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -23504,6 +23504,389 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mekboy Junka" hidden="false" id="b3ad-bdcd-740b-c124">
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="5f7d-6c48-6c3b-5948"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="48f9-c12f-aa42-729e" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="6ccb-c677-aa81-22e0" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="bcda-3ada-d4a9-2c88" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="17f9-f4bb-4236-4505" primary="true" name="Vehicle"/>
+        <categoryLink targetId="75e8-57c4-40e3-1817" id="ef59-6a4b-e449-4f17" primary="false" name="Transport"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="733b-79f4-d7af-669e" primary="false" name="Faction: Orks"/>
+        <categoryLink name="Mekboy Junka" hidden="false" id="a6d4-27f3-7f81-2f98" targetId="531c-df65-11a2-cf29" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mekboy Junka" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a711-085b-9a9e-0816">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Junka Force Field Generator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1198-0b87-ab13-6e6a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mekboy Junka" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="2d10-d07f-275b-fa84">
+          <characteristics>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 ORKS INFANTRY models. Each MEGA ARMOUR model takes up the space of 2 models. It cannot transport JUMP PACK or GHAZGHKULL THRAKA models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="2ea3-ec6c-aea5-a639" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="d5bd-be8e-2258-64ae" targetId="37c-6ef9-277-9091"/>
+        <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="b261-269c-4373-f1c3" targetId="9980-27a7-d53a-5df0"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="7161-04b4-2786-435e" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="2ba1-2b84-310d-b6b4" hidden="false" sortIndex="2">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Gunz" id="40e3-ef05-4438-dce3" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin Rokkit launcha" hidden="false" id="ea8d-2107-b093-d3e1">
+                  <profiles>
+                    <profile name="Rokkit launcha" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f4e2-b511-316e-05b1">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="6105-c6aa-5e28-72e6" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                    <infoLink name="Twin-linked" id="00e4-5fb0-24c3-3e01" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4258-268e-4b33-88d1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c751-3dcd-7111-05cb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2f0f-8b40-54d9-90ca"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="90ad-4057-6642-1ce4"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Big shoota" hidden="false" id="2616-3f92-db36-754c" type="selectionEntry" targetId="1fa0-d99a-154f-ffd8">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bcd6-6c55-ec7a-b6f4"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f0e1-1ada-a48a-33b4"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="82b0-47ca-b9fe-d37a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Twin big shoota" hidden="false" id="486c-3c33-efa0-4d23" type="selectionEntry" targetId="8e99-adf-bad4-e07f">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="685d-f0aa-deb7-2e24" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7084-d795-0441-143b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="2b86-9c7d-88f2-5e2c" type="selectionEntry" targetId="7242-bca9-a3c7-ba6a">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="38fe-d1b4-9fe8-04db" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d90a-b05c-f415-8990"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Skorcha" hidden="false" id="1fd0-488d-4074-e4c7" type="selectionEntry" targetId="7a18-2212-5898-1149">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ce5-ff65-b6f5-d0d6"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="3233-2382-1592-d949" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Innovashiun" id="2dac-eec4-ac81-8c58" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Shokk attack gun" hidden="false" id="53c7-5c9c-d5b7-34e1" type="selectionEntry" targetId="5a62-fc16-4f10-8f80">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a70c-3171-8168-ff67" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db68-67cb-858d-2c3b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Supa-Skorcha" hidden="false" id="fb35-06a2-f92d-63c2" type="selectionEntry" targetId="9cf9-3906-f2ec-1280">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="82b7-8fad-d1a4-4ee6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8df-0c54-fb29-80d9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Kustom mega-zappa" hidden="false" id="d6bf-ba1c-5c53-7f8b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b974-7e00-7757-3ee2"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Kustom mega-zappa" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a960-42c4-f8d6-e6c0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="77c2-0051-2c92-faec" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                    <infoLink name="Hazardous" id="c03d-4696-b0b6-4a13" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a05a-c8b5-1518-09de" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="fd00-b7c7-7fd1-ec25" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Grot-guided bomms" hidden="false" id="9fad-8e1d-13a5-5231">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ee3-8775-1b37-d60b"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Grot-guided bomms" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c6dd-a2a1-2254-c4a4">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="d4b8-a31c-7589-ef30" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                    <infoLink name="One Shot" id="d936-e9ce-1ffd-f084" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
+                    <infoLink name="Indirect Fire" id="2138-dc29-3c0d-e630" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="1a9e-de3d-f20e-d525" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="5dd5-2d9c-e2e9-6d98" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a84-5ecc-f7bd-a1e6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f80-6e10-9077-7a03"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Armoured Hull" id="b97a-0c6c-b2e4-9fe5" hidden="false" defaultSelectionEntryId="f8d7-2bcc-346e-cb5d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bc9-a54e-3749-4e4e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0b2-e624-ff63-3aed"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Deff rolla" hidden="false" id="c9a4-9737-e88f-1c9c" type="selectionEntry" targetId="de9b-6229-5f85-bdbe">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="27e3-29a3-3d0b-fdfc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c504-fe00-8f1f-41fe"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Armoured hull" hidden="false" id="7fc0-4540-ee91-dd7e" type="selectionEntry" targetId="c20a-6327-4743-4114">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2daf-1fe8-ac26-460b"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="e72f-1774-3413-1666" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Extra Bitz" id="e210-857d-4558-a9d8" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Grabbin&apos; klaw" hidden="false" id="dae1-0c00-6790-7156" type="selectionEntry" targetId="13e7-e408-69ab-5aef">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1880-0bb6-249a-791f"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="8801-a579-c563-1db4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Wreckin&apos; ball" hidden="false" id="40c2-8a53-d40a-7ce8" type="selectionEntry" targetId="3e1a-c27b-7ef-a2d6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ae3-c5e0-5e11-b34f"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bfe1-89c7-094a-a087" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a335-231a-5cc7-7958"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="’Ard Case" hidden="false" id="0430-dd30-5b4f-a663">
+              <profiles>
+                <profile name="’Ard Case" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1f0d-ce82-0c19-3bff">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2 to the bearer’s Toughness characteristic, but it no longer has the Firing Deck ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b273-4a97-af8a-9395"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>&apos;Ard Case</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="d29d-cf75-fc2d-34a4" affects="self.entries.profiles.Unit" scope="model-or-unit">
+                      <conditions>
+                        <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0430-dd30-5b4f-a663" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" value="&apos;Ard Case" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit">
+                      <conditions>
+                        <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0430-dd30-5b4f-a663" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Crusade modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="2" field="48f9-c12f-aa42-729e">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="6ccb-c677-aa81-22e0">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="6" field="bcda-3ada-d4a9-2c88">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supa-Skorcha" hidden="false" id="9cf9-3906-f2ec-1280" collective="false">
+      <profiles>
+        <profile name="Supa-Skorcha" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c69b-1b92-a2d7-ce45">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" id="e160-5523-f95e-8cf7" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Torrent" hidden="false" type="rule" id="0bab-7ecb-2881-fef2" targetId="5edf-d619-23e0-9b56"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="85f4-23a6-8c60-3adb" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <rules>
@@ -26342,6 +26725,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <categoryEntry name="Flakk Trakk" id="f5a0-a5cb-dd17-e132" hidden="false"/>
     <categoryEntry name="Kustom Battle Fortress" id="1519-7f92-ee21-321c" hidden="false"/>
     <categoryEntry name="Looted Wagon" id="f90f-cc06-73f2-7a2b" hidden="false"/>
+    <categoryEntry name="Mekboy Junka" id="531c-df65-11a2-cf29" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Big Mek in Mega Armour" hidden="false" type="selectionEntry" id="f552-367d-f8b5-d220" targetId="95e9-6da3-5e75-2566"/>
@@ -26445,6 +26829,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <entryLink import="true" name="&apos;Ard Boyz with Shootas" hidden="false" type="selectionEntry" id="552a-9f38-12e1-22ed" targetId="bd8f-493d-c38f-61f2"/>
     <entryLink import="true" name="Kustom Battle Fortress" hidden="false" type="selectionEntry" id="619e-8e76-2045-753c" targetId="3f22-f112-5596-9f2b"/>
     <entryLink import="true" name="Looted Wagon" hidden="false" type="selectionEntry" id="c642-a82e-66c8-edf0" targetId="201b-baa8-1f60-733a"/>
+    <entryLink import="true" name="Mekboy Junka" hidden="false" type="selectionEntry" id="efb9-2113-20cb-c4bb" targetId="b3ad-bdcd-740b-c124"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" id="2be6-f2b9-f73c-82b1" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -26454,7 +26839,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     </profile>
     <profile name="Invulnerable Save (6+)" hidden="false" id="ae1-4b86-68f7-dd75" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 6+ invulnerable save.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
       </characteristics>
       <comment>6+ Single model</comment>
     </profile>
