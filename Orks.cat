@@ -23517,6 +23517,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
         <categoryLink targetId="75e8-57c4-40e3-1817" id="ef59-6a4b-e449-4f17" primary="false" name="Transport"/>
         <categoryLink targetId="56cc-5f43-2403-8da0" id="733b-79f4-d7af-669e" primary="false" name="Faction: Orks"/>
         <categoryLink name="Mekboy Junka" hidden="false" id="a6d4-27f3-7f81-2f98" targetId="531c-df65-11a2-cf29" primary="false"/>
+        <categoryLink name="Mek" hidden="false" id="e762-18ef-fbc7-4a83" targetId="f802-1e3a-d9ce-aa99" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Mekboy Junka" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a711-085b-9a9e-0816">
@@ -23532,11 +23533,6 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
         </profile>
-        <profile name="Junka Force Field Generator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1198-0b87-ab13-6e6a">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Mekboy Junka" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="2d10-d07f-275b-fa84">
           <characteristics>
             <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 ORKS INFANTRY models. Each MEGA ARMOUR model takes up the space of 2 models. It cannot transport JUMP PACK or GHAZGHKULL THRAKA models.</characteristic>
@@ -23550,7 +23546,6 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
           </modifiers>
         </infoLink>
         <infoLink name="Waaagh!" hidden="false" type="rule" id="d5bd-be8e-2258-64ae" targetId="37c-6ef9-277-9091"/>
-        <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="b261-269c-4373-f1c3" targetId="9980-27a7-d53a-5df0"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="7161-04b4-2786-435e" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
@@ -23579,7 +23574,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
                     <infoLink name="Twin-linked" id="00e4-5fb0-24c3-3e01" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
                   </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4258-268e-4b33-88d1"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4258-268e-4b33-88d1"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="c751-3dcd-7111-05cb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -23593,7 +23588,6 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
               <entryLinks>
                 <entryLink import="true" name="Big shoota" hidden="false" id="2616-3f92-db36-754c" type="selectionEntry" targetId="1fa0-d99a-154f-ffd8">
                   <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bcd6-6c55-ec7a-b6f4"/>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f0e1-1ada-a48a-33b4"/>
                   </constraints>
                   <entryLinks>
@@ -23605,7 +23599,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="685d-f0aa-deb7-2e24" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7084-d795-0441-143b"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7084-d795-0441-143b"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="2b86-9c7d-88f2-5e2c" type="selectionEntry" targetId="7242-bca9-a3c7-ba6a">
@@ -23613,12 +23607,12 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="38fe-d1b4-9fe8-04db" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d90a-b05c-f415-8990"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d90a-b05c-f415-8990"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Skorcha" hidden="false" id="1fd0-488d-4074-e4c7" type="selectionEntry" targetId="7a18-2212-5898-1149">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ce5-ff65-b6f5-d0d6"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4ce5-ff65-b6f5-d0d6"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="3233-2382-1592-d949" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -23702,6 +23696,18 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
                   <categoryLinks>
                     <categoryLink name="Attacks Dx Weapon" hidden="false" id="5dd5-2d9c-e2e9-6d98" targetId="e993-e086-6de1-12af" primary="false"/>
                   </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Junka Force Field Generator" hidden="false" id="f43f-4cf9-90c6-0590">
+                  <infoLinks>
+                    <infoLink name="Invulnerable Save (4+)" id="b261-269c-4373-f1c3" hidden="false" type="profile" targetId="9980-27a7-d53a-5df0"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Junka Force Field Generator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1198-0b87-ab13-6e6a">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save, allied units within 6&apos; of this model gain a 5+ invulnerable save.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -26830,6 +26836,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <entryLink import="true" name="Kustom Battle Fortress" hidden="false" type="selectionEntry" id="619e-8e76-2045-753c" targetId="3f22-f112-5596-9f2b"/>
     <entryLink import="true" name="Looted Wagon" hidden="false" type="selectionEntry" id="c642-a82e-66c8-edf0" targetId="201b-baa8-1f60-733a"/>
     <entryLink import="true" name="Mekboy Junka" hidden="false" type="selectionEntry" id="efb9-2113-20cb-c4bb" targetId="b3ad-bdcd-740b-c124"/>
+    <entryLink import="true" name="Flakk Trakk" hidden="false" type="selectionEntry" id="9f79-f8d1-91c2-09be" targetId="2796-4926-2a59-5900"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" id="2be6-f2b9-f73c-82b1" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
