@@ -23551,6 +23551,11 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
           </modifiers>
         </infoLink>
         <infoLink name="Waaagh!" hidden="false" type="rule" id="d5bd-be8e-2258-64ae" targetId="37c-6ef9-277-9091"/>
+        <infoLink name="Firing Deck" id="bbe4-e0c3-61cb-f462" hidden="false" type="rule" targetId="13b2-6518-dab3-7ea1">
+          <modifiers>
+            <modifier type="append" value="12" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="7161-04b4-2786-435e" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
