@@ -21942,6 +21942,30 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Assigned Agents" id="49d1-195f-7a49-e5e3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
+    <entryLink import="true" name="Inquisitorial Valkyrie" hidden="false" id="afec-5093-d6a4-69fa" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="162a-10c0-6fcc-02c1" type="selectionEntry" targetId="9fbd-8bde-a0e6-8e34">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
   </entryLinks>
   <sharedProfiles>
     <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9522-b10f-5943-435d">
