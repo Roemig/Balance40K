@@ -3680,7 +3680,7 @@
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5121-f15b-7863-647d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: EXACTION SQUAD, GREY KNIGHTS TERMINATOR SQUAD, IMPERIUM BATTLELINE INFANTRY, IMPERIAL NAVY BREACHERS, INQUISTORIAL AGENTS, SISTERS OF BATTLE SQUAD, SUBDUCTION SQUAD, VIGILANT SQUAD</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to all Imperium Infantry Units. A combined unit can only contain a single inquisitor model.</characteristic>
           </characteristics>
         </profile>
         <profile name="Inquisitor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="82ca-9509-a837-71ca">
@@ -17566,15 +17566,15 @@ For the purposes of determining which models in this unit can embark within a ^^
         <entryLink import="true" name="Crusade" hidden="false" id="b7a1-e11c-37c9-9e2d" type="selectionEntryGroup" targetId="ab49-9567-bfbd-7b0c" sortIndex="1"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Inquisitorial Valkyrie" hidden="false" id="8627-fac1-cc34-78cd">
+    <selectionEntry type="model" import="true" name="Valkyrie" hidden="false" id="8627-fac1-cc34-78cd">
       <categoryLinks>
         <categoryLink name="Transport" hidden="false" id="24f4-a242-d89a-cd96" targetId="75e8-57c4-40e3-1817" primary="false"/>
         <categoryLink name="Fly" hidden="false" id="1252-d415-1894-2abe" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink name="Aircraft" hidden="false" id="c3f2-d5b5-5d74-c935" targetId="63f1-e6e8-f6f6-a4f0" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="2db4-872e-78bd-7031" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
-        <categoryLink name="Inquisitorial Valkyrie" hidden="false" id="a1cd-b052-dcd0-ea73" targetId="477a-04a5-c473-2e87" primary="false"/>
         <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="c0e2-4f5d-6ab0-d462" targetId="5128-90b-e4a5-dcbd" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="9982-746f-10d0-ee1c" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Valkyrie" hidden="false" id="017e-c705-6404-97ee" targetId="2e5a-08ba-3cf9-6457" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -17586,13 +17586,6 @@ For the purposes of determining which models in this unit can embark within a ^^
         <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
         <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b0ae-12a5-c84-ea45" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9b42-94ed-a295-32b9" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="0232-8776-296b-acdc" includeChildSelections="false"/>
@@ -18966,7 +18959,7 @@ For the purposes of determining which models in this unit can embark within a ^^
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b0ae-12a5-c84-ea45" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -20849,6 +20842,7 @@ For the purposes of determining which models in this unit can embark within a ^^
     <categoryEntry name="Tarantula Battery" id="25ff-edcb-65bb-7f45" hidden="false"/>
     <categoryEntry name="Inquisitorial Stormtrooper Command Squad" id="8951-d3e6-02d8-1028" hidden="false"/>
     <categoryEntry name="Inquisitorial Land Raider" id="115b-228f-e1f2-0ac8" hidden="false"/>
+    <categoryEntry name="Valkyrie" id="2e5a-08ba-3cf9-6457" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Assigned Agents" hidden="false" id="58c1-ec7a-74f5-26b9">
@@ -21942,11 +21936,12 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Assigned Agents" id="49d1-195f-7a49-e5e3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Inquisitorial Valkyrie" hidden="false" id="afec-5093-d6a4-69fa" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
+    <entryLink import="true" name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="162a-10c0-6fcc-02c1" type="selectionEntry" targetId="9fbd-8bde-a0e6-8e34">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
@@ -21954,17 +21949,34 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="162a-10c0-6fcc-02c1" type="selectionEntry" targetId="9fbd-8bde-a0e6-8e34">
+    <entryLink import="true" name="Valkyrie" hidden="false" id="4362-84c6-492f-631e" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Agents visibility</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Assigned Agents" id="4b07-5ad4-9ae9-87bf" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+      </infoLinks>
     </entryLink>
   </entryLinks>
   <sharedProfiles>
