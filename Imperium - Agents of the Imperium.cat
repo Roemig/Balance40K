@@ -2404,7 +2404,7 @@
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -2422,7 +2422,7 @@
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
@@ -2462,7 +2462,7 @@
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -2496,7 +2496,7 @@
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -3830,7 +3830,7 @@
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1</characteristic>
                       </characteristics>
                     </profile>
@@ -5255,7 +5255,7 @@
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1</characteristic>
                       </characteristics>
                     </profile>
@@ -7594,7 +7594,7 @@ When mustering your army, each ^^Officio Assassinorum^^ unit from your army has 
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1</characteristic>
                       </characteristics>
                     </profile>
@@ -9549,7 +9549,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
                                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                                     <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                                     <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1</characteristic>
                                   </characteristics>
                                 </profile>
@@ -17097,7 +17097,12 @@ For the purposes of determining which models in this unit can embark within a ^^
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Repressor [Legends]" hidden="false" id="e3f5-a1f9-6d52-f9bc">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Dedicated Transport" hidden="false" id="207d-607b-7f9e-c57d" targetId="ba07-411c-2832-1f79" primary="true"/>
@@ -17561,7 +17566,7 @@ For the purposes of determining which models in this unit can embark within a ^^
         <entryLink import="true" name="Crusade" hidden="false" id="b7a1-e11c-37c9-9e2d" type="selectionEntryGroup" targetId="ab49-9567-bfbd-7b0c" sortIndex="1"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Valkyrie" hidden="false" id="8627-fac1-cc34-78cd">
+    <selectionEntry type="model" import="true" name="Inquisitorial Valkyrie" hidden="false" id="8627-fac1-cc34-78cd">
       <categoryLinks>
         <categoryLink name="Transport" hidden="false" id="24f4-a242-d89a-cd96" targetId="75e8-57c4-40e3-1817" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="74c1-4017-adfa-6ce2" targetId="dbd4-63-af05-998" primary="true"/>
@@ -18959,6 +18964,7 @@ For the purposes of determining which models in this unit can embark within a ^^
         <categoryLink name="Grenades" hidden="false" id="aed0-e8e2-7cd1-1028" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="cece-c1cb-2023-21be" targetId="5128-90b-e4a5-dcbd" primary="false"/>
         <categoryLink name="Militarum Tempestus" hidden="false" id="7e3f-aaa9-2934-2401" targetId="6a0d-9893-895e-2659" primary="false"/>
+        <categoryLink name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="c3d9-cce7-d6df-f463" targetId="8951-d3e6-02d8-1028" primary="false"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -19784,7 +19790,7 @@ For the purposes of determining which models in this unit can embark within a ^^
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
@@ -19802,7 +19808,7 @@ For the purposes of determining which models in this unit can embark within a ^^
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
@@ -20199,6 +20205,224 @@ For the purposes of determining which models in this unit can embark within a ^^
       <categoryLinks>
         <categoryLink name="Damage Dx Weapon" hidden="false" id="59d1-45f2-93a7-7ac3" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Inquisitorial Land Raider" hidden="false" id="9dc0-fa17-280c-fdd9">
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="3a6f-2a83-5f59-6b45" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Smoke" hidden="false" id="310f-ff18-fcbd-2c73" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="3714-3884-d801-7e78" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Transport" hidden="false" id="5d4b-e310-4b94-f0a1" targetId="75e8-57c4-40e3-1817" primary="false"/>
+        <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="b8ea-abd3-11a1-f5e4" targetId="5128-90b-e4a5-dcbd" primary="false"/>
+        <categoryLink name="Inquisitorial Land Raider" hidden="false" id="8050-1a70-cd14-dd85" targetId="115b-228f-e1f2-0ac8" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b5d1-2d5b-5b27-7c05"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="561e-4a8a-5979-9cab" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="ebe8-1a47-c33e-a466" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="fbd2-99bd-9694-bfa9" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Land Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3406-e948-26d7-1cc3">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">16</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Assault Ramp" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="63fc-c43a-ccad-b528">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transport" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ac6d-05f9-999a-384e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a transport capacity of 12 Adeptus Astartes Infantry models. Each Jump Pack, Wulfen, Gravis or Terminator model takes up the space of 2 models and each Centurion model takes up the space of 3 models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="6700-bd0a-df69-b49a" type="selectionEntryGroup" targetId="ab49-9567-bfbd-7b0c" sortIndex="1"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Deadly Demise" id="b312-abb3-694a-10fa" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D6" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Damaged: 1-5 Wounds Remaining" id="7998-2f2c-dbae-3676" hidden="false" type="profile" targetId="b9a3-9db8-fd2f-7e43"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="561e-4a8a-5979-9cab">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="ebe8-1a47-c33e-a466">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="fbd2-99bd-9694-bfa9">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="ff3d-4ea5-6f75-918f" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="10ac-8e76-5d49-f51f" type="selectionEntry" targetId="996b-13b4-622c-928e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="587c-a3dd-3fb7-5704"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="6684-1ad3-1fe0-0f0a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="b3cb-d521-f4fc-782a" type="selectionEntry" targetId="2ffc-3e5a-4825-8b35">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ed-7a4b-6068-1de5"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="7961-4927-37dc-c42d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Storm bolter" hidden="false" id="a7d3-d48d-e78c-efc2" type="selectionEntry" targetId="ac72-81fa-ea32-15fe">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1feb-9f25-7858-6b10"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="5946-4b00-801f-ed85" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Twin heavy bolter" hidden="false" id="ea8a-86ce-9422-2ac5" type="selectionEntry" targetId="4eb7-e026-0d10-7e8c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f670-f426-098a-da45"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1dd-9cc4-fc29-f4e4"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="0465-6f15-b19f-a24d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Godhammer Lascannon" hidden="false" id="2632-729e-9a33-0927">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="77ed-00a5-20a5-5bec"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c64f-5b38-58ee-5b08"/>
+              </constraints>
+              <profiles>
+                <profile name="Godhammer Lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2611-5a03-9dcf-27df">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="8f6e-2079-179e-f80e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Armoured Tracks" hidden="false" id="fe62-a9c3-88e5-90fa">
+              <profiles>
+                <profile name="Armoured tracks" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e082-19f8-a509-a188">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1610-fb5d-5f26-28bb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dde-6e96-ee40-cb3c" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="14ff-6802-75c4-6c8c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -20626,6 +20850,8 @@ For the purposes of determining which models in this unit can embark within a ^^
     <categoryEntry name="Inquisitorial Valkyrie" id="477a-04a5-c473-2e87" hidden="false"/>
     <categoryEntry name="Militarum Tempestus" id="6a0d-9893-895e-2659" hidden="false"/>
     <categoryEntry name="Tarantula Battery" id="25ff-edcb-65bb-7f45" hidden="false"/>
+    <categoryEntry name="Inquisitorial Stormtrooper Command Squad" id="8951-d3e6-02d8-1028" hidden="false"/>
+    <categoryEntry name="Inquisitorial Land Raider" id="115b-228f-e1f2-0ac8" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Assigned Agents" hidden="false" id="58c1-ec7a-74f5-26b9">
@@ -21458,122 +21684,6 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Aquila Kill Team" hidden="false" id="64ef-9075-f9c7-ff3f" type="selectionEntry" targetId="b040-ce24-7e1a-c903">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="00c5-10ab-3a66-995e" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
-    <entryLink import="true" name="Aquila Kill Team" hidden="false" id="0f6a-967c-4000-71d5" type="selectionEntry" targetId="b040-ce24-7e1a-c903">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="d80b-c671-576c-967c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
-    <entryLink import="true" name="Aquila Kill Team" hidden="false" id="1901-246b-8e14-5c84" type="selectionEntry" targetId="b040-ce24-7e1a-c903">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="20fc-623e-ca08-3327" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
-    <entryLink import="true" name="Aquila Kill Team" hidden="false" id="b161-d25a-8151-1c0e" type="selectionEntry" targetId="b040-ce24-7e1a-c903">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="8560-5d08-8775-676a" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
     <entryLink import="true" name="Aquila Kill Team" hidden="false" id="77a5-060f-fa03-7db3" type="selectionEntry" targetId="b040-ce24-7e1a-c903">
       <modifierGroups>
         <modifierGroup type="and">
@@ -21601,35 +21711,6 @@ For the purposes of interacting with terrain features, all models in units with 
       </modifiers>
       <infoLinks>
         <infoLink name="Assigned Agents" id="1e0b-5a4d-4101-e8f0" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
-    <entryLink import="true" name="Aquila Kill Team" hidden="false" id="ba81-3c2b-eeaa-d74f" type="selectionEntry" targetId="b040-ce24-7e1a-c903">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="4228-afbf-6ae0-8428" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Inquisitorial Aquilons" hidden="false" id="6ec8-dba4-1266-b4fd" type="selectionEntry" targetId="a37e-5f8b-2e55-bb4a">
