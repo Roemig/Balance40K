@@ -21942,64 +21942,6 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Assigned Agents" id="49d1-195f-7a49-e5e3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="2d8e-6249-1038-49c7" type="selectionEntry" targetId="9fbd-8bde-a0e6-8e34">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="6430-eee9-9e40-54b5" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
-    <entryLink import="true" name="Inquisitorial Valkyrie" hidden="false" id="f025-3eb2-1db0-14af" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="b080-c22d-26ba-5c94" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
   </entryLinks>
   <sharedProfiles>
     <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9522-b10f-5943-435d">
