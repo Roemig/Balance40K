@@ -17575,7 +17575,6 @@ For the purposes of determining which models in this unit can embark within a ^^
         <categoryLink name="Inquisitorial Valkyrie" hidden="false" id="a1cd-b052-dcd0-ea73" targetId="477a-04a5-c473-2e87" primary="false"/>
         <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="c0e2-4f5d-6ab0-d462" targetId="5128-90b-e4a5-dcbd" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="9982-746f-10d0-ee1c" targetId="dbd4-63-af05-998" primary="true"/>
-        <categoryLink name="Militarum Tempestus" hidden="false" id="2242-1f97-0554-71b7" targetId="6a0d-9893-895e-2659" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -18088,7 +18087,6 @@ For the purposes of determining which models in this unit can embark within a ^^
         <categoryLink name="Imperium" hidden="false" id="5db3-05e2-d0c5-3c1b" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Inquisitorial Stormtroopers" hidden="false" id="520c-c32d-84ec-1e4f" targetId="0317-addc-dc97-1e80" primary="false"/>
         <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="56a4-a734-5684-c381" targetId="5128-90b-e4a5-dcbd" primary="false"/>
-        <categoryLink name="Militarum Tempestus" hidden="false" id="80b0-a904-7361-bc4a" targetId="6a0d-9893-895e-2659" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="81d8-f96c-e803-32b0" includeChildSelections="true" includeChildForces="true"/>
@@ -18962,7 +18960,6 @@ For the purposes of determining which models in this unit can embark within a ^^
         <categoryLink name="Infantry" hidden="false" id="db53-4256-571f-7f59" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Grenades" hidden="false" id="aed0-e8e2-7cd1-1028" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="cece-c1cb-2023-21be" targetId="5128-90b-e4a5-dcbd" primary="false"/>
-        <categoryLink name="Militarum Tempestus" hidden="false" id="7e3f-aaa9-2934-2401" targetId="6a0d-9893-895e-2659" primary="false"/>
         <categoryLink name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="c3d9-cce7-d6df-f463" targetId="8951-d3e6-02d8-1028" primary="false"/>
         <categoryLink name="Character" hidden="false" id="ae10-5a42-4888-0a30" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
       </categoryLinks>
@@ -21771,35 +21768,6 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Assigned Agents" id="657b-a103-ad81-f299" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="a253-5d19-9449-41b5" type="selectionEntry" targetId="9fbd-8bde-a0e6-8e34">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="ec2d-a7b1-8b89-de1b" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
     <entryLink import="true" name="Repressor [Legends]" hidden="false" id="dd53-d850-59ba-7b2f" type="selectionEntry" targetId="e3f5-a1f9-6d52-f9bc">
       <modifierGroups>
         <modifierGroup type="and">
@@ -21827,35 +21795,6 @@ For the purposes of interacting with terrain features, all models in units with 
       </modifiers>
       <infoLinks>
         <infoLink name="Assigned Agents" id="cd74-cd8b-8263-9b7f" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
-      </infoLinks>
-    </entryLink>
-    <entryLink import="true" name="Inquisitorial Valkyrie" hidden="false" id="fa74-445b-f800-65cc" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
-          </modifiers>
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Agents visibility</comment>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Assigned Agents" id="295b-2c52-6acf-ca4e" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Scout Sentinels" hidden="false" id="9fa3-31f1-54c8-a5fe" type="selectionEntry" targetId="0ad9-c1b4-5904-db53">
@@ -21974,7 +21913,7 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Assigned Agents" id="9c09-958b-368b-fb1c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Inquisitorial Land Raider" hidden="false" id="1200-c41a-61fd-c6fc" type="selectionEntry" targetId="9dc0-fa17-280c-fdd9">
+    <entryLink import="true" name="Inquisitorial Land Raider" hidden="false" id="4164-1510-1d7d-31f6" type="selectionEntry" targetId="9dc0-fa17-280c-fdd9">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -22000,7 +21939,65 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="66f4-38ce-a800-2981" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Assigned Agents" id="49d1-195f-7a49-e5e3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="2d8e-6249-1038-49c7" type="selectionEntry" targetId="9fbd-8bde-a0e6-8e34">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Agents visibility</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Assigned Agents" id="6430-eee9-9e40-54b5" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Inquisitorial Valkyrie" hidden="false" id="f025-3eb2-1db0-14af" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Agents visibility</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Assigned Agents" id="b080-c22d-26ba-5c94" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
   </entryLinks>
