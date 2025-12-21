@@ -34215,7 +34215,12 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11dd-af88-a863-afc7"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Medi-pack" hidden="false" id="b691-409c-587f-4472" targetId="b9c9-d718-30ba-a99a" type="selectionEntry"/>
+                <entryLink import="true" name="Medi-pack" hidden="false" id="b691-409c-587f-4472" targetId="b9c9-d718-30ba-a99a" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0331-66bc-011a-c929"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="633d-a0c2-664d-60fd"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Laspistol" hidden="false" id="f3ec-7631-d978-ed2e" type="selectionEntry" targetId="5837-1692-df16-8061">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74fe-0d89-e77a-1ced"/>
@@ -35662,7 +35667,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </entryLink>
                 <entryLink import="true" name="Guardsman" hidden="false" id="e0ab-c8bf-4544-c7c2" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
                   <constraints>
-                    <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="8aeb-dcd9-bc7e-93a7"/>
+                    <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="8aeb-dcd9-bc7e-93a7"/>
                     <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="25b0-4539-9ddb-6351"/>
                   </constraints>
                   <modifiers>
@@ -35740,7 +35745,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <entryLinks>
                 <entryLink import="true" name="Guardsman" hidden="false" id="5e7d-26db-dd4d-22f8" type="selectionEntry" targetId="6401-bf57-ca2b-995b">
                   <constraints>
-                    <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="d2f7-fc4b-e1ed-34e1"/>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="d2f7-fc4b-e1ed-34e1"/>
                     <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="d7bf-c439-79c4-d411"/>
                   </constraints>
                   <modifiers>
