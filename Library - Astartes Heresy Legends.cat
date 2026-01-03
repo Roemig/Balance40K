@@ -187,6 +187,8 @@
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f15-a830-9a9e-a6c4" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Leviathan melee weapon" id="48f7-ae3e-a789-9543" hidden="false"/>
+    <categoryEntry name="Contemptor melee weapon" id="f370-4e6f-8a79-58f7" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="78aa-3f99-5fb7-7f83" name="Kratos [Legends]" hidden="false" collective="false" import="true" type="model">
@@ -1133,6 +1135,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Close Combat Mastery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9845-0fe6-93f1-8a09">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 melee weapons in addition to its Armoured feet, add 2 to the Attacks characteristic of those two weapons.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="ebf7-e87e-ea66-837a" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
@@ -1345,6 +1352,9 @@
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="cfbd-4d12-f24f-55f1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Contemptor melee weapon" hidden="false" id="cde0-6967-38d3-bc69" targetId="f370-4e6f-8a79-58f7" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dreadnought combat weapon" hidden="false" id="7cc3-265c-130-198f" collective="false">
                   <constraints>
@@ -1369,6 +1379,9 @@
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="80d6-a2bd-c36e-0262" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Contemptor melee weapon" hidden="false" id="261f-8e51-6a90-8d9e" targetId="f370-4e6f-8a79-58f7" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -1564,6 +1577,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="2" field="2337-daa1-6682-b110" affects="self.entries.recursive.f370-4e6f-8a79-58f7.profiles.Melee Weapons">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="783a-1c02-b377-b169" childId="f370-4e6f-8a79-58f7" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="14d4-8062-f090-6719" name="Leviathan Dreadnought [Legends]" hidden="false" collective="false" import="true" type="model">
@@ -1586,6 +1604,11 @@
         <profile id="731d-26c2-a9e8-d336" name="Duty Eternal" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Close Combat Mastery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e493-094e-8b60-9d0c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is equipped with 2 melee weapons in addition to its Armoured feet, add 2 to the Attacks characteristic of those two weapons.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1746,6 +1769,9 @@
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="70b9-0aac-4358-ba46" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Leviathan melee weapon" hidden="false" id="903d-fb0c-3600-569a" targetId="48f7-ae3e-a789-9543" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -1795,6 +1821,9 @@
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="c0bb-3870-ac27-2893" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Leviathan melee weapon" hidden="false" id="9098-52b5-3e78-a7de" targetId="48f7-ae3e-a789-9543" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -1889,6 +1918,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="2337-daa1-6682-b110" affects="self.entries.recursive.48f7-ae3e-a789-9543.profiles.Melee Weapons">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="14d4-8062-f090-6719" childId="48f7-ae3e-a789-9543" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4677,7 +4711,7 @@
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">18</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">20</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">6</characteristic>
           </characteristics>
@@ -4829,7 +4863,7 @@
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">18</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">20</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">6</characteristic>
           </characteristics>
