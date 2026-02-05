@@ -95,7 +95,7 @@
     <entryLink id="222c-8db7-5b68-a060" name="Lord on Juggernaut" hidden="false" collective="false" import="true" targetId="ec72-f024-4283-0558" type="selectionEntry"/>
     <entryLink id="ca7d-c77a-28e2-7b6b" name="Master of Executions" hidden="false" collective="false" import="true" targetId="1b56-682c-ac33-bc5f" type="selectionEntry"/>
     <entryLink id="b250-a2f9-7098-353d" name="Khorne Berzerkers" hidden="false" collective="false" import="true" targetId="f909-00c7-8ba4-018a" type="selectionEntry"/>
-    <entryLink id="94b7-fa73-a8cd-5b9d" name="Chaos Terminators" hidden="false" collective="false" import="true" targetId="45f6-8429-a1d9-2a51" type="selectionEntry"/>
+    <entryLink id="94b7-fa73-a8cd-5b9d" name="Red Butchers" hidden="false" collective="false" import="true" targetId="45f6-8429-a1d9-2a51" type="selectionEntry"/>
     <entryLink id="8568-71db-b833-93d5" name="Jakhals" hidden="false" collective="false" import="true" targetId="6f81-4538-a414-251e" type="selectionEntry"/>
     <entryLink id="96aa-4baa-2cb2-da3d" name="Eightbound" hidden="false" collective="false" import="true" targetId="9435-1f44-7e5b-d510" type="selectionEntry"/>
     <entryLink id="e213-0676-347e-9292" name="Exalted Eightbound" hidden="false" collective="false" import="true" targetId="9932-3d2b-1e47-d53b" type="selectionEntry"/>
@@ -3859,8 +3859,8 @@
     </selectionEntry>
     <selectionEntry id="44b0-1947-ea4a-3005" name="Chainblade" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07bf-05c2-8ad9-6b15" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d938-9b2e-cb3d-319f" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07bf-05c2-8ad9-6b15" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb34-17f0-59c8-1066" type="max"/>
       </constraints>
       <profiles>
         <profile id="48a1-4f35-83be-3220" name="Chainblade" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
@@ -9708,7 +9708,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="4" field="selections" scope="f909-00c7-8ba4-018a" shared="true" id="588d-ca46-691d-6505" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="4" field="selections" scope="43f3-af05-7167-80d4" shared="true" id="588d-ca46-691d-6505" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b11-f82e-88f3-0cac-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b11-f82e-88f3-0cac-max" includeChildSelections="false"/>
       </constraints>
@@ -9740,7 +9740,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="4" field="selections" scope="f909-00c7-8ba4-018a" shared="true" id="a210-7cc7-b4a9-a462" includeChildSelections="true"/>
+        <constraint type="max" value="4" field="selections" scope="43f3-af05-7167-80d4" shared="true" id="a210-7cc7-b4a9-a462" includeChildSelections="true"/>
       </constraints>
       <modifiers>
         <modifier type="add" value="Max 1 plasma pistol per 5 models" field="error">
@@ -11026,7 +11026,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2de8-6c32-5d1c-4873" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Chainblade" hidden="false" id="5bac-84db-10ad-7eae" collective="false" targetId="44b0-1947-ea4a-3005" type="selectionEntry">
+                    <entryLink import="true" name="Chainblade" hidden="false" id="5bac-84db-10ad-7eae" collective="false" targetId="6694-65b5-713b-cd82" type="selectionEntry">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="ab79-521d-67eb-3e50" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -11035,6 +11035,9 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="3775-8f6d-a270-2ddc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0fa-c320-ee17-ec96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -11043,6 +11046,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                 <entryLink import="true" name="Combi-bolter" hidden="false" id="0f2a-7cfe-6e4f-aa98" collective="false" targetId="2d4d-9623-1cea-b73a" type="selectionEntry">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d38-19c6-46bb-5f21" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8e9-78ca-59a5-92ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="ea38-0809-c09b-4ed7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -11071,6 +11075,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                 <entryLink import="true" name="Combi-bolter" hidden="false" id="d0ee-cdac-b635-6eef" collective="false" targetId="2d4d-9623-1cea-b73a" type="selectionEntry">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7af6-a8ec-cf93-ff8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a2d-319f-24f3-1ca9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Chainblade" hidden="false" id="9052-9c93-b4a2-f882" collective="false" targetId="44b0-1947-ea4a-3005" type="selectionEntry">
@@ -11299,6 +11304,18 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="2144-4e79-49be-20a9" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6756-4e11-61b2-9335"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84e7-f9ad-387d-3d88"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="313e-7618-0046-5487" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7456-4c70-fab8-ff29" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="67f3-27ec-1990-2667" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11396,7 +11413,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance rolls made for this unit</characteristic>
           </characteristics>
         </profile>
-        <profile name="Blood Mist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4f86-5891-1b04-611e">
+        <profile name="Savage Speed" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4f86-5891-1b04-611e">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit may not be chosen as the target of overwatch.</characteristic>
           </characteristics>
@@ -11429,7 +11446,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="281c-c5bd-9b85-094f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Chainblade" hidden="false" id="20a5-db99-8783-f7ce" collective="false" targetId="44b0-1947-ea4a-3005" type="selectionEntry">
+                    <entryLink import="true" name="Chainblade" hidden="false" id="20a5-db99-8783-f7ce" collective="false" targetId="6694-65b5-713b-cd82" type="selectionEntry">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="dc76-617d-72c6-02eb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -11438,6 +11455,9 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="1bee-2f8a-3bc1-be97" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9715-9366-f9a3-2f68" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -11634,6 +11654,28 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry id="6694-65b5-713b-cd82" name="Chainblade" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92d3-cc6f-1a9d-9e4b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6b19-1a6c-1221-042d" name="Chainblade" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+      <comment>Champion</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

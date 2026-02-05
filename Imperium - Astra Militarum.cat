@@ -1018,7 +1018,16 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Hermes Light Sentinels" hidden="false" type="selectionEntry" id="5136-7f1b-a4b5-14d4" targetId="41bd-f345-3f14-07db">
+    <entryLink import="true" name="Hermes Light Sentinel Squadron" hidden="false" type="selectionEntry" id="5136-7f1b-a4b5-14d4" targetId="41bd-f345-3f14-07db">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Honos Command Squad" hidden="false" type="selectionEntry" id="9f18-90ad-054f-bd01" targetId="29d0-cfe6-68a5-da7d">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
