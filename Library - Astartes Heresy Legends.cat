@@ -2521,19 +2521,9 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a757-cc13-2b93-3899" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="9f28-7c6a-410c-6438" collective="false" targetId="f1a6-b394-5bc5-a3cb" type="selectionEntry">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="e347-5a6f-1abc-09ad" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Multi-melta" hidden="false" id="e7f5-6c8e-be0d-5e38" collective="false" targetId="91c8-b628-4d47-d01e" type="selectionEntry">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="5279-e881-9def-b8e7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Twin heavy flamer" hidden="false" id="494e-24ea-e98d-b4f3" collective="false" targetId="28c2-3ff0-43c1-380d" type="selectionEntry">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c4f6-3dda-e514-3123" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
                 </entryLink>
               </entryLinks>
