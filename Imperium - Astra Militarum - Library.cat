@@ -22627,6 +22627,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e3a-b160-6d93-598b"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy" id="d657-3f79-38cc-239d" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                  </infoLinks>
                 </entryLink>
               </entryLinks>
               <profiles>
@@ -41919,7 +41922,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Indirect Fire</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Heavy, Indirect Fire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -43001,15 +43004,13 @@ Onslaught - 4</characteristic>
           </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Grizzled Company" hidden="false" id="cc4e-a30b-f987-c984">
-          <profiles>
-            <profile name="Ruthless Discipline" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2609-5b25-8959-60c2">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the number of Orders each **^^Astra Militarum Officer^^** model from your army can issue, as stated on their datasheet.
+          <rules>
+            <rule name="Ruthless Discipline" id="875a-bbfc-8184-0f73" hidden="false">
+              <description>Add 1 to the number of Orders each **^^Astra Militarum Officer^^** model from your army can issue, as stated on their datasheet.
 
-While an **^^Astra Militarum^^** unit from your army is affected by an Order, each time a model in that unit makes an attack, re‑roll a Hit roll of 1. If the target of that attack is within range of an objective marker, re‑roll a Wound roll of 1 as well.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+While an **^^Astra Militarum^^** unit from your army is affected by an Order, each time a model in that unit makes an attack, re‑roll a Hit roll of 1.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

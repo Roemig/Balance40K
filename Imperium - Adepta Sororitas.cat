@@ -38,6 +38,7 @@
     <categoryEntry name="Saint Potentia" id="99d5-9e0b-2853-ed23" hidden="false"/>
     <categoryEntry name="Living Saint" id="5f9f-ac8a-b212-77fb" hidden="false"/>
     <categoryEntry name="Celestian Insidiants" id="9fe5-ee8a-b4c8-646a" hidden="false"/>
+    <categoryEntry name="Frateris Militia" id="269c-6d4b-36b0-fe20" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Aestred Thurga and Agathae Dolan" hidden="false" id="4b94-c22e-84f9-8d32" publicationId="7d85-6d0f-57e0-5dea">
@@ -1867,6 +1868,7 @@
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b9af-92b4-a125-1446" includeChildSelections="false"/>
@@ -2811,7 +2813,7 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Exorcist" hidden="false" id="684e-4dd3-340a-23ee" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5527,6 +5529,7 @@ of your Command phase, you can choose one of the following:
 ■ Arco-flagellants
 ■ Battle Sisters Squad
 ■ Dominion Squad
+■ Frateris Militia
 ■ Sisters Novitiate Squad</characteristic>
               </characteristics>
             </profile>
@@ -8912,7 +8915,7 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
             <modifier type="append" value="6&quot;" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Assigned Agents" id="dffb-180c-5bad-89b9" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="dffb-180c-5bad-89b9" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Acts of Faith" id="87cb-948e-701f-a2c9" hidden="false" type="rule" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
       <categoryLinks>
@@ -9479,7 +9482,7 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
         </profile>
         <profile name="Virtue of Intolerance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="76e2-fa16-cbc9-d420">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one unit from your opponent’s army to be this unit’s quarry. Each time a model in this unit makes an attack that targets its quarry, that attack has the ^^**[Precision]^^** ability and you can re‑roll the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one unit from your opponent’s army to be this unit’s quarry. Each time a model in this unit makes an attack that targets its quarry, that attack has the ^^**[Precision]^^** ability and you can re‑roll the Hit roll. This ability can be used even if this unit is embarked within a ^^**Transport**^^.</characteristic>
           </characteristics>
         </profile>
         <profile name="Attached Unit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d4e9-0707-582f-0385">
@@ -9812,6 +9815,564 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
         <infoLink name="Pistol" id="75d3-fba3-b32d-10eb" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Frateris Militia" hidden="false" id="455e-65bc-c65b-6896">
+      <modifiers>
+        <modifier type="set" value="120" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="10" field="selections" scope="455e-65bc-c65b-6896" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Imperium" hidden="false" id="c78d-087a-8bc0-2f29" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="4636-64c2-3e8b-22e0" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Battleline" hidden="false" id="a261-50b3-ef43-ca7e" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Grenades" hidden="false" id="e45a-4b05-dd65-8c9f" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Faction: Adepta Sororitas" hidden="false" id="fac2-20b2-25d4-8439" targetId="fd71-afa6-b13b-7fda" primary="false"/>
+        <categoryLink name="Frateris Militia" hidden="false" id="7c80-50af-19f1-a25b" targetId="269c-6d4b-36b0-fe20" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="449b-1532-739d-0086" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="81f4-afc9-595d-e088" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="084b-47f3-2d17-24f4" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="207c-6d87-bffe-8760" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="bd5a-2cd9-66a4-1bc9" hidden="false" defaultSelectionEntryId="3477-98aa-ca79-414" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="10 Militia" hidden="false" id="2266-6d0f-3785-d7aa">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Militia" hidden="false" id="2edb-027f-48dc-46b1">
+                  <constraints>
+                    <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="37f2-7876-b3a0-f44b" includeChildSelections="false"/>
+                    <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="043e-41d9-ff3a-5a2b" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Militia" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="87f6-60e4-6615-c61d">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Autogun" hidden="false" id="6a47-bc85-e92a-7684" type="selectionEntry" targetId="a6ad-aa05-07a0-d835">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ceba-4c93-ef6a-3d18"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b447-22fc-8815-8cde"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="a120-7ab9-6ac5-8d84" type="selectionEntry" targetId="f204-1361-eda8-9845">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c3a-6edc-ea98-162c"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fe8-084b-4394-d525"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20 Militia" hidden="false" id="64c5-ac6e-9bdb-75d8">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Militia" hidden="false" id="f450-7046-371b-cf3c">
+                  <constraints>
+                    <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="9c76-2a7d-34ff-a8a6" includeChildSelections="false"/>
+                    <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="db92-e18f-a7d5-486f" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Militia" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6a4a-d935-2c48-bc1b">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Autogun" hidden="false" id="cd05-2f02-edb4-d880" type="selectionEntry" targetId="a6ad-aa05-07a0-d835">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c17-d5b0-bfc9-d0f0"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebd8-b071-e1ce-db14"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Close combat weapon" hidden="false" id="ae34-cf18-8a56-34e7" type="selectionEntry" targetId="f204-1361-eda8-9845">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8880-4f7b-1193-7759"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87e5-5603-4edf-f84d"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b97d-4423-e223-0b19"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a12-6f85-90ee-7794"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Righteous Fervor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df0f-020d-6913-dc19">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a [Min istorum Priest] is attached to this unit re-roll a hit roll of 1 and re-roll a wound roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Acts of Faith" id="ac90-da6e-901b-e32f" hidden="false" type="rule" targetId="7ef7-dca6-e2ea-ecc8"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="c1b3-db0d-73ec-2e24" type="selectionEntryGroup" targetId="b0df-6a60-8561-efde"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditions>
+                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="6" field="81f4-afc9-595d-e088">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="084b-47f3-2d17-24f4">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="207c-6d87-bffe-8760">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autogun" hidden="false" id="a6ad-aa05-07a0-d835" collective="true">
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="3704-8b6d-eb45-477a" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af8d-250b-5158-8def"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ccc-89ae-cbee-956e"/>
+      </constraints>
+      <profiles>
+        <profile name="Autogun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d3f1-36f0-2070-f840">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="b2d6-1cb5-5b66-5c74" name="Celestians" hidden="false" collective="false" import="true" type="unit" publicationId="7d85-6d0f-57e0-5dea">
+      <modifiers>
+        <modifier type="set" field="51b2-306e-1021-d207" value="160">
+          <conditions>
+            <condition field="selections" scope="b2d6-1cb5-5b66-5c74" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f319-4a61-5ec5-bc65" name="Holy Trinity" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While resolving attacks against a target unit with bolter, flamer and melta weapons, add 1 to the wound roll. While a Canoness is attached to this unit, you may re-roll the wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="26c2-c1d3-46de-6c17">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 5+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Acts of Faith" hidden="false" type="rule" id="4374-49c7-5840-95fe" targetId="7ef7-dca6-e2ea-ecc8"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="7d09-d68a-0e46-4a50" primary="true" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="cce7-eebe-a11b-1acb" primary="false" name="Grenades"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="aecc-00bf-c496-15b5" primary="false" name="Imperium"/>
+        <categoryLink targetId="4038-4f63-856e-fa4c" id="1bdd-127c-a5ea-eab9" primary="false" name="Celestian Sacresants"/>
+        <categoryLink targetId="fd71-afa6-b13b-7fda" id="ca39-b551-73a8-753c" primary="false" name="Faction: Adepta Sororitas"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3df4-98e6-eca9-2648" name="Celestian Superior" hidden="false" collective="false" import="true" type="model" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d0f-4179-01f8-af38"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4ca-4110-0793-996c"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8835-e7b9-8c3f-f550" name="Celestian" hidden="false" targetId="8f3c-d5e1-b18b-060a" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="01a0-ab54-79b4-436d" type="selectionEntry" targetId="a330-88d-5e33-d8ca">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="eead-6fbf-4940-87dd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ee88-8171-f505-f502"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="8716-79ae-6919-e5a0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Close combat weapon" hidden="false" id="17af-5684-f228-92d0" type="selectionEntry" targetId="f204-1361-eda8-9845">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abb5-95ae-1eb4-225f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2c2-7bfd-5ec4-0e75"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="383e-3cec-254e-f24f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Sister Superior Melee Weapons" hidden="false" id="0916-7ac4-06d7-c689" type="selectionEntryGroup" targetId="827b-ad7b-3c7c-71c6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0244-aae0-1054-fe39"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sister Superior Ranged Weapons" hidden="false" id="42a4-8dd4-569e-8761" type="selectionEntryGroup" targetId="4c22-7a16-82bc-e202"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Celestian" hidden="false" id="0310-366d-b68b-9c6c" defaultSelectionEntryId="3b8b-a327-c8e-c919" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="dfb1-0b85-0006-1436"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d502-cdab-7b90-aed2"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Celestian Sister" hidden="false" id="a1fa-0352-47b5-8211" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="e42d-4cac-bbed-d155" type="selectionEntry" targetId="a330-88d-5e33-d8ca">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8e0-1b70-177b-6164"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4871-2eda-8145-c67a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Boltgun" hidden="false" id="c99c-090c-c9a7-ee44" type="selectionEntry" targetId="9378-6ba3-6811-68a7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a49-67d5-97b3-acbf"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f19e-b860-501a-eadc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="5616-f085-d287-6d3a" type="selectionEntry" targetId="f204-1361-eda8-9845">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a546-78f1-5a3a-03d1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f77-64e5-e42d-df67"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Celestian" id="690c-8ced-a446-0b06" hidden="false" targetId="8f3c-d5e1-b18b-060a" type="profile"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="6e6a-8caa-1953-d57a" includeChildSelections="true"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7297-cfb9-5596-7138" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Celestian w/ Simulacrum Imperialis" hidden="false" id="5ca4-9754-830e-0124">
+              <infoLinks>
+                <infoLink name="Celestian" id="ffa6-9c38-8bee-cd26" hidden="false" targetId="8f3c-d5e1-b18b-060a" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="c3fe-8b65-6059-c250" type="selectionEntry" targetId="a330-88d-5e33-d8ca">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4ec-b3f6-deb4-8230"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d34-8013-dd6a-ac27"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Boltgun" hidden="false" id="d709-fa1b-2e8b-7bbf" type="selectionEntry" targetId="9378-6ba3-6811-68a7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd9e-b970-79ce-b398"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b01d-7894-e2d9-ae7f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Simulacrum Imperialis" hidden="false" id="0342-a7b4-c125-4cd2" type="selectionEntry" targetId="dbfb-cfa4-24b3-54e8"/>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="6b13-8b70-2233-58f2" type="selectionEntry" targetId="f204-1361-eda8-9845">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="580b-b9d7-a87d-a8cb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4e6-c3e4-f8a8-7116"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26d7-e72a-efdf-1029" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Celestian w/ Special or Heavy Weapon" hidden="false" id="a3c9-ec08-b63a-e7a2">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="79fc-681f-caf4-56b5" type="selectionEntry" targetId="a330-88d-5e33-d8ca">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12f6-c1f5-a1f6-38d1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6102-a2c4-d59b-4596"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="f30a-98b4-3590-f725" type="selectionEntry" targetId="f204-1361-eda8-9845">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd08-3daa-2a91-38f5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a57a-9405-defa-14ac"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Celestian" id="e2ce-5bb5-052d-8b8f" hidden="false" targetId="8f3c-d5e1-b18b-060a" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon" id="911a-45fa-83e3-43b4" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Special Weapons" hidden="false" id="82fe-0632-f8ae-7501" type="selectionEntryGroup" targetId="2d13-a896-8e4c-2cda">
+                      <modifiers>
+                        <modifier type="set" value="0" field="3fbb-214b-87ac-da52">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="a3c9-ec08-b63a-e7a2" childId="e133-3a33-f95f-ae50" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fbb-214b-87ac-da52"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Weapons" hidden="false" id="82a1-f07c-76a2-648d" type="selectionEntryGroup" targetId="e133-3a33-f95f-ae50">
+                      <modifiers>
+                        <modifier type="set" value="0" field="c360-ad11-95e6-68b1">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="a3c9-ec08-b63a-e7a2" childId="2d13-a896-8e4c-2cda" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e908-556c-55d1-a135" includeChildSelections="true" includeChildForces="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef2d-5684-d2ca-f61b" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8888-c560-dfb1-426c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="8888-c560-dfb1-426c">
+                  <conditions>
+                    <condition type="atLeast" value="6" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Celestian w/ Special Weapon" hidden="false" id="5450-2c84-4ecb-de65">
+              <infoLinks>
+                <infoLink name="Celestian" id="7356-9fc4-97b6-b8ba" hidden="false" targetId="8f3c-d5e1-b18b-060a" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="29fa-73e2-e58f-f442" type="selectionEntry" targetId="a330-88d-5e33-d8ca">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e365-b582-0e79-639e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9628-e766-807a-bc16"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Special Weapons" hidden="false" id="4698-1e39-b0bf-c600" type="selectionEntryGroup" targetId="2d13-a896-8e4c-2cda">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6e7-478b-92ab-b058"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f94a-265e-b49b-156d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="eac8-3fe6-bfde-3fa7" type="selectionEntry" targetId="f204-1361-eda8-9845">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b172-997b-4989-a592"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a4d-c165-c20a-56f8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5954-0bbc-8bdd-b058"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="5954-0bbc-8bdd-b058">
+                  <conditions>
+                    <condition type="atLeast" value="6" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3686-8bce-a72f-a795" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="9eb7-a68f-102a-7c6a" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="91c7-864a-e34c-6270" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="057a-a40b-057e-fde5" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="7101-4573-7815-552f" type="selectionEntryGroup" targetId="b0df-6a60-8561-efde" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="9eb7-a68f-102a-7c6a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="91c7-864a-e34c-6270">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="057a-a40b-057e-fde5">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Simulacrum Imperialis" hidden="false" id="2ad1-ef9a-8953-148a">
+      <profiles>
+        <profile name="Simulacrum Imperialis" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c10-a290-21b5-00a9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 CP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7407-1506-5758-9cac"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3665-e874-0b97-24c1"/>
+      </constraints>
+      <comment>Celestians</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Bolt pistol" hidden="false" id="c934-fc40-d6a2-8919" typeName="Ranged Weapons" typeId="f77d-b953-8fa4-b762">
@@ -9976,6 +10537,16 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
     <profile name="Sacred Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e8c6-0df9-48c0-7c29">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8f3c-d5e1-b18b-060a" name="Celestian" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -12165,6 +12736,7 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
         <entryLink import="true" name="Shadow Operations" hidden="false" id="e5fe-483d-2acf-2a50" type="selectionEntryGroup" targetId="68a2-ada5-3cd4-c5a3"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Frateris Militia" hidden="false" type="selectionEntry" id="015c-59d0-b285-7dbe" targetId="455e-65bc-c65b-6896"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f82d-fbeb-8ed2-4284" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>

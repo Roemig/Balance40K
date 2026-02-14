@@ -8903,6 +8903,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </infoLink>
         <infoLink name="Hover" id="76a6-235f-6ae2-c2b0" hidden="false" type="rule" targetId="eec5-5f54-9c03-c305"/>
         <infoLink name="Stealth" id="cfff-9051-5dc2-2eb6" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Agents of the Imperium" id="79fb-4a83-e004-b5ab" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <profiles>
         <profile name="Corvus Blackstar" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="782e-311e-0601-a32f" publicationId="4115-3627-e608-39f6" page="29">
@@ -9839,6 +9840,9 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <infoLinks>
+        <infoLink name="Agents of the Imperium" id="a9a6-b000-e6d3-988b" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deathwatch Terminator Squad [Legends]" hidden="false" id="0b74-440c-ee1d-ca50" publicationId="4115-3627-e608-39f6" page="15">
       <costs>
@@ -9868,6 +9872,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" id="1157-7a88-c42c-df79" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Agents of the Imperium" id="ae32-ddc1-3c33-6ac3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="9e0a-99f8-a4ab-c7c6" targetId="cf47-a0d7-7207-29dc" primary="true"/>
@@ -10828,6 +10833,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
       </constraints>
       <infoLinks>
         <infoLink name="Kill Team" id="90d8-5d42-0e2f-9b7d" hidden="false" type="rule" targetId="adc1-e09a-fcd4-8d77"/>
+        <infoLink name="Agents of the Imperium" id="6707-4339-91d2-e9e5" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="d1fa-60b8-2f8b-b600" type="selectionEntryGroup" targetId="ab49-9567-bfbd-7b0c" sortIndex="1"/>
@@ -11663,6 +11669,9 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <infoLinks>
+        <infoLink name="Agents of the Imperium" id="5a79-58ad-84de-9fbf" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kill Team Cassius [Legends]" hidden="false" id="88af-6e47-7162-b1be" publicationId="4115-3627-e608-39f6" page="11">
       <categoryLinks>
@@ -16765,6 +16774,9 @@ For the purposes of determining which models in this unit can embark within a ^^
 **Designer’s Note**: *While the abstractions in the above rule cause some models to behave differently to similar models in other units, they are designed to minimise complicated Transport rules.*</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Agents of the Imperium" id="dd65-d6f6-3165-7d93" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="ecff-abf8-a4b0-7882" publicationId="4115-3627-e608-39f6" page="29" collective="true">
       <comment>Decimus Kill Team</comment>
@@ -16844,6 +16856,7 @@ For the purposes of determining which models in this unit can embark within a ^^
           </modifiers>
         </infoLink>
         <infoLink name="Damaged: 1-5 Wounds Remaining" id="602a-3eb7-ce38-9362" hidden="false" type="profile" targetId="b9a3-9db8-fd2f-7e43"/>
+        <infoLink name="Agents of the Imperium" id="6f44-1c92-6b3f-eacd" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -17124,6 +17137,7 @@ For the purposes of determining which models in this unit can embark within a ^^
             <modifier type="append" value="D3" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Agents of the Imperium" id="8004-00d3-6a2c-ff07" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="fe25-a15b-e462-b31e" type="selectionEntryGroup" targetId="ab49-9567-bfbd-7b0c"/>
@@ -17390,6 +17404,7 @@ For the purposes of determining which models in this unit can embark within a ^^
             <modifier type="append" value="9&quot;" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Agents of the Imperium" id="44d7-915a-6399-6537" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <profiles>
         <profile name="Daring Recon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f4f-93a0-2e04-3ed1">
@@ -17629,6 +17644,7 @@ For the purposes of determining which models in this unit can embark within a ^^
             <modifier type="append" value="D6" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Agents of the Imperium" id="af2e-1995-f790-af5f" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="f6bc-efa9-f248-302d" hidden="false" sortIndex="2">
@@ -17812,6 +17828,7 @@ For the purposes of determining which models in this unit can embark within a ^^
             <modifier type="append" value="1" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Agents of the Imperium" id="c1ba-7ab6-3af7-e3e1" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <profiles>
         <profile name="Mobile Hunter-killers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="482f-7b8b-6ad6-db93">
@@ -18090,6 +18107,7 @@ For the purposes of determining which models in this unit can embark within a ^^
       </constraints>
       <infoLinks>
         <infoLink name="Deep Strike" id="0c18-63e2-912b-b568" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Agents of the Imperium" id="6810-4c26-b9b6-9274" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <profiles>
         <profile name="Storm Troopers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="73b9-a870-23b8-030f">
@@ -18508,6 +18526,7 @@ For the purposes of determining which models in this unit can embark within a ^^
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" id="24a3-486b-c389-a8e0" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Agents of the Imperium" id="0f72-ec06-2659-ae88" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -19291,6 +19310,7 @@ For the purposes of determining which models in this unit can embark within a ^^
       </infoGroups>
       <infoLinks>
         <infoLink name="Deep Strike" id="95ca-f2f1-96ea-882f" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Agents of the Imperium" id="09bb-7047-2c98-3396" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c1d6-23fa-1604-10fa" type="selectionEntryGroup" targetId="ab49-9567-bfbd-7b0c" sortIndex="1"/>
@@ -19614,6 +19634,7 @@ For the purposes of determining which models in this unit can embark within a ^^
             <modifier type="append" value="1" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Agents of the Imperium" id="12d6-77a3-f7aa-2b9f" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -20243,6 +20264,7 @@ For the purposes of determining which models in this unit can embark within a ^^
           </modifiers>
         </infoLink>
         <infoLink name="Damaged: 1-5 Wounds Remaining" id="7998-2f2c-dbae-3676" hidden="false" type="profile" targetId="b9a3-9db8-fd2f-7e43"/>
+        <infoLink name="Agents of the Imperium" id="7277-737c-5149-b918" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
@@ -20254,13 +20276,6 @@ For the purposes of determining which models in this unit can embark within a ^^
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -20845,7 +20860,7 @@ For the purposes of determining which models in this unit can embark within a ^^
     <categoryEntry name="Valkyrie" id="2e5a-08ba-3cf9-6457" hidden="false"/>
   </categoryEntries>
   <sharedRules>
-    <rule name="Assigned Agents" hidden="false" id="58c1-ec7a-74f5-26b9">
+    <rule name="Agents of the Imperium" hidden="false" id="58c1-ec7a-74f5-26b9">
       <description>If your army Faction is AGENTS OF THE IMPERIUM, when making an attack with a unit, you may choose the [LETHAL HITS] or [SUSTAINED HITS 1] ability to be active for that unit.
 
 
@@ -20857,13 +20872,6 @@ Onslaught: 3 RETINUE, 3 CHARACTER, 2 REQUISITIONED
 
 
 Note that you can include AGENTS OF THE IMPERIUM DEDICATED TRANSPORT units in such an army as normal, but each unit must start the battle with one or more units embarked within it, or it cannot be deployed for that battle and will count as having been destroyed during the first battle round.</description>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </rule>
     <rule name="Kill Team" id="adc1-e09a-fcd4-8d77" hidden="false">
       <description>Each time an attack targets this unit, if it contains models with different Toughness characteristics, until the attacking unit has finished making its attacks, use the Toughness characteristic of the majority of the models in that unit when determining what roll is required for that attack to successfully wound. If two or more Toughness characteristics are tied for majority, use the highest value. 
