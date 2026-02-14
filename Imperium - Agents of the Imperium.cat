@@ -39,7 +39,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="41c9-9539-975a-4b1e" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="41c9-9539-975a-4b1e" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="ebd6-94c9-1462-91fe" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="f293-75df-bfe5-aab7" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="3ed3-a3ff-fa6b-2f57" targetId="c05d-f4c3-f091-4938"/>
@@ -217,7 +217,7 @@
         <categoryLink targetId="1d30-5c67-e36f-9e55" id="9d26-98a-6e33-c877" primary="false" name="Culexus Assassin"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="d05d-b2ef-bd86-198c" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="d05d-b2ef-bd86-198c" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="b638-575e-e520-84fa" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="59e-4e68-d071-3154" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="8251-6cc0-fd79-a9bf" targetId="7cb5-dd6b-dd87-ad3b"/>
@@ -376,7 +376,7 @@
         <categoryLink targetId="3494-754d-59d1-1d6c" id="ea5c-7b9-216a-83b" primary="false" name="Eversor Assassin"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="6c10-a08d-573d-8b97" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="6c10-a08d-573d-8b97" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="efd5-deef-aa4b-eb86" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="efca-13d4-233e-ae05" targetId="b68a-5ded-65ac-98c">
           <modifiers>
@@ -538,7 +538,7 @@
         <categoryLink targetId="9063-fa49-9ba2-9350" id="5642-2f63-e61d-fce2" primary="false" name="Callidus Assassin"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="b6f5-167-9b7a-40f0" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="b6f5-167-9b7a-40f0" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="c7b6-1da2-946c-cf66" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="d2e9-24f8-11ca-4839" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Fights First" hidden="false" type="rule" id="25b3-6f39-6c4d-97d2" targetId="24-c886-e8ba-5a89"/>
@@ -1101,7 +1101,7 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="d3bc-29d2-6b8f-9981" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="d3bc-29d2-6b8f-9981" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <profiles>
         <profile name="Voidsmen-at-Arms" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="16c2-78c3-4169-3fd5">
@@ -1998,7 +1998,7 @@
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
       </costs>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="f9a1-4f77-491e-782" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="f9a1-4f77-491e-782" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="5128-90b-e4a5-dcbd" id="8e1e-e6d5-9481-9b65" primary="false" name="Faction: Agents of the Imperium"/>
@@ -2236,7 +2236,7 @@
         <entryLink import="true" name="Crusade" hidden="false" id="3465-e416-0050-dc9d" type="selectionEntryGroup" targetId="ab49-9567-bfbd-7b0c" sortIndex="1"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="9796-9f61-ca03-2e26" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="9796-9f61-ca03-2e26" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="5128-90b-e4a5-dcbd" id="53ca-d68b-bb3f-8f37" primary="false" name="Faction: Agents of the Imperium"/>
@@ -2732,7 +2732,7 @@
         <categoryLink name="Adeptus Arbites" hidden="false" id="1cb5-6e5a-2c1d-bd3a" targetId="1fe2-9841-c085-291c" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="f0cb-20fa-f82c-bda7" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="f0cb-20fa-f82c-bda7" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Cyber-mastiff" hidden="false" type="selectionEntry" id="ab3f-46cf-a16b-da83" targetId="14b8-cce5-ed01-5699" sortIndex="4"/>
@@ -3076,7 +3076,7 @@
         <categoryLink name="Ordo Xenos" hidden="false" id="cd26-96ff-e00b-b27c" targetId="ab1c-1334-d1cc-08df" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="8f32-427e-2c83-89d8" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="8f32-427e-2c83-89d8" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Leader" hidden="false" type="rule" id="6e20-77fb-353-40d1" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Authority of the Inquisition" hidden="false" type="profile" id="59ba-7984-7233-ab7f" targetId="730a-dcfd-f2aa-cdd6"/>
       </infoLinks>
@@ -3224,7 +3224,7 @@
         <categoryLink name="Ordo Malleus" hidden="false" id="c60f-d8a6-4bc2-4a4a" targetId="5ef0-886d-e892-b934" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="f1c5-64a2-4d54-9276" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="f1c5-64a2-4d54-9276" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Authority of the Inquisition" hidden="false" type="profile" id="5805-a8ea-bf85-c95b" targetId="730a-dcfd-f2aa-cdd6"/>
         <infoLink name="Leader" hidden="false" type="rule" id="9d3c-500e-8eaa-1527" targetId="b4dd-3e1f-41cb-218f"/>
       </infoLinks>
@@ -3393,7 +3393,7 @@
         <categoryLink name="Ordo Hereticus" hidden="false" id="de01-609b-32fe-bf90" targetId="cc90-ec2e-cca3-e44d" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="e19f-bf10-49a6-ce48" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="e19f-bf10-49a6-ce48" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Authority of the Inquisition" hidden="false" type="profile" id="cbc5-b264-4089-b3eb" targetId="730a-dcfd-f2aa-cdd6"/>
         <infoLink name="Leader" hidden="false" type="rule" id="21ec-a2bd-f775-36ee" targetId="b4dd-3e1f-41cb-218f"/>
       </infoLinks>
@@ -3543,7 +3543,7 @@
         <categoryLink name="Ordo Hereticus" hidden="false" id="53fa-be63-2ac1-f9a9" targetId="cc90-ec2e-cca3-e44d" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="94e8-e546-be1a-9060" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="94e8-e546-be1a-9060" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Deadly Demise" id="182b-7d19-702d-017f" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
           <modifiers>
             <modifier type="append" value="1" field="name"/>
@@ -3662,7 +3662,7 @@
         <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="e547-3f16-bcc1-b759" targetId="5128-90b-e4a5-dcbd" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="ad79-2dda-f83b-42b9" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="ad79-2dda-f83b-42b9" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Authority of the Inquisition" hidden="false" type="profile" id="542f-99af-d250-5688" targetId="730a-dcfd-f2aa-cdd6"/>
         <infoLink name="Leader" hidden="false" type="rule" id="a2a0-5489-2410-da2f" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Power of the Rosette" hidden="false" type="profile" id="e20-46fe-896a-6a6f" targetId="45a6-4631-f66e-3ca2"/>
@@ -4013,7 +4013,7 @@
         <categoryLink name="Ordo Xenos" hidden="false" id="b3ec-b357-4d64-c350" targetId="ab1c-1334-d1cc-08df" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="8acd-512f-4420-fe57" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="8acd-512f-4420-fe57" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Authority of the Inquisition" hidden="false" type="profile" id="5c7e-c7f1-2d21-6ec2" targetId="730a-dcfd-f2aa-cdd6"/>
         <infoLink name="Leader" hidden="false" type="rule" id="8062-36f1-c52f-5dd5" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Feel No Pain" id="c561-4875-643e-6f6a" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
@@ -4263,7 +4263,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="e118-9630-8894-214c" targetId="a8a0-8fe7-898-e0f3"/>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="3e29-35ab-1265-2cb1" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="3e29-35ab-1265-2cb1" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Mk 1 assault weapon" hidden="false" id="fe35-3223-5ba2-7886">
@@ -4342,7 +4342,7 @@
         <categoryLink name="Voidfarer Character" hidden="false" id="03e9-14ac-a0e5-b601" targetId="dc9f-a416-58db-fe5a" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="2b44-12de-df89-f525" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="2b44-12de-df89-f525" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Leader" hidden="false" type="rule" id="2444-db68-167c-d826" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="8c44-2a74-77ec-f100" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="Rogue Trader" hidden="false" type="infoGroup" id="9278-b77b-f871-979d" targetId="dd02-89d6-d162-250d"/>
@@ -4466,7 +4466,7 @@
         <categoryLink name="Voidfarers" hidden="false" id="414f-3188-21af-3ac6" targetId="7aea-df68-2ade-9bd6" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="5383-c077-12c7-deb4" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="5383-c077-12c7-deb4" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Leader" hidden="false" type="rule" id="f94a-1c0e-26c7-2984" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Rogue Trader" hidden="false" type="infoGroup" id="4056-31d6-7a24-b35f" targetId="dd02-89d6-d162-250d"/>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="2f36-7c9-b7b3-1553" targetId="c05d-f4c3-f091-4938"/>
@@ -4587,7 +4587,7 @@
         <categoryLink targetId="cc77-a53-fca8-f48e" id="a3d2-1479-7a26-7dad" primary="false" name="Retinue"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="648e-ce0b-7b3-b082" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="648e-ce0b-7b3-b082" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="26c8-473d-f0c6-f98d" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <profiles>
@@ -5085,7 +5085,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Assigned Agents" hidden="false" type="rule" id="5acc-9227-e217-48" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" hidden="false" type="rule" id="5acc-9227-e217-48" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Authority of the Inquisition" hidden="false" type="profile" id="1ac0-4caf-32f2-386e" targetId="730a-dcfd-f2aa-cdd6"/>
         <infoLink name="Leader" hidden="false" type="rule" id="3636-8682-164d-1e78" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Power of the Rosette" hidden="false" type="profile" id="dae2-efb8-471b-ec22" targetId="45a6-4631-f66e-3ca2"/>
@@ -5596,7 +5596,7 @@ When mustering your army, each ^^Officio Assassinorum^^ unit from your army has 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="8e5f-e1da-f94d-fde6" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="8e5f-e1da-f94d-fde6" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Leader" id="21f1-c4fd-0162-b4fc" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
       </infoLinks>
       <modifiers>
@@ -6764,7 +6764,7 @@ When mustering your army, each ^^Officio Assassinorum^^ unit from your army has 
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Deep Strike" id="5141-cd61-758f-f746" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
-        <infoLink name="Assigned Agents" id="98e4-2f55-4c1f-694a" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="98e4-2f55-4c1f-694a" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
@@ -6973,7 +6973,7 @@ When mustering your army, each ^^Officio Assassinorum^^ unit from your army has 
             <modifier type="append" value="2" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Assigned Agents" id="217f-9451-6d02-633c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="217f-9451-6d02-633c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="c026-c50f-8a3c-f08a" hidden="false" sortIndex="2">
@@ -7291,7 +7291,7 @@ When mustering your army, each ^^Officio Assassinorum^^ unit from your army has 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Imperial Rhino" hidden="false" id="cbbd-8e0a-fd90-fa0d">
       <infoLinks>
-        <infoLink name="Assigned Agents" id="43cd-e3c6-08d2-4f13" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="43cd-e3c6-08d2-4f13" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Deadly Demise" id="0782-c05d-60a0-1dad" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
           <modifiers>
             <modifier type="append" value="D3" field="name"/>
@@ -15511,7 +15511,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
             <modifier type="append" value="6&quot;" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Assigned Agents" id="d46b-ee80-f143-85a3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="d46b-ee80-f143-85a3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Faction: Agents of the Imperium" hidden="false" id="4ec5-2739-d49c-3026" targetId="5128-90b-e4a5-dcbd" primary="false"/>
@@ -15974,7 +15974,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="91e2-a284-7223-331c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="91e2-a284-7223-331c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
         <infoLink name="Leader" id="2a39-4d2f-eb6e-7a89" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Authority of the Inquisition" id="04af-80e2-67cc-fd2a" hidden="false" type="profile" targetId="730a-dcfd-f2aa-cdd6"/>
         <infoLink name="Feel No Pain" id="97bd-239a-05d0-3e28" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
@@ -20861,7 +20861,7 @@ For the purposes of determining which models in this unit can embark within a ^^
   </categoryEntries>
   <sharedRules>
     <rule name="Agents of the Imperium" hidden="false" id="58c1-ec7a-74f5-26b9">
-      <description>If your army Faction is AGENTS OF THE IMPERIUM, when making an attack with a unit, you may choose the [LETHAL HITS] or [SUSTAINED HITS 1] ability to be active for that unit.
+      <description>If your army Faction is AGENTS OF THE IMPERIUM, when making an attack with a unit, you may choose the [LETHAL HITS, [SUSTAINED HITS 1] or [Ignores Cover] ability to be active for that unit.
 
 
 If your army Faction is not AGENTS OF THE IMPERIUM, but every model in your army has the IMPERIUM keyword, you can include AGENTS OF THE IMPERIUM units in your army even if they do not have the Faction keyword you selected in the Select Army Faction step. In this case, the maximum number of AGENTS OF THE IMPERIUM units you can include in your army depends on the battle size, as shown below.
@@ -21291,7 +21291,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifierGroup>
       </modifierGroups>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="455d-b30c-7c08-10b1" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="455d-b30c-7c08-10b1" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -21320,7 +21320,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifierGroup>
       </modifierGroups>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="7c32-61f9-6393-0d55" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="7c32-61f9-6393-0d55" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -21356,7 +21356,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifierGroup>
       </modifierGroups>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="6eef-119a-4fd2-f90e" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="6eef-119a-4fd2-f90e" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="23e6-67c7-39cb-49a2" type="selectionEntry" targetId="bb9a-14e7-b947-793b"/>
@@ -21389,7 +21389,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifierGroup>
       </modifierGroups>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="0583-815f-b0ba-0f9d" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="0583-815f-b0ba-0f9d" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="4a17-9276-7b3b-f471" type="selectionEntry" targetId="bb9a-14e7-b947-793b"/>
@@ -21709,7 +21709,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="1e0b-5a4d-4101-e8f0" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="1e0b-5a4d-4101-e8f0" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Inquisitorial Aquilons" hidden="false" id="6ec8-dba4-1266-b4fd" type="selectionEntry" targetId="a37e-5f8b-2e55-bb4a">
@@ -21738,7 +21738,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="d3a5-aec5-9e76-5941" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="d3a5-aec5-9e76-5941" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Inquisitorial Stormtroopers" hidden="false" id="a746-5fb1-0e40-82bd" type="selectionEntry" targetId="164f-1bed-1a6f-fd51">
@@ -21767,7 +21767,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="657b-a103-ad81-f299" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="657b-a103-ad81-f299" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Repressor [Legends]" hidden="false" id="dd53-d850-59ba-7b2f" type="selectionEntry" targetId="e3f5-a1f9-6d52-f9bc">
@@ -21796,7 +21796,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="cd74-cd8b-8263-9b7f" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="cd74-cd8b-8263-9b7f" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Scout Sentinels" hidden="false" id="9fa3-31f1-54c8-a5fe" type="selectionEntry" targetId="0ad9-c1b4-5904-db53">
@@ -21825,7 +21825,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="c077-9424-77b8-4e44" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="c077-9424-77b8-4e44" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Armoured Sentinels" hidden="false" id="e025-a23f-8a78-6531" type="selectionEntry" targetId="a65e-219b-d8a3-b8df">
@@ -21854,7 +21854,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="9593-4671-6b54-be32" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="9593-4671-6b54-be32" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Tarantula Battery [Legends]" hidden="false" id="bd64-b194-915a-f284" type="selectionEntry" targetId="168d-1d4e-bacf-267c">
@@ -21883,7 +21883,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="ae82-a5bf-3e67-5b50" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="ae82-a5bf-3e67-5b50" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Leman Russ Battle Tank" hidden="false" id="ad8e-9f93-7ba1-cc12" type="selectionEntry" targetId="0c28-4236-1eba-f605">
@@ -21912,7 +21912,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="9c09-958b-368b-fb1c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="9c09-958b-368b-fb1c" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Inquisitorial Land Raider" hidden="false" id="4164-1510-1d7d-31f6" type="selectionEntry" targetId="9dc0-fa17-280c-fdd9">
@@ -21941,7 +21941,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="49d1-195f-7a49-e5e3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="49d1-195f-7a49-e5e3" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Inquisitorial Stormtrooper Command Squad" hidden="false" id="162a-10c0-6fcc-02c1" type="selectionEntry" targetId="9fbd-8bde-a0e6-8e34">
@@ -21983,7 +21983,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Assigned Agents" id="4b07-5ad4-9ae9-87bf" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
+        <infoLink name="Agents of the Imperium" id="4b07-5ad4-9ae9-87bf" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
   </entryLinks>

@@ -295,28 +295,6 @@
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Raptors" hidden="false" id="c2ab-c8e2-8c88-17ac" type="selectionEntry" targetId="acb5-dbf2-e3a6-ad94">
-      <categoryLinks>
-        <categoryLink name="Shadow Legion" hidden="false" id="4576-1edf-dcc3-c80b" targetId="4df3-beae-010c-9087" primary="false"/>
-        <categoryLink name="Undivided" hidden="false" id="c31f-903b-c660-e7a7" targetId="1299-7e3f-6272-c60f" primary="false"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Disciples of Be&apos;lakor" id="6376-6c2a-ba48-182a" hidden="false" type="profile" targetId="d4db-ebd5-8c2f-3616"/>
-      </infoLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="5063-25bd-d22e-665b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="forces" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
-      </modifiers>
-    </entryLink>
     <entryLink import="true" name="Sorcerer" hidden="false" id="8fd2-c73a-3682-c230" type="selectionEntry" targetId="980d-c80a-19b2-f641">
       <categoryLinks>
         <categoryLink name="Shadow Legion" hidden="false" id="74a2-ddca-5e37-b61c" targetId="4df3-beae-010c-9087" primary="false"/>
@@ -758,5 +736,6 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Order of Battle" hidden="false" id="7ca3-8931-ce58-03ae" type="selectionEntry" targetId="eda7-8b4b-3719-af36"/>
+    <entryLink import="true" name="Raptors" hidden="false" id="cb8c-446f-9f92-34e4" type="selectionEntry" targetId="acb5-dbf2-e3a6-ad94"/>
   </entryLinks>
 </catalogue>
