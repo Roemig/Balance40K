@@ -24035,6 +24035,777 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
       </infoLinks>
       <comment>Grot Tank</comment>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Genrul Gitgud" hidden="false" id="08ae-1c85-e291-728e">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8729-dc27-f37e-e6d0"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="b18c-5bdf-8ca7-313b" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="b90f-1426-4e9e-a9c2" includeChildSelections="true"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="8b68-79bd-87ea-bd48" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="47cc-4071-6fda-688e" id="e8b4-6c4a-7fc7-db4e" primary="false" name="Warboss"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="df63-4747-799d-42ad" primary="false" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="a94e-327c-e4f5-794a" primary="false" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="8bd8-d957-af1d-a119" primary="false" name="Grenades"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="30a4-736b-2420-d184" primary="false" name="Faction: Orks"/>
+        <categoryLink name="Epic Hero" hidden="false" id="73fd-4537-8828-018b" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Genrul Gitgud" hidden="false" id="d3a7-ae92-926a-b38a" targetId="24fe-dbe1-3d4c-e861" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Genrul Gitgud" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7049-4243-614f-4af8">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Propa Dishchuplin" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c9db-fa2e-1e96-0e1e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, for each 5 models in that unit, improve the leadership characteristic by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kustom Force Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6745-9238-fe31-db94">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have a 4+ invulnerable save against ranged attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Da Genrul" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c35-764d-ed2c-f691">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You may include only 1 Genrul Gitgud unit in your army.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="5699-1e40-9af0-ecd7" targetId="37c-6ef9-277-9091"/>
+      </infoLinks>
+      <infoGroups>
+        <infoGroup name="Leader" hidden="false" id="d0d2-cc4a-c31c-7032">
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="85f4-4d4d-08e1-f0d5">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+- BOYZ
+- NOBZ
+- BURNA BOYZ
+- FLASH GITZ
+- KOMMANDOS
+- LOOTAS
+- MEK GUNZ
+- TANKBUSTAZ</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Leader" hidden="false" type="rule" id="2469-e265-31ae-d001" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="9710-1ff1-2ed9-ab90" targetId="8b5-898c-f79b-5a9c" sortIndex="2"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="7bee-c913-6e80-c09b" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="c055-ad24-f364-f420" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Beast Snagga klaw" hidden="false" id="5291-f58c-4a79-0d3d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7525-a157-871e-c2b3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1821-a6b0-755e-19b3"/>
+              </constraints>
+              <profiles>
+                <profile name="Beast Snagga klaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="73de-3f82-62b3-19a9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Monster 4+, Anti-Vehicle 4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="a6ce-5695-0c1f-980f" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="108d-627a-a62b-7574" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="948e-06a8-0879-e47a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="a534-3068-3bab-a1eb" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                      <entryLinks>
+                        <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="dff6-f7fe-c1e9-887f" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="15e4-c176-49de-baef" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="1f5b-ec1c-0bd9-8195" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Attack Squig" id="ab0f-4f1b-cb3c-3085" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Attack squig" hidden="false" id="90a5-8afb-02ec-7587">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed6-b26d-bf9f-b356"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Attack Squig" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="fee4-ee98-5431-026a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Extra Attacks" id="87b4-0022-1324-99a0" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="9414-5a56-d376-b28e" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="8065-6bfa-d8f4-2c1f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="ff4a-6964-da34-1bca" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="00fa-685a-24d6-fba4" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="2d0d-40e3-2c18-3b04" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="1e87-0365-0c4b-fb75" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Snazzgun" hidden="false" id="d160-bfbc-dce6-0b20" type="selectionEntry" targetId="f606-38ce-2ada-4fbd">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="11a5-329b-031b-2ed0" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a81c-5d35-00b0-2af3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4be8-425c-4a24-4b62" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86a2-6309-38a8-c079"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d0f-fcd4-61e9-03c8"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Crusade modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="2" field="b18c-5bdf-8ca7-313b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="b90f-1426-4e9e-a9c2">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Genrul Gitgud on Warbike" hidden="false" id="5763-751a-e2d7-6dfc">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f38e-c4e8-cb9a-bb0d"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="4640-b709-6eab-8889" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="0d8e-a432-624a-5621" includeChildSelections="true"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="3bd3-c4b1-1a91-5d12" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="2607-9d4a-7834-8d43" primary="false" name="Mounted"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="6ebb-2871-f8dd-793a" primary="false" name="Character"/>
+        <categoryLink targetId="fe8b-9078-9a3d-fed" id="ac72-10a0-90f1-834b" primary="false" name="Speed Freeks"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="f231-4723-f824-2f28" primary="false" name="Grenades"/>
+        <categoryLink targetId="47cc-4071-6fda-688e" id="9208-cff1-661a-9210" primary="false" name="Warboss"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="3837-d5e9-03d3-d988" primary="false" name="Faction: Orks"/>
+        <categoryLink name="Genrul Gitgud" hidden="false" id="d685-0fbb-cb0a-a927" targetId="24fe-dbe1-3d4c-e861" primary="false"/>
+        <categoryLink name="Epic Hero" hidden="false" id="40f2-280c-db8c-0ac7" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="3f95-0dfa-e707-38cc" targetId="8b5-898c-f79b-5a9c" sortIndex="2"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ffa8-6aa0-bc01-8f94" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="1633-49e6-fd87-0f65" hidden="false" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Twin dakkagun" hidden="false" id="7424-7db9-7225-b07b" type="selectionEntry" targetId="dc72-6a9b-5792-557a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c21d-cb8b-c838-16b2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a47e-c324-23f9-1ee7"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="73aa-c2bb-1f98-6459" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="b6fc-81e1-5649-299b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7d66-e0ee-e057-7d89" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink import="true" name="Slugga" hidden="false" id="42f8-50dd-37e7-8084" type="selectionEntry" targetId="752e-cd9b-4721-f0b0">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="5286-2f7f-e7f2-cb91" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="2fa7-c751-74d1-db74" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="43b6-6e61-2059-08e6" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6131-07f8-bbb4-deb3"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e291-623a-c19c-1120"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Snazzgun" hidden="false" id="284d-69da-ef97-9283" type="selectionEntry" targetId="f606-38ce-2ada-4fbd">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="e9a2-7ead-f8c7-e6e1" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="fa77-83b8-bc3c-c3f8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="866f-75db-bb3b-98f4" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ab1-d4e1-5727-0811"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b96-329d-ca3b-ab0b"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Beast Snagga klaw" hidden="false" id="4324-29b0-7fb4-48ae">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6114-63bc-bd54-bf3b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c370-ffcb-07d4-4ca6"/>
+              </constraints>
+              <profiles>
+                <profile name="Beast Snagga klaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5d35-23c5-930c-0502">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Monster 4+, Anti-Vehicle 4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="da48-b47f-7f0d-2c14" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="5360-a8dc-17ea-be63" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9db0-52d8-8606-31f0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0d10-07eb-76a8-cc4b" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                      <entryLinks>
+                        <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="89f6-1713-ec79-d369" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="5008-301e-d677-447a" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="ad9f-45a1-6324-b5a1" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Genrul Gitgud on Warbike" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1852-c79b-0768-b02c">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Speedboss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e041-809e-271d-fcb8">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Da Genrul" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a773-7675-1535-ab7f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You may include only 1 Genrul Gitgud unit in your army.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kustom Force Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c907-651c-a9d4-6f46">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have a 4+ invulnerable save against ranged attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Propa Dishchuplin" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="690f-3069-b156-0c6b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, for each 5 models in that unit, improve the leadership characteristic by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="e7bf-820c-6056-8b02" targetId="37c-6ef9-277-9091"/>
+      </infoLinks>
+      <infoGroups>
+        <infoGroup name="Leader" hidden="false" id="ef8a-49e5-e8a2-8fdc">
+          <infoLinks>
+            <infoLink name="Leader" hidden="false" type="rule" id="04b2-c53d-9f2e-37c9" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a8b-46d4-5ef3-0018">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+- WARBIKERS
+- NOBZ ON WARBIKES</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Crusade modifiers</comment>
+          <modifiers>
+            <modifier type="increment" value="2" field="4640-b709-6eab-8889">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="0d8e-a432-624a-5621">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Da Drillboss" hidden="false" id="7553-c059-7dfa-a30b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8c6-2d23-1466-a0c7"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="f386-133e-8bd8-48e3" primary="false" name="Infantry"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="2078-8c86-f914-0673" primary="false" name="Character"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="1414-7d9d-9090-f893" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="dda2-bb0a-215e-ad9c" id="bcb7-5db8-ffe1-cfa4" primary="false" name="Jump Pack"/>
+        <categoryLink targetId="c619-2086-bbcf-69c9" id="177d-b448-54a0-87e5" primary="false" name="Fly"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="6232-3932-6cb1-2341" primary="false" name="Faction: Orks"/>
+        <categoryLink name="Da Drillboss" hidden="false" id="9b36-455c-7728-2816" targetId="2897-f453-e392-21ad" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Da Drillboss" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ac01-152e-030b-10c2">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Drill Boss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3842-3479-06fa-453a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Propa Dishchuplin" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fe68-7617-552e-5a73">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, for each 5 models in that unit, improve the leadership characteristic by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" hidden="false" type="rule" id="5a40-a352-4d13-1715" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="1744-1d73-51c3-fab3" targetId="37c-6ef9-277-9091"/>
+      </infoLinks>
+      <infoGroups>
+        <infoGroup name="Leader" hidden="false" id="e65f-6e60-b75c-5ed2">
+          <infoLinks>
+            <infoLink name="Leader" hidden="false" type="rule" id="6d45-0dd5-6b44-01f9" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a4bf-16cc-794e-c663">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+- STORMBOYZ</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="f257-1f73-c77a-968c" targetId="8b5-898c-f79b-5a9c"/>
+        <entryLink import="true" name="Slugga" hidden="false" type="selectionEntry" id="728f-3f70-7a8c-6f28" targetId="752e-cd9b-4721-f0b0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7b9-bae1-cdf6-f48c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dde2-402f-c5e7-7ee5"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Beast Snagga klaw" hidden="false" id="7c15-d4a3-361b-08a9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcc1-d9ec-2708-fc3e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a38-6606-f729-1999"/>
+          </constraints>
+          <profiles>
+            <profile name="Beast Snagga klaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="29f4-018a-68c4-8e3f">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Monster 4+, Anti-Vehicle 4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-" id="550a-d062-ab55-3813" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Upgrades" id="3590-bbc4-7a78-8646" hidden="false" flatten="true">
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="64b8-86a2-e5ed-dc62" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="094e-a31a-64ba-2afc" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                  <entryLinks>
+                    <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="a424-2600-b567-2ce8" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="2150-10ea-90f5-ac2e" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink name="Melee Weapon" hidden="false" id="a574-bd99-93f9-5197" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="7526-6aed-d4e3-fb11" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="6806-1194-8db4-252d" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Korpral Gobstik" hidden="false" id="1b89-ed15-b485-4a49">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a7b4-1354-e443-1812"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="f171-5291-7af5-a011" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="d460-dde7-b692-8e95" primary="false" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="7008-237d-1d04-f1db" primary="false" name="Infantry"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="fc2b-0e8e-5b30-e9af" primary="false" name="Faction: Orks"/>
+        <categoryLink name="Korpral Gobstik" hidden="false" id="f66a-fce9-8b6c-e6f0" targetId="c503-ab1a-f20c-12cb" primary="false"/>
+        <categoryLink name="Grots" hidden="false" id="dbf7-22c9-9bfb-2d71" targetId="c7c7-ef60-67e3-def2" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Korpral Gobstik" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e72c-f0d1-d65d-376b">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">2</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">7+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Grot Boss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="40d0-9a54-590a-3241">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit:
+- Each time a model in that unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="a110-2ac8-c051-cf36" targetId="37c-6ef9-277-9091"/>
+        <infoLink name="Infiltrators" id="90ee-baa5-ac41-000a" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+        <infoLink name="Stealth" id="e282-cba4-fecb-c9f8" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+      </infoLinks>
+      <infoGroups>
+        <infoGroup name="Leader" hidden="false" id="6e51-9d55-d691-ddd1">
+          <infoLinks>
+            <infoLink name="Leader" hidden="false" type="rule" id="899a-4d77-a0eb-7a2c" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2d8a-d649-7052-8d7f">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+- GRETCHIN</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="1101-15f8-a795-25cf" targetId="8b5-898c-f79b-5a9c"/>
+        <entryLink import="true" name="Close combat weapon" hidden="false" id="5e10-2828-f086-a696" type="selectionEntry" targetId="2f50-e1fb-f69b-1590"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grot blasta" hidden="false" id="92f3-14e0-6000-8f57" collective="true">
+          <profiles>
+            <profile name="Grot blasta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="63d8-39b8-6a22-fc69">
+              <characteristics>
+                <characteristic name="Range" id="6f11-15e2-742f-e1f1" hidden="false" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" id="b12f-9171-7b45-89aa" hidden="false" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" id="306e-c670-3a27-e58a" hidden="false" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" id="c2fa-ee14-551b-a10d" hidden="false" typeId="2229-f494-25db-c5d3">3</characteristic>
+                <characteristic name="AP" id="5245-1b44-2489-9c80" hidden="false" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" id="dd71-b59c-13e8-9ca6" hidden="false" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" id="7427-3702-08c8-f4d2" hidden="false" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Pistol" id="326d-69b4-b73f-39d1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70a4-9aa6-b03c-7c25"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8086-28e0-1e67-d799"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="b7db-1877-b0d3-1b38" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="c663-39d4-715a-d782" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Attack Squig" id="42ac-a34c-e73c-f1b6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Attack squig" hidden="false" id="f6f5-aa40-5bd9-81ca">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79d0-a8ab-6304-3cfd"/>
+              </constraints>
+              <profiles>
+                <profile name="Attack Squig" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0254-9ea7-ca86-61b1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Extra Attacks" id="6a4b-e257-97a0-c993" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="fe92-82e8-e125-a3cb" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7673-239b-a809-1e91" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="64b9-b9f4-d1b7-da9f" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="cf66-0e4b-d3f4-2ec0" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="4ac6-7811-c868-87d5" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="5b72-ae1e-77dd-c1f5" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="2f50-e1fb-f69b-1590">
+      <profiles>
+        <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6afd-f96b-7b59-cfc6">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>A4 S4</comment>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="5e3c-5ba0-53a8-3f6f" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <rules>
     <rule name="Waaagh!" hidden="false" id="37c-6ef9-277-9091">
@@ -26886,6 +27657,9 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <categoryEntry name="Kustom Battle Fortress" id="1519-7f92-ee21-321c" hidden="false"/>
     <categoryEntry name="Looted Wagon" id="f90f-cc06-73f2-7a2b" hidden="false"/>
     <categoryEntry name="Mekboy Junka" id="531c-df65-11a2-cf29" hidden="false"/>
+    <categoryEntry name="Genrul Gitgud" id="24fe-dbe1-3d4c-e861" hidden="false"/>
+    <categoryEntry name="Da Drillboss" id="2897-f453-e392-21ad" hidden="false"/>
+    <categoryEntry name="Korpral Gobstik" id="c503-ab1a-f20c-12cb" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Big Mek in Mega Armour" hidden="false" type="selectionEntry" id="f552-367d-f8b5-d220" targetId="95e9-6da3-5e75-2566"/>
@@ -26991,6 +27765,10 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <entryLink import="true" name="Looted Wagon" hidden="false" type="selectionEntry" id="c642-a82e-66c8-edf0" targetId="201b-baa8-1f60-733a"/>
     <entryLink import="true" name="Mekboy Junka" hidden="false" type="selectionEntry" id="efb9-2113-20cb-c4bb" targetId="b3ad-bdcd-740b-c124"/>
     <entryLink import="true" name="Flakk Trakk" hidden="false" type="selectionEntry" id="9f79-f8d1-91c2-09be" targetId="2796-4926-2a59-5900"/>
+    <entryLink import="true" name="Genrul Gitgud on Warbike" hidden="false" type="selectionEntry" id="76c8-0ffc-674b-e975" targetId="5763-751a-e2d7-6dfc"/>
+    <entryLink import="true" name="Genrul Gitgud" hidden="false" type="selectionEntry" id="1bbc-de00-05ce-09ad" targetId="08ae-1c85-e291-728e"/>
+    <entryLink import="true" name="Da Drillboss" hidden="false" type="selectionEntry" id="effb-79f5-8f86-8c33" targetId="7553-c059-7dfa-a30b"/>
+    <entryLink import="true" name="Korpral Gobstik" hidden="false" type="selectionEntry" id="37a8-0955-37c0-1958" targetId="1b89-ed15-b485-4a49"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" id="2be6-f2b9-f73c-82b1" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
