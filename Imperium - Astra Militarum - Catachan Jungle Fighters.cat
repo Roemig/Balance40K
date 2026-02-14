@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="244f-7e98-f025-394b" name="Imperium - Astra Militarum - Catachan Jungle Fighters" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="52da-0065-ba0a-df13" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Astra Militarum" id="0b4f-00dc-b23a-72c0" targetId="b0ae-12a5-c84-ea45"/>
-  </catalogueLinks>
-</catalogue>
