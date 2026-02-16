@@ -905,7 +905,7 @@
     <entryLink import="true" name="Krieg Combat Engineers" hidden="false" type="selectionEntry" id="6fd0-a0ae-a673-1b14" targetId="3e90-9359-2aaa-205e"/>
     <entryLink import="true" name="Krieg Heavy Weapons Squad" hidden="false" type="selectionEntry" id="4bde-dc8a-4a53-6924" targetId="1669-d311-eff9-243b"/>
     <entryLink import="true" name="Catachan Heavy Weapons Squad" hidden="false" type="selectionEntry" id="5727-4dd2-5ff4-abd0" targetId="dfcb-7854-1d6d-cd02"/>
-    <entryLink import="true" name="Order of Battle" hidden="false" id="d539-debc-87ba-ddb8" type="selectionEntry" targetId="eda7-8b4b-3719-af36">
+    <entryLink import="true" name="Sentinel Commander" hidden="false" id="d539-debc-87ba-ddb8" type="selectionEntry" targetId="d471-291b-039d-0db5">
       <entryLinks>
         <entryLink import="true" name="Tours of Duty" hidden="false" id="bfbf-60b3-1e89-658c" type="selectionEntryGroup" targetId="b30e-426f-b315-62aa" collapsible="false"/>
         <entryLink import="true" name="Shadow Operations" hidden="false" id="406a-d472-ffad-66e1" type="selectionEntryGroup" targetId="68a2-ada5-3cd4-c5a3"/>
@@ -1027,7 +1027,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Honos Command Squad" hidden="false" type="selectionEntry" id="9f18-90ad-054f-bd01" targetId="29d0-cfe6-68a5-da7d">
+    <entryLink import="true" name="Honus Command Squad" hidden="false" type="selectionEntry" id="9f18-90ad-054f-bd01" targetId="29d0-cfe6-68a5-da7d">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -1035,6 +1035,18 @@
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Ogryn Sergeant" hidden="false" id="774b-1617-a2c1-341a" type="selectionEntry" targetId="3f7c-fd3d-15e9-0068">
+      <entryLinks>
+        <entryLink import="true" name="Tours of Duty" hidden="false" id="c1e3-3140-9cea-f4e7" type="selectionEntryGroup" targetId="b30e-426f-b315-62aa" collapsible="false"/>
+        <entryLink import="true" name="Shadow Operations" hidden="false" id="e519-c827-8d23-d840" type="selectionEntryGroup" targetId="68a2-ada5-3cd4-c5a3"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Order of Battle" hidden="false" id="b920-e1d2-05d4-9c78" type="selectionEntry" targetId="eda7-8b4b-3719-af36">
+      <entryLinks>
+        <entryLink import="true" name="Tours of Duty" hidden="false" id="6794-60b8-e7cb-2bb7" type="selectionEntryGroup" targetId="b30e-426f-b315-62aa" collapsible="false"/>
+        <entryLink import="true" name="Shadow Operations" hidden="false" id="29de-708f-d5d3-b13e" type="selectionEntryGroup" targetId="68a2-ada5-3cd4-c5a3"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>

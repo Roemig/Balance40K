@@ -11136,7 +11136,8 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="289b-7a-d0a-1868">
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
-- Catachan Jungle Fighters</characteristic>
+- Catachan Jungle Fighters
+- Catachan Veteran Squad</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -38860,7 +38861,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">10+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
@@ -42412,6 +42413,273 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </infoGroup>
       </infoGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sentinel Commander" hidden="false" id="d471-291b-039d-0db5">
+      <profiles>
+        <profile name="Mobile Firebase" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="24a4-1ffd-09d4-b700">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by this model&apos;s unit have the [Assault] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sentinel Commander" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="aaa8-5e39-9f81-3fe2">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Orders" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="055a-047f-dba8-efd8">
+          <characteristics>
+            <characteristic name="Orders" typeId="36b-c3c9-245f-e97d">This **^^Officer^^** can issue 1 Order to Squadron units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Veteran Sergeant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3ff0-96d7-25f1-76ae">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the game, you must exchange the sergeant of any Cadian Shock Troops Unit with Sergeant Bastonne. When doing so, increase the Ballistic Skill of ranged Weapons equipped by that squad, but not Sergeant Bastonne, by 1. Sergeant Bastonne may not lead a squad of more than 10 models. If this is not possible, Sergeant Bastonne is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fire Coordinator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bb47-4c77-cdde-d976">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by model in this unit have the [Sustained Hits 1] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Voice Of Command" id="0964-2dd9-cf0f-5683" hidden="false" type="rule" targetId="53c9-34f6-2443-a95e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="9725-52a5-e8e2-f29a" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365" sortIndex="1"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Epic Hero" hidden="false" id="5b72-6e85-9bfa-84b8" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="4a93-9661-7bfb-22bd" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="a75d-93c1-6adc-a544" targetId="fa45-57e-930e-602b" primary="false"/>
+        <categoryLink name="Officer" hidden="false" id="263f-852d-6c59-52f8" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
+        <categoryLink name="Vehicle" hidden="false" id="aa5b-8869-c07a-5927" targetId="dbd4-63-af05-998" primary="false"/>
+        <categoryLink name="Squadron" hidden="false" id="5336-0272-c4dc-9c33" targetId="4780-be29-8c52-1d20" primary="false"/>
+        <categoryLink name="Smoke" hidden="false" id="eaa1-22db-208e-14f7" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Sentinel Commander" hidden="false" id="576b-359e-289c-3ca2" targetId="b012-e02a-4cb2-4691" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="af4a-eb3b-2448-c79f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="7f00-e4e3-0641-d6a2">
+          <profiles>
+            <profile name="Lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7e3f-ebaf-9995-e572">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Ranged Weapon" hidden="false" id="2f81-2b4d-2712-3638" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c680-26b4-7c50-ea43"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d81d-e3f1-d6fc-3d84"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="925c-af7d-4666-c39e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="183a-1d1f-9e3e-1ede">
+          <profiles>
+            <profile name="Sentinel chainsaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0c05-5c27-2c7b-d87e">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f915-dc82-1e64-70a0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="489b-39b6-6dd9-e740"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="1604-69bb-f6da-d827" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Leader" id="fb88-6340-adf5-5e95" hidden="false">
+          <infoLinks>
+            <infoLink name="Leader" id="6185-864e-d9ec-be71" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3700-ade3-86f6-1082">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+- Armoured Sentinels
+- Scout Sentinels</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ogryn Sergeant" hidden="false" id="3f7c-fd3d-15e9-0068">
+      <categoryLinks>
+        <categoryLink targetId="fa45-57e-930e-602b" id="80e1-5ecb-3ec6-3987" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="1f5f-7c7f-2515-8a2e" primary="false" name="Imperium"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="95c6-3edd-48f0-144e" primary="false" name="Grenades"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="59c9-1a9b-cd20-967c" primary="false" name="Character"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="5b46-7daa-e775-b3b5" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="d89d-ebe1-9d07-0a54" primary="false" name="Infantry"/>
+        <categoryLink name="Augmented Bone&apos;ead" hidden="false" id="7d00-0c0e-f373-5581" targetId="0d55-9884-7e62-6276" primary="false"/>
+        <categoryLink name="Regiment" hidden="false" id="2874-7bad-39c6-99e8" targetId="c8a1-fef-5569-61c9" primary="false"/>
+        <categoryLink name="Ogryn" hidden="false" id="ecd1-f513-46c3-1b2e" targetId="5e1a-9392-f640-e4b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b0ae-12a5-c84-ea45" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ec02-a777-a855-4f00" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Leader" hidden="false" id="8fdc-61cc-9448-f4b7">
+          <infoLinks>
+            <infoLink name="Leader" hidden="false" type="rule" id="d6d1-1159-048b-25f9" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="addb-7c92-0ce4-4722">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit:
+- Bullgryn Squad
+- Ogryn Squad</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <profiles>
+        <profile name="Ogryn Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c3a4-5572-2788-ddc2">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="You &apos;Eard &apos;Em" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7611-1927-c33e-f644">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Order is issued to this model&apos;s unit, this model can issue that Order to one other friendly Platoon or Ogryn unit in the same way as an officer.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fire Coordinator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5a49-c729-788e-8f26">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by model in this unit have the [Sustained Hits 1] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ripper gun" hidden="false" id="0326-acbb-4ea6-5421" collective="true">
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="5c53-49f9-a045-98ad" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Ripper gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9319-671b-167a-9c1a">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ripper gun" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bebd-7bf8-48c7-d5e8">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Ranged Weapon" hidden="false" id="81e9-dc9c-8f0e-ed5e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+            <categoryLink name="Melee Weapon" hidden="false" id="4802-8e32-4024-7daf" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="2297-e88c-3f7d-c1e5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a6b-7d89-736f-7eec" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d27-b592-7645-839c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="4834-82fd-65c0-1f0c" targetId="ea3f-b52b-8dc7-d365"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Feel No Pain" hidden="false" type="rule" id="84bc-2dbd-cba5-0622" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Scouts" hidden="false" type="rule" id="87c5-8f67-19c4-92db" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Invulnerable Save 5+" id="5a89-a248-64b2-1e53" hidden="false" type="profile" targetId="3a3d-9e14-64a6-c032"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="d672-feba-110b-cc2b" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="7532-2be3-e3e1-1b2d" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Aegis Defence Line" hidden="false" id="a56a-23f-9ea1-d8ee"/>
@@ -42579,6 +42847,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Heavy Weapons Squad" id="42c2-da27-68aa-6d04" hidden="false"/>
     <categoryEntry name="Hermes Light Sentinels" id="ed8e-2f91-2d40-d0a9" hidden="false"/>
     <categoryEntry name="Honos Command Squad" id="c307-9112-7382-c454" hidden="false"/>
+    <categoryEntry name="Sentinel Commander" id="b012-e02a-4cb2-4691" hidden="false"/>
+    <categoryEntry name="Augmented Bone&apos;ead" id="0d55-9884-7e62-6276" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">

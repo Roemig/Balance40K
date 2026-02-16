@@ -24050,6 +24050,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
         <categoryLink targetId="56cc-5f43-2403-8da0" id="30a4-736b-2420-d184" primary="false" name="Faction: Orks"/>
         <categoryLink name="Epic Hero" hidden="false" id="73fd-4537-8828-018b" targetId="4f3a-f0f7-6647-348d" primary="true"/>
         <categoryLink name="Genrul Gitgud" hidden="false" id="d3a7-ae92-926a-b38a" targetId="24fe-dbe1-3d4c-e861" primary="false"/>
+        <categoryLink name="Mek" hidden="false" id="ac7a-460e-472d-13d7" targetId="f802-1e3a-d9ce-aa99" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Genrul Gitgud" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7049-4243-614f-4af8">
@@ -24680,8 +24681,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
         <profile name="Grot Boss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="40d0-9a54-590a-3241">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit:
-- Each time a model in that unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll.
-</characteristic>
+- Each time a model in that unit makes an attack, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
