@@ -2329,7 +2329,7 @@
     <entryLink import="true" name="Khorne Berzerkers on Bikes" hidden="false" id="1e57-3b03-22d8-3e73" collective="false" targetId="13fe-bdf3-dc6b-4248" type="selectionEntry"/>
     <entryLink import="true" name="Butcher Surgeon" hidden="false" id="019e-90df-3f2a-54ef" collective="false" targetId="1492-e801-f435-3d06" type="selectionEntry"/>
     <entryLink id="12cc-067b-5205-ca44" name="Lord in Terminator Armour" hidden="false" collective="false" import="true" targetId="cb2a-dcba-5fd5-d64a" type="selectionEntry"/>
-    <entryLink import="true" name="Lord Teddybear Teamonger III. on princess" hidden="false" type="selectionEntry" id="fba7-dba6-822c-6811" targetId="793d-99e8-840c-9f13">
+    <entryLink import="true" name="Lord Teddybear Teamonger III. on Princess" hidden="false" type="selectionEntry" id="fba7-dba6-822c-6811" targetId="793d-99e8-840c-9f13">
       <categoryLinks>
         <categoryLink targetId="bd1d-c1a5-6ca2-c791" id="b015-5341-dccc-1b62" primary="false" name="Faction: World Eaters"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="c87c-c620-faea-045e" primary="false" name="Chaos"/>
@@ -2360,6 +2360,91 @@
               </repeats>
             </modifier>
             <modifier type="increment" value="2" field="14fe-8594-3495-92a9">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Lord Teddybear Teamonger III." hidden="false" type="selectionEntry" id="6e79-f0fb-101f-39d6" targetId="2fdd-f6d2-d10e-f4c0">
+      <categoryLinks>
+        <categoryLink targetId="bd1d-c1a5-6ca2-c791" id="1fce-f205-70aa-5e72" primary="false" name="Faction: World Eaters"/>
+        <categoryLink targetId="4c00-2578-faf5-6918" id="f1db-b582-7550-6b72" primary="false" name="Chaos"/>
+        <categoryLink targetId="4bd-5ee0-f179-2fc5" id="5d7a-a677-bb2f-cb68" primary="false" name="Khorne"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Blessings of Khorne" hidden="false" type="rule" id="bbec-b160-a513-d453" targetId="e68b-b42f-6f7c-4670"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9a23-5bb9-7f3a-a2e7" type="selectionEntryGroup" targetId="8bbb-e890-a169-863e" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="f641-3203-573b-8ae3" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="534e-01f6-e031-d2a9" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="f9f0-57a2-dab1-fc08" includeChildSelections="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="f641-3203-573b-8ae3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="534e-01f6-e031-d2a9">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="f9f0-57a2-dab1-fc08">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
@@ -11963,9 +12048,9 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile id="9ca7-6733-30c9-a16b" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d43-6470-b84b-793c">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following unit: ^^**Khorne Berserkers^^**</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: ^^**Eightbound^^**, ^^**Exalted Eightbound^^**, ^^**Khorne Berserkers^^**, ^^**Khorne Berserkers on Bikes^^**</characteristic>
           </characteristics>
         </profile>
       </profiles>

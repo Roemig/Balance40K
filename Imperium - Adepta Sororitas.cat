@@ -10394,8 +10394,7 @@ If this unit made a Charge move this turn, until the end of the phase, select bo
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="fe35-0536-91f4-d028" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="dc4b-0dee-f7af-0172" primary="false" name="Walker"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="8b65-6335-b720-d67e" primary="false" name="Character"/>
-        <categoryLink targetId="4f3a-f0f7-6647-348d" id="d969-fa0f-7620-8152" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="8b65-6335-b720-d67e" primary="true" name="Character"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="a23f-2281-94b9-46c1" primary="false" name="Imperium"/>
         <categoryLink targetId="fd71-afa6-b13b-7fda" id="cfde-c31f-e6c6-fd6c" primary="false" name="Faction: Adepta Sororitas"/>
         <categoryLink name="Canoness in Paragon Warsuit" hidden="false" id="3023-4966-b625-ed9b" targetId="658a-9bfd-975d-e05d" primary="false"/>
