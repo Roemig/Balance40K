@@ -1564,7 +1564,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2694,6 +2694,13 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5ea7-abf2-821b-82f4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="2" field="e04a-bc13-6867-e5e7">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5eed-4fb3-e387-8adf" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Hunter-killer missile" hidden="false" id="e98-7362-c489-e09e" type="selectionEntry" targetId="308-b972-2863-2a32">
               <constraints>
@@ -3019,6 +3026,13 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="f344-dd76-574f-2e75" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="2" field="5404-371a-b24c-72c4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="89e6-d428-9e6b-5b04" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Hunter-killer missile" hidden="false" id="e898-67e0-211e-753e" type="selectionEntry" targetId="308-b972-2863-2a32">
               <constraints>
@@ -3191,6 +3205,13 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="82b4-ef9f-1b1b-3461" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="2" field="d0e0-64c2-a49a-edd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7abe-99a4-08c9-6e1e" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Hunter-killer missile" hidden="false" id="f807-a3b7-5b3-7bba" type="selectionEntry" targetId="308-b972-2863-2a32">
               <constraints>
