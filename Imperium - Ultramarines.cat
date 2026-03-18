@@ -2543,7 +2543,7 @@ This unit cannot join an Attached unit, and only Captain Titus can join a unit t
         <categoryLink name="Wardens of Ultramar" hidden="false" id="231b-cafe-25f5-36e7" targetId="64c5-cae6-18fe-868f" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
