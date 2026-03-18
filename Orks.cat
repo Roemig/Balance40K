@@ -29001,36 +29001,6 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="a134-43e9-053c-87ff" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="’Eadbanger" hidden="false" id="c43d-8466-eb97-972f" type="selectionEntry" targetId="ee69-ed3e-1164-78e9">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e45f-8030-2a7c-4491" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="d2fc-8d53-d881-4173" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Eyez of Mork" hidden="false" id="fa69-49b9-04e6-4dd5" type="selectionEntry" targetId="454d-16ff-5aad-c7ad">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="836c-4d3c-ff85-de02" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="e369-b81c-3343-2d77" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
             <entryLink import="true" name="Kombi-weapon" hidden="false" id="afb8-2412-ba68-7d9d" type="selectionEntry" targetId="ac6f-9310-e9ac-678">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b40-637b-0960-b136" includeChildSelections="false"/>
@@ -29061,21 +29031,6 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="640e-c6a5-c35f-8535" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Saddlegit weapons" hidden="false" id="71ec-e475-f4bb-f3d5" type="selectionEntry" targetId="8a8f-5ceb-8a0a-6c6c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5198-11a4-f5a5-0288" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4238-7b14-da34-4f61" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="7ff3-be92-48c4-d5ff" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Shoota" hidden="false" id="dad5-2e93-6b21-ec18" type="selectionEntry" targetId="b2ed-fcb0-cba1-63c4">
@@ -29118,6 +29073,121 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
               </conditions>
             </modifier>
           </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Saddlegit weapons" hidden="false" id="307e-279d-789e-dadb" collective="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7079-3be7-a81e-bfdf"/>
+              </constraints>
+              <profiles>
+                <profile name="Saddlegit weapons" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="92e0-4f7b-022a-6c12">
+                  <characteristics>
+                    <characteristic name="Range" id="6502-cef2-10c5-9e56" hidden="false" typeId="9896-9419-16a1-92fc">9&quot;</characteristic>
+                    <characteristic name="A" id="3fb2-3eb8-6e36-3ab2" hidden="false" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" id="da67-1165-bc9a-ab82" hidden="false" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" id="e98e-5417-961f-1ddd" hidden="false" typeId="2229-f494-25db-c5d3">3</characteristic>
+                    <characteristic name="AP" id="704f-4537-8e48-3995" hidden="false" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" id="3ffb-c71a-f9e8-c2e4" hidden="false" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" id="c44b-07bf-bb5d-cc28" hidden="false" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault" id="6e92-0b80-ae6e-d359" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="86de-19b8-0abd-9ee4" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="4238-7b14-da34-4f61" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="’Eadbanger" hidden="false" id="ddef-9d17-d2d5-51d7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="154b-1979-e87b-1789"/>
+              </constraints>
+              <profiles>
+                <profile name="’Eadbanger" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="97a4-75a3-776f-c8e8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Precision, Psychic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Psychic" id="d82d-065a-1fe6-5601" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+                <infoLink name="Precision" id="321a-8746-0ae7-920c" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="28a7-6d31-2665-db4d" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="6a6a-91cb-e858-92f3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="b7da-04ce-fffb-a63e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="88ea-7057-02b1-0006" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                <categoryLink name="Ranged Weapon" hidden="false" id="55a6-0222-8fb0-1fd5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eyez of Mork" hidden="false" id="9701-3c3c-3a61-4f19">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8581-04f9-809f-c03f"/>
+              </constraints>
+              <profiles>
+                <profile name="Eyez of Mork" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="46c6-2c84-a217-ab3c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="dac9-0d98-2a37-1ffd" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7a8c-f497-01b4-b957" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="88c5-b682-19f4-fba5" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="22ba-d373-24f0-c10a" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                <categoryLink name="Ranged Weapon" hidden="false" id="5a88-0ec0-e42b-24ac" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="68e7-2850-a826-8d59" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Psychic" id="0728-3146-7518-5db4" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Pistols" id="28bf-e888-6526-ee29" hidden="false">
           <constraints>
@@ -29147,10 +29217,31 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="a5a1-15ee-684a-3df4" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Rokkit pistol" hidden="false" id="c525-a7fc-b79e-8cf5" type="selectionEntry" targetId="9786-120d-a921-3226">
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rokkit pistol" hidden="false" id="89b4-186e-3e39-d49c">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3284-cbd5-05c3-6f98" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6544-7771-a8bd-a768" includeChildSelections="false"/>
               </constraints>
+              <profiles>
+                <profile name="Rokkit pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="72f1-129e-c66b-d222">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="0fc7-80fe-5569-aab6" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="327d-d1c3-12c6-1d60" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
+              </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -29158,11 +29249,8 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
                   </conditions>
                 </modifier>
               </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="4e81-79c2-a65a-8136" targetId="0197-b272-85e4-92bc" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Melee Weapons" id="ac6c-4cbf-0928-62c9" hidden="false" defaultSelectionEntryId="none">
           <constraints>
