@@ -27417,6 +27417,185 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Bully Boyz Enhancements" id="fe9c-6076-3f89-1995" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Da Biggest Boss" hidden="false" id="ccd6-6490-a314-78a0">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ccd6-6490-a314-78a0" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="ccd6-6490-a314-78a0" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Da Biggest Boss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5fa9-4648-617a-8bac">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Warboss^^** model only. Add 2 to the bearer&apos;s Wounds characteristic.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2d7-abe5-a130-c794" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Da Biggest Boss" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="root-entry"/>
+                    <modifier type="increment" value="2" field="750a-a2ec-90d3-21fe" affects="self.entries.profiles.Unit" scope="root-entry"/>
+                  </modifiers>
+                  <comment>Da Biggest Boss</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="ccd6-6490-a314-78a0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Big Gob" hidden="false" id="277e-4363-d9ea-167d">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="277e-4363-d9ea-167d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="277e-4363-d9ea-167d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Big Gob" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5f33-6400-5a1d-274a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Warboss^^** model only. At the start of the Fight phase, select one enemy unit within Engagement range of the bearer. That unit must take a Battle-shock test, and when doing so, subtract 1 from the result.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c4f9-c831-e4e9-29f9" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="&apos;Eadstompa" hidden="false" id="d6c2-6c06-f327-5f91">
+              <profiles>
+                <profile name="&apos;Eadstompa" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1763-9039-3a6d-9d3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Warboss^^** model only. Each time the bearer makes an attack that targets a unit that is below its Starting Strength, re-roll a Wound roll of 1. If that unit is Below Half-strength, you can re-roll the Wound roll instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d6c2-6c06-f327-5f91" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="d6c2-6c06-f327-5f91" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ec5e-a03e-382a-822e" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tellyporta" hidden="false" id="b44f-e2fb-29d5-72f5">
+              <profiles>
+                <profile name="Tellyporta" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3474-84f-8bf-783">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Warboss In Mega Armour^^** model only. Models in the bearer&apos;s unit have the Deep Strike ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b44f-e2fb-29d5-72f5" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="b44f-e2fb-29d5-72f5" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="d88e-a9e3-30d8-f9fd" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Deep Strike" id="dca1-4256-bfe0-8575" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cf79-eb2a-1990-da2f" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fb6-d1-32e8-101f" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4b17-a73a-7a0a-a265" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Da Big Hunt Enhancements" id="6a5b-742b-e850-4a75" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Surly As A Squiggoth" hidden="false" id="c312-35e4-d4d5-ea8e">
@@ -27745,6 +27924,174 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Freebooter Krew Enhancements" id="158c-7423-da23-6d8b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Razgit&apos;s Magik Map" hidden="false" id="1f59-a92a-38f0-75d6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="1f59-a92a-38f0-75d6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="1f59-a92a-38f0-75d6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1a7-3346-98ac-8f35" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Razgit&apos;s Magik Map" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9eff-9c5f-43ce-f892">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. After both players have deployed their armies, select up to three **^^Orks Infantry^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Git-spotter Squig" hidden="false" id="8620-a781-136c-b9e8">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8620-a781-136c-b9e8" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8620-a781-136c-b9e8" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ec4c-a939-a216-99df" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Ignores Cover" id="e68b-db76-20ca-1788" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Git-spotter Squig" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="888c-bf79-c151-7d95">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Ranged weapons equipped by models in the bearer’s unit have the **[IGNORES COVER]** ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Git-spotter Squig" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="append" value="Ignores Cover" field="893f-9000-ccf7-648e" scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bionik Workshop" hidden="false" id="a4e4-b6d1-8ad1-6b54">
+              <profiles>
+                <profile name="Bionik Workshop" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="96ed-b6d4-f919-14de">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Big Mek^^** or **^^Painboy^^** model only. At the start of the battle, roll one D3 and compare the result to the list below. Until the end of the battle, models in the bearer’s unit have that bioniks ability.
+**1. Bionik Legs:** Add 2&quot; to the Move characteristic of this model.
+**2. Bionik Arms:** Add 1 to the Strength characteristic of melee weapons equipped by this model.
+**3. Bionik Bonce:** Improve the Weapon Skill characteristic of melee weapons equipped by this model by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a4e4-b6d1-8ad1-6b54" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="a4e4-b6d1-8ad1-6b54" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="1ea0-8b1a-ddea-4d7c" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="d844-fb57-f3b6-1560" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d988-3cf2-9748-f330" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Da Kaptin" hidden="false" id="a1c0-bf58-83ec-60b7">
+              <profiles>
+                <profile name="Da Kaptin" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a813-57b4-ee80-17d1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Warboss^^** model only. Once per battle round, at the start of any phase, you can select one friendly **^^Orks^^** unit that is Battle‑shocked and within 12&quot; of the bearer. That unit suffers D3 mortal wounds and it is no longer Battle‑shocked.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a1c0-bf58-83ec-60b7" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="a1c0-bf58-83ec-60b7" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0081-d15b-af3b-4861" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c2b-4551-cd1d-3556" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="bea1-1e34-5f31-78f2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Green Tide Enhancements" id="292d-34a5-7672-ab93" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Ferocious Show Off" hidden="false" id="647-4242-1022-5d0a">
@@ -27900,185 +28247,6 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Bully Boyz Enhancements" id="fe9c-6076-3f89-1995" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Da Biggest Boss" hidden="false" id="ccd6-6490-a314-78a0">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ccd6-6490-a314-78a0" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="ccd6-6490-a314-78a0" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Da Biggest Boss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5fa9-4648-617a-8bac">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Warboss^^** model only. Add 2 to the bearer&apos;s Wounds characteristic.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2d7-abe5-a130-c794" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Da Biggest Boss" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="root-entry"/>
-                    <modifier type="increment" value="2" field="750a-a2ec-90d3-21fe" affects="self.entries.profiles.Unit" scope="root-entry"/>
-                  </modifiers>
-                  <comment>Da Biggest Boss</comment>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="ccd6-6490-a314-78a0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Big Gob" hidden="false" id="277e-4363-d9ea-167d">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="277e-4363-d9ea-167d" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="277e-4363-d9ea-167d" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Big Gob" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5f33-6400-5a1d-274a">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Warboss^^** model only. At the start of the Fight phase, select one enemy unit within Engagement range of the bearer. That unit must take a Battle-shock test, and when doing so, subtract 1 from the result.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c4f9-c831-e4e9-29f9" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="&apos;Eadstompa" hidden="false" id="d6c2-6c06-f327-5f91">
-              <profiles>
-                <profile name="&apos;Eadstompa" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1763-9039-3a6d-9d3">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Warboss^^** model only. Each time the bearer makes an attack that targets a unit that is below its Starting Strength, re-roll a Wound roll of 1. If that unit is Below Half-strength, you can re-roll the Wound roll instead.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d6c2-6c06-f327-5f91" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="d6c2-6c06-f327-5f91" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ec5e-a03e-382a-822e" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tellyporta" hidden="false" id="b44f-e2fb-29d5-72f5">
-              <profiles>
-                <profile name="Tellyporta" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3474-84f-8bf-783">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Warboss In Mega Armour^^** model only. Models in the bearer&apos;s unit have the Deep Strike ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b44f-e2fb-29d5-72f5" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="b44f-e2fb-29d5-72f5" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="d88e-a9e3-30d8-f9fd" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <infoLinks>
-                <infoLink name="Deep Strike" id="dca1-4256-bfe0-8575" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cf79-eb2a-1990-da2f" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fb6-d1-32e8-101f" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4b17-a73a-7a0a-a265" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Kult of Speed Enhancements" id="8f6c-4dd3-c968-54de" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Fasta Than Yooz" hidden="false" id="3ed-27a1-e50f-f0da">
@@ -28226,6 +28394,252 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               </conditionGroups>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="More Dakka! Enhancements" id="14fb-0991-673a-782d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Da Gobshot Thunderbuss" hidden="false" id="d1a9-2ad1-40d0-656e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d1a9-2ad1-40d0-656e" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d1a9-2ad1-40d0-656e" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="38f9-b52f-aadd-cbb6" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Da Gobshot Thunderbuss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="77af-4d8c-a941-6323">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** models only. Ranged weapons equipped by the bearer have the **[DEVASTATING WOUNDS]** and **[HAZARDOUS]** abilities.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastating Wounds" id="88b0-0e66-2967-933f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                <infoLink name="Hazardous" id="af6f-13c9-43f7-acf8" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Targetin&apos; Squigs" hidden="false" id="9863-40e7-e0c2-47dc">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9863-40e7-e0c2-47dc" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="9863-40e7-e0c2-47dc" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d5bf-76f9-4642-f71f" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Targetin&apos; Squigs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a7b9-b5de-a8fc-6476">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Each time a model in the bearer&apos;s unit makes a ranged attack, add 1 to the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dead Shiny Shootas" hidden="false" id="0b5e-45c3-a140-9033">
+              <profiles>
+                <profile name="Dead Shiny Shootas" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="46d6-c36e-029a-e31e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Ranged weapons equipped by models in the bearer&apos;s unit have the **[RAPID FIRE 1]** ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b5e-45c3-a140-9033" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0b5e-45c3-a140-9033" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2e7d-0d5b-83db-fa83" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Rapid Fire" id="39b7-7510-e8c6-240a" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Zog Off And Eat Dakka!" hidden="false" id="9955-f835-48e7-4f03">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9955-f835-48e7-4f03" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="9955-f835-48e7-4f03" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7ae0-15f9-3588-9669" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Zog Off And Eat Dakka!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c510-f50a-a0a9-4a0f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. The bearer&apos;s unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f8-9414-3af9-be8f" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="f607-6488-0765-b901" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ramship Raiders Enhancements" id="22d6-71ee-1a9c-f57c" hidden="false">
+          <comment>Boarding Actions content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="09d3-a08a-0671-fe86" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Living Battering Ram" hidden="false" id="738e-ed10-bda6-e042">
+              <profiles>
+                <profile name="Living Battering Ram" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="747c-54cd-0115-3338">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer attempts to operate a closed Hatchway, your opponent cannot try to prevent it. In addition, each time the bearer opens a Hatchway, each enemy unit within 6&quot; of that Hatchway and wholly on the opposite side of it from the bearer must take a Battle-shock test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="738e-ed10-bda6-e042" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="738e-ed10-bda6-e042" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Grenades" hidden="false" id="63d3-39da-633a-142d" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="27cf-1e7e-aa2b-0398" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scarred Brute" hidden="false" id="e2d9-7229-fe69-b844">
+              <profiles>
+                <profile name="Scarred Brute" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e5d1-c184-ac93-8fc2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the Feel No Pain 5+ ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e2d9-7229-fe69-b844" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="e2d9-7229-fe69-b844" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Grenades" hidden="false" id="9ecd-a95f-f7ee-ea79" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a51e-821a-ab29-444c" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Feel No Pain" id="0eef-6c4e-bdcf-caf3" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                  <modifiers>
+                    <modifier type="append" value="5+" field="name" join=" "/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Taktikal Brigade Enhancements" id="e99c-ce4e-cebb-3069" hidden="false">
           <selectionEntries>
@@ -28405,323 +28819,94 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="More Dakka! Enhancements" id="14fb-0991-673a-782d" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Da Gobshot Thunderbuss" hidden="false" id="d1a9-2ad1-40d0-656e">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d1a9-2ad1-40d0-656e" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d1a9-2ad1-40d0-656e" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="38f9-b52f-aadd-cbb6" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Da Gobshot Thunderbuss" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="77af-4d8c-a941-6323">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** models only. Ranged weapons equipped by the bearer have the **[DEVASTATING WOUNDS]** and **[HAZARDOUS]** abilities.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Devastating Wounds" id="88b0-0e66-2967-933f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                <infoLink name="Hazardous" id="af6f-13c9-43f7-acf8" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Targetin&apos; Squigs" hidden="false" id="9863-40e7-e0c2-47dc">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9863-40e7-e0c2-47dc" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="9863-40e7-e0c2-47dc" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d5bf-76f9-4642-f71f" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Targetin&apos; Squigs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a7b9-b5de-a8fc-6476">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Each time a model in the bearer&apos;s unit makes a ranged attack, add 1 to the Hit roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Dead Shiny Shootas" hidden="false" id="0b5e-45c3-a140-9033">
-              <profiles>
-                <profile name="Dead Shiny Shootas" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="46d6-c36e-029a-e31e">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Ranged weapons equipped by models in the bearer&apos;s unit have the **[RAPID FIRE 1]** ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b5e-45c3-a140-9033" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0b5e-45c3-a140-9033" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2e7d-0d5b-83db-fa83" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Rapid Fire" id="39b7-7510-e8c6-240a" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Zog Off And Eat Dakka!" hidden="false" id="9955-f835-48e7-4f03">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9955-f835-48e7-4f03" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="9955-f835-48e7-4f03" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7ae0-15f9-3588-9669" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Zog Off And Eat Dakka!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c510-f50a-a0a9-4a0f">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. The bearer&apos;s unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f8-9414-3af9-be8f" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
+        <selectionEntryGroup name="Kaptin Killers Enhancements" id="0b24-30e5-0cfa-20fa" hidden="false">
+          <comment>Boarding Actions content</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="f607-6488-0765-b901" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="726a-fa36-dac2-0b11" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Freebooter Krew Enhancements" id="158c-7423-da23-6d8b" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Razgit&apos;s Magik Map" hidden="false" id="1f59-a92a-38f0-75d6">
+            <selectionEntry type="upgrade" import="true" name="Tellyporta" hidden="false" id="7d3f-9228-cee1-d300">
+              <profiles>
+                <profile name="Tellyporta" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb97-1452-494f-7c60">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Deploy Armies step, select one **^^Meganobz^^** unit from your army. Until the end of the battle, models in that unit have the Deep Strike ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="1f59-a92a-38f0-75d6" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="1f59-a92a-38f0-75d6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7d3f-9228-cee1-d300" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d3f-9228-cee1-d300" shared="true" includeChildForces="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="Grenades" hidden="false" id="dd23-5f2d-51c8-1108" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+              </categoryLinks>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                 <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1a7-3346-98ac-8f35" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="182e-39ba-e6f2-4bb6" includeChildForces="true" includeChildSelections="true"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gnasher Squig Crates" hidden="false" id="1a94-5cd1-ee3b-3805">
               <profiles>
-                <profile name="Razgit&apos;s Magik Map" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9eff-9c5f-43ce-f892">
+                <profile name="Gnasher Squig Crates" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4fcf-c5a8-0567-fcbc">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. After both players have deployed their armies, select up to three **^^Orks Infantry^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Warboss^^** model only. In your Command phase, you can select one **^^Nobz^^** or **^^Meganobz^^** unit from your army (excluding Battle-shocked units) that is within 6&quot; of the bearer and is within range of an objective marker. If there are no enemy models within range of that objective marker, it is Secured by your army.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Git-spotter Squig" hidden="false" id="8620-a781-136c-b9e8">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8620-a781-136c-b9e8" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8620-a781-136c-b9e8" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="1a94-5cd1-ee3b-3805" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="1a94-5cd1-ee3b-3805" shared="true" includeChildForces="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="Grenades" hidden="false" id="0661-ae8c-86a4-6a05" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+              </categoryLinks>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ec4c-a939-a216-99df" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Ignores Cover" id="e68b-db76-20ca-1788" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-              </infoLinks>
-              <profiles>
-                <profile name="Git-spotter Squig" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="888c-bf79-c151-7d95">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Ranged weapons equipped by models in the bearer’s unit have the **[IGNORES COVER]** ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Git-spotter Squig" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons"/>
-                    <modifier type="append" value="Ignores Cover" field="893f-9000-ccf7-648e" scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bionik Workshop" hidden="false" id="a4e4-b6d1-8ad1-6b54">
-              <profiles>
-                <profile name="Bionik Workshop" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="96ed-b6d4-f919-14de">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Big Mek^^** or **^^Painboy^^** model only. At the start of the battle, roll one D3 and compare the result to the list below. Until the end of the battle, models in the bearer’s unit have that bioniks ability.
-**1. Bionik Legs:** Add 2&quot; to the Move characteristic of this model.
-**2. Bionik Arms:** Add 1 to the Strength characteristic of melee weapons equipped by this model.
-**3. Bionik Bonce:** Improve the Weapon Skill characteristic of melee weapons equipped by this model by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a4e4-b6d1-8ad1-6b54" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="a4e4-b6d1-8ad1-6b54" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="1ea0-8b1a-ddea-4d7c" shared="true"/>
-                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="d844-fb57-f3b6-1560" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d988-3cf2-9748-f330" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Da Kaptin" hidden="false" id="a1c0-bf58-83ec-60b7">
-              <profiles>
-                <profile name="Da Kaptin" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a813-57b4-ee80-17d1">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Warboss^^** model only. Once per battle round, at the start of any phase, you can select one friendly **^^Orks^^** unit that is Battle‑shocked and within 12&quot; of the bearer. That unit suffers D3 mortal wounds and it is no longer Battle‑shocked.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a1c0-bf58-83ec-60b7" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="a1c0-bf58-83ec-60b7" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="47cc-4071-6fda-688e" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                 <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0081-d15b-af3b-4861" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="38c8-573a-7000-e114" includeChildForces="true" includeChildSelections="true"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c2b-4551-cd1d-3556" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="bea1-1e34-5f31-78f2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -28735,6 +28920,14 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Boarding Actions Enhancements" hidden="false" id="798d-5280-37de-d5b1" type="selectionEntryGroup" targetId="5a79-2c0b-66e4-2122">
+          <comment>Boarding Actions content</comment>
+        </entryLink>
+        <entryLink import="true" name="Breaching Operation Enhancements" hidden="false" id="664c-15af-573a-225c" type="selectionEntryGroup" targetId="fc3b-5a53-47b1-4b2d">
+          <comment>Boarding Actions content</comment>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Detachment" id="8b85-ad3b-752f-6502" hidden="false" defaultSelectionEntryId="none">
       <selectionEntries>
@@ -28836,9 +29029,9 @@ Taktiks abilities cannot be issued to Battle shocked units, and if a unit affect
         <selectionEntry type="upgrade" import="true" name="More Dakka!" hidden="false" id="f607-6488-0765-b901">
           <rules>
             <rule name="Dakka! Dakka! Dakka!" id="0d8a-1996-f526-5ca4" hidden="false">
-              <description>Ranged weapons equipped by **^^Orks Infantry^^** and **^^Orks Walker^^** models from your army have the **[SUSTAINED HITS 1]** ability.
+              <description>Ranged weapons equipped by **^^Orks^^** models from your army have the **[SUSTAINED HITS 1]** ability.
 
-While the Waaagh! is active for your army, during your Shooting phase, ranged weapons equipped by **^^Orks Infantry^^** and **^^Orks Walker^^** models from your army have the **[Assault]** ability.</description>
+While the Waaagh! is active for your army, during your Shooting phase, ranged weapons equipped by **^^Orks^^** models from your army have the **[Assault]** ability.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -28849,7 +29042,10 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
         <selectionEntry type="upgrade" import="true" name="Freebooter Krew" hidden="false" id="bea1-1e34-5f31-78f2">
           <rules>
             <rule name="Here Be Loot" id="078c-99f5-cc7a-9ad9" hidden="false">
-              <description>Each time a model in an **^^Orks Infantry^^**, **^^Orks Mounted^^** or **^^Orks Walker^^** unit from your army makes an attack, that attack has the **[SUSTAINED HITS 1]** ability if either or both of the following are true:
+              <description>At the start of your Command phase, select one objective marker. Until the start of your next Command phase, that objective marker is your loot objective.
+
+
+Each time a model in an **^^Orks Infantry^^**, **^^Orks Mounted^^** or **^^Orks Walker^^** unit from your army makes an attack, that attack has the **[SUSTAINED HITS 1]** ability if either or both of the following are true:
 
 - That model&apos;s unit is within range of your loot objective.
 - That attack targets a unit within range of your loot objective.</description>
@@ -28857,6 +29053,96 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
           </rules>
           <infoLinks>
             <infoLink name="Sustained Hits" id="20bd-cb08-e800-1179" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ramship Raiders" hidden="false" id="09d3-a08a-0671-fe86">
+          <comment>Boarding Actions</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Mustering A Boarding Patrol" id="17ad-1594-9c9b-419e" hidden="false">
+              <description>You can include up to two of the following units (duplicates are not allowed):
+- **^^Beastboss^^**
+- **^^Big Mek^^**
+- **^^Big Mek with Shokk Attack Gun^^**
+- **^^Boss Snikrot^^**
+- **^^Infantry Warboss^^**
+- **^^Mek^^**
+- **^^Painboss^^**
+- **^^Painboy^^**
+- **^^Weirdboy^^**
+- **^^Wurrboy^^**
+- **^^Zodgrod Wortsnagga^^**
+
+You can include up to three of each of the following units:
+- **^^Beast Snagga Boyz^^** (10 models)
+- **^^Boyz^^** (10 models)
+
+You can include up to one of each of the following units:
+- **^^Burna Boyz^^** (5 or 10 models)
+- **^^Flash Gitz^^** (5 or 10 models)
+- **^^Gretchin^^** (11 models)
+- **^^Kommandos^^** (10 models)
+- **^^Nobz^^** (5 models)
+- **^^Stormboyz^^** (5 or 10 models)</description>
+            </rule>
+            <rule name="Rules Adaptions" id="aad1-f91a-9039-5372" hidden="false">
+              <description>- The **^^Big Mek^^** model loses the Shokk-boosta ability.
+- The **^^Boss Snikrot^^** model loses the Kunnin&apos; Infiltrator ability.
+- The **^^Boyz^^** unit loses the Get Da Good Bitz ability.
+- The **^^Kommandos^^** unit loses the Sneaky Gitz and Bomb Squig abilities.
+- The **^^Stormboyz^^** unit loses the Deep Strike and Full Throttle abilities.
+- The **^^Weirdboy^^** model loses the Waaagh! Energy and Da Jump abilities.
+- The **^^Wurrboy^^** model loses the Unstable Oracle ability.
+- The **^^Zodgrod Wortsnagga^^** model loses the Special Dose ability.</description>
+            </rule>
+            <rule name="Forming Boarding Squads" id="3327-9d86-3c96-0e65" hidden="false">
+              <description>- Do not split **^^Gretchin^^** units into separate units in the Form Boarding Squads step.
+- When splitting a **^^Kommandos^^** unit, select on of the resulting Boarding Squads to gain the Distraction Grot token (if equipped with one). The Boarding Squad without the Distraction Grot token loses the Distraction Grot ability.</description>
+            </rule>
+            <rule name="Belligerent Boarders" id="3255-16d4-cadf-94dd" hidden="false">
+              <description>Each time an attack targets an **^^Orks^^** unit from your army (excluding **^^Grots^^** units), if the Strength characteristic of that attack is greater than the Toughness characteristic of that **^^Orks^^** unit, subtract 1 from the Wound roll.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Void Waaagh!" id="9200-8671-16e8-3058" hidden="false" targetId="07ef-c552-cfd5-29ad" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kaptin Killers" hidden="false" id="726a-fa36-dac2-0b11">
+          <comment>Boarding Actions</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Mustering A Boarding Patrol" id="d707-92ac-033d-2e41" hidden="false">
+              <description>You can include up to two of the following units (duplicates are not allowed):
+- **^^Big Mek in Mega Armour^^**
+- **^^Infantry Warboss^^** (excluding **^^Warboss in Mega Armour^^**)
+- **^^Warboss in Mega Armour^^**
+
+You can include up to two of each of the following units:
+- **^^Meganobz^^** (3 models)
+- **^^Nobz^^** (5 or 10 models)</description>
+            </rule>
+            <rule name="Rules Adaptions" id="105e-f7db-6620-121e" hidden="false">
+              <description>- The **^^Big Mek in Mega Armour^^** model loses the Fix Dat Armour Up ability.
+- The **^^Meganobz^^** unit loses the Krumpin&apos; Time ability.</description>
+            </rule>
+            <rule name="Comin&apos; Through" id="c6cf-4eb3-0f1f-aee9" hidden="false">
+              <description>In your Movement phase, Desperate Escape tests taken for **^^Orks^^** models from your army are automatically passed and each time an **^^Orks^^** unit from your army makes a Normal, Advance or Fall Back move, it can move through other models as if they were not there, provided those other models have a lower Toughness characteristic than it.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Void Waaagh!" id="536f-ba95-13eb-0cbb" hidden="false" targetId="07ef-c552-cfd5-29ad" type="rule"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -29888,6 +30174,18 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b503-16cf-1125-0a5d" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Weapon Upgrades" id="85a4-cf28-fbe8-1e24" hidden="false" flatten="true">
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="22e4-a519-d924-905f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="dd61-a87a-0d69-e431" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+          <entryLinks>
+            <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="612a-5323-523c-f380" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="480c-9fb7-4495-f68e" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+        <entryLink import="true" name="Boarding Actiions Upgrades" hidden="false" id="2154-bee0-f523-0303" type="selectionEntryGroup" targetId="3167-0f5b-caba-d96e"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="Battlewagon" hidden="false" id="9224-dbd4-36ad-6ab2"/>
@@ -30190,4 +30488,15 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
       </characteristicTypes>
     </profileType>
   </profileTypes>
+  <sharedRules>
+    <rule name="Void Waaagh!" id="07ef-c552-cfd5-29ad" hidden="false">
+      <description>Units from your army with the Waaagh! ability retain that ability and gain this one.
+
+Once per battle, at the start of the battle round, you can call a Void Waaagh!. If you do, until the start of the next battle round, the Void Waaagh! is active for your army and:
+- Add 1 to the Strength and Attacks characteristics of melee weapons equipped by models from your army with this ability.
+- Models from your army with this ability have a 5+ invulnerable save.
+
+A Void Waaagh! counts as a Waaagh! for any datasheet abilities.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
