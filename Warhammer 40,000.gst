@@ -559,6 +559,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f61e-2b47-32cb-14d3" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Supreme Commander" id="75fe-c657-43c6-7c09" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
