@@ -37969,7 +37969,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c0d-48f5-19b2-37ff"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -38003,7 +38003,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d991-570b-09c0-9497"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -38037,7 +38037,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe0c-ffbf-f7ed-60ec"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -38071,7 +38071,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5543-e628-19a3-b801"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -38105,7 +38105,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f42-a454-4186-1587"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
                     <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                     <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                     <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
