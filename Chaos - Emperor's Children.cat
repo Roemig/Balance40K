@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="03fe-a162-4c02-f07b" name="Chaos - Emperor&apos;s Children" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="31" revision="45" authorContact="Mad_Spy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="03fe-a162-4c02-f07b" name="Chaos - Emperor&apos;s Children" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="31" revision="48" authorContact="Mad_Spy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Lucius the Eternal" hidden="false" id="e390-b58b-db9-816" collective="false">
       <profiles>
@@ -4921,6 +4921,7 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" id="3eed-845e-d31a-ad96" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+        <infoLink name="Damaged: 1-6 wounds remaining" id="486a-ba0f-b839-bc38" hidden="false" type="profile" targetId="80ea-c6e-ee51-da61"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Monster" hidden="false" id="6cd3-a8eb-5116-e15c" targetId="9693-cf84-fe69-37a9" primary="false"/>
@@ -6244,6 +6245,13 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Champion of Excess [Crucible]" hidden="false" id="cc4d-41d6-dfea-414f">
       <categoryLinks>
@@ -6402,6 +6410,13 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Flawless Champion [Crucible]" hidden="false" id="2334-eccf-6ea5-562e">
       <categoryLinks>
@@ -6566,6 +6581,11 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
       </costs>
       <modifiers>
         <modifier type="append" value="Precision" field="893f-9000-ccf7-648e" affects="self.entries.profiles.Melee Weapons" join=", "/>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Defiler" hidden="false" id="b541-3292-a5cc-dbeb" collective="false">
@@ -6675,7 +6695,7 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -6686,7 +6706,7 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>

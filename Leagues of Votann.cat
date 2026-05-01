@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f616-3f08-ee8e-3349" name="Xenos - Leagues of Votann" revision="78" battleScribeVersion="2.03" library="false" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f616-3f08-ee8e-3349" name="Xenos - Leagues of Votann" revision="82" battleScribeVersion="2.03" library="false" gameSystemId="sys-68cc-5ca8-f046-3e5c" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="5a53-ae58-e0d9-0616" name="Hearthkyn Warriors" hidden="false"/>
     <categoryEntry id="a360-cb11-e139-55df" name="Ûthar the Destined" hidden="false"/>
@@ -3278,6 +3278,18 @@ In your Shooting phase, each time a ^^**Brôkhyr, Ironkin Steeljacks^^** or ^^**
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="ed28-4475-b9dc-271a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <modifiers>
+                        <modifier type="add" value="All models must be equipped with the same weapon" field="error">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="415a-e6f6-d17f-d700" childId="e010-924b-804d-026f" shared="true" includeChildSelections="true" childName="Concussion maul"/>
+                                <condition type="atLeast" value="1" field="selections" scope="415a-e6f6-d17f-d700" childId="0e8e-5168-13f2-1dba" shared="true" includeChildSelections="true" childName="Heavy plasma axe"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                     <selectionEntry id="0e8e-5168-13f2-1dba" name="Heavy plasma axe" hidden="false" collective="true" import="true" type="upgrade">
                       <constraints>
@@ -3292,6 +3304,18 @@ In your Shooting phase, each time a ^^**Brôkhyr, Ironkin Steeljacks^^** or ^^**
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="0284-7584-2050-70f6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <modifiers>
+                        <modifier type="add" value="All models must be equipped with the same weapon" field="error">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="415a-e6f6-d17f-d700" childId="e010-924b-804d-026f" shared="true" includeChildSelections="true" childName="Concussion maul"/>
+                                <condition type="atLeast" value="1" field="selections" scope="415a-e6f6-d17f-d700" childId="0e8e-5168-13f2-1dba" shared="true" includeChildSelections="true" childName="Heavy plasma axe"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -7387,6 +7411,13 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="7fe9-2ef3-d1c9-8a01" includeChildSelections="true"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="cc0d-675a-92d0-3ccc" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kinhost Commander [Crucible]" hidden="false" id="05b6-7622-edbe-7a9a">
       <categoryLinks>
@@ -7536,6 +7567,13 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Steeljack Elder [Crucible]" hidden="false" id="4eaf-78d5-9195-0e36">
       <categoryLinks>
@@ -7681,6 +7719,13 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Berehk Stornbröw" hidden="false" id="c7ea-1b76-c8c1-4786">
       <costs>
@@ -12083,6 +12128,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="a847-8e7a-cf3e-b6b3" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Autoch-pattern combi-bolter" hidden="false" id="0b8c-e395-6dd7-3f6f">
               <profiles>
@@ -12106,6 +12154,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="d3b7-0664-3ac4-7bdb" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Graviton blast cannon" hidden="false" id="7c09-de6d-ca40-7d7e">
               <profiles>
@@ -12147,6 +12198,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </selectionEntryGroups>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="26a5-dd34-dd8e-c2dd" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Bolt shotgun" hidden="false" id="30d9-0451-da93-c7ee">
               <selectionEntryGroups>
@@ -12173,6 +12227,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <infoLinks>
                 <infoLink name="Assault" id="3b53-eed8-00f0-ec26" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="9388-767f-fcb7-2c4f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EtaCarn plasma gun" hidden="false" id="eadf-8ebf-dc90-770b">
               <profiles>
@@ -12206,6 +12263,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="b89f-0b4d-6532-4099" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Bolt cannon" hidden="false" id="8351-50e2-565a-17f9">
               <profiles>
@@ -12239,6 +12299,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="fa3b-1ebc-1366-919c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Graviton rifle" hidden="false" id="3f13-358a-e171-7bcf">
               <selectionEntryGroups>
@@ -12265,8 +12328,11 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <infoLinks>
                 <infoLink name="Anti-" id="28e6-191c-dfd8-1bd6" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="9420-b5a5-dbb5-6c7f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heavy volkanite disintegrator" hidden="false" id="82e7-3928-7489-bebc" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Heavy volkanite disintegrator" hidden="false" id="82e7-3928-7489-bebc">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b11-576c-cd4d-398c" includeChildSelections="false"/>
               </constraints>
@@ -12301,6 +12367,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="2712-aed1-cdd3-a031" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Ion blaster" hidden="false" id="4c7a-ed48-106b-953a">
               <selectionEntryGroups>
@@ -12324,8 +12393,11 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="3cf4-33b3-a06e-12a3" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="SP conversion beamer" hidden="false" id="0369-aee5-7c7b-58b6" collective="true">
+            <selectionEntry type="upgrade" import="true" name="SP conversion beamer" hidden="false" id="0369-aee5-7c7b-58b6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="278d-da76-a788-c04a" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
               </constraints>
@@ -12364,6 +12436,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="4ac7-1286-7705-6496" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Volkanite disintegrator" hidden="false" id="9a90-09f0-7607-6c6c" collective="false">
               <profiles>
@@ -12444,6 +12519,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3dad-c519-6618-c52e" includeChildSelections="false"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Pistol Weapon" hidden="false" id="a042-d1af-d095-ac8a" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Autoch-pattern bolt pistol" hidden="false" id="f6ab-7e5f-1181-df6d">
               <profiles>
@@ -12473,6 +12551,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e5a1-b199-d1fa-3c60" includeChildSelections="false"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Pistol Weapon" hidden="false" id="0be4-10e0-822d-b326" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Bolt revolver" hidden="false" id="0c62-027a-60d9-a2a4">
               <constraints>
@@ -12509,6 +12590,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </conditions>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="Pistol Weapon" hidden="false" id="ca2c-1537-b3a7-4f97" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Theyn&apos;s pistol" hidden="false" id="4117-09b4-0881-13eb">
               <constraints>
@@ -12530,6 +12614,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <infoLinks>
                 <infoLink name="Pistol" id="7c3a-e125-a2b8-a1b8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Pistol Weapon" hidden="false" id="7b9b-3460-3ef4-d8a0" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -12570,6 +12657,7 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               </profiles>
               <categoryLinks>
                 <categoryLink name="Damage Dx Weapon" hidden="false" id="b767-dcd0-ef4a-8e13" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                <categoryLink name="Melee Weapon" hidden="false" id="a77b-99b8-3c69-bb14" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3192-6950-9b5b-5400" includeChildSelections="false"/>
@@ -12600,6 +12688,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="adf5-4acc-cdf3-bde8" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Concussion gauntlet" hidden="false" id="c4c2-acce-b45c-6e11">
               <constraints>
@@ -12641,6 +12732,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <infoLinks>
                 <infoLink name="Lethal Hits" id="4da9-d698-e561-04d7" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="d1dc-7ce5-3e87-d2f8" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Concussion maul" hidden="false" id="a109-b288-e138-4dcf">
               <selectionEntryGroups>
@@ -12670,6 +12764,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <infoLinks>
                 <infoLink name="Anti-" id="f580-2e9d-bacc-9113" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="720d-28af-4dd6-e78f" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Darkstar axe" hidden="false" id="6caa-aab1-0b46-c95e">
               <modifiers>
@@ -12703,6 +12800,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cad0-0b64-dc91-ccfc" includeChildSelections="false"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="89df-d8d7-87dd-504c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Forgewrought plasma axe" hidden="false" id="7766-7c62-b4bb-6ad9">
               <selectionEntryGroups>
@@ -12729,6 +12829,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="495b-32d3-97f6-2608" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Graviton hammer" hidden="false" id="c7d5-3a2b-f152-3f37">
               <selectionEntryGroups>
@@ -12758,6 +12861,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               <infoLinks>
                 <infoLink name="Anti-" id="c3c5-ea54-b94f-085f" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="592c-ff83-e7dd-7adb" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy plasma axe" hidden="false" id="ea1a-2cc6-5c6e-ae4d">
               <selectionEntryGroups>
@@ -12784,6 +12890,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="248f-b139-e3e7-5c1b" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mass gauntlet" hidden="false" id="f785-612c-c71d-4d9b">
               <constraints>
@@ -12810,6 +12919,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="11b9-11db-221f-b21d" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mass hammer" hidden="false" id="86e8-c43a-a297-f307">
               <selectionEntryGroups>
@@ -12845,6 +12957,7 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
               </profiles>
               <categoryLinks>
                 <categoryLink name="Damage Dx+0 Modifier" hidden="false" id="07a7-e226-1885-c03d" targetId="982b-de77-dd2d-d9bd" primary="false"/>
+                <categoryLink name="Melee Weapon" hidden="false" id="4384-5799-9e1a-1818" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma blade gauntlet" hidden="false" id="a34b-dcc3-72ca-dce4">
@@ -12879,6 +12992,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="688b-bcaf-c612-7769" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma knife" hidden="false" id="9395-43ea-59bc-17b4">
               <constraints>
@@ -12905,6 +13021,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="db2f-82bb-86d2-0bb6" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma sword" hidden="false" id="c08f-ebaf-bcf8-3ccc">
               <constraints>
@@ -12938,6 +13057,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </conditions>
                 </modifier>
               </modifiers>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="957f-d353-2326-0f38" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Theyn&apos;s melee weapon" hidden="false" id="2a8a-f101-b638-6426">
               <constraints>
@@ -12964,6 +13086,9 @@ At the start of the Declare Battle Formations step, you can select one ^^**Hernk
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="4c1d-e06f-5ffd-0279" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -13031,7 +13156,7 @@ Whenever a rule allows you to spend YP, reduce the number of YP you have by that
     </profile>
     <profile id="df2e-7066-b61c-1a2d" name="➤ L7 missile launcher - blast" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
       <characteristics>
-        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
         <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
         <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
@@ -13049,7 +13174,7 @@ Whenever a rule allows you to spend YP, reduce the number of YP you have by that
     </profile>
     <profile id="0f47-f0cd-0d5b-514b" name="➤ L7 missile launcher - focused" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
       <characteristics>
-        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
         <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
         <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
