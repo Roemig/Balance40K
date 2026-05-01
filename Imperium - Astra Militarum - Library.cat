@@ -42757,7 +42757,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <infoLink name="Voice Of Command" id="0964-2dd9-cf0f-5683" hidden="false" type="rule" targetId="53c9-34f6-2443-a95e"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="9725-52a5-e8e2-f29a" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365" sortIndex="1"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="9725-52a5-e8e2-f29a" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365" sortIndex="2"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="6189-23de-7110-d1f0" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
@@ -42782,7 +42783,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="af4a-eb3b-2448-c79f" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="183a-1d1f-9e3e-1ede">
+        <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="183a-1d1f-9e3e-1ede" sortIndex="1">
           <profiles>
             <profile name="Sentinel chainsaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0c05-5c27-2c7b-d87e">
               <characteristics>
@@ -42822,7 +42823,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </infoGroup>
       </infoGroups>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Main Weapon" id="0470-34f9-7cd4-7013" hidden="false">
+        <selectionEntryGroup name="Main Weapon" id="0470-34f9-7cd4-7013" hidden="false" sortIndex="4">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="f6ca-56bc-99b1-7098">
               <profiles>
@@ -49836,14 +49837,6 @@ Each time an **^^Officer^^** model in this unit issues an Order, that Order can 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37d3-8614-abb9-2e3b" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Boltgun" hidden="false" id="6c52-37f0-43e6-27ff" type="selectionEntry" targetId="ed8c-84a9-a336-576e">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf1f-a3ba-a705-0c15" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3d3a-ecd0-e6e7-b588" targetId="7c41-04ac-762f-878c" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
             <entryLink import="true" name="Heavy flamer" hidden="false" id="9b1c-3301-8d2a-d897" type="selectionEntry" targetId="6fef-cbbd-be33-44a4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8811-0b18-c626-f6d3" includeChildSelections="false"/>
@@ -50263,6 +50256,38 @@ Each time an **^^Officer^^** model in this unit issues an Order, that Order can 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b2c-dc22-96e5-54d9" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="2996-d65a-ed3d-c180">
+              <profiles>
+                <profile name="Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0e2a-a4a3-dce2-1f98">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Fire" id="fd01-a478-3dc6-ff89" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7df1-5fe9-5281-1661" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="868a-876a-2d1c-d89d" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="01be-8775-7f6e-59da" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5607-7075-7321-4433" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="39fb-ca89-813d-bc59" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Pistols" id="1a52-f4de-3bac-c94d" hidden="false">
@@ -50354,14 +50379,6 @@ Each time an **^^Officer^^** model in this unit issues an Order, that Order can 
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="51eb-92e4-5235-e71a" targetId="7c41-04ac-762f-878c" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Close combat weapon" hidden="false" id="59a6-ee2e-913e-2b45" type="selectionEntry" targetId="b6d3-8990-0dd3-7937">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daa0-f371-8e4f-ce6f" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="8831-0a02-a321-6b6f" targetId="7c41-04ac-762f-878c" type="selectionEntryGroup"/>
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Frag lance" hidden="false" id="5298-4b6d-46b2-cf31" type="selectionEntry" targetId="af3d-3ba3-ef7a-7879">
@@ -50604,6 +50621,35 @@ Each time an **^^Officer^^** model in this unit issues an Order, that Order can 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a23-6131-1bda-3bdc" includeChildSelections="false"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="9506-79bf-2072-f76f" collective="false">
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6fe3-534b-f092-226b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa74-38a0-b967-6fba" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="c56b-7fe7-217c-c46a" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ce7b-79b4-c1c1-e8ee" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="3b3f-165d-c65a-dc98" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="b959-ea57-effd-778a" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
