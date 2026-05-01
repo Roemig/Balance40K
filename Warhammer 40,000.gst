@@ -1149,6 +1149,31 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="977c-2d1e-aa65-6364" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show Crucible Characters" hidden="false" id="57cc-822a-1d43-be52" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="303a-3e8a-48d9-a81a" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d3c-bf56-7a9a-ecbf"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="Crucible Characters are visible" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="57cc-822a-1d43-be52" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="You need to check this option to see your Crucible characters" field="warning">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e2bc-fc0c-1099-3e75" shared="true" includeChildSelections="true" includeChildForces="true" childName="Crucible"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
