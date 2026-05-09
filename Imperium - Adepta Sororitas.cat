@@ -2402,12 +2402,12 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
                 <profile name="Mace of the Righteous" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1753-fc17-1197-41cd">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2422,6 +2422,9 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="9590-639e-4761-21b6" targetId="ccdd-3987-11ed-90cd" primary="false"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Precision" id="2a66-a9b3-119f-84d4" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
