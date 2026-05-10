@@ -44930,7 +44930,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <profiles>
         <profile name="Armageddon-pattern Salamander Scout Vehicle" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4f1b-25a7-8da6-13a8">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
