@@ -2423,23 +2423,39 @@
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="198a-27de-022a-b947" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Heavy flamer" hidden="false" id="be42-e478-5e84-75d8" type="selectionEntry" targetId="bcef-39ba-a990-5490">
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="cb3d-9313-7dda-7efe" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Multi-melta" hidden="false" id="3457-5166-67d8-ca8a" type="selectionEntry" targetId="91c8-b628-4d47-d01e">
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ed1c-1a43-5e60-cf5e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="a204-172e-c95b-ef14" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df"/>
-                <entryLink import="true" name="Combi-weapon" hidden="false" id="47de-0247-d818-a26f" type="selectionEntry" targetId="8882-6dc0-3a7b-5266"/>
+                <entryLink import="true" name="Combi-weapon" hidden="false" id="47de-0247-d818-a26f" type="selectionEntry" targetId="8882-6dc0-3a7b-5266">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d7c9-3d91-c7d2-cb8e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Havoc Launcher" hidden="false" id="629f-3003-5a72-c240" type="selectionEntry" targetId="5500-ca94-43f4-0881">
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d48a-7e62-b98f-81ec" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -2452,14 +2468,45 @@
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a77f-89a7-b03b-377a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Twin heavy flamer" hidden="false" id="3ce6-44d1-4f2d-17d2" collective="false" targetId="28c2-3ff0-43c1-380d" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9e0b-ae4d-7875-10c6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Twin lascannon" hidden="false" id="56e8-9e08-1a56-59f3" type="selectionEntry" targetId="c36c-6247-f673-fe00"/>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin lascannon" hidden="false" id="077a-cd02-2852-bca7" collective="false">
+                  <profiles>
+                    <profile name="Twin lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="408a-a80d-fa40-3867">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="8bcd-0733-3e60-8b89" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f525-e683-979e-54d3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -3771,7 +3818,7 @@
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon" id="77e0-a80e-ee61-6df9" hidden="false" defaultSelectionEntryId="81b-3440-e7a1-cd0b">
+                    <selectionEntryGroup name="Weapon" id="77e0-a80e-ee61-6df9" hidden="false" defaultSelectionEntryId="2096-1d75-f788-326">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74d8-2a6d-ed53-87b3"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cdf-3e1a-5dbe-6266"/>
@@ -3832,7 +3879,7 @@
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="57fe-307a-b0a3-1364" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                           </entryLinks>
                           <costs>
-                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3862,6 +3909,14 @@
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="a4c4-75a4-66ac-32d1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="7ff0-2c58-398d-41e">
                           <constraints>
@@ -3899,6 +3954,14 @@
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="c421-226e-178f-087f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
