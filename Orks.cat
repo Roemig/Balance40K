@@ -23567,16 +23567,46 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="6b4c-6985-7407-2f35" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Killkannon" hidden="false" id="cc9c-401f-a0c0-8624" type="selectionEntry" targetId="7b79-39d8-0d8a-275c">
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Killkannon" id="80bb-655c-f285-4b74" hidden="false" defaultSelectionEntryId="cc9c-401f-a0c0-8624">
+              <entryLinks>
+                <entryLink import="true" name="Killkannon" hidden="false" id="cc9c-401f-a0c0-8624" type="selectionEntry" targetId="7b79-39d8-0d8a-275c">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="208d-fbee-d7ff-ea21" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8727-057c-9b25-48a9"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8441-af1d-c5c9-d489"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="208d-fbee-d7ff-ea21" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Mek speshul" hidden="false" id="aadf-66db-35f7-7f1f">
+                  <profiles>
+                    <profile name="Wagon Shoota" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="49b1-79f8-d478-53e2">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">12</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 6, Sustained Hits 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Rapid Fire" id="c6e5-a106-d0a2-7b60" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+                    <infoLink name="Sustained Hits" id="9750-a9e2-67a7-9155" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="3c2e-46e3-f6a5-046c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
