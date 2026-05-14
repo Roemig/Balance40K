@@ -27819,6 +27819,11 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 Astra Militarum Infantry models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each Ogryn model takes up the space of 3 models. It cannot transport Artillery models.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Assault Plating" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0c22-2006-a58a-9caf">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, when an when an enemy unit is selecting this unit as the target of their attacks, substract 1 from wound rolls until these attacks are resolved.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="d535-17de-688b-d3b1" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
@@ -34402,7 +34407,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Drop Troop Commander" hidden="false" id="6bf4-10b3-ed27-96e7">
+        <selectionEntry type="model" import="true" name="Drop Troop Commander" hidden="false" id="6bf4-10b3-ed27-96e7" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Character" hidden="false" id="fd95-3adb-a265-4ccd" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
             <categoryLink name="Officer" hidden="false" id="980b-22f0-2ee3-9392" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
@@ -34458,7 +34463,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Veteran Drop Trooper" id="bb45-d051-5d28-805c" hidden="false" defaultSelectionEntryId="fea6-1ba1-e799-3b69">
+        <selectionEntryGroup name="Veteran Drop Trooper" id="bb45-d051-5d28-805c" hidden="false" defaultSelectionEntryId="fea6-1ba1-e799-3b69" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Veteran Heavy Weapons Team" hidden="false" id="26d5-1579-219a-32c6">
               <constraints>
@@ -34783,6 +34788,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="33b8-4fbb-7c69-4526" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Elysian Drop Troopers" hidden="false" id="cb0b-a50f-ef25-64a0">
       <modifiers>
