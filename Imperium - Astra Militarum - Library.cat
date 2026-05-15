@@ -6271,7 +6271,7 @@
                     <profile name="Chem cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="23f3-22f8-70e0-e701">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -6322,7 +6322,7 @@
                     <profile name="Melta cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="56d1-8b38-2610-bf0e">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+1</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
@@ -10847,6 +10847,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="8831-c321-ef56-d5f3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-20"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -10860,6 +10863,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="db07-3d51-3a28-3670" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Pulveriser cannon" hidden="false" id="dd43-0040-c828-92be" type="selectionEntry" targetId="42f1-14c8-3bf5-fb7b">
                   <entryLinks>
@@ -10868,7 +10874,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponsons" id="ed4f-a6ba-54d4-3b3f" hidden="false" defaultSelectionEntryId="none">
+            <selectionEntryGroup name="Sponsons" id="ed4f-a6ba-54d4-3b3f" hidden="false" defaultSelectionEntryId="8794-8678-a7dd-3e67">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d90-400f-5781-97d9"/>
               </constraints>
@@ -10898,10 +10904,20 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hull Weapons" id="ed34-9a55-9b47-43c4" hidden="false" defaultSelectionEntryId="none">
+            <selectionEntryGroup name="Hull Weapons" id="ed34-9a55-9b47-43c4" hidden="false" defaultSelectionEntryId="1f1f-0578-a662-e468">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="2 Meltaguns" hidden="false" id="1f1f-0578-a662-e468">
                   <entryLinks>
@@ -10928,6 +10944,16 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -12340,6 +12366,14 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="-20"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Annihilator Lascannon" hidden="false" id="e599-8a14-54d7-b22e" type="selectionEntry" targetId="72d0-c262-5b03-afdc">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="2423-d7dc-b245-4e76" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-40"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ab9-9c55-5702-b3f5"/>
@@ -12603,11 +12637,12 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="ba07-411c-2832-1f79" id="9a08-6a0f-1288-61c6" primary="true" name="Dedicated Transport"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
         <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
@@ -12772,7 +12807,14 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Taurox Prime" hidden="false" id="4b67-f814-358e-f776">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="b303-93e8-ef8d-8d5a" id="fd61-433-de1b-ddc7" primary="false" name="Taurox Prime"/>
@@ -23946,7 +23988,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         </profile>
         <profile name="Tank Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="de83-c749-1bae-d1f0">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack that targets a Vehicle unit, add 1 to the Wound roll</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack that targets a Vehicle or Monster unit, add 1 to the Wound roll</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -30706,7 +30748,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Castigator Gatling Cannon" id="3c4d-519a-3cd9-e8d1" hidden="false" defaultSelectionEntryId="5e1e-1f73-a39a-ef9d">
+            <selectionEntryGroup name="Castigator Gatling Cannon" id="3c4d-519a-3cd9-e8d1" hidden="false" defaultSelectionEntryId="6201-b601-4b5f-d599">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b019-29f4-8648-6d72"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc64-3e6d-33c7-6137"/>
@@ -30721,6 +30763,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Pulveriser cannon" hidden="false" id="6201-b601-4b5f-d599" type="selectionEntry" targetId="42f1-14c8-3bf5-fb7b">
                   <selectionEntryGroups>
@@ -30734,7 +30779,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hull Weapons" id="19ce-c3bf-cb5b-7ac3" hidden="false" defaultSelectionEntryId="none">
+            <selectionEntryGroup name="Hull Weapons" id="19ce-c3bf-cb5b-7ac3" hidden="false" defaultSelectionEntryId="10ec-300f-baf8-46a1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="2 Meltaguns" hidden="false" id="10ec-300f-baf8-46a1">
                   <entryLinks>
@@ -30771,13 +30816,23 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ece0-6095-5b1c-d6dd"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Sponsons" id="c910-2d8b-2248-66da" hidden="false" defaultSelectionEntryId="none">
+            <selectionEntryGroup name="Sponsons" id="c910-2d8b-2248-66da" hidden="false" defaultSelectionEntryId="e17b-349a-fa6f-abfe">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e02-9b45-503a-df9f"/>
               </constraints>
@@ -30817,10 +30872,20 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Twin Battle Cannon" id="d397-8887-5fac-3018" hidden="false" defaultSelectionEntryId="efb5-fffa-82b4-f8c0">
+            <selectionEntryGroup name="Twin Battle Cannon" id="d397-8887-5fac-3018" hidden="false" defaultSelectionEntryId="eee2-af08-94f6-0624">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Oppressor cannon and coaxial autocannon" hidden="false" id="eee2-af08-94f6-0624">
                   <entryLinks>
@@ -30853,6 +30918,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -30869,6 +30944,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-20"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -33519,7 +33597,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
@@ -36986,6 +37064,10 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="4647-643d-9057-2197" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4422-fe34-382d-425d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a17-2066-7920-5cae"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -41449,11 +41531,12 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Assault Vehicle [Legends]" hidden="false" id="6800-f1ce-7deb-d9eb">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
         <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
@@ -41663,11 +41746,12 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Venator [Legends]" hidden="false" id="a95f-9dd6-de66-fa59">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
         <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
@@ -43686,6 +43770,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="c25f-eb4e-738c-90ae" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
                           <comment>Assault variant</comment>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="7f05-b87b-4249-3052">
                           <profiles>
@@ -43791,6 +43885,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                           <entryLinks>
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="25e7-2198-beee-014e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="bb19-0828-e633-a38e">
                           <profiles>
