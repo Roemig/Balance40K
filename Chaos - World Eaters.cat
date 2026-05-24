@@ -12973,10 +12973,6 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="8bfa-31a5-ff4d-6d8f">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30c7-bf3c-7a0b-6ce0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70b0-a1b7-da38-f2f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <profiles>
                         <profile name="Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="69a8-e1f5-cfe4-dd38">
                           <characteristics>
@@ -13323,10 +13319,6 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="e7c2-dd3c-53eb-57fd">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d71-a6b0-4941-27aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6364-58d1-552e-b980" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <profiles>
                         <profile name="Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9add-3768-810e-2556">
                           <characteristics>
