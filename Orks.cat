@@ -98,6 +98,14 @@
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -242,7 +250,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="16ad-f4c8-1e75-c9a4" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
@@ -11384,6 +11397,111 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Skorcha or Warbuggy (0-1)" hidden="false" id="5f0f-3846-072f-cc1c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acf9-dc03-85fe-70e2"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7f43-06ac-ec80-be8f"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Warbuggies w/ Twin big shoota" hidden="false" id="3360-ff1d-0b94-985c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2dd0-28e8-2d0e-225b"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Twin big shoota" hidden="false" id="31fb-ca38-97af-93dd" type="selectionEntry" targetId="8e99-adf-bad4-e07f" collective="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d822-7eb1-c2b6-07b1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="826d-06d3-bb05-b7eb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52b8-6b54-e19c-25d3"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spiked wheel" hidden="false" id="cfa9-acdc-4957-e6be" type="selectionEntry" targetId="fa04-6371-c977-b6fa">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9e22-3534-27da-a648" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ec8-64fd-e485-bea9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f103-4043-2e2e-caa5"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Warbuggies w/ Rack of rokkits" hidden="false" id="9b3b-064a-eea4-1cfa">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e4f3-8640-bcf0-d17f"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Rack of rokkits" hidden="false" id="3e58-b661-fa83-0c01" type="selectionEntry" targetId="a92d-48a0-723b-1e6b">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="5654-ed86-4ab6-5157" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="368c-5899-24e0-cd7c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc89-2cb6-4cb5-a6a7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spiked wheel" hidden="false" id="05cf-2713-6506-4e2e" type="selectionEntry" targetId="fa04-6371-c977-b6fa">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="43d7-36f3-b0b4-c185" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d55c-3e2e-64c1-5ea1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5977-6580-8a55-ce59"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Skorchas" hidden="false" id="d727-2cb8-142a-112e">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3a09-6e36-2038-c138"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5ce-1879-038d-ec80"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Skorcha" hidden="false" id="49c9-023e-8df4-48ef" type="selectionEntry" targetId="7a18-2212-5898-1149">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="287d-9ae8-6cd6-b0fe"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0773-993c-0a0d-3f92"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d29d-5e55-35bf-98d8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Spiked wheel" hidden="false" id="f09f-55b8-414e-6af4" type="selectionEntry" targetId="ec64-9626-e7ca-27d7">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="089b-8790-de46-1e85" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae1a-e5dd-6cf0-f66e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec3-804c-3095-cde4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warboss" hidden="false" id="2efc-c4b3-2ecc-5a37">
       <constraints>
@@ -19416,7 +19534,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </profile>
         <profile name="Gargantsmasha" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fd0b-c139-173f-26c4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a **^^Titanic^^* unit, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -19441,7 +19559,12 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         <infoLink name="Waaagh!" hidden="false" id="50f7-1ecc-6524-2785" type="rule" targetId="37c-6ef9-277-9091"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Shokk rifle" hidden="false" id="76f8-8a50-72fe-3175">
@@ -23214,6 +23337,10 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="c114-0f98-95ee-49b8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="153a-a3d8-db17-5411"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a26c-f00c-89a9-12d1"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -23351,6 +23478,10 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5430-f852-7016-4dda" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77d8-547f-3d84-aa1e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb1-84c0-1ef5-eaa6"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tracks and wheels" hidden="false" id="690e-723f-3630-3fbc">
               <constraints>
@@ -23576,13 +23707,18 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="208d-fbee-d7ff-ea21" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Boom Gun" hidden="false" id="62af-36c9-da0a-3dd1" type="selectionEntry" targetId="8f77-6d34-fe22-a3ec">
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8727-057c-9b25-48a9"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8441-af1d-c5c9-d489"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Mek speshul" hidden="false" id="aadf-66db-35f7-7f1f">
+                <selectionEntry type="upgrade" import="true" name="Wagon Shoota" hidden="false" id="aadf-66db-35f7-7f1f">
                   <profiles>
                     <profile name="Wagon Shoota" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="49b1-79f8-d478-53e2">
                       <characteristics>
@@ -24086,7 +24222,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
         <profile name="Supa-Skorcha" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c69b-1b92-a2d7-ce45">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
@@ -26039,6 +26175,24 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boom Gun" hidden="false" id="8f77-6d34-fe22-a3ec" collective="false" defaultAmount="1">
+      <profiles>
+        <profile name="Boom Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9c0e-a833-ddc2-d72b">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="e86e-dbca-fc55-6924" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <rules>
@@ -29604,7 +29758,7 @@ You can include up to two of each of the following units:
         <selectionEntry type="upgrade" import="true" name="Blitz Brigade" hidden="false" id="63cc-721f-b263-9d4a">
           <rules>
             <rule name="Eager For The Fight" id="5742-4494-1463-2670" hidden="false">
-              <description>Each time an **^^Orks^^** unit from your army disembarks from a **^^Transport^^**, until the end of the turn, you can re‑roll Advance and Charge rolls made for that **^^Orks^^** unit.</description>
+              <description>Each time an **^^Orks^^** unit from your army disembarks from a **^^Transport^^**, until the end of the turn, you can re‑roll Advance and Charge rolls made for that **^^Orks^^** unit. When an **^^Orks^^** unit from your army disembarks from a **^^Trukk^^**, it can declare a charge as well.</description>
             </rule>
           </rules>
           <infoLinks>

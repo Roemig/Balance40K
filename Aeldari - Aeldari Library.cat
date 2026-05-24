@@ -19944,6 +19944,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="5efc-7bcf-2c7e-dbea" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dark Lance" hidden="false" id="7786-7319-2842-703a">
                   <profiles>
@@ -20226,6 +20234,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="025d-01a2-52cc-debe" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dark Lance" hidden="false" id="8c0f-1bd-db16-bd1a">
                   <profiles>
@@ -21385,6 +21401,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                       <infoLinks>
                         <infoLink name="Assault" hidden="false" type="rule" id="6651-a623-f4c2-3701" targetId="fc8a-8c24-bae9-cc1c"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Heat Lance" hidden="false" id="26b1-f552-d165-31ec" collective="false">
                       <profiles>
@@ -21428,6 +21452,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                         <infoLink name="Anti-" hidden="false" type="rule" id="edc6-9f24-5259-9987" targetId="4111-82e3-9444-e942"/>
                         <infoLink name="Sustained Hits" hidden="false" type="rule" id="ead6-2155-ae3a-7604" targetId="1897-c22c-9597-12b1"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Shredder" hidden="false" id="848c-4609-2f05-e939">
                       <profiles>
@@ -21450,6 +21482,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                       <categoryLinks>
                         <categoryLink name="Attacks Dx Weapon" hidden="false" id="ceb5-c62f-a0d5-8e2b" targetId="e993-e086-6de1-12af" primary="false"/>
                       </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Dark Lance" hidden="false" id="9c50-5c34-bd90-2238">
                       <profiles>
@@ -21488,6 +21528,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                         <infoLink name="Devastating Wounds" hidden="false" type="rule" id="cd7d-925a-5dc8-abcb" targetId="be1e-ac8e-1e2c-3528"/>
                         <infoLink name="Heavy" hidden="false" type="rule" id="9a36-ed6d-a5b7-a140" targetId="1202-10a8-78e9-4c67"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -22182,6 +22230,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="b7aa-54f9-0fd9-87db" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Twin Haywire Blasters" hidden="false" id="4595-ed57-5540-67cb">
                       <profiles>
@@ -22205,6 +22261,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="e43f-84a8-f213-1ba4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Twin Heat Lance" hidden="false" id="d17c-a89a-345b-2e7a">
                       <profiles>
@@ -22256,6 +22320,14 @@ It can also move through sections of terrain features that are more than 4&quot;
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="f512-acd8-43cd-9e56" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>

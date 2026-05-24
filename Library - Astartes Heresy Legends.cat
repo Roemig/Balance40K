@@ -3042,7 +3042,7 @@
                 <profile name="Arcus multi-launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="93fe-a690-8669-3380">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+6</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
@@ -5553,6 +5553,53 @@
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Quad Heavy Bolters" hidden="false" id="5dc4-bd8f-edd1-d23f">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Quad heavy bolter" hidden="false" id="305a-e412-4e5f-5616">
+                      <profiles>
+                        <profile name="Quad heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="61ed-6892-1a59-4b25">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Twin-linked, Sustained Hits 1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Heavy" id="6a70-8b5a-291d-3e67" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                        <infoLink name="Twin-linked" id="5a0f-02ee-fe3c-a63b" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                        <infoLink name="Sustained Hits" id="2506-6f8f-b184-ccd1" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2972-19e6-347c-dfba" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e64e-803e-cfa3-161d"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0843-910c-ca59-4f3f"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5809,6 +5856,53 @@
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Quad Heavy Bolters" hidden="false" id="1e21-b4f3-be42-11b9">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Quad heavy bolter" hidden="false" id="fce7-c54f-0e72-995b">
+                      <profiles>
+                        <profile name="Quad heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b3ce-ddc8-a583-d478">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Twin-linked, Sustained Hits 1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Heavy" id="d01d-ae97-499a-ad4e" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                        <infoLink name="Twin-linked" id="e0e1-5ee2-fe7b-4d47" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                        <infoLink name="Sustained Hits" id="6333-9413-c33b-c7cd" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e5e1-4661-7d3b-2740" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b8bc-3151-b178-c752"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5530-07fc-f24e-a2fd"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6019,6 +6113,53 @@
                       </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Quad Heavy Bolters" hidden="false" id="08a1-d440-8174-d1ae">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Quad heavy bolter" hidden="false" id="f83f-7429-1a78-2cae">
+                      <profiles>
+                        <profile name="Quad heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8066-2027-682b-3f9a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Twin-linked, Sustained Hits 1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Heavy" id="7c9c-83e9-357b-1672" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                        <infoLink name="Twin-linked" id="6688-4e63-c450-3c1d" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                        <infoLink name="Sustained Hits" id="4c95-da0e-5eb9-6ca4" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0214-d9d6-9901-6604" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1f20-bd6c-a0ac-41e4"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1890-44cd-66e2-83b8"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-20"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
