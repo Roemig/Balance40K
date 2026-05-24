@@ -2558,7 +2558,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="86ae-8c7b-d701-8161" name="Legionaries" hidden="false" collective="false" import="true" targetId="5376-7f72-ff95-3346" type="selectionEntry"/>
+    <entryLink id="86ae-8c7b-d701-8161" name="World Eater Legionaries" hidden="false" collective="false" import="true" targetId="5376-7f72-ff95-3346" type="selectionEntry"/>
     <entryLink id="0b21-0086-e4ae-a92e" name="Teeth of Khorne" hidden="false" collective="false" import="true" targetId="47c4-90f7-97cd-7e8a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
@@ -12918,56 +12918,67 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b285-9d2c-41df-9018" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="8789-9eee-de77-78e4" hidden="false">
+            <selectionEntryGroup name="Wargear" id="ec2b-2b86-23a5-8048" hidden="false">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Replace bolt pistol" id="0d93-fbde-afee-1a0d" hidden="false" collective="false" import="true" defaultSelectionEntryId="b32-e48-57b8-ad3b">
+                <selectionEntryGroup name="Replace bolt pistol" id="29c9-f9c8-d8c0-d5e1" hidden="false" collective="false" import="true" defaultSelectionEntryId="b32-e48-57b8-ad3b">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00a6-6e77-cc01-31ce" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51df-db89-3e04-7ae2" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fda2-3655-93bc-e416" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bca-8df3-9fc2-494b" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="313b-385d-81d7-36e1" collective="false" targetId="2ba4-635b-fffd-0f59" type="selectionEntry">
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="6ce7-c93a-3c0b-72ef" collective="false" targetId="2ba4-635b-fffd-0f59" type="selectionEntry">
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="db6d-b6e6-3f18-898c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ddb8-4b85-8699-832d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="6ea2-a963-0bfb-08cd" collective="false" targetId="6fd1-efa4-7787-db82" type="selectionEntry">
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="c69b-190d-171c-2c8b" collective="false" targetId="6fd1-efa4-7787-db82" type="selectionEntry">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="fecc-eb85-46b6-8f31" shared="true" id="f726-b087-e205-0aac" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="fecc-eb85-46b6-8f31" shared="true" id="7f35-dd8e-fa14-4fb5" includeChildSelections="true"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="c4f6-ece4-c009-409b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a082-7152-fd40-93f3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Power fist" hidden="false" id="4f9a-ec2b-125b-f832" collective="false" targetId="a1b4-80b4-e85e-96ec" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bd4-b17f-ab02-bbdf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb77-420b-a6bb-ff2c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
+                    <entryLink import="true" name="Power fist" hidden="false" id="241f-0669-2c48-70d5" collective="false" targetId="a1b4-80b4-e85e-96ec" type="selectionEntry">
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6eac-2297-ebe0-df04" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Chainblade" hidden="false" id="d14c-2cab-0ee9-f8c9" collective="false" targetId="44b0-1947-ea4a-3005" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="626c-0e8d-94a6-9ade" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2acb-a5c6-aa68-d846" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="82dd-cf0f-fd47-9314">
+                      <profiles>
+                        <profile name="Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f841-f743-1884-5c67">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2c8a-7b3b-48f3-6e3e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Replace boltgun" id="4d24-66de-739b-2fa0" hidden="false" collective="false" import="true" defaultSelectionEntryId="4284-5fdc-c7a4-4d83">
+                <selectionEntryGroup name="Replace boltgun" id="b066-1895-1470-bbc2" hidden="false" collective="false" import="true" defaultSelectionEntryId="4284-5fdc-c7a4-4d83">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94c3-a76d-af59-2dfc" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d9c-41b0-63da-53db" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ea9-89cd-a9b3-6a07" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8ca-f146-88cf-6698" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="09d6-388a-660d-2acf">
+                    <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="8bfa-31a5-ff4d-6d8f">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04f0-8ff8-ed1a-9f5a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19f5-9989-bbf4-3794" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30c7-bf3c-7a0b-6ce0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70b0-a1b7-da38-f2f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <profiles>
-                        <profile name="Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="032d-9fed-a0e6-c9ec">
+                        <profile name="Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="69a8-e1f5-cfe4-dd38">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
@@ -12978,7 +12989,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
                           </characteristics>
                         </profile>
-                        <profile name="Chain Bayonet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5204-a45f-463b-47ca">
+                        <profile name="Chain Bayonet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e6c6-5a7f-7104-c2de">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
@@ -12991,37 +13002,45 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Rapid Fire" id="4cf6-87dd-04a5-8562" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+                        <infoLink name="Rapid Fire" id="0b6e-0e9e-2c08-e096" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
                       </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="460a-aacd-b4af-b195" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="e586-1cbf-8e39-09bc">
+                      <profiles>
+                        <profile name="Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7cfd-74e1-4427-4dd7">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7c2a-709a-16a5-5bb2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="9bd6-8951-6017-da82" collective="false" targetId="6fd1-efa4-7787-db82" type="selectionEntry">
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="7d3c-25a4-bd25-7a87" collective="false" targetId="6fd1-efa4-7787-db82" type="selectionEntry">
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b458-d252-4e06-1b8d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="281c-de58-affc-e136" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Power fist" hidden="false" id="30a6-b246-1504-d308" collective="false" targetId="a1b4-80b4-e85e-96ec" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3112-afea-904b-2d97" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6814-ebde-7c0a-b3ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
+                    <entryLink import="true" name="Power fist" hidden="false" id="1399-9a6c-d2e0-db8e" collective="false" targetId="a1b4-80b4-e85e-96ec" type="selectionEntry">
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5ee6-a8f5-a051-19ca" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6d5d-0d7e-7334-63ba" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Accursed weapon" hidden="false" id="a6bf-2eb6-203b-588c" collective="false" targetId="67cd-e430-ed37-2d08" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98f0-e634-a1f4-78a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a29-5fd7-9c41-8822" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
+                    <entryLink import="true" name="Accursed weapon" hidden="false" id="dcbf-bca1-0c29-4481" collective="false" targetId="67cd-e430-ed37-2d08" type="selectionEntry">
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="86b1-f461-a5bc-92f0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Chainblade" hidden="false" id="0803-caf1-5551-4dba" collective="false" targetId="44b0-1947-ea4a-3005" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="56ac-4623-c90f-5802" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="733b-191a-5794-44b9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
@@ -13101,12 +13120,13 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire 2</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
                     <infoLink name="Rapid Fire" id="6635-7a40-3585-0412" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+                    <infoLink name="Assault" id="63be-1862-83e8-645e" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -13212,7 +13232,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Teeth of Khorne" hidden="false" id="47c4-90f7-97cd-7e8a" collective="false">
       <modifiers>
-        <modifier type="set" value="240" field="51b2-306e-1021-d207">
+        <modifier type="set" value="250" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="47c4-90f7-97cd-7e8a" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
@@ -13270,20 +13290,31 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                       </entryLinks>
                     </entryLink>
                     <entryLink import="true" name="Power fist" hidden="false" id="7144-f60d-98b3-e38f" collective="false" targetId="a1b4-80b4-e85e-96ec" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4195-e3a4-52bd-89ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2774-3425-2ba6-ffb4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="96a8-48e7-9ee8-55ef" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Chainblade" hidden="false" id="e1bc-4874-9685-71d2" collective="false" targetId="44b0-1947-ea4a-3005" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d089-88c1-2e62-d420" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
                   </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="093f-10e6-309d-2f6b">
+                      <profiles>
+                        <profile name="Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="99ba-77e2-fd61-1e3f">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1194-9df3-822a-324a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Replace boltgun" id="1114-4388-6f35-1fd2" hidden="false" collective="false" import="true" defaultSelectionEntryId="4284-5fdc-c7a4-4d83">
                   <constraints>
@@ -13323,6 +13354,27 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                       <infoLinks>
                         <infoLink name="Rapid Fire" id="0f4b-6f0a-4c49-750f" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
                       </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1da7-3a0c-7aeb-6748" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="62f3-8d0c-c858-8ab9">
+                      <profiles>
+                        <profile name="Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0e53-44e9-2ae8-e780">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2849-c28b-c4e0-cedb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -13332,26 +13384,13 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
                       </entryLinks>
                     </entryLink>
                     <entryLink import="true" name="Power fist" hidden="false" id="cc8d-25fb-bbef-0653" collective="false" targetId="a1b4-80b4-e85e-96ec" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edd5-6b8c-4257-e2e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4af-24c2-4f1f-a148" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="05d3-2792-0ca5-558c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
                     <entryLink import="true" name="Accursed weapon" hidden="false" id="02d0-72a3-aa75-fab4" collective="false" targetId="67cd-e430-ed37-2d08" type="selectionEntry">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd09-3940-15f5-6982" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1df-6110-21e8-b1f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="d11d-4058-2d49-4c32" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Chainblade" hidden="false" id="6852-6d26-279e-1ed7" collective="false" targetId="44b0-1947-ea4a-3005" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d843-36d3-da46-1767" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
                   </entryLinks>

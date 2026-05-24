@@ -2991,7 +2991,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sicaran Arcus [Legends]" hidden="false" id="ca2a-69ca-dd3c-47">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3039,20 +3039,55 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6412-ae46-3847-2cc0"/>
               </constraints>
               <profiles>
-                <profile name="Arcus multi-launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="93fe-a690-8669-3380">
+                <profile name="Arcus multi-launcher - Pyrex" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="93fe-a690-8669-3380">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Indirect Fire</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Indirect Fire, Lethal Hits</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Arcus multi-launcher - Arcus" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a530-f921-02a2-f596">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Arcus multi-launcher - Neutron-flux" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d57f-b8dd-54bc-45fc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Monster 3+, Anti-Vehicle 3+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Arcus multi-launcher - Skyspear" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fb08-26e7-b8c3-6a68">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Fly 3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Indirect Fire" id="f0f9-e10e-b4fd-a2e5" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
+                <infoLink name="Anti-" id="606a-007a-064a-582b" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="Lethal Hits" id="7481-0252-b784-1615" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="4ebe-f7da-30ce-66e1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
