@@ -1065,7 +1065,7 @@
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked</characteristic>
@@ -1139,6 +1139,7 @@
                   </profiles>
                   <infoLinks>
                     <infoLink name="Hazardous" id="cd3-baba-547e-e449" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+                    <infoLink name="Twin-linked" id="2fbe-d07b-2d63-a2e4" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -1416,7 +1417,7 @@
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-VEHICLE 3+</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Monster 3+, Anti-VEHICLE 3+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -3047,7 +3048,7 @@
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Indirect Fire, Lethal Hits</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Ignores Cover, Indirect Fire</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Arcus multi-launcher - Arcus" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a530-f921-02a2-f596">
@@ -3057,7 +3058,7 @@
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                   </characteristics>
                 </profile>
@@ -3067,9 +3068,9 @@
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Monster 3+, Anti-Vehicle 3+</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Monster 2+, Anti-Vehicle 2+</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Arcus multi-launcher - Skyspear" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fb08-26e7-b8c3-6a68">
@@ -3087,7 +3088,8 @@
               <infoLinks>
                 <infoLink name="Indirect Fire" id="f0f9-e10e-b4fd-a2e5" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
                 <infoLink name="Anti-" id="606a-007a-064a-582b" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                <infoLink name="Lethal Hits" id="7481-0252-b784-1615" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                <infoLink name="Ignores Cover" id="3cba-7431-365c-81a0" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+                <infoLink name="Blast" id="7a69-8b5b-2195-3594" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="4ebe-f7da-30ce-66e1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
