@@ -11700,6 +11700,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="868b-6132-9a1b-7c0e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="042f-55e4-95ca-9475" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="7f14-8add-cdef-c7c5" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -26248,6 +26249,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
         <categoryLink targetId="fe8b-9078-9a3d-fed" id="12fe-a940-94cd-af90" primary="false" name="Speed Freeks"/>
         <categoryLink name="Fly Kaptin" hidden="false" id="df54-e3e5-5cf7-65b3" targetId="6fe2-4b26-ff92-405e" primary="false"/>
         <categoryLink name="Character" hidden="false" id="af66-4f21-2254-0057" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Warboss" hidden="false" id="2812-95f4-2ac4-b752" targetId="47cc-4071-6fda-688e" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Bombz for da Gitz" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dcd0-11cc-5387-92e5">
@@ -26259,8 +26261,8 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
@@ -26285,6 +26287,8 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
             <entryLink import="true" name="Kopta rokkits" hidden="false" id="d039-e874-b10a-e3b1" type="selectionEntry" targetId="d8fe-2a02-7ffa-079f">
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="68f7-a76c-05f0-887f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7417-0b00-8243-78c0" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="b15a-0d38-b6c9-42bc" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afa1-cb43-353b-452b"/>
@@ -26294,13 +26298,21 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
             <entryLink import="true" name="Slugga" hidden="false" id="df31-fcd8-11fe-2a09" type="selectionEntry" targetId="752e-cd9b-4721-f0b0" collective="true">
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="8695-bb6c-2e17-a8e9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="0c60-b44b-4ed4-10c7" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+                <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d5b0-8628-5026-5914" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d80-866d-756f-9438"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8060-da2d-4dd8-1d67"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Twin big shoota" hidden="false" id="addb-c3a7-4840-64f3" type="selectionEntry" targetId="8e99-adf-bad4-e07f"/>
+            <entryLink import="true" name="Twin big shoota" hidden="false" id="addb-c3a7-4840-64f3" type="selectionEntry" targetId="8e99-adf-bad4-e07f">
+              <entryLinks>
+                <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5eac-fb42-5e6a-1be4" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="3fb7-4419-2d10-736a" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="881c-9a80-59e8-233f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Armoured Hull" hidden="false" id="13ab-eba6-14f3-02c0">
@@ -26424,8 +26436,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can be attached to the following units:
 - **^^Deffkoptas^^**
-- **^^Deffkoptas with Big Shootas^^**
-</characteristic>
+- **^^Deffkoptas with Big Shootas^^**</characteristic>
               </characteristics>
             </profile>
           </profiles>

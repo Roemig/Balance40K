@@ -2563,6 +2563,7 @@
     <entryLink id="86ae-8c7b-d701-8161" name="World Eater Legionaries" hidden="false" collective="false" import="true" targetId="5376-7f72-ff95-3346" type="selectionEntry"/>
     <entryLink id="0b21-0086-e4ae-a92e" name="Teeth of Khorne" hidden="false" collective="false" import="true" targetId="47c4-90f7-97cd-7e8a" type="selectionEntry"/>
     <entryLink import="true" name="Skullseekers" hidden="false" id="dbd5-2e5a-2839-0c16" type="selectionEntry" targetId="3a9a-6ff9-697b-1b43"/>
+    <entryLink import="true" name="Skull Collector" hidden="false" id="c61a-ad37-8ddb-10d4" type="selectionEntry" targetId="2ca0-9410-dec4-f4ae"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="f4b8-1179-de57-4d69" name="Angron" hidden="false" collective="false" import="true" type="model">
@@ -13147,11 +13148,6 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="4b0b-b2aa-ad24-fc1a" type="selectionEntryGroup" targetId="8bbb-e890-a169-863e" sortIndex="1"/>
-        <entryLink import="true" name="Icon of Khorne" hidden="false" id="cee6-615a-f8ef-9acc" collective="false" targetId="8e1d-9846-a460-6002" type="selectionEntry">
-          <associations>
-            <association min="1" max="1" scope="f909-00c7-8ba4-018a" childId="model" name="Icon of Khorne" id="5bb9-229b-4807-75f8"/>
-          </associations>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
@@ -13461,11 +13457,6 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="35b0-4f6e-4996-5de8" type="selectionEntryGroup" targetId="8bbb-e890-a169-863e" sortIndex="1"/>
-        <entryLink import="true" name="Icon of Khorne" hidden="false" id="a21c-8d8b-0a99-2cd6" collective="false" targetId="8e1d-9846-a460-6002" type="selectionEntry">
-          <associations>
-            <association min="1" max="1" scope="f909-00c7-8ba4-018a" childId="model" name="Icon of Khorne" id="c7cf-4bb1-0b22-af7d"/>
-          </associations>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
@@ -13772,11 +13763,6 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="e7dd-533a-0c34-7262" type="selectionEntryGroup" targetId="8bbb-e890-a169-863e" sortIndex="1"/>
-        <entryLink import="true" name="Icon of Khorne" hidden="false" id="78a2-dec6-787f-0729" collective="false" targetId="8e1d-9846-a460-6002" type="selectionEntry">
-          <associations>
-            <association min="1" max="1" scope="f909-00c7-8ba4-018a" childId="model" name="Icon of Khorne" id="24ca-7fd6-bd9d-7c9e"/>
-          </associations>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
@@ -17408,5 +17394,6 @@ Until the end of the battle round, each of those models has the VESSEL OF WRATH 
     <catalogueLink type="catalogue" name="Library - Titans" id="53cd-cf73-8ced-dd24" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Unaligned Forces" id="0631-ff5c-6bb7-c465" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Chaos - Daemons Library" id="8d73-4c2c-ee96-af16" targetId="b45c-af22-788a-dfd6"/>
+    <catalogueLink type="catalogue" name="Library - Militarum Traitoris" id="5cf5-c52e-6ed2-f23b" targetId="0bc0-e04c-63c8-5044" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

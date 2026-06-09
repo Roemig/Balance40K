@@ -6072,16 +6072,25 @@
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="41d0-8ecb-4c77-8dbe" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Heavy flamer" hidden="false" id="4eee-cfd5-27a4-bca9" type="selectionEntry" targetId="bcef-39ba-a990-5490">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="8661-119d-ea49-cfab" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Multi-melta" hidden="false" id="ded8-5815-407f-cc31" type="selectionEntry" targetId="91c8-b628-4d47-d01e">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="66d7-622f-5ac6-a037" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="4a2b-5c1d-ea3c-644f" type="selectionEntry" targetId="7eb4-c21c-d0a2-39df">
                   <entryLinks>
