@@ -31,7 +31,8 @@
         <categoryLink name="Chaos" hidden="false" id="1650-7b1d-488a-1eed" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Traitor Guardsmen Squad" hidden="false" id="c995-3901-e99c-8ab1" targetId="ee8d-6a5b-ab4a-7904" primary="false"/>
         <categoryLink name="Damned" hidden="false" id="c4e9-75bb-e097-3719" targetId="4573-5097-7432-e150" primary="false"/>
-        <categoryLink name="Battleline" hidden="false" id="45e7-65a5-d56f-3898" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Battleline" hidden="false" id="45e7-65a5-d56f-3898" targetId="e338-111e-d0c6-b687" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="3ed3-31d1-4fd5-104d" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Traitor Sergeant" hidden="false" id="a2ff-bd94-aff4-ab6a" collective="false" sortIndex="2">
@@ -581,8 +582,9 @@
         <infoLink name="Leader" id="5c77-9427-f092-dcd2" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink name="Character" hidden="false" id="f5ea-ad58-a41f-13d9" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="f5ea-ad58-a41f-13d9" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
         <categoryLink name="Damned" hidden="false" id="4d3e-ad44-1c5f-9902" targetId="4573-5097-7432-e150" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="83bb-c8a6-54f7-f93b" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Traitor Enforcer" hidden="false" id="1030-e76e-f984-bdde" collective="false" sortIndex="2">
@@ -808,11 +810,12 @@
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Infantry" hidden="false" id="ed3b-7dc6-fdad-245b" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="ed3b-7dc6-fdad-245b" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Grenades" hidden="false" id="c097-d088-db21-b4e7" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="6fba-fa79-e785-3064" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Renegade Heavy Weapons Squad" hidden="false" id="9ac6-16e0-a28a-6641" targetId="3c33-1f73-651d-7d7b" primary="false"/>
         <categoryLink name="Damned" hidden="false" id="b877-1742-bc36-13e2" targetId="4573-5097-7432-e150" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="406b-8868-9fc4-73b1" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Renegade Heavy Weapons Squad" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0976-c2da-9a44-94b6">
@@ -1161,10 +1164,11 @@
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Infantry" hidden="false" id="2d44-94d8-2ccd-1c6e" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="2d44-94d8-2ccd-1c6e" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="af39-74db-92b7-ad2a" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Damned" hidden="false" id="e28a-38f2-f896-aef9" targetId="4573-5097-7432-e150" primary="false"/>
         <categoryLink name="Renegade Ogryn Brutes" hidden="false" id="dfbe-d17e-be0e-4e58" targetId="aaa8-2bb8-33e9-5aad" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="35ba-9017-77c3-fad1" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3ae8-8a23-60d7-af27" type="selectionEntryGroup" targetId="c33b-9f06-b2bf-74a6" sortIndex="1">
@@ -1455,10 +1459,11 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink name="Beast" hidden="false" id="3fbf-8047-f9ef-1f65" targetId="4c3e-9310-a516-3590" primary="true"/>
+        <categoryLink name="Beast" hidden="false" id="3fbf-8047-f9ef-1f65" targetId="4c3e-9310-a516-3590" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="2c54-e178-2fff-6c28" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Renegade Ogryn Beast Handler" hidden="false" id="6098-4f9f-194d-6dee" targetId="d206-28ea-ef89-5639" primary="false"/>
         <categoryLink name="Damned" hidden="false" id="fd75-2ce6-a334-7959" targetId="4573-5097-7432-e150" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="3dba-8a44-744e-0756" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
@@ -1620,11 +1625,12 @@
       </profiles>
       <categoryLinks>
         <categoryLink name="Faction: Heretic Astartes" hidden="false" id="353e-b9d4-7134-96b4" targetId="1e42-dfae-cbdd-207d" primary="false"/>
-        <categoryLink name="Infantry" hidden="false" id="203b-3d1c-a9c1-eddd" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="203b-3d1c-a9c1-eddd" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Grenades" hidden="false" id="5840-0a18-e708-2248" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="84f6-4f49-a002-8d6a" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Fellgor Beastmen" hidden="false" id="0008-b2e8-9983-04eb" targetId="ffcb-8114-1398-2f11" primary="false"/>
         <categoryLink name="Damned" hidden="false" id="0dfd-0bfa-c8fe-ec9b" targetId="4573-5097-7432-e150" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="6be1-b98d-591a-2e99" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Fellgor Champion" hidden="false" id="0dcc-4623-fca2-a9ff" collective="false" sortIndex="2">
@@ -2025,9 +2031,10 @@
         <categoryLink name="Imperium" hidden="false" id="9ae5-7d77-fa76-446c" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="14f7-06fd-284c-2784" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink name="Transport" hidden="false" id="2905-8d53-b8e9-d324" targetId="75e8-57c4-40e3-1817" primary="false"/>
-        <categoryLink name="Dedicated Transport" hidden="false" id="fd4a-a123-6adc-8635" targetId="ba07-411c-2832-1f79" primary="true"/>
+        <categoryLink name="Dedicated Transport" hidden="false" id="fd4a-a123-6adc-8635" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Smoke" hidden="false" id="8fb8-0389-0365-5a19" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Traitor Chimera" hidden="false" id="6bd2-7553-bc3d-db80" targetId="8444-aa27-9b62-8c3a" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="2a4e-5140-cf3b-de48" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
@@ -2280,9 +2287,10 @@
       </costs>
       <categoryLinks>
         <categoryLink name="Imperium" hidden="false" id="d4a1-bc49-aa8c-e7a7" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
-        <categoryLink name="Vehicle" hidden="false" id="df26-8f8f-6819-3826" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Vehicle" hidden="false" id="df26-8f8f-6819-3826" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink name="Smoke" hidden="false" id="ae19-5909-8712-4330" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Traitor Leman Russ Battle Tank" hidden="false" id="2b97-fe7e-d14a-5857" targetId="0597-9eec-3854-b4fc" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="def0-14b2-9805-0dc6" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="0eeb-5fb2-089e-14e7" includeChildSelections="true" includeChildForces="true"/>
@@ -2689,9 +2697,10 @@
         <categoryLink name="Faction: Astra Militarum" hidden="false" id="f0f7-7e4f-5dd8-42cc" targetId="fa45-57e-930e-602b" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="687c-df74-30a1-dc16" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Artillery" hidden="false" id="9fc6-0d9c-0726-a1ae" targetId="8cab-448d-37b7-32bc" primary="false"/>
-        <categoryLink name="Vehicle" hidden="false" id="195c-07ff-31a7-43ba" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Vehicle" hidden="false" id="195c-07ff-31a7-43ba" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink name="Smoke" hidden="false" id="5e47-0a90-f721-23f5" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Traitor Basilisk" hidden="false" id="c118-481e-0b22-0c48" targetId="1d7c-5ff0-4f5f-605c" primary="false"/>
+        <categoryLink name="Allied Units" hidden="false" id="5683-3d9a-82e8-315f" targetId="887b-ab87-92a2-20f5" primary="true"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -4543,6 +4552,6 @@
     <entryLink import="true" name="Renegade Ogryn Beast Handler [Legends]" hidden="false" id="274d-8133-edc8-d50e" collective="false" targetId="f585-eab0-0380-5928" type="selectionEntry"/>
     <entryLink import="true" name="Traitor Chimera" hidden="false" id="b0e0-fb64-c026-5d9d" collective="false" targetId="4234-1f5f-7bae-b19b" type="selectionEntry"/>
     <entryLink import="true" name="Traitor Leman Russ Battle Tank" hidden="false" id="181b-e979-36d7-f800" collective="false" targetId="9687-76b4-0682-b901" type="selectionEntry"/>
-    <entryLink import="true" name="Basilisk" hidden="false" id="6128-406d-5ec2-0011" collective="false" targetId="7118-8c23-a526-7864" type="selectionEntry"/>
+    <entryLink import="true" name="Traitor Basilisk" hidden="false" id="6128-406d-5ec2-0011" collective="false" targetId="7118-8c23-a526-7864" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

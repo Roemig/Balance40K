@@ -29818,7 +29818,7 @@ If a weapon equipped by a model you army has the **[HAZARDOUS]** ability from mu
             </profile>
             <profile name="5-6" typeId="2ece-65f0-756f-bc77" typeName="Try Dat Button! - D6" hidden="false" id="2687-ceb1-a423-fc12">
               <characteristics>
-                <characteristic name="Button Effect" id="9f9d-bdbe-1e1d-4632" hidden="false" typeId="dcd0-b896-8ccf-ea83">Each time an attack is made with this weapon, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 2.</characteristic>
+                <characteristic name="Button Effect" typeId="dcd0-b896-8ccf-ea83">Each time an attack is made with this weapon, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -29852,7 +29852,7 @@ If a weapon equipped by a model you army has the **[HAZARDOUS]** ability from mu
             <rule name="Lissen &apos;Ere" id="8e19-56b8-b90a-ae8d" hidden="false">
               <description>Once per battle round, in your Command phase or after being set up on the battlefield in your Movement phase, each **^^Boss Snikrot^^**, **^^Mek^^** and **^^Warboss^^** model in your army can issue Taktiks abilities.
 
-To do so, select one of the Taktiks abilities below and select one friendly **^^Orks^^** unit within 6&quot; of that model to issue them to. That model must take a Leadership test: if failed, the selected unit suffers 1 mortal wound. Until the start of your next Command phase, the selected unit is affected by the selected Taktik. A unit cannot have Taktiks issued to it in this way more than once per battle round.
+To do so, select one of the Taktiks abilities below and select one friendly **^^Orks^^** unit within 6&quot; of that model to issue them to. Until the start of your next Command phase, the selected unit is affected by the selected Taktik. A unit cannot have Taktiks issued to it in this way more than once per battle round.
 
 Taktiks abilities cannot be issued to Battle shocked units, and if a unit affected by Taktiks becomes Battle shocked, all Taktiks cease to affect that unit while it is Battle shocked.
 
