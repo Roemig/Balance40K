@@ -42297,19 +42297,29 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Honus Squad Trooper" hidden="false" id="95e4-f0ee-25a8-fcf4">
                   <infoLinks>
-                    <infoLink name="Honus Infantry" id="bd37-7147-9325-2cca" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                    <infoLink name="Honus Squad Trooper" id="bd37-7147-9325-2cca" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="de57-a732-e2db-3b1a" includeChildSelections="false"/>
                     <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="96da-4255-ee7c-9489" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Power weapon" hidden="false" id="636a-26bf-f146-6400" type="selectionEntry" targetId="abb5-c410-8f2a-e60a"/>
+                    <entryLink import="true" name="Power weapon" hidden="false" id="636a-26bf-f146-6400" type="selectionEntry" targetId="abb5-c410-8f2a-e60a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c78-cc15-ddc2-0a3e"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9689-0b8e-930c-a1b0"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Honus Trooper w/Vox Caster" hidden="false" id="422e-734a-d407-5b6c">
                   <entryLinks>
-                    <entryLink import="true" name="Power weapon" hidden="false" id="585b-5e4e-6755-db47" type="selectionEntry" targetId="abb5-c410-8f2a-e60a"/>
+                    <entryLink import="true" name="Power weapon" hidden="false" id="585b-5e4e-6755-db47" type="selectionEntry" targetId="abb5-c410-8f2a-e60a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abfd-a034-8b57-ce56"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dab-c9a9-796f-46d2"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d131-d139-b20e-4e2b"/>
