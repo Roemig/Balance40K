@@ -42297,7 +42297,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Honus Squad Trooper" hidden="false" id="95e4-f0ee-25a8-fcf4">
                   <infoLinks>
-                    <infoLink name="Honus Squad Trooper" id="bd37-7147-9325-2cca" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
+                    <infoLink name="Honus Infantry" id="bd37-7147-9325-2cca" hidden="false" type="profile" targetId="d239-6d1e-6ac5-cf4d"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="de57-a732-e2db-3b1a" includeChildSelections="false"/>
