@@ -3768,6 +3768,16 @@
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="475a-2944-06b8-59e6"/>
                           </constraints>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Grenade launcher" hidden="false" id="28ac-c671-417e-e0d9">
                           <entryLinks>
@@ -3790,6 +3800,16 @@
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c015-31bb-7464-6db4"/>
                           </constraints>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Long-las" hidden="false" id="0a2d-d66c-6536-f704">
                           <entryLinks>
@@ -4068,6 +4088,16 @@
                           <constraints>
                             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c137-4006-49ed-d784"/>
                           </constraints>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Grenade launcher" hidden="false" id="921e-c125-4dc1-7b60">
                           <entryLinks>
@@ -4090,6 +4120,16 @@
                           <constraints>
                             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="508e-462a-7ec4-87f0"/>
                           </constraints>
+                          <costs>
+                            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Long-las" hidden="false" id="feaf-4201-c37f-a3f3">
                           <entryLinks>
@@ -6969,6 +7009,16 @@
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="abe4-ca71-d5a7-3883" shared="true" id="4ff8-8f19-f3f0-4c11" includeChildSelections="true"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Plasma gun" hidden="false" id="9ca6-ab56-d7f1-cab1">
                   <infoLinks>
@@ -7057,6 +7107,16 @@
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="abe4-ca71-d5a7-3883" shared="true" id="8873-a033-a9a9-5b11"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -13315,6 +13375,16 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2459-8134-65c5-34a4"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Tempestus Scion w/ Grenade launcher" hidden="false" id="aadf-5806-f8e3-aded">
                   <infoLinks>
@@ -13345,6 +13415,16 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="891f-3bca-5ae6-4876"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                    <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                    <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Tempestus Scion w/ Hot-shot volley gun" hidden="false" id="b634-8ca1-cd86-6fd4">
                   <infoLinks>
@@ -46416,6 +46496,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               </conditions>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Shock Trooper w/ Grenade Launcher" hidden="false" id="3d59-b7ef-3885-7cce">
           <entryLinks>
@@ -46445,6 +46535,16 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               </conditions>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Shock Trooper w/ Meltagun" hidden="false" id="318a-8c8c-8556-6972">
           <entryLinks>
@@ -48706,6 +48806,16 @@ In addition:
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="411e-2828-14a8-712c"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsman w/ Flamer" hidden="false" id="28e2-96eb-68d7-c330">
           <infoLinks>
@@ -48737,6 +48847,16 @@ In addition:
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="045d-da03-c0b5-8e12"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+            <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsman w/ Sniper Rifle" hidden="false" id="d1ed-1248-1c4b-4f49">
           <infoLinks>

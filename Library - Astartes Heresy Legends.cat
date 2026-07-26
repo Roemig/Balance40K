@@ -4176,7 +4176,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vindicator Laser Destroyer [Legends]" hidden="false" id="128d-5011-8e6-45a6">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5461,7 +5461,7 @@
         </profile>
         <profile name="Ablative Plating" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7933-efea-8992-c1cc">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when an attack is allocated to this model, you change the Damage characteristic of that attack to 0.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when an attack is allocated to this model, you may change the Damage characteristic of that attack to 0.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6709,6 +6709,9 @@
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="743f-47b7-03c2-441b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
@@ -6731,7 +6734,12 @@
                     <infoLink name="Twin-linked" id="dd86-c34c-62e2-87f4" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                    <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                    <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                    <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
