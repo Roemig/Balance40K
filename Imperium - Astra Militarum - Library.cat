@@ -25106,7 +25106,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
@@ -34748,7 +34748,12 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f4-a1db-78d1-e7b8"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Regimental standard" hidden="false" id="45fe-44a8-c062-b45f" targetId="92e4-774c-a0a-a822" type="selectionEntry"/>
+                <entryLink import="true" name="Regimental standard" hidden="false" id="45fe-44a8-c062-b45f" targetId="92e4-774c-a0a-a822" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a3f-4aea-1458-b728"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="204e-e166-78ea-0e28"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Laspistol" hidden="false" id="7c8c-9dc7-d5d0-4c58" type="selectionEntry" targetId="5837-1692-df16-8061">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f410-3c2a-5189-a0a1"/>
@@ -36036,6 +36041,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               </selectionEntries>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bb3-8e69-c224-ab94" includeChildForces="false" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="997f-4281-0b62-7828" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
@@ -36253,7 +36259,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <infoLink name="Guardsman" id="a502-3d38-dd39-4860" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
                   </infoLinks>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapons" id="081e-d5e5-62f2-53a4" hidden="false" defaultSelectionEntryId="850c-9a99-1772-b54c">
+                    <selectionEntryGroup name="Weapons" id="081e-d5e5-62f2-53a4" hidden="false" defaultSelectionEntryId="none">
                       <entryLinks>
                         <entryLink import="true" name="Sergeant Melee Option" hidden="false" id="4a54-237a-27fc-d63b" type="selectionEntryGroup" targetId="4236-4a39-e7dd-9ee8"/>
                         <entryLink import="true" name="Lasgun" hidden="false" id="850c-9a99-1772-b54c" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
@@ -37875,7 +37881,11 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <selectionEntryGroups>
                 <selectionEntryGroup name="Lasgun Option" id="d98d-2a9f-90a4-eb78" hidden="false" defaultSelectionEntryId="3726-1116-50f6-1a37">
                   <entryLinks>
-                    <entryLink import="true" name="Lasgun" hidden="false" id="6526-efbb-8817-5958" type="selectionEntry" targetId="a09c-6de4-e1c1-708a"/>
+                    <entryLink import="true" name="Lasgun" hidden="false" id="6526-efbb-8817-5958" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                      </costs>
+                    </entryLink>
                     <entryLink import="true" name="Heavy flamer" hidden="false" id="0969-9034-c883-d054" type="selectionEntry" targetId="6fef-cbbd-be33-44a4">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="e108-e2b6-b27b-bf8e" shared="true" id="769c-c0ba-1c62-d2a3" includeChildSelections="true"/>
@@ -37885,6 +37895,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="e108-e2b6-b27b-bf8e" shared="true" id="0aa3-5892-a851-a816" includeChildSelections="true"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                      </costs>
                     </entryLink>
                     <entryLink import="true" name="Meltagun" hidden="false" id="9dd8-2fb6-7390-256b" type="selectionEntry" targetId="15ea-693b-24ef-effc">
                       <constraints>
@@ -37896,11 +37909,18 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                         <constraint type="max" value="1" field="selections" scope="e108-e2b6-b27b-bf8e" shared="true" id="ccc6-f81b-f2ff-e6d7" includeChildSelections="true"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="a4a6-1fec-df17-ca5a" type="selectionEntry" targetId="7934-5223-153f-104e"/>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="a4a6-1fec-df17-ca5a" type="selectionEntry" targetId="7934-5223-153f-104e">
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                      </costs>
+                    </entryLink>
                     <entryLink import="true" name="Flamer" hidden="false" id="2898-0cd7-34a3-04b3" type="selectionEntry" targetId="5779-e27a-e226-5a66">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="e108-e2b6-b27b-bf8e" shared="true" id="4480-9ae6-ff67-8e7e" includeChildSelections="true"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
+                      </costs>
                     </entryLink>
                     <entryLink import="true" name="Plasma gun" hidden="false" id="cbfb-f8c3-1e59-d48d" type="selectionEntry" targetId="8e6c-4de8-8cec-ddde">
                       <constraints>
@@ -37978,7 +37998,12 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Master vox" hidden="false" id="b184-1f0a-cc17-3d07" targetId="1f75-a238-cc23-a70f" type="selectionEntry"/>
+                <entryLink import="true" name="Master vox" hidden="false" id="b184-1f0a-cc17-3d07" targetId="1f75-a238-cc23-a70f" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f87-27e7-460a-af14"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2556-3e5c-b15a-b0d3"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Close combat weapon" hidden="false" id="b2d8-9109-7b9b-7cf6" type="selectionEntry" targetId="b349-9d3a-1a65-3e48">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d133-ffd2-7419-1b99"/>

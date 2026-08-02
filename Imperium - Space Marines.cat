@@ -45168,12 +45168,17 @@ per turn.</characteristic>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Heavy Flamer" hidden="false" id="2883-764f-5375-a3c1" type="selectionEntry" targetId="b3e6-f7a7-8357-2055"/>
+                    <entryLink import="true" name="Cyclone missile launcher" hidden="false" id="f385-e677-1a3b-c8da" type="selectionEntry" targetId="da0b-ae86-a275-13f1"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Melee Weapon Option" id="dba9-e131-c2f0-c30c" hidden="false" defaultSelectionEntryId="7d2a-eb98-9b3e-676a">
                   <entryLinks>
                     <entryLink import="true" name="Power Fist" hidden="false" id="161d-9084-238a-1822" type="selectionEntry" targetId="f8d8-7e77-4b71-faac"/>
-                    <entryLink import="true" name="Power Weapon" hidden="false" id="d963-9409-3476-73fc" type="selectionEntry" targetId="50dd-3e76-d993-4d1a"/>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="d963-9409-3476-73fc" type="selectionEntry" targetId="50dd-3e76-d993-4d1a">
+                      <costs>
+                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-10"/>
+                      </costs>
+                    </entryLink>
                     <entryLink import="true" name="Chainfist" hidden="false" id="0738-aab2-b835-6e6e" type="selectionEntry" targetId="cb6c-970e-444a-3ec3"/>
                     <entryLink import="true" name="Power Maul" hidden="false" id="8215-1bd2-79c7-138b" type="selectionEntry" targetId="65af-7d26-702e-0855">
                       <costs>
@@ -45257,7 +45262,7 @@ per turn.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="400" field="51b2-306e-1021-d207">
+        <modifier type="set" value="360" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="9deb-5ab4-48be-a329" childId="2e54-bea0-bf0a-84f0" shared="true" id="7cdd-d352-0828-4ca7"/>
           </conditions>

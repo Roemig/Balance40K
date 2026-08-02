@@ -164,7 +164,12 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -201,11 +206,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Culexus Assassin" hidden="false" id="5e5e-d6b2-6a1c-aa69">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5128-90b-e4a5-dcbd" id="6dd3-7d4e-fef9-5476" primary="false" name="Faction: Agents of the Imperium"/>
@@ -364,7 +370,12 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Eversor Assassin" hidden="false" id="f201-1f4a-b907-d9d1">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5128-90b-e4a5-dcbd" id="ad5c-e22c-4400-4241" primary="false" name="Faction: Agents of the Imperium"/>
@@ -510,11 +521,6 @@
             </conditionGroup>
           </conditionGroups>
           <comment>Agents visibility</comment>
-        </modifier>
-        <modifier type="increment" value="10" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
-          </conditions>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -23672,7 +23678,7 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Agents of the Imperium" id="657b-a103-ad81-f299" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Repressor [Legends]" hidden="false" id="dd53-d850-59ba-7b2f" type="selectionEntry" targetId="e3f5-a1f9-6d52-f9bc">
+    <entryLink import="true" name="Inquisitorial Repressor [Legends]" hidden="false" id="dd53-d850-59ba-7b2f" type="selectionEntry" targetId="e3f5-a1f9-6d52-f9bc">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -23701,7 +23707,7 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Agents of the Imperium" id="cd74-cd8b-8263-9b7f" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Scout Sentinels" hidden="false" id="9fa3-31f1-54c8-a5fe" type="selectionEntry" targetId="0ad9-c1b4-5904-db53">
+    <entryLink import="true" name="Arbites Scout Sentinels" hidden="false" id="9fa3-31f1-54c8-a5fe" type="selectionEntry" targetId="0ad9-c1b4-5904-db53">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -23730,7 +23736,7 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Agents of the Imperium" id="c077-9424-77b8-4e44" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Armoured Sentinels" hidden="false" id="e025-a23f-8a78-6531" type="selectionEntry" targetId="a65e-219b-d8a3-b8df">
+    <entryLink import="true" name="Arbites Armoured Sentinels" hidden="false" id="e025-a23f-8a78-6531" type="selectionEntry" targetId="a65e-219b-d8a3-b8df">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -23788,7 +23794,7 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Agents of the Imperium" id="ae82-a5bf-3e67-5b50" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Leman Russ Battle Tank" hidden="false" id="ad8e-9f93-7ba1-cc12" type="selectionEntry" targetId="0c28-4236-1eba-f605">
+    <entryLink import="true" name="Arbites Leman Russ Battle Tank" hidden="false" id="ad8e-9f93-7ba1-cc12" type="selectionEntry" targetId="0c28-4236-1eba-f605">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -23859,7 +23865,7 @@ For the purposes of interacting with terrain features, all models in units with 
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Valkyrie" hidden="false" id="4362-84c6-492f-631e" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
+    <entryLink import="true" name="Inquisitorial Valkyrie" hidden="false" id="4362-84c6-492f-631e" type="selectionEntry" targetId="8627-fac1-cc34-78cd">
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
