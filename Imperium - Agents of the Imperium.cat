@@ -16856,9 +16856,6 @@ For the purposes of determining which models in this unit can embark within a ^^
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
       </profiles>
       <infoLinks>
@@ -17447,9 +17444,6 @@ For the purposes of determining which models in this unit can embark within a ^^
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -17630,9 +17624,6 @@ For the purposes of determining which models in this unit can embark within a ^^
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Airborne Insertion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ed6d-c0ec-77d5-2fa5">
           <characteristics>
@@ -17868,9 +17859,6 @@ For the purposes of determining which models in this unit can embark within a ^^
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -18523,9 +18511,6 @@ For the purposes of determining which models in this unit can embark within a ^^
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
         </profile>
         <profile name="Precision Drop" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="97a3-9ec6-ce99-5336">
           <characteristics>
@@ -19194,9 +19179,6 @@ For the purposes of determining which models in this unit can embark within a ^^
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -19520,9 +19502,6 @@ For the purposes of determining which models in this unit can embark within a ^^
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -19627,9 +19606,6 @@ For the purposes of determining which models in this unit can embark within a ^^
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -24123,9 +24099,6 @@ For the purposes of interacting with terrain features, all models in units with 
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
-      <attributes>
-        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-      </attributes>
     </profile>
   </sharedProfiles>
   <sharedInfoGroups>

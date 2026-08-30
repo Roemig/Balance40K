@@ -25106,7 +25106,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
@@ -25516,7 +25516,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -38260,7 +38260,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             </selectionEntry>
             <selectionEntry type="model" import="true" name="3 Guardsmen w/ Special Weapons" hidden="false" id="19fe-6c9e-e25a-cca8">
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Flamers" hidden="false" id="7adf-b5d5-4546-9a5a">
+                <selectionEntry type="upgrade" import="true" name="3 Guardsmen w/ Flamers" hidden="false" id="7adf-b5d5-4546-9a5a">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="80b1-e221-f08d-f573" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -38275,11 +38275,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Guardsman" id="dcf5-733f-7f16-26bb" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="ce21-58a2-a31b-e3ec" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="7c5d-d060-a637-83ee" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                  </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c0d-48f5-19b2-37ff"/>
                   </constraints>
@@ -38293,8 +38288,40 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
+                  <profiles>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ee48-2644-b77c-7427">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="619f-a03c-5aa8-3fe8">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b4df-d8b9-0d18-411f">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Grenade Launchers" hidden="false" id="603a-559a-976b-4c52">
+                <selectionEntry type="upgrade" import="true" name="3 Guardsmen w/ Grenade Launchers" hidden="false" id="603a-559a-976b-4c52">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="8332-0e64-a3ff-7574" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -38309,11 +38336,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Guardsman" id="972a-5565-2275-52d2" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="aae6-beda-35fe-3cb8" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="2103-8fcc-b514-749a" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                  </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d991-570b-09c0-9497"/>
                   </constraints>
@@ -38327,8 +38349,40 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
+                  <profiles>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0fb6-99ab-caee-a745">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d4c3-b0e5-6a0a-0a20">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1539-b133-00b9-fe5b">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Meltaguns" hidden="false" id="eda9-703a-6318-23b5">
+                <selectionEntry type="upgrade" import="true" name="3 Guardsmen w/ Meltaguns" hidden="false" id="eda9-703a-6318-23b5">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="0c9f-017b-afdc-0cfb" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -38343,11 +38397,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Guardsman" id="b01c-ec4e-f8f4-c730" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="595f-b4ff-92bc-6480" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="aa18-7435-116d-cf4e" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                  </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe0c-ffbf-f7ed-60ec"/>
                   </constraints>
@@ -38361,8 +38410,40 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
+                  <profiles>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ac91-08bf-51a8-5946">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ecd3-1dd9-df17-97fa">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="95e5-9389-30f7-35d1">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Plasma Guns" hidden="false" id="584c-0adf-54d3-e58c">
+                <selectionEntry type="upgrade" import="true" name="3 Guardsmen w/ Plasma Guns" hidden="false" id="584c-0adf-54d3-e58c">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="ceeb-3966-c893-c327" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -38377,11 +38458,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Guardsman" id="29dd-1b30-2cce-149a" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="e5bc-ac5a-64e6-2ad1" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="43a9-e7e7-a49d-b886" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                  </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5543-e628-19a3-b801"/>
                   </constraints>
@@ -38395,8 +38471,40 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
+                  <profiles>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="03b0-995e-ab5e-f494">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ae69-fdda-a204-ac19">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6714-3798-9609-4af2">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="3 Guardsmen w/ Sniper Rifles" hidden="false" id="5bba-9aac-8793-939a">
+                <selectionEntry type="upgrade" import="true" name="3 Guardsmen w/ Sniper Rifles" hidden="false" id="5bba-9aac-8793-939a">
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" id="488d-1e35-652c-6c21" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                       <constraints>
@@ -38411,11 +38519,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Guardsman" id="754d-229d-6d93-0fa2" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="26ec-6083-7282-4b2c" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                    <infoLink name="Guardsman" id="3a0d-33f5-7562-38a3" hidden="false" type="profile" targetId="ea09-3364-e6cd-2ffe"/>
-                  </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f42-a454-4186-1587"/>
                   </constraints>
@@ -38429,6 +38532,38 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
                     <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
                   </costs>
+                  <profiles>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3ea1-ba81-cd4b-6581">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0c05-8c2b-75f6-9434">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="34fe-377f-020d-d85d">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -45943,7 +46078,12 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <categoryLink name="Thunderbolt Heavy Fighter" hidden="false" id="c08e-aecb-f935-71a6" targetId="3a0d-2716-3314-955d" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Armoured hull" hidden="false" id="1a52-ba35-e61c-c983" type="selectionEntry" targetId="12c3-780a-dd47-36d1"/>
+        <entryLink import="true" name="Armoured hull" hidden="false" id="1a52-ba35-e61c-c983" type="selectionEntry" targetId="12c3-780a-dd47-36d1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d89-d670-d867-1641"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49e2-17b8-327f-6331"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Lascannon" hidden="false" id="4732-4dfb-da7b-7dbe" type="selectionEntry" targetId="af85-b936-7f-430c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="de3b-f480-fab5-3dc6"/>

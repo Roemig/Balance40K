@@ -8972,6 +8972,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                 <selectionEntry type="upgrade" import="true" name="Fabricator claw array" hidden="false" id="2701-3ce4-f0e-fd9d">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="289d-6902-e707-d73b"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b667-429b-8685-a13b"/>
                   </constraints>
                   <profiles>
                     <profile name="Fabricator Claw Array (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="486c-f4fd-5ec1-38e3">
@@ -9015,11 +9016,16 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                   </selectionEntries>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f7-12d4-17a1-c1ba"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e65-85de-f14b-53cd"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Gloom prism" hidden="false" id="4ed6-7bda-95e1-3ca0" type="selectionEntry" targetId="bf18-cd0a-a37f-b62b"/>
+                <entryLink import="true" name="Gloom prism" hidden="false" id="4ed6-7bda-95e1-3ca0" type="selectionEntry" targetId="bf18-cd0a-a37f-b62b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d44d-2da9-5a48-f930"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
