@@ -14352,7 +14352,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -14375,7 +14375,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -14508,7 +14508,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -14519,7 +14519,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
@@ -14680,7 +14680,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -46165,6 +46165,28 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="290c-41f8-d577-763c" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="221d-edb8-6266-bcf8">
+      <profiles>
+        <profile name="Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4ac0-d4e8-3755-3940">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" hidden="false" type="rule" id="638c-48f4-d184-107e" targetId="c5c8-8b58-b8b6-7786"/>
+      </infoLinks>
+      <comment>BS3+</comment>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="60b3-1ac9-b386-38d3" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Aegis Defence Line" hidden="false" id="a56a-23f-9ea1-d8ee"/>
@@ -49056,12 +49078,12 @@ In addition:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Laspistol Option" id="dc7c-ece9-243e-e5c5" hidden="false">
+    <selectionEntryGroup name="Laspistol Option" id="dc7c-ece9-243e-e5c5" hidden="false" defaultSelectionEntryId="790b-2564-33f8-b54c">
       <entryLinks>
-        <entryLink import="true" name="Laspistol" hidden="false" id="790b-2564-33f8-b54c" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="c884-ed43-1552-2856" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
-        <entryLink import="true" name="Boltgun" hidden="false" id="c342-6386-58d6-6147" type="selectionEntry" targetId="1cd4-7b86-8d9d-bb46"/>
-        <entryLink import="true" name="Plasma pistol" hidden="false" id="e7b3-ee82-5563-abed" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
+        <entryLink import="true" name="Laspistol" hidden="false" id="790b-2564-33f8-b54c" type="selectionEntry" targetId="5837-1692-df16-8061"/>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="c884-ed43-1552-2856" type="selectionEntry" targetId="3117-5234-7ed4-8d7f"/>
+        <entryLink import="true" name="Boltgun" hidden="false" id="c342-6386-58d6-6147" type="selectionEntry" targetId="221d-edb8-6266-bcf8"/>
+        <entryLink import="true" name="Plasma pistol" hidden="false" id="e7b3-ee82-5563-abed" type="selectionEntry" targetId="2da9-abbd-3c4d-361a"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2522-5e37-d546-b432"/>
@@ -49069,7 +49091,7 @@ In addition:
       </constraints>
       <comment>Elysian</comment>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Laspistol Option" id="b046-96fe-4014-fe33" hidden="false">
+    <selectionEntryGroup name="Laspistol Option" id="b046-96fe-4014-fe33" hidden="false" defaultSelectionEntryId="b0c4-3796-3a9a-cbc2">
       <entryLinks>
         <entryLink import="true" name="Laspistol" hidden="false" id="b0c4-3796-3a9a-cbc2" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
         <entryLink import="true" name="Bolt pistol" hidden="false" id="d626-4328-a58b-8f78" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
@@ -49079,7 +49101,7 @@ In addition:
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f2f-3b83-e009-96f6"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Sergeant Melee Option" id="4236-4a39-e7dd-9ee8" hidden="false">
+    <selectionEntryGroup name="Sergeant Melee Option" id="4236-4a39-e7dd-9ee8" hidden="false" defaultSelectionEntryId="dd5e-2cea-0dc7-cadc">
       <entryLinks>
         <entryLink import="true" name="Chainsword" hidden="false" id="dd5e-2cea-0dc7-cadc" type="selectionEntry" targetId="7934-5223-153f-104e"/>
         <entryLink import="true" name="Power weapon" hidden="false" id="b908-c438-f167-eb13" type="selectionEntry" targetId="abb5-c410-8f2a-e60a"/>

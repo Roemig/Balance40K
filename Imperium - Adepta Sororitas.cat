@@ -11834,10 +11834,10 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
       <description>In your Command phase, you can select up to 3 ^^**Adepta Sororitas^^** units from your army (including units that are embarked within ^^**Transports^^**), until the start of your next Command phase, those units are Righteous. While a unit is Righteous:
 ■ Add 1&quot; to the Move characteristic of models in that unit.
 ■ Improve the Leadership characteristic of models in that unit by 1.
-■ Improve the Weapon Skill and Ballistic Skill characteristics of weapons equipped by ^^**Battle Sisters Squad^^**, ^^**Celestian Sacresants^^** and ^^**Paragon Warsuits^^** models in that unit by 1.</description>
+■ Improve the Weapon Skill and Ballistic Skill characteristics of weapons equipped by ^^**Battle Sisters Squad^^**, ^^**Celestian Insidiants^^**, ^^**Celestian Sacresants^^** and ^^**Paragon Warsuits^^** models in that unit by 1.</description>
     </rule>
     <rule name="Keywords" id="f84c-5011-816f-3fb6" hidden="false">
-      <description>While a ^^**Celestian Sacresants^^** unit from your army is not Battle‑shocked, add 1 to the Objective Control characteristic of ^^**Celestian Sacresants^^** models in that unit.</description>
+      <description>While a ^^**Celestian Sacresants^^** or ^^**Celestian Insidiants^^** unit from your army is not Battle‑shocked, add 1 to the Objective Control characteristic of ^^**Celestian Sacresants^^** and ^^**Celestian Insidiants^^** models in that unit.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
