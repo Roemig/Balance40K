@@ -13228,7 +13228,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink name="Squadron" id="bced-eabf-ec0c-f7fa" primary="false" targetId="4780-be29-8c52-1d20"/>
         <categoryLink name="Transport" id="d032-f39d-bcc5-af74" primary="false" targetId="75e8-57c4-40e3-1817"/>
         <categoryLink name="Dedicated Transport" id="9a08-6a0f-1288-61c6" primary="true" targetId="ba07-411c-2832-1f79"/>
-        <categoryLink name="Elysian" id="0ec0-d5c5-6524-0b83" hidden="false" primary="false" targetId="7619-c4de-dc6d-edbb"/>
       </categoryLinks>
       <constraints>
         <constraint id="acd1-da30-2656-832a" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="6"/>
@@ -13408,7 +13407,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink name="Vehicle" id="f022-d129-ac28-ce68" primary="false" targetId="dbd4-63-af05-998"/>
         <categoryLink name="Dedicated Transport" id="c51a-df22-f66-a932" primary="true" targetId="ba07-411c-2832-1f79"/>
         <categoryLink name="Transport" id="f82d-ba69-30df-e49c" primary="false" targetId="75e8-57c4-40e3-1817"/>
-        <categoryLink name="Elysian" id="1101-ce59-54fd-ab46" hidden="false" primary="false" targetId="7619-c4de-dc6d-edbb"/>
       </categoryLinks>
       <constraints>
         <constraint id="acd1-da30-2656-832a" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="6"/>
@@ -44434,7 +44432,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <categoryLink name="Squadron" id="d277-ea7e-cb69-3e12" hidden="false" primary="false" targetId="4780-be29-8c52-1d20"/>
         <categoryLink name="Smoke" id="3dd1-1397-a3f1-279c" hidden="false" primary="false" targetId="6df-937-16bc-8c1a"/>
         <categoryLink name="Hippogriff AFV" id="0b66-6f0c-2a22-a111" hidden="false" primary="false" targetId="c849-8bc8-df52-bb5c"/>
-        <categoryLink name="Elysian" id="5cbf-3c19-abe9-4a30" hidden="false" primary="false" targetId="7619-c4de-dc6d-edbb"/>
       </categoryLinks>
       <constraints>
         <constraint id="60b5-b11d-961f-8663" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
