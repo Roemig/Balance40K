@@ -658,7 +658,7 @@ In your Shooting phase, each time a ^^**Brôkhyr, Ironkin Steeljacks^^** or ^^**
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Hearthkyn Warrior w/ plasma knife" hidden="false" id="6c9e-f7c7-6e0e-4dd7" collective="false" sortIndex="3">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6eb7-9817-1aea-79c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="6eb7-9817-1aea-79c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Autoch-pattern bolt pistol" hidden="false" id="72bf-750f-754e-e69b" collective="true">
