@@ -42324,7 +42324,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Tauros Assault Vehicle Squadron" id="6800-f1ce-7deb-d9eb" hidden="false" import="true" type="model">
+    <selectionEntry name="Tauros Assault Vehicle Squadron" id="6800-f1ce-7deb-d9eb" hidden="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Tauros Assault Vehicle" id="ecbf-fc20-7e8b-f254" hidden="false" primary="false" targetId="e979-a4f1-c9c8-64f5"/>
         <categoryLink name="Mounted" id="7564-3922-5567-ca20" hidden="false" primary="true" targetId="14a0-40c9-2748-ae6e"/>
@@ -42563,7 +42563,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Tauros Venator Squadron" id="a95f-9dd6-de66-fa59" hidden="false" import="true" type="model">
+    <selectionEntry name="Tauros Venator Squadron" id="a95f-9dd6-de66-fa59" hidden="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Tauros" id="dceb-f53c-8045-7a62" hidden="false" primary="false" targetId="be36-7cb1-29f-f344"/>
         <categoryLink name="Tauros Venator" id="86c4-e84f-6ce8-4812" hidden="false" primary="false" targetId="25c2-9b66-89d3-928b"/>
@@ -47154,10 +47154,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </constraints>
           <selectionEntries>
             <selectionEntry name="1 Sergeant and 9 Veterans" id="03aa-2e01-5447-acaf" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="4ee1-c4a2-2943-c64b" field="selections" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="fd6a-9f4d-aec2-c257" field="selections" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
               <selectionEntries>
                 <selectionEntry name="Veteran Drop Trooper" id="1c56-5d75-4d3b-3ef3" hidden="false" import="true" type="model">
                   <constraints>
@@ -47462,10 +47458,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry name="1 Sergeant, 7 Veterans and 1 Heavy Weapons Team" id="3623-6134-f2fd-5224" hidden="false" import="true" type="upgrade">
-              <constraints>
-                <constraint id="a82c-9134-4f74-cbfe" field="selections" scope="parent" shared="true" type="min" value="9"/>
-                <constraint id="3cae-2a6e-c51c-4264" field="selections" scope="parent" shared="true" type="max" value="9"/>
-              </constraints>
               <entryLinks>
                 <entryLink name="Elysian Heavy Weapons Team" id="0dda-92b9-14a2-cbcb" hidden="false" import="true" targetId="23ed-6cb6-e340-b2f0" type="selectionEntry">
                   <constraints>
