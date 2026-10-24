@@ -3946,7 +3946,7 @@ Improve the Leadership and Objective Control characteristics of models in this u
           <profiles>
             <profile name="Leader" id="b6d-7fbe-cc9-4f92" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Death Korps of Krieg^^**, **^^Kasrkin^^**, **^^Krieg Combat Engineers^^**, **^^Tempestus Scions^^**</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Death Korps of Krieg^^**, **^^Kasrkin^^**, **^^Krieg Combat Engineers^^**, **^^Tempestus Scions^^**, **^^Elysian Drop Troopers^^**, **^^Elysian Veteran Squad^^**</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13646,7 +13646,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     </selectionEntry>
                     <selectionEntry name="Taurox missile launcher" id="c48b-7044-1ce1-41a7" hidden="false" import="true" type="upgrade">
                       <costs>
-                        <cost name="pts" typeId="51b2-306e-1021-d207" value="-5"/>
                         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -35401,12 +35400,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   </constraints>
                   <entryLinks>
                     <entryLink name="Chainsword" id="16e6-b8b5-42a8-21d2" hidden="false" import="true" targetId="7934-5223-153f-104e" type="selectionEntry"/>
-                    <entryLink name="Accatran Pattern Lasgun" id="e4e4-b845-2d22-1192" hidden="false" import="true" targetId="2664-d120-82ca-96f1" type="selectionEntry">
-                      <constraints>
-                        <constraint id="8a05-b8ea-c7e3-e9d0" field="selections" scope="parent" shared="true" type="min" value="1"/>
-                        <constraint id="a95a-2576-d071-f2dd" field="selections" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                    </entryLink>
+                    <entryLink name="Accatran Pattern Lasgun" id="e4e4-b845-2d22-1192" hidden="false" import="true" targetId="2664-d120-82ca-96f1" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -42347,7 +42341,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <constraint id="2fa4-96c0-9a68-fcf0" field="716d-91b7-d55a-1022" includeChildSelections="true" scope="self" shared="true" type="min" value="0"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -42462,13 +42455,23 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="1-2 Tauros Venators" id="229b-de11-d854-2685" hidden="false">
+        <selectionEntryGroup name="1-2 Tauros Venators" id="229b-de11-d854-2685" defaultSelectionEntryId="ac19-4839-7e84-4572" hidden="false">
           <constraints>
             <constraint id="43e4-6901-72ea-b225" field="selections" includeChildSelections="true" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="0931-a1ef-eb26-d5ad" field="selections" includeChildSelections="true" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Tauros Assault Vehicle" id="ac19-4839-7e84-4572" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Tauros Assault Vehicle" id="ac19-4839-7e84-4572" defaultAmount="1" hidden="false" import="true" type="model">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
+              </costs>
               <profiles>
                 <profile name="Tauros Assault Vehicle" id="9ab-2ae2-1a5d-425b" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
                   <attributes>
@@ -42686,13 +42689,13 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="1-2 Tauros Venators" id="4a24-c672-b092-0de4" hidden="false">
+        <selectionEntryGroup name="1-2 Tauros Venators" id="4a24-c672-b092-0de4" defaultSelectionEntryId="5324-78b9-b136-941f" hidden="false">
           <constraints>
             <constraint id="d6d7-8b35-6d04-8979" field="selections" includeChildSelections="true" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="3b3a-69d2-75ae-2e99" field="selections" includeChildSelections="true" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Tauros Venator" id="5324-78b9-b136-941f" hidden="false" import="true" type="model">
+            <selectionEntry name="Tauros Venator" id="5324-78b9-b136-941f" defaultAmount="1" hidden="false" import="true" type="model">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -46835,7 +46838,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <constraint id="5521-eb85-c4c0-1344" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="3"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -47007,7 +47010,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <constraint id="5fc8-265b-4bf8-d07c" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Chainsword" id="f9ce-ec86-7259-b248" hidden="false" import="true" targetId="7934-5223-153f-104e" type="selectionEntry"/>
                     <entryLink name="Accatran Pattern Lasgun" id="7790-8ff9-4170-69f1" hidden="false" import="true" targetId="2664-d120-82ca-96f1" type="selectionEntry"/>
                     <entryLink name="Combat shotgun" id="e326-b21d-617d-653f" hidden="false" import="true" targetId="d451-9543-babf-fcf2" type="selectionEntry"/>
                   </entryLinks>
@@ -47016,7 +47018,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Assault Trooper" id="f1da-736e-abd7-f3a2" defaultSelectionEntryId="fea6-1ba1-e799-3b69" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Assault Trooper /Sspecial weapon" id="f1da-736e-abd7-f3a2" defaultSelectionEntryId="fea6-1ba1-e799-3b69" hidden="false" sortIndex="3">
           <constraints>
             <constraint id="c282-c668-ee4e-839b" field="selections" scope="parent" shared="true" type="min" value="3"/>
             <constraint id="db6a-2abd-0cd3-bee0" field="selections" scope="parent" shared="true" type="max" value="3"/>
@@ -47153,14 +47155,14 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           <selectionEntries>
             <selectionEntry name="1 Sergeant and 9 Veterans" id="03aa-2e01-5447-acaf" hidden="false" import="true" type="upgrade">
               <constraints>
-                <constraint id="4ee1-c4a2-2943-c64b" field="selections" scope="parent" shared="true" type="min" value="10"/>
-                <constraint id="fd6a-9f4d-aec2-c257" field="selections" scope="parent" shared="true" type="max" value="10"/>
+                <constraint id="4ee1-c4a2-2943-c64b" field="selections" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="fd6a-9f4d-aec2-c257" field="selections" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry name="Veteran Drop Trooper" id="1c56-5d75-4d3b-3ef3" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="151b-31b4-43af-f36e" field="selections" scope="parent" shared="true" type="min" value="9"/>
-                    <constraint id="af21-f513-4084-c160" field="selections" scope="parent" shared="true" type="max" value="9"/>
+                    <constraint id="151b-31b4-43af-f36e" field="selections" scope="parent" shared="true" type="min" value="8"/>
+                    <constraint id="af21-f513-4084-c160" field="selections" scope="parent" shared="true" type="max" value="8"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Accatran Pattern Lasgun" id="9af8-fc51-8691-4877" hidden="false" import="true" targetId="2664-d120-82ca-96f1" type="selectionEntry">
@@ -47181,16 +47183,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       <repeats>
                         <repeat id="a834-3348-ae0a-6d78" childId="34e0-971f-ee5a-6a14" field="selections" repeats="1" roundUp="false" scope="parent" shared="true" value="1"/>
                       </repeats>
-                    </modifier>
-                    <modifier field="151b-31b4-43af-f36e" type="decrement" value="1">
-                      <conditions>
-                        <condition childId="89b0-f42c-a94e-a0da" field="selections" includeChildSelections="true" scope="parent" shared="true" type="atLeast" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="af21-f513-4084-c160" type="decrement" value="1">
-                      <conditions>
-                        <condition childId="89b0-f42c-a94e-a0da" field="selections" includeChildSelections="true" scope="parent" shared="true" type="atLeast" value="1"/>
-                      </conditions>
                     </modifier>
                     <modifier field="151b-31b4-43af-f36e" type="decrement" value="1">
                       <repeats>
@@ -47236,6 +47228,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <selectionEntry name="Veteran Drop Trooper w/ Vox Caster" id="89b0-f42c-a94e-a0da" hidden="false" import="true" type="model">
                   <constraints>
                     <constraint id="d05b-0896-4dcd-a8a9" field="selections" includeChildSelections="true" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="b830-ab71-3155-af07" field="selections" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Vox-caster" id="5330-79e0-9977-43d5" collective="false" hidden="false" import="true" targetId="6bfd-18be-90d3-2398" type="selectionEntry">
@@ -47484,8 +47477,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
               <selectionEntries>
                 <selectionEntry name="Veteran Drop Trooper" id="1714-ab46-0c3e-8f5c" hidden="false" import="true" type="model">
                   <constraints>
-                    <constraint id="bf6b-0e68-5fd6-cb44" field="selections" scope="parent" shared="true" type="min" value="7"/>
-                    <constraint id="e327-fe1f-b376-aab1" field="selections" scope="parent" shared="true" type="max" value="7"/>
+                    <constraint id="bf6b-0e68-5fd6-cb44" field="selections" scope="parent" shared="true" type="min" value="6"/>
+                    <constraint id="e327-fe1f-b376-aab1" field="selections" scope="parent" shared="true" type="max" value="6"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Accatran Pattern Lasgun" id="2911-9f49-6a4a-c488" hidden="false" import="true" targetId="2664-d120-82ca-96f1" type="selectionEntry">
@@ -47506,16 +47499,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                       <repeats>
                         <repeat id="2c1b-436b-ec48-50be" childId="ce2b-3f23-24a3-91c8" field="selections" repeats="1" roundUp="false" scope="parent" shared="true" value="1"/>
                       </repeats>
-                    </modifier>
-                    <modifier field="bf6b-0e68-5fd6-cb44" type="decrement" value="1">
-                      <conditions>
-                        <condition childId="98fe-cc23-fe03-fdf2" field="selections" includeChildSelections="true" scope="parent" shared="true" type="atLeast" value="1"/>
-                      </conditions>
-                    </modifier>
-                    <modifier field="e327-fe1f-b376-aab1" type="decrement" value="1">
-                      <conditions>
-                        <condition childId="98fe-cc23-fe03-fdf2" field="selections" includeChildSelections="true" scope="parent" shared="true" type="atLeast" value="1"/>
-                      </conditions>
                     </modifier>
                     <modifier field="bf6b-0e68-5fd6-cb44" type="decrement" value="1">
                       <repeats>
@@ -47561,6 +47544,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 <selectionEntry name="Veteran Drop Trooper w/ Vox Caster" id="98fe-cc23-fe03-fdf2" hidden="false" import="true" type="model">
                   <constraints>
                     <constraint id="dc90-0f27-15e9-5d2d" field="selections" includeChildSelections="true" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="3f55-1d68-8be2-341a" field="selections" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Vox-caster" id="cab0-a4f0-c275-fedb" collective="false" hidden="false" import="true" targetId="6bfd-18be-90d3-2398" type="selectionEntry">
